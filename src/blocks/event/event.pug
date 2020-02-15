@@ -1,6 +1,7 @@
 mixin event(data)
   .event(style="background-image: url(../img/" + data.picture + ");")&attributes(attributes)
-    .event__type программа развлекательных мероприятий
-    .event__footer
-      h5.mb-0 Выступления известных артистов
-      h5.mb-0 25 июля
+    .event__content
+      .event__type программа развлекательных мероприятий
+      .event__footer
+        h5.event__title.mb-0 Выступления известных артистов
+        h5.mb-0 25 июля

@@ -1,2 +1,25 @@
 .content {
+
+  &__section {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  &__festival {
+    background: $tertiary;
+  }
+
+  &__forum {
+    background: $primary;
+  }
+
+  &__header {
+    padding: 25px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__wrapper {
+  }
 }
