@@ -1,2 +1,19 @@
 mixin advantages(data)
   .advantages&attributes(attributes)
+    .container
+      +logo.logo--mirroring
+      .advantages__features
+        +feature({
+          number: '92 000',
+          title: 'Зрителей фестиваля'
+        }).feature--blue
+        +feature({
+          number: '19 946',
+          title: 'Эксперта'
+        }).feature--yellow
+        +feature({
+          number: '100 млн.Р.',
+          title: 'На гранты'
+        }).feature--red
+      .d-flex.justify-content-center
+        a.btn.btn-outline-secondary(href="#") Принять участие
