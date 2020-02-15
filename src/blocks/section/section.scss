@@ -3,4 +3,14 @@
   &__content {
     min-height: 100vh;
   }
+
+  &--footer {
+    border-left: 1px solid #efc825;
+
+    .fp-tableCell {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
 }

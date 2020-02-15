@@ -1,2 +1,33 @@
 .footer {
+  padding: 60px 0 65px;
+  background: $tertiary;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__left-top {
+  }
+
+  &__contacts {
+    margin-top: 35px;
+  }
+
+  &__contacts-item {
+
+    & + & {
+      margin-top: 25px;
+    }
+  }
+
+  &__map {
+    margin-right: 80px;
+  }
 }

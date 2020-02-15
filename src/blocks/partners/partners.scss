@@ -1,2 +1,54 @@
 .partners {
+
+  &__row {
+    margin-bottom: 18px;
+
+    &--light {
+      background: rgba(#efc825, .2);
+    }
+
+    &--dark {
+      background: rgba($primary, .2);
+    }
+  }
+
+  &__row-wrapper {
+    position: relative;
+    padding-left: 110px;
+  }
+
+  &__header {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    display: inline-flex;
+    width: 1px;
+    height: 1px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    color: $dark;
+    transform: rotate(-90deg);
+    //    left: -45px;
+    //    top: 75px;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__row-content {
+  }
+
+  &__logo {
+    margin-right: 96px;
+    max-width: 160px;
+    max-height: 160px;
+  }
 }
