@@ -1,8 +1,7 @@
 .content {
 
   &__section {
-    overflow: hidden;
-    height: 100vh;
+    position: relative;
   }
 
   &__wrapper {
@@ -13,26 +12,44 @@
     max-width: 48.06%;
     flex-grow: 1;
     background: $tertiary;
-  }
 
-  &__forum {
-    flex-grow: 1;
-    background: $primary;
+    .content__header {
+      background: $tertiary;
+    }
   }
 
   &__header {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
     padding: 25px 70px;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
   }
 
   &__events-wrapper {
+    position: relative;
+    padding-top: 98px;
+    height: 100vh;
+  }
+
+  &__forum {
+    max-width: 51.94%;
+    flex-grow: 1;
+    background: $primary;
+
+    .content__header {
+      background: $primary;
+    }
   }
 
   &__items-wrapper {
-    padding: 32px 140px 70px 70px;
+    padding: 130px 140px 70px 70px;
     display: flex;
+    height: 100vh;
     flex-wrap: wrap;
     justify-content: space-between;
   }
