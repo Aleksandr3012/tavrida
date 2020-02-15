@@ -1,2 +1,21 @@
 mixin content(data)
   .content&attributes(attributes)
+    .container-fluid
+      .row.no-gutters
+        .col-lg-6
+          .content__festival
+            .content__header
+              h3.content__header-title ФЕСТИВАЛЬ
+              a.btn.btn-outline-secondary(href="#") Подробнее
+            +event({
+              picture: 'event-1.jpg'
+            })
+            +event({
+              picture: 'event-1.jpg'
+            })
+            +event({
+              picture: 'event-1.jpg'
+            })
+            +event({
+              picture: 'event-1.jpg'
+            })
