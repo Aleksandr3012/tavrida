@@ -2,14 +2,10 @@ extends ../templates/template.pug
 block content
   +header
   .wrapper#fullpage
-    .section
-      +front
-    .section
-      +advantages
-    .section
-      +content
-    .section
-      +about
+    +front.section
+    +advantages.section
+    +content.section
+    +about.section
     .section
       +partners
       +footer

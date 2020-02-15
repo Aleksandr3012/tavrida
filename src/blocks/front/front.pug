@@ -1,11 +1,12 @@
 mixin front(data)
   .front&attributes(attributes)
     .container
-      .front__header
-        +logo
-        a.btn.btn-outline-secondary(href="#") Регистрация
-      .front__content
-        h1.front__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО
-        .front__content-right
-          h1 ТЫ <br>УНИКАЛЕН? <br>ДОКАЖИ!
-          h4.text-uppercase.text-right.mt-50 На фестивале
+      .front__wrapper
+        .front__header
+          +logo
+          a.btn.btn-outline-secondary(href="#") Регистрация
+        .front__content
+          h1.front__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО
+          .front__content-right
+            h1 ТЫ <br>УНИКАЛЕН? <br>ДОКАЖИ!
+            h4.front__subheader На фестивале
