@@ -1,2 +1,33 @@
 .item {
+  position: relative;
+  margin-bottom: 47px;
+  padding-top: 54.82%;
+  width: 100%;
+  max-width: 324px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 40px rgba(34, 70, 129, .74);
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 36px 27px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  &__dates {
+    font-family: $font-family-sans-serif;
+    font-size: 15px;
+    line-height: 1.18;
+    font-weight: 900;
+    color: #fff;
+  }
 }
