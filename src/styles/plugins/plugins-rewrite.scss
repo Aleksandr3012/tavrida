@@ -26,6 +26,12 @@
   background-size: contain;
   border-radius: 50%;
 
+  @include transition;
+
+  &:hover {
+    opacity: .85;
+  }
+
   &.slick-prev {
     left: -40px;
     transform: rotate(180deg);

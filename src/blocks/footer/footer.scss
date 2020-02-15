@@ -25,6 +25,16 @@
     & + & {
       margin-top: 25px;
     }
+
+    a {
+      color: #fff;
+
+      @include transition;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
   }
 
   &__map {

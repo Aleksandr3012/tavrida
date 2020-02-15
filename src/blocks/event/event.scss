@@ -5,6 +5,12 @@
   background-position: center;
   background-size: cover;
 
+  @include transition;
+
+  &:hover {
+    opacity: .8;
+  }
+
   &__content {
     position: absolute;
     top: 0;

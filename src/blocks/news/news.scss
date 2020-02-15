@@ -21,6 +21,11 @@
 
   &__title {
     margin: 20px 0;
+
+    a {
+
+      @include transition;
+    }
   }
 
   &__source {

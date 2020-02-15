@@ -10,6 +10,12 @@
   border-radius: 20px;
   box-shadow: 0 4px 40px rgba(34, 70, 129, .74);
 
+  @include transition;
+
+  &:hover {
+    opacity: .8;
+  }
+
   &__content {
     position: absolute;
     top: 0;

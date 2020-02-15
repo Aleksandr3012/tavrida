@@ -6,6 +6,12 @@
     height: 9.72vh;
     background: url(../img/menu.svg) no-repeat center;
     border-bottom: 1px solid $primary;
+
+    @include transition;
+
+    &:hover {
+      opacity: .8;
+    }
   }
 
   &__content {

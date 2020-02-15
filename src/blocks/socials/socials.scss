@@ -7,6 +7,12 @@
     width: 24px;
     height: 24px;
 
+    @include transition;
+
+    &:hover {
+      opacity: .8;
+    }
+
     & + & {
       margin-top: 33px;
     }
