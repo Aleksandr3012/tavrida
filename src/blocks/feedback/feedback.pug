@@ -1,2 +1,9 @@
 mixin feedback(data)
   .feedback&attributes(attributes)
+    .feedback__photo(style="background-image: url(./img/" + data.photo + ');')
+    .feedback__content
+      p Смолин считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+      .feedback__footer
+        p.p--sm.mb-0 14.04.2020
+        p.p--sm.mb-0.text-uppercase Калининский ВИКТОР
+        

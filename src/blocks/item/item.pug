@@ -1,2 +1,5 @@
 mixin item(data)
-  .item&attributes(attributes)
+  .item(style="background-image: url(../img/" + data.picture + ");")&attributes(attributes)
+    .item__content
+      h5= data-title
+      .item__dates 10.12, 11.12, 13.12...

@@ -7,15 +7,52 @@ mixin content(data)
             .content__header
               h3.content__header-title ФЕСТИВАЛЬ
               a.btn.btn-outline-secondary(href="#") Подробнее
-            +event({
-              picture: 'event-1.jpg'
-            })
-            +event({
-              picture: 'event-1.jpg'
-            })
-            +event({
-              picture: 'event-1.jpg'
-            })
-            +event({
-              picture: 'event-1.jpg'
-            })
+            .content__wrapper
+              +event({
+                picture: 'event-1.jpg'
+              })
+              +event({
+                picture: 'event-1.jpg'
+              })
+              +event({
+                picture: 'event-1.jpg'
+              })
+              +event({
+                picture: 'event-1.jpg'
+              })
+        .col-lg-6
+          .content__forum
+            .content__header
+              h3.content__header-title Форум
+              a.btn.btn-outline-secondary(href="#") Подробное расписание
+            .row
+              .col-sm-6
+                +item({
+                  picture: 'item-1.jpg',
+                  title: 'Гончарное дело'
+                })
+              .col-sm-6
+                +item({
+                  picture: 'item-2.jpg',
+                  title: 'Ювелир как профессия'
+                })
+              .col-sm-6
+                +item({
+                  picture: 'item-3.jpg',
+                  title: 'АНТИШКОЛА ИСКУСТВА'
+                })
+              .col-sm-6
+                +item({
+                  picture: 'item-4.jpg',
+                  title: 'Мастер-классы мастеров'
+                })
+              .col-sm-6
+                +item({
+                  picture: 'item-5.jpg',
+                  title: 'АНТИШКОЛА ИСКУСТВА'
+                })
+              .col-sm-6
+                +item({
+                  picture: 'item-6.jpg',
+                  title: 'Мастер-классы мастеров'
+                })
