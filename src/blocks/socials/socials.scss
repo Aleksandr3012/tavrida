@@ -7,6 +7,10 @@
     width: 24px;
     height: 24px;
 
+    & + & {
+      margin-top: 33px;
+    }
+
     &--vk {
       background: url(../img/vk.svg) no-repeat center;
       background-size: contain;
