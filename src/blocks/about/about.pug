@@ -1,51 +1,53 @@
 mixin about(data)
   .about&attributes(attributes)
     .container
-      h4.mb-20.mb-lg-50 СМИ о фестивале
-      .slider.about__slider
-        +news({
-          title: 'Путин пообещал бесплатное второе высшее образование для творческих профессий',
-          logo: 'news-1.png'
-        })
-        +news({
-          title: 'Путин оценил идею создать студию ВГИК на площадке «Тавриды»',
-          logo: 'news-2.png'
-        })
-        +news({
-          title: 'В Крыму стартует «Таврида Лит»',
-          logo: 'news-1.png'
-        })
-        +news({
-          title: 'В Крыму потребовали прекратить дискуссию о переименовании полуостроваий',
-          logo: 'news-2.png'
-        })
-        +news({
-          title: 'Путин пообещал бесплатное второе высшее образование для творческих профессий',
-          logo: 'news-1.png'
-        })
-        +news({
-          title: 'Путин оценил идею создать студию ВГИК на площадке «Тавриды»',
-          logo: 'news-2.png'
-        })
-        +news({
-          title: 'В Крыму стартует «Таврида Лит»',
-          logo: 'news-1.png'
-        })
-        +news({
-          title: 'В Крыму потребовали прекратить дискуссию о переименовании полуостроваий',
-          logo: 'news-2.png'
-        })
-      h4.mb-20.mb-lg-50 Комментарии участников и гостей
-      .slider.about__slider
-        +feedback({
-          photo: 'feedback-1.jpg'
-        })
-        +feedback({
-          photo: 'feedback-2.jpg'
-        })
-        +feedback({
-          photo: 'feedback-3.jpg'
-        })
-        +feedback({
-          photo: 'feedback-4.jpg'
-        })
+      .about__slider
+        h4.mb-20.mb-lg-50 СМИ о фестивале
+        .slider
+          +news({
+            title: 'Путин пообещал бесплатное второе высшее образование для творческих профессий',
+            logo: 'news-1.png'
+          })
+          +news({
+            title: 'Путин оценил идею создать студию ВГИК на площадке «Тавриды»',
+            logo: 'news-2.png'
+          })
+          +news({
+            title: 'В Крыму стартует «Таврида Лит»',
+            logo: 'news-1.png'
+          })
+          +news({
+            title: 'В Крыму потребовали прекратить дискуссию о переименовании полуостроваий',
+            logo: 'news-2.png'
+          })
+          +news({
+            title: 'Путин пообещал бесплатное второе высшее образование для творческих профессий',
+            logo: 'news-1.png'
+          })
+          +news({
+            title: 'Путин оценил идею создать студию ВГИК на площадке «Тавриды»',
+            logo: 'news-2.png'
+          })
+          +news({
+            title: 'В Крыму стартует «Таврида Лит»',
+            logo: 'news-1.png'
+          })
+          +news({
+            title: 'В Крыму потребовали прекратить дискуссию о переименовании полуостроваий',
+            logo: 'news-2.png'
+          })
+      .about__slider
+        h4.mb-20.mb-lg-50 Комментарии участников и гостей
+        .slider
+          +feedback({
+            photo: 'feedback-1.jpg'
+          })
+          +feedback({
+            photo: 'feedback-2.jpg'
+          })
+          +feedback({
+            photo: 'feedback-3.jpg'
+          })
+          +feedback({
+            photo: 'feedback-4.jpg'
+          })

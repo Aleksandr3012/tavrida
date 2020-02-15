@@ -3,5 +3,9 @@
   background-size: cover;
 
   &__slider {
+
+    & + & {
+      margin-top: 80px;
+    }
   }
 }

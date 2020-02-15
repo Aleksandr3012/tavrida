@@ -1,2 +1,34 @@
 .feedback {
+  padding: 45px 40px 50px;
+  display: flex !important;
+  max-width: 754px;
+  min-height: 276px;
+  background: #fff;
+  border-radius: 20px;
+
+  & + & {
+    margin-left: 40px;
+  }
+
+  &__photo {
+    margin-right: 38px;
+    width: 137px;
+    height: 137px;
+    flex-shrink: 0;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
