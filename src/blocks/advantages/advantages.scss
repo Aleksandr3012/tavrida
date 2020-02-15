@@ -1,2 +1,12 @@
 .advantages {
+  background: #67bac3;
+
+  &__logo {
+    margin-bottom: -90px;
+  }
+
+  &__features {
+    margin-bottom: 85px;
+    display: flex;
+  }
 }

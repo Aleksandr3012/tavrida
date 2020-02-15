@@ -1,18 +1,21 @@
 mixin advantages(data)
   .advantages&attributes(attributes)
     .container
-      +logo.logo--mirroring
+      +logo.logo--mirroring.advantages__logo
       .advantages__features
         +feature({
+          bg: 'feature-1.svg',
           number: '92 000',
           title: 'Зрителей фестиваля'
         }).feature--blue
         +feature({
+          bg: 'feature-2.svg',
           number: '19 946',
           title: 'Эксперта'
         }).feature--yellow
         +feature({
-          number: '100 млн.Р.',
+          bg: 'feature-3.svg',
+          number: '100 <span>млн.р</span>',
           title: 'На гранты'
         }).feature--red
       .d-flex.justify-content-center
