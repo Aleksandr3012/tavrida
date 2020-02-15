@@ -1,2 +1,19 @@
 mixin footer(data)
   .footer&attributes(attributes)
+    .container
+      .footer__wrapper
+        .footer__left
+          .footer__left-top
+            h4 Контакты
+            .footer__contacts
+              .footer__contacts-item
+                p.p--sm.text-uppercase Телефон:
+                h5 8 (800) 302-27-04 
+              .footer__contacts-item
+                p.p--sm.text-uppercase Сотрудничество:
+                h5 info@crki.art
+              .footer__contacts-item
+                p.p--sm.text-uppercase Пресса:
+                h5 press@crki.art
+          p.p--sm.text-uppercase © Официальный сайт форума «Таврида»
+        img.footer__map(src="./img/crimea.svg", alt="Crimea")

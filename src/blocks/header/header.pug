@@ -1,7 +1,9 @@
 mixin header(data)
   .header&attributes(attributes)
-    +menu
-    .header__content
+    .header__top
+      +menu
+      +logo.logo--header
+    .header__bottom
       +socials
       .header__info 20-26 АВГУСТА 2020 <br> г. Судак, Бухта Капсель
       a.header__route(href="#") Как проехать
