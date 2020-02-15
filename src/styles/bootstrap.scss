@@ -75,6 +75,17 @@ $transition-base: .3s cubic-bezier(.25, .1, .25, 1);
 $headings-margin-bottom: $spacer;
 
 /* Project variables */
+$primary: #476fb2;
+$secondary: #fff;
+$tertiary: #ce3b65;
+
+$container-max-widths: (
+  xl: 1600px,
+);
+$grid-gutter-width: 40px;
+
+$font-family-sans-serif: 'Akrobat', 'Arial', sans-serif;
+$font-family-serif: 'Intro', 'Times New Roman', serif;
 
 /* Imports */
 @import '../../node_modules/bootstrap/scss/functions';
