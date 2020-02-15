@@ -1,2 +1,30 @@
 .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__item {
+    width: 24px;
+    height: 24px;
+
+    &--vk {
+      background: url(../img/vk.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &--fb {
+      background: url(../img/fb.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &--tw {
+      background: url(../img/tw.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &--ig {
+      background: url(../img/ig.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
 }
