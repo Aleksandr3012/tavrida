@@ -134,3 +134,29 @@
 .fp-slidesNav ul li:hover a.active span {
   margin: 0;
 }
+
+/* Perfect Scrollbar */
+
+.ps__rail-y {
+  right: 23px !important;
+  margin-top: 128px;
+  overflow: hidden;
+  width: 5px;
+  height: calc(100% - 158px) !important;
+  opacity: 1 !important;
+  background: rgba(#fff, .2) !important;
+  border-radius: 10px;
+  //  top: 128px!important;
+
+  .ps__thumb-y {
+    right: 0;
+    width: 5px;
+    background: $tertiary !important;
+  }
+}
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  width: 5px;
+}

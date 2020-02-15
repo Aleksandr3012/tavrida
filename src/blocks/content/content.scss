@@ -44,9 +44,14 @@
     .content__header {
       background: $primary;
     }
+
+    .ps__rail-y {
+      display: none;
+    }
   }
 
   &__items-wrapper {
+    position: relative;
     padding: 130px 140px 70px 70px;
     display: flex;
     height: 100vh;
