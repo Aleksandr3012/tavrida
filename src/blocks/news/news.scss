@@ -1,2 +1,28 @@
 .news {
+  margin: 0 20px;
+  padding: 25px 45px 33px 33px;
+  display: flex !important;
+  max-width: 357px;
+  min-height: 276px;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+
+  &__content {
+  }
+
+  &__title {
+    margin: 20px 0;
+  }
+
+  &__source {
+  }
 }

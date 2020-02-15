@@ -1,7 +1,8 @@
 mixin news(data)
   .news&attributes(attributes)
-    .news__content
-      .news__date 14.04.2020
-      h6.news__title
-        a(href="#")= data.title
-    img.news__source(src="./img/" + data.source, alt="Logo")
+    .news__wrapper
+      .news__content
+        p.p--sm 14.04.2020
+        h6.news__title
+          a(href="#")= data.title
+      img.news__source(src="./img/" + data.logo, alt="Logo")

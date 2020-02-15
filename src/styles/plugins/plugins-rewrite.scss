@@ -11,3 +11,31 @@
   &.btn-outline-secondary {
   }
 }
+
+/* Slick */
+
+.slick-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  background: url(../img/slider-arrow.svg) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+
+  &.slick-prev {
+    left: -40px;
+    transform: rotate(180deg);
+  }
+
+  &.slick-next {
+    right: -10px;
+  }
+
+  &.slick-disabled {
+    display: none !important;
+  }
+}
