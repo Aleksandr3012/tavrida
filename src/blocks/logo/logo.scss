@@ -10,6 +10,10 @@
     margin: 0 auto;
     max-width: 540px;
 
+    @include media-breakpoint-down(xml) {
+      max-width: 450px;
+    }
+
     &:before {
       position: absolute;
       top: -70px;

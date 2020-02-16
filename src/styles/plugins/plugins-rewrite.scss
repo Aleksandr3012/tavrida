@@ -1,5 +1,13 @@
 /* Boostrap */
 
+.container {
+
+  @include media-breakpoint-down(xml) {
+    padding: 0 80px 0 40px;
+    max-width: none;
+  }
+}
+
 .btn {
   padding: 13px 43.25px;
   font-family: $font-family-serif;
@@ -7,9 +15,6 @@
   line-height: 1;
   font-weight: 900;
   border-radius: 250px;
-
-  &.btn-outline-secondary {
-  }
 }
 
 /* Slick */

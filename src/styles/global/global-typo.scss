@@ -6,6 +6,10 @@ h1,
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
+
+  @include media-breakpoint-down(xml) {
+    font-size: 80px;
+  }
 }
 
 h2,
@@ -16,6 +20,10 @@ h2,
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
+
+  @include media-breakpoint-down(xml) {
+    font-size: 60px;
+  }
 }
 
 h3,
@@ -46,6 +54,10 @@ h5,
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
+
+  @include media-breakpoint-down(xml) {
+    font-size: 20px;
+  }
 }
 
 h6,
@@ -56,6 +68,10 @@ h6,
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
+
+  @include media-breakpoint-down(xml) {
+    font-size: 20px;
+  }
 }
 
 p,
@@ -66,10 +82,21 @@ p,
   font-weight: 600;
   color: $black;
 
+  @include media-breakpoint-down(xml) {
+    font-size: 18px;
+  }
+
   &.p--sm {
     font-size: 15px;
     line-height: 1.15;
     font-weight: 700;
+
+    &.text-uppercase {
+
+      @include media-breakpoint-down(xml) {
+        font-size: 13px;
+      }
+    }
   }
 }
 

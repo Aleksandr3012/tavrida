@@ -3,6 +3,10 @@
   &__row {
     margin-bottom: 18px;
 
+    @include media-breakpoint-down(xml) {
+      padding: 10px 0;
+    }
+
     &--light {
       background: rgba(#efc825, .2);
     }
@@ -30,6 +34,10 @@
     color: $dark;
     transform: rotate(-90deg);
 
+    @include media-breakpoint-down(xml) {
+      font-size: 10px;
+    }
+
     span {
       position: absolute;
       top: 50%;
@@ -48,5 +56,11 @@
     margin-right: 96px;
     max-width: 160px;
     max-height: 160px;
+
+    @include media-breakpoint-down(xml) {
+      margin-right: 30px;
+      max-width: 100px;
+      max-height: 100px;
+    }
   }
 }

@@ -8,5 +8,10 @@
   &__features {
     margin-bottom: 85px;
     display: flex;
+
+    @include media-breakpoint-down(xml) {
+      margin-bottom: 30px;
+      justify-content: space-around;
+    }
   }
 }

@@ -2,6 +2,10 @@
   padding: 60px 0 65px;
   background: $tertiary;
 
+  @include media-breakpoint-down(xml) {
+    padding: 40px 0;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -39,5 +43,9 @@
 
   &__map {
     margin-right: 80px;
+
+    @include media-breakpoint-down(xml) {
+      max-height: 320px;
+    }
   }
 }
