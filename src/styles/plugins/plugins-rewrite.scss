@@ -15,6 +15,11 @@
   line-height: 1;
   font-weight: 900;
   border-radius: 250px;
+
+  @include media-breakpoint-down(xml) {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 }
 
 /* Slick */

@@ -57,5 +57,10 @@
     height: 100vh;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include media-breakpoint-down(xml) {
+      padding-right: 100px;
+      padding-left: 50px;
+    }
   }
 }

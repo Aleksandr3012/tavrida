@@ -2,9 +2,10 @@
 
   &__row {
     margin-bottom: 18px;
+    padding: 10px 0;
 
     @include media-breakpoint-down(xml) {
-      padding: 10px 0;
+      margin-bottom: 0;
     }
 
     &--light {
