@@ -48,7 +48,7 @@
   background-size: contain;
   border-radius: 50%;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     display: none !important;
   }
 
@@ -75,12 +75,61 @@
 /* Fullpage */
 
 #fp-nav.fp-right {
+  z-index: 2;
   top: 0;
-  right: 2vw;
+  right: 0;
   margin-top: 0 !important;
+  padding-right: 54px;
   height: 100%;
+  transition: background .7s linear;
+  //  transition-delay: .7s;
+
+  &[data-slide='0'] {
+    background: transparent;
+  }
+
+  &[data-slide='1'] {
+    background: #67bac3;
+  }
+
+  &[data-slide='2'] {
+    background: $primary;
+  }
+
+  &[data-slide='3'] {
+    background: #efc825;
+  }
+
+  &[data-slide='4'] {
+    background: transparent;
+
+    ul li a {
+      z-index: 2;
+
+      &.active {
+        z-index: 1;
+
+        &:before,
+        &:after {
+          background: #000;
+        }
+
+        span {
+          background: #fff;
+          border-color: #000;
+        }
+      }
+
+      span {
+        z-index: 1;
+        background: #fff;
+        border: 1px solid #000;
+      }
+    }
+  }
 
   ul {
+    margin-left: -15px;
     padding-top: 44px;
     display: flex;
     flex-direction: column;

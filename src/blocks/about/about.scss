@@ -5,6 +5,10 @@
 
   &__slider {
 
+    .slick-list {
+      overflow: visible;
+    }
+
     .slick-track {
       display: flex;
 
