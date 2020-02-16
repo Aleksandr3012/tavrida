@@ -11,6 +11,10 @@ h1,
     font-size: 80px;
   }
 
+  @include media-breakpoint-down(xl) {
+    font-size: 70px;
+  }
+
   @include media-breakpoint-down(lg) {
     font-size: 60px;
   }

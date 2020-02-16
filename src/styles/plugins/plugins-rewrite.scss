@@ -3,7 +3,7 @@
 .container {
 
   @include media-breakpoint-down(xml) {
-    padding: 0 80px 0 40px;
+    padding: 0 100px 0 40px;
     max-width: none;
   }
 
