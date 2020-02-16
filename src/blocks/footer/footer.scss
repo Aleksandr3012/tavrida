@@ -48,5 +48,9 @@
     @include media-breakpoint-down(xml) {
       max-height: 300px;
     }
+
+    @include media-breakpoint-down(md) {
+      margin-left: 40px;
+    }
   }
 }

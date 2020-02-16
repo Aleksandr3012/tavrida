@@ -1,8 +1,17 @@
 .advantages {
   background: #67bac3;
 
+  @include media-breakpoint-down(md) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
   &__logo {
     margin-bottom: -90px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 90px;
+    }
   }
 
   &__features {

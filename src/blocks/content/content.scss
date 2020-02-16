@@ -6,12 +6,20 @@
 
   &__wrapper {
     display: flex;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
   }
 
   &__festival {
     max-width: 48.06%;
     flex-grow: 1;
     background: $tertiary;
+
+    @include media-breakpoint-down(md) {
+      max-width: none;
+    }
 
     .content__header {
       background: $tertiary;
@@ -42,12 +50,20 @@
     @include media-breakpoint-down(lg) {
       padding-top: 68px;
     }
+
+    @include media-breakpoint-down(md) {
+      height: auto;
+    }
   }
 
   &__forum {
     max-width: 51.94%;
     flex-grow: 1;
     background: $primary;
+
+    @include media-breakpoint-down(md) {
+      max-width: none;
+    }
 
     .content__header {
       background: $primary;
@@ -72,9 +88,13 @@
     }
 
     @include media-breakpoint-down(lg) {
-      padding-top: 80px;
+      padding-top: 100px;
       padding-right: 60px;
       padding-left: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: auto;
     }
   }
 }

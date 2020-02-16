@@ -2,6 +2,10 @@
 
   &__content {
     min-height: 100vh;
+
+    @include media-breakpoint-down(md) {
+      min-height: 500px;
+    }
   }
 
   &--footer {

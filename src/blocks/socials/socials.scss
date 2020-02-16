@@ -3,11 +3,20 @@
   flex-direction: column;
   align-items: center;
 
+  @include media-breakpoint-down(md) {
+    flex-direction: row;
+  }
+
   &__item {
     width: 24px;
     height: 24px;
 
     @include transition;
+
+    @include media-breakpoint-down(md) {
+      width: 20px;
+      height: 20px;
+    }
 
     &:hover {
       opacity: .8;
@@ -15,6 +24,11 @@
 
     & + & {
       margin-top: 33px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+        margin-left: 15px;
+      }
     }
 
     &--vk {

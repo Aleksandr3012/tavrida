@@ -1,4 +1,5 @@
 .partners {
+  padding-top: 40px;
 
   &__row {
     margin-bottom: 18px;
@@ -51,6 +52,8 @@
   }
 
   &__row-content {
+    display: flex;
+    align-items: center;
   }
 
   &__logo {
@@ -62,6 +65,11 @@
       margin-right: 30px;
       max-width: 100px;
       max-height: 100px;
+    }
+
+    @include media-breakpoint-down(md) {
+      max-width: 80px;
+      max-height: 80px;
     }
   }
 }

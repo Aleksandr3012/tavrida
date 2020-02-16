@@ -9,6 +9,13 @@
 
     @include transition;
 
+    @include media-breakpoint-down(md) {
+      width: 60px;
+      height: 50px;
+      border-right: 1px solid $primary;
+      border-bottom: 0;
+    }
+
     &:hover {
       opacity: .8;
     }
