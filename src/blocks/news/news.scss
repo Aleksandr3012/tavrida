@@ -10,6 +10,7 @@
 
   @include media-breakpoint-down(xml) {
     padding: 25px;
+    min-height: 0;
   }
 
   &__wrapper {
