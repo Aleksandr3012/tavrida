@@ -37,8 +37,30 @@
     justify-content: space-between;
     align-items: center;
 
+    @include media-breakpoint-down(xml) {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
     @include media-breakpoint-down(lg) {
-      padding: 15px 25px;
+      padding: 15px 20px;
+    }
+
+    &--forum {
+      padding-right: 143px;
+
+      @include media-breakpoint-down(xml) {
+        padding-right: 100px;
+        padding-left: 50px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding-left: 20px;
+      }
+
+      @include media-breakpoint-down(md) {
+        padding-right: 20px;
+      }
     }
   }
 
@@ -89,7 +111,6 @@
 
     @include media-breakpoint-down(lg) {
       padding-top: 100px;
-      padding-right: 60px;
       padding-left: 20px;
     }
 

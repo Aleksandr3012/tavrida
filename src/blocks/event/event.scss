@@ -23,6 +23,11 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @include media-breakpoint-down(xml) {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
     @include media-breakpoint-down(lg) {
       padding: 20px;
     }
