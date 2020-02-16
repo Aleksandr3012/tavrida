@@ -13,6 +13,12 @@
     min-height: 0;
   }
 
+  @include media-breakpoint-down(sm) {
+    margin: 0 10px;
+    padding: 20px;
+    max-width: 280px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;

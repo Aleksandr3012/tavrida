@@ -3,7 +3,9 @@ mixin front(data)
     .container
       .section__content.front__wrapper
         .front__header
-          +logo
+          +logo({
+            img: 'logo.svg'
+          })
           a.btn.btn-outline-secondary(href="#") Регистрация
         .front__content
           h1.front__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО

@@ -2,7 +2,9 @@ mixin header(data)
   .header&attributes(attributes)
     .header__top
       +menu
-      +logo.header__logo.logo--header
+      +logo({
+        img: 'logo--colored.svg'
+      }).header__logo
     .header__bottom
       +socials
       .header__info 20-26 АВГУСТА 2020

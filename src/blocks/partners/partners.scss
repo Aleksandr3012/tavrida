@@ -21,6 +21,10 @@
   &__row-wrapper {
     position: relative;
     padding-left: 110px;
+
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+    }
   }
 
   &__header {
@@ -40,6 +44,18 @@
       font-size: 10px;
     }
 
+    @include media-breakpoint-down(sm) {
+      position: static;
+      width: auto;
+      height: auto;
+      transform: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+
     span {
       position: absolute;
       top: 50%;
@@ -48,12 +64,21 @@
       justify-content: center;
       align-items: center;
       transform: translate(-50%, -50%);
+
+      @include media-breakpoint-down(sm) {
+        position: static;
+        transform: none;
+      }
     }
   }
 
   &__row-content {
     display: flex;
     align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+    }
   }
 
   &__logo {

@@ -1,7 +1,9 @@
 mixin advantages(data)
   .advantages&attributes(attributes)
     .container
-      +logo.logo--mirroring.advantages__logo
+      +logo({
+        img: 'logo.svg'
+      }).logo--mirroring.advantages__logo
       .advantages__features
         +feature({
           bg: 'feature-1.svg',

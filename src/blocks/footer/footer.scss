@@ -52,5 +52,9 @@
     @include media-breakpoint-down(md) {
       margin-left: 40px;
     }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
 }

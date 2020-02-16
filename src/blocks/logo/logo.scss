@@ -1,6 +1,10 @@
 .logo {
   display: block;
 
+  @include media-breakpoint-down(sm) {
+    max-width: 100px;
+  }
+
   &__img {
     width: 100%;
   }
@@ -24,6 +28,10 @@
       content: '';
       background: url(../img/logo--stroke.svg) no-repeat;
       background-size: contain;
+
+      @include media-breakpoint-down(sm) {
+        top: -10px;
+      }
     }
 
     &:after {
@@ -36,6 +44,10 @@
       content: '';
       background: url(../img/logo--stroke.svg) no-repeat;
       background-size: contain;
+
+      @include media-breakpoint-down(sm) {
+        bottom: -10px;
+      }
     }
   }
 }

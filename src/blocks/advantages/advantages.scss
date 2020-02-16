@@ -12,6 +12,10 @@
     @include media-breakpoint-down(md) {
       margin-bottom: 90px;
     }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__features {
@@ -21,6 +25,11 @@
     @include media-breakpoint-down(xml) {
       margin-bottom: 30px;
       justify-content: space-around;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

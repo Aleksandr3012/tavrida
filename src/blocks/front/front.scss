@@ -11,6 +11,10 @@
     @include media-breakpoint-down(xml) {
       padding: 40px 0;
     }
+
+    @include media-breakpoint-down(sm) {
+      padding: 20px 0;
+    }
   }
 
   &__header {
@@ -23,6 +27,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include media-breakpoint-down(sm) {
+      //      flex-direction: column;
+    }
   }
 
   &__content-right {
@@ -41,6 +49,11 @@
 
     @include media-breakpoint-down(lg) {
       margin-top: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
+      text-align: left;
     }
   }
 }
