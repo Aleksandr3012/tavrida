@@ -36,6 +36,17 @@
 
 /* Slick */
 
+.slick-slide {
+
+  &:focus {
+    outline: none;
+  }
+
+  a:focus {
+    outline: none;
+  }
+}
+
 .slick-arrow {
   position: absolute;
   z-index: 1;
