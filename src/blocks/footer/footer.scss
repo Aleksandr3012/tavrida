@@ -6,6 +6,10 @@
     padding: 40px 0;
   }
 
+  @include media-breakpoint-down(xl) {
+    padding: 30px 0;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -44,9 +48,14 @@
 
   &__map {
     margin-right: 80px;
+    margin-left: 40px;
 
     @include media-breakpoint-down(xml) {
       max-height: 300px;
+    }
+
+    @include media-breakpoint-down(xl) {
+      margin-right: 0;
     }
 
     @include media-breakpoint-down(md) {

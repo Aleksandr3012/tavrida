@@ -3,6 +3,14 @@
   background: #efc825 url(../img/about-bg.svg) no-repeat center;
   background-size: cover;
 
+  @include media-breakpoint-down(xl) {
+    padding: 20px 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 40px 0;
+  }
+
   &__slider {
 
     .slick-list {
@@ -20,7 +28,7 @@
     & + & {
       margin-top: 80px;
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(xl) {
         margin-top: 40px;
       }
     }
