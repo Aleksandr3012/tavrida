@@ -18,6 +18,10 @@
       max-width: 450px;
     }
 
+    @include media-breakpoint-down(xs) {
+      max-width: 80%;
+    }
+
     &:before {
       position: absolute;
       top: -70px;

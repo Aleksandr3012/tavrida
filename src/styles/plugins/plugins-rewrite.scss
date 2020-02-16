@@ -115,6 +115,16 @@
 
   &[data-slide='3'] {
     background: #efc825;
+
+    ul li a {
+
+      &.active {
+
+        span {
+          background: #efc825;
+        }
+      }
+    }
   }
 
   &[data-slide='4'] {
