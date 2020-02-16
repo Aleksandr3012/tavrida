@@ -4,7 +4,6 @@
   padding-top: 54.82%;
   width: 100%;
   max-width: 45.5%;
-  //  max-width: 324px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,6 +11,10 @@
   box-shadow: 0 4px 40px rgba(34, 70, 129, .74);
 
   @include transition;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 20px;
+  }
 
   &:hover {
     opacity: .8;

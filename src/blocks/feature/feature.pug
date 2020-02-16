@@ -2,5 +2,5 @@ mixin feature(data)
   .feature&attributes(attributes)
     img.feature__bg(src="./img/" + data.bg, alt="background")
     .feature__content
-      h2.feature__number.mb-15!= data.number
+      h2.feature__number!= data.number
       h4.feature__title= data.title

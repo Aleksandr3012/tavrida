@@ -162,7 +162,10 @@
   opacity: 1 !important;
   background: rgba(#fff, .2) !important;
   border-radius: 10px;
-  //  top: 128px!important;
+
+  @include media-breakpoint-down(lg) {
+    display: none !important;
+  }
 
   .ps__thumb-y {
     right: 0;

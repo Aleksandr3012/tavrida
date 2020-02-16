@@ -10,6 +10,10 @@ h1,
   @include media-breakpoint-down(xml) {
     font-size: 80px;
   }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 60px;
+  }
 }
 
 h2,
@@ -24,6 +28,10 @@ h2,
   @include media-breakpoint-down(xml) {
     font-size: 60px;
   }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 40px;
+  }
 }
 
 h3,
@@ -34,6 +42,10 @@ h3,
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 25px;
+  }
 }
 
 h4,
@@ -44,6 +56,10 @@ h4,
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 25px;
+  }
 }
 
 h5,

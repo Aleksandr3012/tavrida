@@ -5,6 +5,10 @@
     max-width: 408px;
   }
 
+  @include media-breakpoint-down(lg) {
+    max-width: 300px;
+  }
+
   &__bg {
 
     @include media-breakpoint-down(xml) {
@@ -18,6 +22,11 @@
   }
 
   &__number {
+    margin-bottom: 15px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 5px;
+    }
 
     span {
       font-size: 40px;
@@ -37,6 +46,11 @@
     @include media-breakpoint-down(xml) {
       font-size: 20px;
     }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 16px;
+      text-transform: lowercase;
+    }
   }
 
   &--blue {
@@ -48,6 +62,11 @@
       @include media-breakpoint-down(xml) {
         top: 130px;
         left: 90px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        top: 100px;
+        left: 80px;
       }
     }
   }
@@ -64,6 +83,11 @@
         top: 120px;
         left: 110px;
       }
+
+      @include media-breakpoint-down(lg) {
+        top: 100px;
+        left: 90px;
+      }
     }
   }
 
@@ -78,6 +102,11 @@
       @include media-breakpoint-down(xml) {
         top: 150px;
         left: 90px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        top: 120px;
+        left: 70px;
       }
     }
   }
