@@ -1,0 +1,37 @@
+
+
+if ($(window).width() > 992) {
+  const ps = new PerfectScrollbar('.content__events-wrapper');
+  const ps2 = new PerfectScrollbar('.content__items-wrapper');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.slider').slick({
+  infinite: false,
+  variableWidth: true
+});
+
+
+if ($(window).width() > 992) {
+  new fullpage('#fullpage', {
+    navigation: true,
+    normalScrollElements: '.content__festival .content__forum',
+    onLeave: function (origin, destination, direction) {
+      $('#fp-nav').attr('data-slide', destination.index);
+    }
+  });
+}
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFib3V0L2Fib3V0LmpzIiwiYWR2YW50YWdlcy9hZHZhbnRhZ2VzLmpzIiwiY29udGVudC9jb250ZW50LmpzIiwiZXZlbnQvZXZlbnQuanMiLCJmZWF0dXJlL2ZlYXR1cmUuanMiLCJmZWVkYmFjay9mZWVkYmFjay5qcyIsImZvb3Rlci9mb290ZXIuanMiLCJmcm9udC9mcm9udC5qcyIsImhlYWRlci9oZWFkZXIuanMiLCJpdGVtL2l0ZW0uanMiLCJsb2dvL2xvZ28uanMiLCJtZW51L21lbnUuanMiLCJuZXdzL25ld3MuanMiLCJwYXJ0bmVycy9wYXJ0bmVycy5qcyIsInNlY3Rpb24vc2VjdGlvbi5qcyIsInNsaWRlci9zbGlkZXIuanMiLCJzb2NpYWxzL3NvY2lhbHMuanMiLCJ3cmFwcGVyL3dyYXBwZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUNBQTtBQ0FBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUNKQTtBQUNBO0FDREE7QUNBQTtBQ0FBO0FDQUE7QUNBQTtBQ0FBO0FDQUE7QUNBQTtBQ0FBO0FDQUE7QUNBQTtBQ0FBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUNKQTtBQ0FBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6InNjcmlwdHMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIiLCIiLCJpZiAoJCh3aW5kb3cpLndpZHRoKCkgPiA5OTIpIHtcclxuICBjb25zdCBwcyA9IG5ldyBQZXJmZWN0U2Nyb2xsYmFyKCcuY29udGVudF9fZXZlbnRzLXdyYXBwZXInKTtcclxuICBjb25zdCBwczIgPSBuZXcgUGVyZmVjdFNjcm9sbGJhcignLmNvbnRlbnRfX2l0ZW1zLXdyYXBwZXInKTtcclxufVxyXG4iLCJcclxuIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiJCgnLnNsaWRlcicpLnNsaWNrKHtcclxuICBpbmZpbml0ZTogZmFsc2UsXHJcbiAgdmFyaWFibGVXaWR0aDogdHJ1ZVxyXG59KTtcclxuIiwiIiwiaWYgKCQod2luZG93KS53aWR0aCgpID4gOTkyKSB7XHJcbiAgbmV3IGZ1bGxwYWdlKCcjZnVsbHBhZ2UnLCB7XHJcbiAgICBuYXZpZ2F0aW9uOiB0cnVlLFxyXG4gICAgbm9ybWFsU2Nyb2xsRWxlbWVudHM6ICcuY29udGVudF9fZmVzdGl2YWwgLmNvbnRlbnRfX2ZvcnVtJyxcclxuICAgIG9uTGVhdmU6IGZ1bmN0aW9uIChvcmlnaW4sIGRlc3RpbmF0aW9uLCBkaXJlY3Rpb24pIHtcclxuICAgICAgJCgnI2ZwLW5hdicpLmF0dHIoJ2RhdGEtc2xpZGUnLCBkZXN0aW5hdGlvbi5pbmRleCk7XHJcbiAgICB9XHJcbiAgfSk7XHJcbn1cclxuIl19
