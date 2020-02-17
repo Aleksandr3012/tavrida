@@ -31,7 +31,8 @@ const paths = {
     watch: ['./src/blocks/**/*.scss', './src/styles/**/*.scss', './src/styles/*.scss']
   },
   jsVendor: {
-    src: ['./node_modules/jquery/dist/jquery.min.js', './src/plugins/*.js'],
+//    src: ['./node_modules/jquery/dist/jquery.min.js', './src/plugins/*.js'],
+    src: './src/plugins/*.js',
     dest: './public/js',
     watch: './src/plugins/*.js',
   },
