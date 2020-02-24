@@ -1,0 +1,41 @@
+mixin timeline(data)
+  .timeline&attributes(attributes)
+    +timeline__item({
+      date: '10 июля',
+      name: 'Открытие фестиваля',
+      participants: 'Егор крид, Ляпис трубецкой, Елка, ГУФ, ТИМАТИ и др.'
+    })
+    +timeline__item({
+      date: '10 июля',
+      name: 'День РОКА',
+      participants: 'FFDP, Nickelback, Asking alexandria и др.'
+    })
+    +timeline__item({
+      date: '10 июля',
+      name: 'День Блюза',
+      participants: 'FFDP, Nickelback, Asking alexandria и др.'
+    })
+    +timeline__item({
+      date: '11 июля',
+      name: 'Народные гуляния',
+      participants: 'FFDP, Nickelback, Asking alexandria и др.'
+    })
+    +timeline__item({
+      date: '12 июля',
+      name: 'Исторические мотивы',
+      participants: 'FFDP, Nickelback, Asking alexandria и др.'
+    })
+    +timeline__item({
+      date: '12 июля',
+      name: 'Подведение итогов',
+      participants: 'FFDP, Nickelback, Asking alexandria и др.'
+    })
+    
+    
+    
+    
+mixin timeline__item(data)
+  .timeline__item&attributes(attributes)
+    h5= data.date
+    h5= data.name
+    p.p--sm.timeline__item--dscr= data.participants

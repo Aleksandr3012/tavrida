@@ -1,0 +1,105 @@
+mixin registration(data)
+  .registration&attributes(attributes)
+    .container
+      h2.h2--default Регистрация на фестиваль
+      form.form(action="#", method="POST")
+        .row
+          .col-lg-3
+            .form__item.form-group
+              label.form__label Фамилия
+              input.input.form-control(type="text", placeholder="Введите вашу фамилию")
+          .col-lg-3
+            .form__item.form-group
+              label.form__label Имя
+              input.input.form-control(type="text", placeholder="Введите ваше имя")
+          .col-lg-3
+            .form__item.form-group
+              label.form__label Отчество
+              input.input.form-control(type="text", placeholder="Введите ваше отчество")
+        .row
+          .col-lg-3
+            .form__item.form-group
+              label.form__label Телефон
+              input.input.form-control(type="text", placeholder="+7 ( ___ ) ___ - __ - __")
+          .col-lg-3
+            .form__item.form-group
+              label.form__label E-mail
+              input.input.form-control(type="text", placeholder="sample@sample.com")
+        .registration__type
+          .registration__type-top
+            .fregistration__type-header Выберите тип участия
+            .registration__type-content
+              .custom-control.custom-radio
+                input#type1.custom-control-input(type='radio', name='type')
+                label.custom-control-label(for='type1') Зритель
+              .custom-control.custom-radio
+                input#type2.custom-control-input(type='radio', name='type')
+                label.custom-control-label(for='type2') Участник
+              .custom-control.custom-radio
+                input#type3.custom-control-input(type='radio', name='type')
+                label.custom-control-label(for='type3') Партнер
+          .registration__type-dscr
+            p.registration__type-dscr-item Зритель это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+            p.registration__type-dscr-item Участник это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+            p.registration__type-dscr-item Партнер это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+        .row
+          .col-lg-3
+            .form__item.form-group
+              label.form__label О себе
+              textarea.input.input--textarea.form-control(placeholder="Расскажите нам о себе")
+          .col-lg-3
+            .form__item.form-group
+              label.form__label Достижения в сфере культуры и искусства
+              textarea.input.input--textarea.form-control(placeholder="Немного о ваших достижениях")
+          .col-lg-3
+            .form__item.form-group
+              label.form__label Сфера деятельности
+              select.select
+                option(disabled, selected) Выберите из списка
+                option Деятельность 1
+                option Деятельность 2
+        .row
+          .col-lg-3
+            .form__item.form-group
+              label.form__label Фото-портфолио в сфере искусства
+              .form__portfolio
+                .custom-file.custom-file--photo
+                  input#customFile1.custom-file-input(type='file')
+                  label.custom-file-label(for='customFile') Добавить фото
+                .form__portfolio-list
+                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                    a.form__portfolio-item-remove(href="#")
+                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                    a.form__portfolio-item-remove(href="#")
+                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                    a.form__portfolio-item-remove(href="#")
+                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                    a.form__portfolio-item-remove(href="#")
+                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                    a.form__portfolio-item-remove(href="#")
+                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                    a.form__portfolio-item-remove(href="#")
+                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                    a.form__portfolio-item-remove(href="#")
+                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                    a.form__portfolio-item-remove(href="#")
+                  .form__portfolio-item
+                  .form__portfolio-item
+          .col-lg-3
+            .form__item.form-group
+              label.form__label Видео портфолио
+              input.input.form-control(type="text", placeholder="Ссылка на видео")
+              input.input.form-control(type="text", placeholder="Краткое описание")
+        .form__item.form-group
+          label.form__label Творческое задание
+          .form__file
+            .custom-file
+              input#customFile1.custom-file-input(type='file')
+              label.custom-file-label(for='customFile') Добавить файл
+            .form__file-name Filename.pdf 
+            .form__file-size 258 mb
+            a.form__file-remove(href="#")
+        .form__footer
+          button.btn.btn-primary.btn-green(type="submit") Зарегистрироваться
+          p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
+            a(href="#") пользовательским соглашением
