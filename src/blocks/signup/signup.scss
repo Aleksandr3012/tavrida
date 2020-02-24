@@ -1,6 +1,6 @@
 .signup {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 36px;
   left: 35px;
   padding: 35px 30px 30px;
@@ -9,6 +9,25 @@
   max-width: 66.7vw;
   background: #fff;
   border-radius: 20px;
+
+  @include media-breakpoint-down(xl) {
+    max-width: calc(100% - 70px);
+  }
+
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow: auto;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  &__content {
+  }
 
   &__close {
     position: absolute;

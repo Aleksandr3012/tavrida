@@ -109,6 +109,7 @@
 
   &__item {
     margin-bottom: 15px;
+    width: 100%;
   }
 
   &__label {
@@ -170,6 +171,10 @@
     margin-top: 35px;
     display: flex;
     align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 10px;
+    }
   }
 
   &__footer-agreement {
@@ -179,6 +184,10 @@
     line-height: 17px;
     font-weight: 600;
     color: #333;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 10px;
+    }
   }
 
   &__file-name {
