@@ -147,6 +147,12 @@ p,
       }
     }
   }
+
+  &.p--xs {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+  }
 }
 
 .font-weight-medium {

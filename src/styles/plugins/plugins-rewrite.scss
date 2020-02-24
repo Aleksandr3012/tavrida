@@ -89,6 +89,7 @@
 
   .custom-file-label {
     position: static;
+    margin-bottom: 0;
     display: flex;
     height: auto;
     justify-content: center;
@@ -372,4 +373,45 @@
 .ps__rail-y:focus > .ps__thumb-y,
 .ps__rail-y.ps--clicking .ps__thumb-y {
   width: 5px;
+}
+
+/* Select2 */
+
+.select2-container--default .select2-selection--single {
+  height: 48px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+
+  &:focus {
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding-left: 20px;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: rgba(#333, .5);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+}
+
+.select2-container--default.select2-container--open.select2-container--below
+  .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below
+  .select2-selection--multiple {
+}
+
+.select2-dropdown {
+}
+
+.select2-results__option {
 }

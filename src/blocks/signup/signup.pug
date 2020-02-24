@@ -57,34 +57,35 @@ mixin signup(data)
               .custom-file.custom-file--gray.custom-file--photo
                 input#customFile1.custom-file-input(type='file')
                 label.custom-file-label(for='customFile1') Добавить личное фото
-            .col-auto
-              p.font-weight-semi.mb-0 Горбатов Вячеслав Георгиевич
-              .form__item.form-group
+            .col-auto.d-flex.flex-column.justify-content-between
+              p.font-weight-bold.mb-0 Горбатов Вячеслав Георгиевич
+              .form__item.form-group.mb-0
                 label.form__label Страна
                 select.select
                   option(disabled, selected) Выберите
                   option Страна 1
                   option Страна 2
-            .col-auto
-              p.font-weight-bold.mb-0 +7 ( 975 ) 966 - 55 - 43
-              p.p--xs sample@sample.com
-              .form__item.form-group
+            .col-auto.d-flex.flex-column.justify-content-between
+              div
+                p.font-weight-bold.mb-5 +7 ( 975 ) 966 - 55 - 43
+                p.p--xs sample@sample.com
+              .form__item.form-group.mb-0
                 label.form__label Федеральный округ
                 select.select
                   option(disabled, selected) Выберите
                   option Округ 1
                   option Округ 2
-            .col-auto
-              .form__item.form-group
+            .col-auto.d-flex.flex-column.justify-content-between
+              .form__item.form-group.mb-5
                 label.form__label Дата рождения
                 input.input.form-control(type="text", placeholder="__.__.____")
-              .form__item.form-group
+              .form__item.form-group.mb-0
                 label.form__label Регион
                 select.select
                   option(disabled, selected) Выберите
                   option Регион 1
                   option Регион 2
-            .col-auto
+            .col-auto.d-flex.flex-column.justify-content-between
               .form__item.form-group
                 label.form__label Пол
                 select.select
