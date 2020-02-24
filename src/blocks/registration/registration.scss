@@ -1,2 +1,19 @@
 .registration {
+
+  &--blue {
+    padding: 60px 0;
+    background: $primary url(../img/form-blue-bg.svg) no-repeat right bottom;
+
+    .form__label {
+      color: #fff;
+    }
+
+    .form__footer-agreement {
+      color: #fff;
+
+      a {
+        color: #c9df55;
+      }
+    }
+  }
 }
