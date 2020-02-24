@@ -1,5 +1,42 @@
 .registration {
 
+  &__type {
+    margin-top: 30px;
+  }
+
+  &__type-top {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__type-header {
+    margin-right: 48px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  &__type-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__type-dscr {
+    margin-bottom: 25px;
+  }
+
+  &__type-dscr-item {
+    margin-bottom: 0;
+    display: none;
+    color: #fff;
+
+    &--active {
+      display: block;
+    }
+  }
+
   &--blue {
     padding: 60px 0;
     background: $primary url(../img/form-blue-bg.svg) no-repeat right bottom;

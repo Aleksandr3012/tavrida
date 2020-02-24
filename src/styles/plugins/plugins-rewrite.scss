@@ -156,6 +156,53 @@
   }
 }
 
+.custom-radio {
+
+  .custom-control-input {
+
+    &:checked ~ .custom-control-label {
+      color: #333;
+      background: #efc825;
+      border-color: #efc825;
+    }
+  }
+
+  .custom-control-label {
+    padding-left: 0;
+    padding-bottom: 2px;
+    display: flex;
+    width: 145px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+    }
+
+    &:focus {
+
+      &:before {
+      }
+    }
+
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
 /* Slick */
 
 .slick-slide {
