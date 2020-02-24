@@ -19,6 +19,10 @@
     color: rgba(#333, .5);
   }
 
+  & + & {
+    margin-top: 5px;
+  }
+
   &--fb {
     padding-left: 40px;
     background: url(../img/form-fb.svg) no-repeat left 16px center;
@@ -32,5 +36,10 @@
   &--ig {
     padding-left: 40px;
     background: url(../img/form-ig.svg) no-repeat left 16px center;
+  }
+
+  &--textarea {
+    padding-top: 15px;
+    height: 153px !important;
   }
 }

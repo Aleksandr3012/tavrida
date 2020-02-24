@@ -141,12 +141,15 @@ mixin registration(data)
               label.form__label Видео портфолио
               input.input.form-control(type="text", placeholder="Ссылка на видео")
               input.input.form-control(type="text", placeholder="Краткое описание")
-        .form__item.form-group
-          label.form__label Творческое задание
-          .form__file
-            .custom-file
-              input#customFile1.custom-file-input(type='file')
-              label.custom-file-label(for='customFile') Добавить файл
+        .row
+          .col-lg-2
+            .form__item.form-group
+              label.form__label Творческое задание
+              .form__file
+                .custom-file.custom-file--blue
+                  input#customFile1.custom-file-input(type='file')
+                  label.custom-file-label(for='customFile') Добавить файл
+          .col-lg-4.d-flex.align-items-center
             .form__file-name Filename.pdf 
             .form__file-size 258 mb
             a.form__file-remove(href="#")

@@ -45,6 +45,19 @@
       color: #fff;
     }
 
+    .form__file-name {
+      color: #fff;
+    }
+
+    .form__file-size {
+      color: rgba(#fff, .54);
+    }
+
+    .form__file-remove {
+      background: url(../img/form-remove-white.svg) no-repeat;
+      background-size: contain;
+    }
+
     .form__footer-agreement {
       color: #fff;
 

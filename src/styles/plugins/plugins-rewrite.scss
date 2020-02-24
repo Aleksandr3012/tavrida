@@ -154,6 +154,20 @@
       }
     }
   }
+
+  &--blue {
+
+    .custom-file-label {
+      color: #fff;
+      background: #467ad1;
+      border: 1px dashed rgba(#fff, .5);
+
+      &:before {
+        background: url(../img/form-plus-white.svg) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
 }
 
 .custom-radio {
