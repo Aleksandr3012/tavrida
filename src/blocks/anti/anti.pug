@@ -1,2 +1,9 @@
 mixin anti(data)
-  .anti&attributes(attributes)
+  .anti(style="background-image: url(./img/" + data.picture + ");")&attributes(attributes)
+    .anti__header
+      .anti__type ТВОРЧЕСКАЯ АНТИШКОЛА 
+      img.anti__number(src="./img/" + data.number, alt)
+    .anti__footer
+      h6.anti__title= data.title
+      .anti__date 13 - 16 МАЯ
+    

@@ -1,2 +1,5 @@
 mixin part(data)
-  .part&attributes(attributes)
+  .part(style="background-color: " + data.color)&attributes(attributes)
+    h5.part__title= data.title
+    p.part__dscr= data.dscr
+    a.btn.btn-primary.part__btn.btn-green.btn-sm(href="#") Узнать больше
