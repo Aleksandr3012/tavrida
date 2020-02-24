@@ -1,2 +1,47 @@
 .timeline {
+  display: flex;
+
+  &__item {
+    position: relative;
+    max-width: 270px;
+    flex-shrink: 0;
+
+    &:before {
+      margin-bottom: 45px;
+      display: block;
+      width: 39px;
+      height: 39px;
+      content: '';
+      border: 6px solid #fff;
+      border-radius: 50%;
+    }
+
+    &:after {
+      position: absolute;
+      top: 16.5px;
+      left: 39px;
+      display: block;
+      width: 285px;
+      height: 6px;
+      content: '';
+      background: #fff;
+    }
+
+    & + & {
+      margin-left: 50px;
+    }
+  }
+
+  &__item-header {
+    word-spacing: 100vw;
+  }
+
+  &__item-dscr {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+  }
 }

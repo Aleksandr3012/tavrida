@@ -1,3 +1,4 @@
 mixin headliner(data)
-  .headliner(style="background-image: url(./img/" + data.picture + ');')&attributes(attributes)
+  a.headliner(href="#")&attributes(attributes)
+    img.headliner__img(src="./img/" + data.picture, alt)
     h5.headliner__title= data.title

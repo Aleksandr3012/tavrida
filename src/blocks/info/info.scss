@@ -6,6 +6,7 @@
 
   &__top {
     margin-top: 87px;
+    margin-bottom: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,6 +74,28 @@
     }
   }
 
+  &__timeline {
+    margin-bottom: 95px;
+    overflow: hidden;
+    width: calc(100% + 65px);
+  }
+
   &__headliners {
+    margin-bottom: -155px;
+    display: flex;
+    overflow: hidden;
+    width: calc(100% + 65px);
+    align-items: flex-start;
+
+    & + & {
+      margin-left: 30px;
+    }
+  }
+
+  &__headliner-item {
+
+    & + & {
+      margin-left: 30px;
+    }
   }
 }
