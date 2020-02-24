@@ -52,40 +52,44 @@ mixin signup(data)
               span.form__info-item-content 4455896
             .form__info-item Зарегистрирован: 
               span.form__info-item-content 04.06.2020
-          .row
-            .col-auto
-              .custom-file.custom-file--gray.custom-file--photo
-                input#customFile1.custom-file-input(type='file')
-                label.custom-file-label(for='customFile1') Добавить личное фото
-            .col-auto.d-flex.flex-column.justify-content-between
-              p.font-weight-bold.mb-0 Горбатов Вячеслав Георгиевич
-              .form__item.form-group.mb-0
-                label.form__label Страна
-                select.select
-                  option(disabled, selected) Выберите
-                  option Страна 1
-                  option Страна 2
-            .col-auto.d-flex.flex-column.justify-content-between
-              div
-                p.font-weight-bold.mb-5 +7 ( 975 ) 966 - 55 - 43
-                p.p--xs sample@sample.com
-              .form__item.form-group.mb-0
-                label.form__label Федеральный округ
-                select.select
-                  option(disabled, selected) Выберите
-                  option Округ 1
-                  option Округ 2
-            .col-auto.d-flex.flex-column.justify-content-between
-              .form__item.form-group.mb-5
-                label.form__label Дата рождения
-                input.input.form-control(type="text", placeholder="__.__.____")
-              .form__item.form-group.mb-0
-                label.form__label Регион
-                select.select
-                  option(disabled, selected) Выберите
-                  option Регион 1
-                  option Регион 2
-            .col-auto.d-flex.flex-column.justify-content-between
+          .row.mb-15
+            .col-lg-4
+              .row
+                .col-4
+                  .custom-file.custom-file--gray.custom-file--photo
+                    input#customFile1.custom-file-input(type='file')
+                    label.custom-file-label(for='customFile1') Добавить личное фото
+                .col-8.d-flex.flex-column.justify-content-between
+                  p.font-weight-bold.mb-0 Горбатов Вячеслав Георгиевич
+                  .form__item.form-group.mb-0
+                    label.form__label Страна
+                    select.select
+                      option(disabled, selected) Выберите
+                      option Страна 1
+                      option Страна 2
+            .col-lg-5
+              .row.row--h-100
+                .col-lg-6.d-flex.flex-column.justify-content-between
+                  div
+                    p.font-weight-bold.mb-5 +7 ( 975 ) 966 - 55 - 43
+                    p.p--xs sample@sample.com
+                  .form__item.form-group.mb-0
+                    label.form__label Федеральный округ
+                    select.select
+                      option(disabled, selected) Выберите
+                      option Округ 1
+                      option Округ 2
+                .col-lg-6.d-flex.flex-column.justify-content-between
+                  .form__item.form-group.mb-5
+                    label.form__label Дата рождения
+                    input.input.form-control(type="text", placeholder="__.__.____")
+                  .form__item.form-group.mb-0
+                    label.form__label Регион
+                    select.select
+                      option(disabled, selected) Выберите
+                      option Регион 1
+                      option Регион 2
+            .col-lg-3.d-flex.flex-column.justify-content-between
               .form__item.form-group
                 label.form__label Пол
                 select.select
