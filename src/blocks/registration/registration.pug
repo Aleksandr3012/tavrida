@@ -25,39 +25,90 @@ mixin registration(data)
             .form__item.form-group
               label.form__label E-mail
               input.input.form-control(type="text", placeholder="sample@sample.com")
-        .registration__type
-          .registration__type-top
-            .fregistration__type-header Выберите тип участия
-            .registration__type-content
-              .custom-control.custom-radio
-                input#type1.custom-control-input(type='radio', name='type')
-                label.custom-control-label(for='type1') Зритель
-              .custom-control.custom-radio
-                input#type2.custom-control-input(type='radio', name='type')
-                label.custom-control-label(for='type2') Участник
-              .custom-control.custom-radio
-                input#type3.custom-control-input(type='radio', name='type')
-                label.custom-control-label(for='type3') Партнер
-          .registration__type-dscr
-            p.registration__type-dscr-item Зритель это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
-            p.registration__type-dscr-item Участник это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
-            p.registration__type-dscr-item Партнер это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
-        .row
-          .col-lg-3
-            .form__item.form-group
-              label.form__label О себе
-              textarea.input.input--textarea.form-control(placeholder="Расскажите нам о себе")
-          .col-lg-3
-            .form__item.form-group
-              label.form__label Достижения в сфере культуры и искусства
-              textarea.input.input--textarea.form-control(placeholder="Немного о ваших достижениях")
-          .col-lg-3
-            .form__item.form-group
-              label.form__label Сфера деятельности
-              select.select
-                option(disabled, selected) Выберите из списка
-                option Деятельность 1
-                option Деятельность 2
+        if data && data.modifier == 'festival'
+          .registration__type
+            .registration__type-top
+              .fregistration__type-header Выберите тип участия
+              .registration__type-content
+                .custom-control.custom-radio
+                  input#type1.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='type1') Зритель
+                .custom-control.custom-radio
+                  input#type2.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='type2') Участник
+                .custom-control.custom-radio
+                  input#type3.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='type3') Партнер
+            .registration__type-dscr
+              p.registration__type-dscr-item Зритель это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+              p.registration__type-dscr-item Участник это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+              p.registration__type-dscr-item Партнер это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+          .row
+            .col-lg-3
+              .form__item.form-group
+                label.form__label О себе
+                textarea.input.input--textarea.form-control(placeholder="Расскажите нам о себе")
+            .col-lg-3
+              .form__item.form-group
+                label.form__label Достижения в сфере культуры и искусства
+                textarea.input.input--textarea.form-control(placeholder="Немного о ваших достижениях")
+            .col-lg-3
+              .form__item.form-group
+                label.form__label Сфера деятельности
+                select.select
+                  option(disabled, selected) Выберите из списка
+                  option Деятельность 1
+                  option Деятельность 2
+        if data && data.modifier == 'forum'
+          .registration__type
+            .registration__type-top
+              .fregistration__type-header Выберите тип участия
+              .registration__type-content
+                .custom-control.custom-radio
+                  input#type4.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='type4') Индивидуально
+                .custom-control.custom-radio
+                  input#type5.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='type5') Команда
+                .custom-control.custom-radio
+                  input#type6.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='type6') Координатор
+            .registration__type-dscr
+              p.registration__type-dscr-item Зритель это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+              p.registration__type-dscr-item Участник это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+              p.registration__type-dscr-item Партнер это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+          .row
+            .col-lg-6
+              .form__item.form-group
+                label.form__label Название коллектива
+                input.input.form-control(type="text", placeholder="Введите название коллектива", value="Горбатов и компания")
+          .row
+            .col-lg-3
+              .form__item.form-group
+                label.form__label О себе
+                textarea.input.input--textarea.form-control(placeholder="Расскажите нам о себе")
+            .col-lg-3
+              .form__item.form-group
+                label.form__label Достижения в сфере культуры и искусства
+                textarea.input.input--textarea.form-control(placeholder="Немного о ваших достижениях")
+          .row
+            .col-lg-3
+              .form__item.form-group
+                label.form__label Участники коллектива (только существующие ID участников)
+                .form__team-input
+                  input.input.form__team-input-content.form-control(type="text", placeholder="ID участника")
+                  a.form__team-input-btn(href="#")
+            .col-lg-3
+              .form__item-warning Такого ID не существует
+          .form__team-list
+            .form__team-item
+              .form__team-item-id ID 1235598
+              .form__team-item-name Гановерский А.В.
+              a.form__team-item-remove(href="#")
+            .form__team-item
+              .form__team-item-id ID 1235598
+              .form__team-item-name Гановерский А.В.
+              a.form__team-item-remove(href="#")
         .row
           .col-lg-3
             .form__item.form-group
