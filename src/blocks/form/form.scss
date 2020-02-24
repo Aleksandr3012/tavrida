@@ -142,9 +142,28 @@
   }
 
   &__disability {
+    margin-left: -30px;
+    padding: 16px 30px 8px;
+    width: calc(100% + 60px);
+    background: rgba(#333, .1);
   }
 
   &__add {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+
+    &:before {
+      margin-right: 15px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      content: '';
+      background: url(../img/form-plus-blue.svg) no-repeat;
+      background-size: contain;
+    }
   }
 
   &__footer {
@@ -160,5 +179,29 @@
     line-height: 17px;
     font-weight: 600;
     color: #333;
+  }
+
+  &__file-name {
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  &__file-size {
+    margin-right: 14px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: rgba(#333, .54);
+  }
+
+  &__file-remove {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/form-remove.svg) no-repeat;
+    background-size: contain;
   }
 }

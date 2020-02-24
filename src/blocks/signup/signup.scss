@@ -1,11 +1,22 @@
 .signup {
-  //  display: none;
   position: absolute;
   top: 36px;
   left: 35px;
   padding: 35px 30px 30px;
+  display: none;
   width: 100%;
   max-width: 66.7vw;
   background: #fff;
   border-radius: 20px;
+
+  &__close {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/form-close.svg) no-repeat center;
+    background-size: contain;
+  }
 }

@@ -18,4 +18,19 @@
     font-weight: 500;
     color: rgba(#333, .5);
   }
+
+  &--fb {
+    padding-left: 40px;
+    background: url(../img/form-fb.svg) no-repeat left 16px center;
+  }
+
+  &--vk {
+    padding-left: 40px;
+    background: url(../img/form-vk.svg) no-repeat left 16px center;
+  }
+
+  &--ig {
+    padding-left: 40px;
+    background: url(../img/form-ig.svg) no-repeat left 16px center;
+  }
 }

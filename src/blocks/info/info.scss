@@ -1,5 +1,78 @@
 .info {
   position: relative;
+  padding: 58px 65px;
   background: url(../img/info-bg.jpg) no-repeat center;
   background-size: cover;
+
+  &__top {
+    margin-top: 87px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top-left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__restriction {
+    margin: 0 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__restriction-age {
+    margin-bottom: 9px;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12.8px;
+    font-weight: 900;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+
+  &__restriction-dscr {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__dates {
+    font-family: $font-family-sans-serif;
+  }
+
+  &__past {
+    padding: 2px 40px 2px 2px;
+    display: flex;
+    align-items: center;
+    font-family: $font-family-serif;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 900;
+    color: #4dc5c6;
+    border: 1.29167px solid #4dc5c6;
+    border-radius: 323px;
+
+    &:before {
+      margin-right: 20px;
+      display: block;
+      width: 54px;
+      height: 54px;
+      content: '';
+      background: url(../img/play-past.svg) no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__headliners {
+  }
 }

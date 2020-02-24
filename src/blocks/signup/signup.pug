@@ -110,153 +110,155 @@ mixin signup(data)
                 label.form__label Ссылка на аккаунт в Инстаграм
                 input.input.input--ig.form-control(type="text")
         .form__disability
-          .col
-            .form__item.form-group
-              label.form__label Ограничения по здоровью
-              select.select
-                option(disabled, selected) Выберите
-                option Ограничение 1
-                option Ограничение 2
-          .col
-            .form__item.form-group
-              label.form__label Группа инвалидности
-              select.select
-                option(disabled, selected) Выберите
-                option Группа 1
-                option Группа 2
-          .col
-            .form__item.form-group
-              label.form__label Классификация формы инвалидности
-              select.select
-                option(disabled, selected) Выберите
-                option Классификация 1
-                option Классификация 2
-          .col-lg-4
-            p.p--xs В целях защиты здоровья ФЗ №152, ст. 10, п. 2, пп.3
-          p.font-weight-bold Паспортные данные
           .row
-            .col-lg-4
-              .row
-                .col-4
-                  .form__item.form-group
-                    label.form__label Серия
-                    input.input.form-control(type="text", placeholder="__ __")
-                .col-8
-                  .form__item.form-group
-                    label.form__label Номер
-                    input.input.form-control(type="text", placeholder="__ __")
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Кем выдан
-                input.input.form-control(type="text")
-            .col-lg-4
-              .row
-                .col-4
-                  .form__item.form-group
-                    label.form__label Когда выдан
-                    input.input.form-control(type="text", placeholder="__ __")
-                .col-8
-                  .form__item.form-group
-                    label.form__label Код подразделения
-                    input.input.form-control(type="text", placeholder="")
-          .row
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Населенный пункт
-                input.input.form-control(type="text")
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Улица
-                input.input.form-control(type="text")
-            .col-lg-4
-              .row
-                .col-4
-                  .form__item.form-group
-                    label.form__label Дом
-                    input.input.form-control(type="text")
-                .col-8
-                  .form__item.form-group
-                    label.form__label Место рождения
-                    input.input.form-control(type="text")
-          .row.justify-content-between
             .col
               .form__item.form-group
-                label.form__label Скан паспорта
-                .form__file
-                  .custom-file.custom-file--gray
-                    input#customFile1.custom-file-input(type='file')
-                    label.custom-file-label(for='customFile') Добавить файл
-                  .form__file-name Filename.pdf 
-                  .form__file-size 258 mb
-                  a.form__file-remove(href="#")
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Гражданство
+                label.form__label Ограничения по здоровью
                 select.select
-                  option(disabled, selected)
-                  option Гражданство 1
-                  option Гражданство 2
-          p.font-weight-bold Проживание
-          .row
-            .col-lg-2
+                  option(disabled, selected) Выберите
+                  option Ограничение 1
+                  option Ограничение 2
+            .col
               .form__item.form-group
-                label.form__label Индекс
-                input.input.form-control(type="text")
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Регион
-                input.input.form-control(type="text")
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Населенный пункт
-                input.input.form-control(type="text")
-          .row
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Улица
-                input.input.form-control(type="text")
-            .col-lg-2
-              .form__item.form-group
-                label.form__label Дом
-                input.input.form-control(type="text")
-          p.font-weight-bold Работа
-          .row
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Организация
-                input.input.form-control(type="text")
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Должность
-                input.input.form-control(type="text")
-            .col-lg-2
-              .form__item.form-group
-                label.form__label Стаж
-                input.input.form-control(type="text")
-          p.font-weight-bold Образование
-          .row
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Уровень образования
+                label.form__label Группа инвалидности
                 select.select
-                  option(disabled, selected)
-                  option Уровень 1
-                  option Уровень 2
-            .col-lg-8
+                  option(disabled, selected) Выберите
+                  option Группа 1
+                  option Группа 2
+            .col
               .form__item.form-group
-                label.form__label Наименование учебного заведения (без сокращений)
-                input.input.form-control(type="text")
-          .row
-            .col-lg-4
-              .form__item.form-group
-                label.form__label Профессия (специальность)
-                input.input.form-control(type="text")
-            .col-lg-2
-              .form__item.form-group
-                label.form__label Год окончания
-                input.input.form-control(type="text")
-          a.form__add(href="#") Добавить
-          .form__footer
-            button.btn.btn-primary.btn-green(type="submit") Сохранить информацию
-            p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
-              a(href="#") пользовательским соглашением
+                label.form__label Классификация формы инвалидности
+                select.select
+                  option(disabled, selected) Выберите
+                  option Классификация 1
+                  option Классификация 2
+            .col-lg-4.d-flex.align-items-center
+              p.p--xs.text-gray.mb-0 В целях защиты здоровья ФЗ №152, ст. 10, п. 2, пп.3
+        p.font-weight-bold.mt-20 Паспортные данные
+        .row
+          .col-lg-4
+            .row
+              .col-4
+                .form__item.form-group
+                  label.form__label Серия
+                  input.input.form-control(type="text", placeholder="__ __")
+              .col-8
+                .form__item.form-group
+                  label.form__label Номер
+                  input.input.form-control(type="text", placeholder="__ __")
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Кем выдан
+              input.input.form-control(type="text")
+          .col-lg-4
+            .row
+              .col-4
+                .form__item.form-group
+                  label.form__label Когда выдан
+                  input.input.form-control(type="text", placeholder="__ __")
+              .col-8
+                .form__item.form-group
+                  label.form__label Код подразделения
+                  input.input.form-control(type="text", placeholder="")
+        .row
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Населенный пункт
+              input.input.form-control(type="text")
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Улица
+              input.input.form-control(type="text")
+          .col-lg-4
+            .row
+              .col-4
+                .form__item.form-group
+                  label.form__label Дом
+                  input.input.form-control(type="text")
+              .col-8
+                .form__item.form-group
+                  label.form__label Место рождения
+                  input.input.form-control(type="text")
+        .row.justify-content-between
+          .col-lg-3
+            .form__item.form-group
+              label.form__label Скан паспорта
+              .form__file
+                .custom-file.custom-file--gray
+                  input#customFile1.custom-file-input(type='file')
+                  label.custom-file-label(for='customFile') Добавить файл
+          .col-lg-5.d-flex.align-items-center
+            .form__file-name Filename.pdf 
+            .form__file-size 258 mb
+            a.form__file-remove(href="#")
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Гражданство
+              select.select
+                option(disabled, selected)
+                option Гражданство 1
+                option Гражданство 2
+        p.font-weight-bold.mt-15 Проживание
+        .row
+          .col-lg-2
+            .form__item.form-group
+              label.form__label Индекс
+              input.input.form-control(type="text")
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Регион
+              input.input.form-control(type="text")
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Населенный пункт
+              input.input.form-control(type="text")
+        .row
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Улица
+              input.input.form-control(type="text")
+          .col-lg-2
+            .form__item.form-group
+              label.form__label Дом
+              input.input.form-control(type="text")
+        p.font-weight-bold Работа
+        .row
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Организация
+              input.input.form-control(type="text")
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Должность
+              input.input.form-control(type="text")
+          .col-lg-2
+            .form__item.form-group
+              label.form__label Стаж
+              input.input.form-control(type="text")
+        p.font-weight-bold Образование
+        .row
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Уровень образования
+              select.select
+                option(disabled, selected)
+                option Уровень 1
+                option Уровень 2
+          .col-lg-8
+            .form__item.form-group
+              label.form__label Наименование учебного заведения (без сокращений)
+              input.input.form-control(type="text")
+        .row
+          .col-lg-4
+            .form__item.form-group
+              label.form__label Профессия (специальность)
+              input.input.form-control(type="text")
+          .col-lg-2
+            .form__item.form-group
+              label.form__label Год окончания
+              input.input.form-control(type="text")
+        a.form__add(href="#") Добавить
+        .form__footer
+          button.btn.btn-primary.btn-green(type="submit") Сохранить информацию
+          p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
+            a(href="#") пользовательским соглашением

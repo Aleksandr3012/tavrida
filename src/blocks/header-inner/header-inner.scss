@@ -1,11 +1,24 @@
 .header-inner {
 
   &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__menu {
+    display: flex;
+    align-items: center;
   }
 
   &__link {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 900;
+    color: #fff;
+
+    & + & {
+      margin-left: 60px;
+    }
   }
 }
