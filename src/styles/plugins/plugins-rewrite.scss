@@ -153,6 +153,14 @@
         background-size: contain;
       }
     }
+
+    &.custom-file--blue {
+
+      .custom-file-label {
+        min-height: 104px;
+        border-radius: 5px;
+      }
+    }
   }
 
   &--blue {
