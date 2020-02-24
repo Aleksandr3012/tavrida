@@ -205,12 +205,37 @@
     background-size: contain;
   }
 
+  &__portfolio {
+    display: flex;
+  }
+
   &__portfolio-list {
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
   }
 
   &__portfolio-item {
+    position: relative;
+    margin: 3px;
+    padding-top: 17%;
+    width: calc(20% - 6px);
+    background: #467ad1;
+    border-radius: 5px;
+
+    &--empty {
+      border: 1px dashed rgba(#fff, .5);
+    }
   }
 
   &__portfolio-item-remove {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 12px;
+    height: 12px;
+    background: url(../img/portfolio-remove.svg) no-repeat;
+    background-size: contain;
   }
 }
