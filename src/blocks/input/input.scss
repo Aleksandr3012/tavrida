@@ -1,2 +1,21 @@
 .input {
+  padding: 0 20px;
+  height: 48px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+
+  &:focus {
+    border-color: #bdbdbd;
+    box-shadow: none;
+  }
+
+  @include placeholder {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: rgba(#333, .5);
+  }
 }

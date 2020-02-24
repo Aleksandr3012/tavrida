@@ -6,17 +6,26 @@
 
 /* Миксин замены цвета placeholder у input.
 Нужно добавить в стилях элемента конструкцию вида @include placeholder(#000); */
-@mixin placeholder($color) {
 
-  &::-webkit-input-placeholder {
-    color: $color;
+@mixin placeholder {
+
+  &.placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
   }
 
   &::-moz-placeholder {
-    color: $color;
+    @content;
   }
 
   &:-ms-input-placeholder {
-    color: $color;
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
   }
 }
