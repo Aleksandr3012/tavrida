@@ -180,6 +180,12 @@
 }
 
 .custom-radio {
+  margin-right: 15px;
+  padding-left: 0;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 10px;
+  }
 
   .custom-control-input {
 

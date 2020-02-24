@@ -4,24 +4,24 @@ mixin registration(data)
       h2.h2--default.text-white.mb-15 Регистрация на фестиваль
       form.form(action="#", method="POST")
         .row
-          .col-lg-3
+          .col-md-4.col-xml-3
             .form__item.form-group
               label.form__label Фамилия
               input.input.form-control(type="text", placeholder="Введите вашу фамилию")
-          .col-lg-3
+          .col-md-4.col-xml-3
             .form__item.form-group
               label.form__label Имя
               input.input.form-control(type="text", placeholder="Введите ваше имя")
-          .col-lg-3
+          .col-md-4.col-xml-3
             .form__item.form-group
               label.form__label Отчество
               input.input.form-control(type="text", placeholder="Введите ваше отчество")
         .row
-          .col-lg-3
+          .col-md-4.col-xml-3
             .form__item.form-group
               label.form__label Телефон
               input.input.form-control(type="text", placeholder="+7 ( ___ ) ___ - __ - __")
-          .col-lg-3
+          .col-md-4.col-xml-3
             .form__item.form-group
               label.form__label E-mail
               input.input.form-control(type="text", placeholder="sample@sample.com")
@@ -40,19 +40,19 @@ mixin registration(data)
                   input#type3.custom-control-input(type='radio', name='type')
                   label.custom-control-label(for='type3') Партнер
           .row
-            .col-lg-8
+            .col-xml-8
               .registration__type-dscr
                 p.registration__type-dscr-item.registration__type-dscr-item--active Участник это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
           .row
-            .col-lg-3
+            .col-md-4.col-xml-3
               .form__item.form-group
                 label.form__label О себе
                 textarea.input.input--textarea.form-control(placeholder="Расскажите нам о себе")
-            .col-lg-3
+            .col-md-4.col-xml-3
               .form__item.form-group
                 label.form__label Достижения в сфере культуры и искусства
                 textarea.input.input--textarea.form-control(placeholder="Немного о ваших достижениях")
-            .col-lg-3
+            .col-md-4.col-xml-3
               .form__item.form-group
                 label.form__label Сфера деятельности
                 select.select
@@ -74,31 +74,31 @@ mixin registration(data)
                   input#type6.custom-control-input(type='radio', name='type')
                   label.custom-control-label(for='type6') Координатор
           .row
-            .col-lg-8
+            .col-xml-8
               .registration__type-dscr
                 p.registration__type-dscr-item.registration__type-dscr-item--active Команда это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
           .row
-            .col-lg-6
+            .col-xml-6
               .form__item.form-group
                 label.form__label Название коллектива
                 input.input.form-control(type="text", placeholder="Введите название коллектива", value="Горбатов и компания")
           .row
-            .col-lg-3
+            .col-md-4.col-xml-3
               .form__item.form-group
                 label.form__label О себе
                 textarea.input.input--textarea.form-control(placeholder="Расскажите нам о себе")
-            .col-lg-3
+            .col-md-4.col-xml-3
               .form__item.form-group
                 label.form__label Достижения в сфере культуры и искусства
                 textarea.input.input--textarea.form-control(placeholder="Немного о ваших достижениях")
           .row
-            .col-lg-3
+            .col-md-4.col-xml-3
               .form__item.form-group
                 label.form__label Участники коллектива (только существующие ID участников)
                 .form__team-input
                   input.input.form__team-input-content.form-control(type="text", placeholder="ID участника")
                   a.form__team-input-btn(href="#")
-            .col-lg-3.d-flex.align-items-center
+            .col-md-4.col-xml-3.d-flex.align-items-center
               .form__item-warning Такого ID не существует
           .form__team-list
             .form__team-item
@@ -110,7 +110,7 @@ mixin registration(data)
               .form__team-item-name Гановерский А.В.
               a.form__team-item-remove(href="#")
         .row
-          .col-lg-3
+          .col-md-6.col-xl-4.col-xml-3
             .form__item.form-group
               label.form__label Фото-портфолио в сфере искусства
               .form__portfolio
@@ -136,20 +136,20 @@ mixin registration(data)
                     a.form__portfolio-item-remove(href="#")
                   .form__portfolio-item.form__portfolio-item--empty
                   .form__portfolio-item.form__portfolio-item--empty
-          .col-lg-3
+          .col-md-6.col-xl-4.col-xml-3
             .form__item.form-group
               label.form__label Видео портфолио
               input.input.form-control(type="text", placeholder="Ссылка на видео")
               input.input.form-control(type="text", placeholder="Краткое описание")
         .row
-          .col-lg-2
+          .col-md-4.col-xml-2
             .form__item.form-group
               label.form__label Творческое задание
               .form__file
                 .custom-file.custom-file--blue
                   input#customFile1.custom-file-input(type='file')
                   label.custom-file-label(for='customFile') Добавить файл
-          .col-lg-4.d-flex.align-items-center
+          .col-md-4.d-flex.align-items-center
             .form__file-name Filename.pdf 
             .form__file-size 258 mb
             a.form__file-remove(href="#")

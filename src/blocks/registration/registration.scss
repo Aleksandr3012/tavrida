@@ -8,6 +8,11 @@
     margin-bottom: 35px;
     display: flex;
     align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__type-header {
@@ -16,11 +21,19 @@
     line-height: 1.2;
     font-weight: 600;
     color: #fff;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__type-content {
     display: flex;
     align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__type-dscr {
@@ -40,6 +53,10 @@
   &--blue {
     padding: 60px 0;
     background: $primary url(../img/form-blue-bg.svg) no-repeat right bottom;
+
+    @include media-breakpoint-down(lg) {
+      background: $primary;
+    }
 
     .form__label {
       color: #fff;
