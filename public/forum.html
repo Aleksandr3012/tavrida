@@ -22,7 +22,812 @@
           <div class="header__info">г. Судак, Бухта Капсель</div><a class="header__route" href="#">Как проехать</a>
         </div>
       </div>
-    <!--script(src="js/vendor.js")-->
+    <div class="wrapper">
+        <div class="art">
+            <div class="header-inner">
+              <div class="container">
+                <div class="header-inner__wrapper"><a class="logo" href="index.html"><img class="logo__img" src="./img/logo.svg" alt="Logo"></a>
+                  <div class="header-inner__menu"><a class="header-inner__link" href="#">Как добраться</a><a class="header-inner__link" href="#">Где жить?</a><a class="header-inner__link" href="#">Лайн-ап</a></div><a class="btn btn-outline-secondary js-registration" href="#">Регистрация</a>
+                    <div class="signup"><a class="signup__close" href="#"></a>
+                      <h2 class="h2--default mb-30">Регистрация</h2>
+                      <ul class="nav nav-tabs mb-30">
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#step1" role="tab" aria-selected="true">Шаг 1</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#step2" role="tab" aria-selected="false">Шаг 2</a></li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane fade show active" id="step1" role="tabpanel">
+                          <form class="form" action="#" method="POST">
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Фамилия</label>
+                                  <input class="input form-control" type="text" placeholder="Введите вашу фамилию">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Имя</label>
+                                  <input class="input form-control" type="text" placeholder="Введите ваше имя">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Отчество</label>
+                                  <input class="input form-control" type="text" placeholder="Введите ваше отчество">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Телефон</label>
+                                  <input class="input form-control" type="text" placeholder="+7 ( ___ ) ___ - __ - __">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">E-mail</label>
+                                  <input class="input form-control" type="email" placeholder="sample@sample.com">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Пароль</label>
+                                  <input class="input form-control" type="password">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Повторите пароль</label>
+                                  <input class="input form-control" type="password">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form__footer">
+                              <button class="btn btn-primary btn-green" type="submit">Зарегистрироваться</button>
+                              <p class="form__footer-agreement">Нажимая кнопку я соглашаюсь с <a href="#">пользовательским соглашением</a></p>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="tab-pane fade" id="step2" role="tabpanel">
+                          <form class="form" action="#" method="POST">
+                            <div class="form__info">
+                              <div class="form__info-item">ID: <span class="form__info-item-content">4455896</span></div>
+                              <div class="form__info-item">Зарегистрирован: <span class="form__info-item-content">445589604.06.2020</span></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-auto">
+                                <div class="custom-file custom-file--gray custom-file--photo">
+                                  <input class="custom-file-input" id="customFile1" type="file">
+                                  <label class="custom-file-label" for="customFile">Добавить личное фото</label>
+                                </div>
+                              </div>
+                              <div class="col-auto">
+                                <p class="font-weight-bold mb-0">Горбатов Вячеслав Георгиевич</p>
+                                <div class="form__item form-group">
+                                  <label class="form__label">Страна</label>
+                                  <select class="select">
+                                    <option disabled selected>Выберите</option>
+                                    <option>Страна 1</option>
+                                    <option>Страна 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-auto">
+                                <p class="font-weight-bold mb-0">+7 ( 975 ) 966 - 55 - 43</p>
+                                <p class="p--xs">sample@sample.com</p>
+                                <div class="form__item form-group">
+                                  <label class="form__label">Федеральный округ</label>
+                                  <select class="select">
+                                    <option disabled selected>Выберите</option>
+                                    <option>Округ 1</option>
+                                    <option>Округ 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-auto">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Дата рождения</label>
+                                  <input class="input form-control" type="text" placeholder="__.__.____">
+                                </div>
+                                <div class="form__item form-group">
+                                  <label class="form__label">Регион</label>
+                                  <select class="select">
+                                    <option disabled selected>Выберите</option>
+                                    <option>Регион 1</option>
+                                    <option>Регион 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-auto">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Пол</label>
+                                  <select class="select">
+                                    <option disabled selected>Выберите</option>
+                                    <option>Мужской</option>
+                                    <option>Женский</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Ссылка на аккаунт в Facebook</label>
+                                  <input class="input input--fb form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Ссылка на аккаунт во Вконтакте</label>
+                                  <input class="input input--vk form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Ссылка на аккаунт в Инстаграм</label>
+                                  <input class="input input--ig form-control" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                          <div class="form__disability">
+                            <div class="col">
+                              <div class="form__item form-group">
+                                <label class="form__label">Ограничения по здоровью</label>
+                                <select class="select">
+                                  <option disabled selected>Выберите</option>
+                                  <option>Ограничение 1</option>
+                                  <option>Ограничение 2</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form__item form-group">
+                                <label class="form__label">Группа инвалидности</label>
+                                <select class="select">
+                                  <option disabled selected>Выберите</option>
+                                  <option>Группа 1</option>
+                                  <option>Группа 2</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form__item form-group">
+                                <label class="form__label">Классификация формы инвалидности</label>
+                                <select class="select">
+                                  <option disabled selected>Выберите</option>
+                                  <option>Классификация 1</option>
+                                  <option>Классификация 2</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <p class="p--xs">В целях защиты здоровья ФЗ №152, ст. 10, п. 2, пп.3</p>
+                            </div>
+                            <p class="font-weight-bold">Паспортные данные</p>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="row">
+                                  <div class="col-4">
+                                    <div class="form__item form-group">
+                                      <label class="form__label">Серия</label>
+                                      <input class="input form-control" type="text" placeholder="__ __">
+                                    </div>
+                                  </div>
+                                  <div class="col-8">
+                                    <div class="form__item form-group">
+                                      <label class="form__label">Номер</label>
+                                      <input class="input form-control" type="text" placeholder="__ __">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Кем выдан</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="row">
+                                  <div class="col-4">
+                                    <div class="form__item form-group">
+                                      <label class="form__label">Когда выдан</label>
+                                      <input class="input form-control" type="text" placeholder="__ __">
+                                    </div>
+                                  </div>
+                                  <div class="col-8">
+                                    <div class="form__item form-group">
+                                      <label class="form__label">Код подразделения</label>
+                                      <input class="input form-control" type="text" placeholder="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Населенный пункт</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Улица</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="row">
+                                  <div class="col-4">
+                                    <div class="form__item form-group">
+                                      <label class="form__label">Дом</label>
+                                      <input class="input form-control" type="text">
+                                    </div>
+                                  </div>
+                                  <div class="col-8">
+                                    <div class="form__item form-group">
+                                      <label class="form__label">Место рождения</label>
+                                      <input class="input form-control" type="text">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between">
+                              <div class="col">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Скан паспорта</label>
+                                  <div class="form__file">
+                                    <div class="custom-file custom-file--gray">
+                                      <input class="custom-file-input" id="customFile1" type="file">
+                                      <label class="custom-file-label" for="customFile">Добавить файл</label>
+                                    </div>
+                                    <div class="form__file-name">Filename.pdf </div>
+                                    <div class="form__file-size">258 mb</div><a class="form__file-remove" href="#"></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Гражданство</label>
+                                  <select class="select">
+                                    <option disabled selected></option>
+                                    <option>Гражданство 1</option>
+                                    <option>Гражданство 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="font-weight-bold">Проживание</p>
+                            <div class="row">
+                              <div class="col-lg-2">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Индекс</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Регион</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Населенный пункт</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Улица</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Дом</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                            </div>
+                            <p class="font-weight-bold">Работа</p>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Организация</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Должность</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Стаж</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                            </div>
+                            <p class="font-weight-bold">Образование</p>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Уровень образования</label>
+                                  <select class="select">
+                                    <option disabled selected></option>
+                                    <option>Уровень 1</option>
+                                    <option>Уровень 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-lg-8">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Наименование учебного заведения (без сокращений)</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Профессия (специальность)</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="form__item form-group">
+                                  <label class="form__label">Год окончания</label>
+                                  <input class="input form-control" type="text">
+                                </div>
+                              </div>
+                            </div><a class="form__add" href="#">Добавить</a>
+                            <div class="form__footer">
+                              <button class="btn btn-primary btn-green" type="submit">Сохранить информацию</button>
+                              <p class="form__footer-agreement">Нажимая кнопку я соглашаюсь с <a href="#">пользовательским соглашением</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          <div class="art__title"></div>
+        </div>
+      <div class="container">
+        <h2 class="h2--default mb-30 mb-xl-60">Форум молодых деятелей культуры и искусства «Таврида – 2020»</h2>
+        <div class="row">
+          <div class="col-lg-4">
+              <div class="part" style="background-color: #EFC825">
+                <h5 class="part__title">Участники форума</h5>
+                <p class="part__dscr">Молодые деятели культуры и искусства в возрасте от 18 до 35 лет из всех регионов страны </p><a class="btn btn-primary part__btn btn-green btn-sm" href="#">Узнать больше</a>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="part" style="background-color: #C9DF55">
+                <h5 class="part__title">Образовательная программа </h5>
+                <p class="part__dscr">Описание блока в одну или несколько строк для наглядности отображения контента...</p><a class="btn btn-primary part__btn btn-green btn-sm" href="#">Узнать больше</a>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="part" style="background-color: #67BAC3">
+                <h5 class="part__title">Карьерный лифт</h5>
+                <p class="part__dscr">Описание блока в одну или несколько строк для наглядности отображения контента</p><a class="btn btn-primary part__btn btn-green btn-sm" href="#">Узнать больше</a>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="part" style="background-color: #BDBDBD">
+                <h5 class="part__title">Кросс-студии</h5>
+                <p class="part__dscr">Молодые деятели культуры и искусства в возрасте от 18 до 35 лет из всех регионов страны </p><a class="btn btn-primary part__btn btn-green btn-sm" href="#">Узнать больше</a>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="part" style="background-color: #CE3B65">
+                <h5 class="part__title">Грантовый конкурс</h5>
+                <p class="part__dscr">Описание блока в одну или несколько строк для наглядности отображения контента</p><a class="btn btn-primary part__btn btn-green btn-sm" href="#">Узнать больше</a>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="part" style="background-color: #476FB2">
+                <h5 class="part__title">Программа лояльности для участников форума</h5>
+                <p class="part__dscr">Описание блока в одну или несколько строк для наглядности отображения контента</p><a class="btn btn-primary part__btn btn-green btn-sm" href="#">Узнать больше</a>
+              </div>
+          </div>
+        </div>
+          <div class="award">
+            <h3 class="award__header">Премия молодых деятелей современного искусства «Таврида - Арт»</h3><a class="btn btn-outline-secondary" href="#">Узнать больше</a>
+          </div>
+      </div>
+        <div class="anti-list">
+          <div class="container">
+            <h2 class="h2--default">Творческие антишколы 2020</h2>
+            <div class="row">
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-1.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/1" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-2.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/2" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-3.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/3" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-4.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/4" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-5.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/5" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-6.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/6" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-7.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/7" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-8.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/8" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-9.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/9" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-10.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/10" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-11.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/11" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-12.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/12" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-13.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/13" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-14.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/14" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="anti" style="background-image: url(./img/anti-15.jpg);">
+                    <div class="anti__header">
+                      <div class="anti__type">ТВОРЧЕСКАЯ АНТИШКОЛА </div><img class="anti__number" src="./img/15" alt>
+                    </div>
+                    <div class="anti__footer">
+                      <h6 class="anti__title"></h6>
+                      <div class="anti__date">13 - 16 МАЯ</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map"><img class="map__img" src="./img/map.png" alt="Map"><a class="map__btn" href="#">Открыть на весь экран</a></div>
+        <div class="registration registration--blue">
+          <div class="container">
+            <h2 class="h2--default">Регистрация на фестиваль</h2>
+            <form class="form" action="#" method="POST">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">Фамилия</label>
+                    <input class="input form-control" type="text" placeholder="Введите вашу фамилию">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">Имя</label>
+                    <input class="input form-control" type="text" placeholder="Введите ваше имя">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">Отчество</label>
+                    <input class="input form-control" type="text" placeholder="Введите ваше отчество">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">Телефон</label>
+                    <input class="input form-control" type="text" placeholder="+7 ( ___ ) ___ - __ - __">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">E-mail</label>
+                    <input class="input form-control" type="text" placeholder="sample@sample.com">
+                  </div>
+                </div>
+              </div>
+              <div class="registration__type">
+                <div class="registration__type-top">
+                  <div class="fregistration__type-header">Выберите тип участия</div>
+                  <div class="registration__type-content">
+                    <div class="custom-control custom-radio">
+                      <input class="custom-control-input" id="type4" type="radio" name="type">
+                      <label class="custom-control-label" for="type4">Индивидуально</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input class="custom-control-input" id="type5" type="radio" name="type">
+                      <label class="custom-control-label" for="type5">Команда</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input class="custom-control-input" id="type6" type="radio" name="type">
+                      <label class="custom-control-label" for="type6">Координатор</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="registration__type-dscr">
+                  <p class="registration__type-dscr-item">Зритель это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся</p>
+                  <p class="registration__type-dscr-item">Участник это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся</p>
+                  <p class="registration__type-dscr-item">Партнер это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form__item form-group">
+                    <label class="form__label">Название коллектива</label>
+                    <input class="input form-control" type="text" placeholder="Введите название коллектива" value="Горбатов и компания">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">О себе</label>
+                    <textarea class="input input--textarea form-control" placeholder="Расскажите нам о себе"></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">Достижения в сфере культуры и искусства</label>
+                    <textarea class="input input--textarea form-control" placeholder="Немного о ваших достижениях"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">Участники коллектива (только существующие ID участников)</label>
+                    <div class="form__team-input">
+                      <input class="input form__team-input-content form-control" type="text" placeholder="ID участника"><a class="form__team-input-btn" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form__item-warning">Такого ID не существует</div>
+                </div>
+              </div>
+              <div class="form__team-list">
+                <div class="form__team-item">
+                  <div class="form__team-item-id">ID 1235598</div>
+                  <div class="form__team-item-name">Гановерский А.В.</div><a class="form__team-item-remove" href="#"></a>
+                </div>
+                <div class="form__team-item">
+                  <div class="form__team-item-id">ID 1235598</div>
+                  <div class="form__team-item-name">Гановерский А.В.</div><a class="form__team-item-remove" href="#"></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">Фото-портфолио в сфере искусства</label>
+                    <div class="form__portfolio">
+                      <div class="custom-file custom-file--photo">
+                        <input class="custom-file-input" id="customFile1" type="file">
+                        <label class="custom-file-label" for="customFile">Добавить фото</label>
+                      </div>
+                      <div class="form__portfolio-list">
+                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
+                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
+                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
+                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
+                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
+                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
+                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
+                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
+                        <div class="form__portfolio-item"></div>
+                        <div class="form__portfolio-item"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form__item form-group">
+                    <label class="form__label">Видео портфолио</label>
+                    <input class="input form-control" type="text" placeholder="Ссылка на видео">
+                    <input class="input form-control" type="text" placeholder="Краткое описание">
+                  </div>
+                </div>
+              </div>
+              <div class="form__item form-group">
+                <label class="form__label">Творческое задание</label>
+                <div class="form__file">
+                  <div class="custom-file">
+                    <input class="custom-file-input" id="customFile1" type="file">
+                    <label class="custom-file-label" for="customFile">Добавить файл</label>
+                  </div>
+                  <div class="form__file-name">Filename.pdf </div>
+                  <div class="form__file-size">258 mb</div><a class="form__file-remove" href="#"></a>
+                </div>
+              </div>
+              <div class="form__footer">
+                <button class="btn btn-primary btn-green" type="submit">Зарегистрироваться</button>
+                <p class="form__footer-agreement">Нажимая кнопку я соглашаюсь с <a href="#">пользовательским соглашением</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="partners">
+          <div class="container">
+            <h4 class="text-dark mb-20 mb-xml-45">Партнеры</h4>
+          </div>
+          <div class="partners__row partners__row--light">
+            <div class="container">
+              <div class="partners__row-wrapper">
+                <h6 class="partners__header"> <span>информационные</span></h6>
+                <div class="partners__row-content"><img class="partners__logo" src="./img/partner-1.png" alt="Logo"><img class="partners__logo" src="./img/partner-2.png" alt="Logo"><img class="partners__logo" src="./img/partner-3.png" alt="Logo"><img class="partners__logo" src="./img/partner-4.png" alt="Logo"><img class="partners__logo" src="./img/partner-3.png" alt="Logo"></div>
+              </div>
+            </div>
+          </div>
+          <div class="partners__row partners__row--dark">
+            <div class="container">
+              <div class="partners__row-wrapper">
+                <h6 class="partners__header"> <span>тематические</span></h6>
+                <div class="partners__row-content"><img class="partners__logo" src="./img/partner-5.png" alt="Logo"><img class="partners__logo" src="./img/partner-6.png" alt="Logo"><img class="partners__logo" src="./img/partner-7.png" alt="Logo"><img class="partners__logo" src="./img/partner-8.png" alt="Logo"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="container">
+            <div class="footer__wrapper">
+              <div class="footer__left">
+                <div class="footer__left-top">
+                  <h4>Контакты</h4>
+                  <div class="footer__contacts">
+                    <div class="footer__contacts-item">
+                      <p class="p--sm text-uppercase text-white mb-15">Телефон:</p>
+                      <h5 class="mb-0"> <a href="tel:8 (800) 302-27-04 ">8 (800) 302-27-04 </a></h5>
+                    </div>
+                    <div class="footer__contacts-item">
+                      <p class="p--sm text-uppercase text-white mb-15">Сотрудничество:</p>
+                      <h5><a href="mailto:info@crki.art">info@crki.art</a></h5>
+                    </div>
+                    <div class="footer__contacts-item">
+                      <p class="p--sm text-uppercase text-white mb-15">Пресса:</p>
+                      <h5 class="mb-0"><a href="mailto:press@crki.art">press@crki.art</a></h5>
+                    </div>
+                  </div>
+                </div>
+                <p class="p--sm text-uppercase text-white mb-0">© Официальный сайт форума «Таврида»</p>
+              </div><img class="footer__map" src="./img/crimea.svg" alt="Crimea">
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/vendor.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

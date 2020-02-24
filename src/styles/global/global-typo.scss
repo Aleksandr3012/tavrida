@@ -48,6 +48,11 @@ h2,
   @include media-breakpoint-down(md) {
     font-size: 30px;
   }
+
+  &.h2--default {
+    font-size: 50px;
+    color: $primary;
+  }
 }
 
 h3,

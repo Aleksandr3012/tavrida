@@ -2,7 +2,9 @@ mixin header-inner(data)
   .header-inner&attributes(attributes)
     .container
       .header-inner__wrapper
-        +logo
+        +logo({
+          img: 'logo.svg'
+        })
         .header-inner__menu
           a.header-inner__link(href="#") Как добраться
           a.header-inner__link(href="#") Где жить?
