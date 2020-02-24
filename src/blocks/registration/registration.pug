@@ -62,7 +62,7 @@ mixin registration(data)
         if data && data.modifier == 'forum'
           .registration__type
             .registration__type-top
-              .fregistration__type-header Выберите тип участия
+              .registration__type-header Выберите тип участия
               .registration__type-content
                 .custom-control.custom-radio
                   input#type4.custom-control-input(type='radio', name='type')
@@ -98,7 +98,7 @@ mixin registration(data)
                 .form__team-input
                   input.input.form__team-input-content.form-control(type="text", placeholder="ID участника")
                   a.form__team-input-btn(href="#")
-            .col-lg-3
+            .col-lg-3.d-flex.align-items-center
               .form__item-warning Такого ID не существует
           .form__team-list
             .form__team-item

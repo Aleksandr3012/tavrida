@@ -238,4 +238,84 @@
     background: url(../img/portfolio-remove.svg) no-repeat;
     background-size: contain;
   }
+
+  &__team-input {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  &__team-input-content {
+  }
+
+  &__team-input-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    background: #c9df55 url(../img/form-plus-participants.svg) no-repeat center;
+    border-radius: 5px;
+  }
+
+  &__item-warning {
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    &:before {
+      margin-right: 8px;
+      display: block;
+      width: 24px;
+      height: 22px;
+      content: '';
+      background: url(../img/form-danger.svg) no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__team-list {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__team-item {
+    padding: 4px 8.57px;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(#fff, .1);
+    border-radius: 250px;
+
+    & + & {
+      margin-left: 16px;
+    }
+  }
+
+  &__team-item-id {
+    margin-right: 7px;
+    font-family: $font-family-serif;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #67bac3;
+    align-self: baseline;
+  }
+
+  &__team-item-name {
+    margin-right: 9px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #fff;
+    align-self: baseline;
+  }
+
+  &__team-item-remove {
+    width: 20px;
+    height: 20px;
+    background: url(../img/team-close.svg) no-repeat;
+    background-size: contain;
+  }
 }
