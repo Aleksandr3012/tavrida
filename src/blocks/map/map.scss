@@ -1,18 +1,24 @@
 .map {
   position: relative;
+  margin-bottom: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  &__wrapper {
+    position: relative;
+  }
+
   &__img {
     width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 3.65438px 50px rgba(0, 0, 0, .35);
   }
 
   &__btn {
     position: absolute;
     bottom: 48px;
     left: 66px;
-
     padding: 14px 21.3px;
     font-family: $font-family-serif;
     font-size: 20px;

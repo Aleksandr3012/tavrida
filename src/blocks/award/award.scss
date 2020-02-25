@@ -1,2 +1,15 @@
 .award {
+  margin-bottom: 40px;
+  padding: 95px 100px 95px 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../img/award.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 10px;
+
+  &__header {
+    max-width: 800px;
+    font-size: 40px;
+  }
 }

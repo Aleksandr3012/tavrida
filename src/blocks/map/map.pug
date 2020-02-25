@@ -1,4 +1,6 @@
 mixin map(data)
   .map&attributes(attributes)
-    img.map__img(src="./img/map.png", alt="Map")
-    a.map__btn(href="#") Открыть на весь экран
+    .container
+      .map__wrapper
+        img.map__img(src="./img/map.png", alt="Map")
+        a.map__btn(href="#") Открыть на весь экран
