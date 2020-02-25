@@ -2,6 +2,11 @@
   position: relative;
   width: 100%;
   max-width: 526px;
+  flex-shrink: 0;
+
+  @include media-breakpoint-down(xl) {
+    max-width: 300px;
+  }
 
   &:after {
     position: absolute;
@@ -17,6 +22,7 @@
   }
 
   &__img {
+    max-width: 100%;
     border-radius: 22px;
   }
 
@@ -26,5 +32,9 @@
     bottom: 0;
     left: 0;
     padding: 43px 54px;
+
+    @include media-breakpoint-down(xl) {
+      padding: 20px;
+    }
   }
 }
