@@ -10,6 +10,10 @@
   justify-content: space-between;
   background: #fff;
 
+  @include media-breakpoint-down(lg) {
+    z-index: 4;
+  }
+
   @include media-breakpoint-down(md) {
     width: 100%;
     height: auto;

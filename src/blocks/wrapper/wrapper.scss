@@ -2,10 +2,18 @@
   position: relative;
   padding-left: 7.4vw;
 
+  @include media-breakpoint-down(lg) {
+    z-index: 3;
+  }
+
   @include media-breakpoint-down(md) {
     padding-top: 50px;
     padding-left: 0;
     overflow: hidden;
+  }
+
+  @include media-breakpoint-down(sm) {
+    z-index: 4;
   }
 
   &--popup {
