@@ -44,11 +44,15 @@
   }
 
   &__number {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: -90px;
-    margin-right: -33px;
+    opacity: .7;
+    font-family: $font-family-serif;
+    font-size: 180px;
+    line-height: .7;
+    font-weight: 900;
+    background-image: url(../img/mask.svg);
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &__footer {

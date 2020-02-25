@@ -3,7 +3,8 @@ mixin anti(data)
     .anti__content
       .anti__header
         .anti__type ТВОРЧЕСКАЯ АНТИШКОЛА 
-        img.anti__number(src="./img/" + data.number + '.svg', alt)
+        .anti__number= data.number
+//        img.anti__number(src="./img/" + data.number + '.svg', alt)
       .anti__footer
         h6.anti__title= data.title
         .anti__date 13 - 16 МАЯ
