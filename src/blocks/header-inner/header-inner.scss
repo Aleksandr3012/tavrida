@@ -8,15 +8,31 @@
     }
   }
 
+  &__logo {
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__menu {
     display: flex;
     align-items: center;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 20px;
+    }
   }
 
   &__link {
@@ -24,6 +40,10 @@
     line-height: 1;
     font-weight: 900;
     color: #fff;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
 
     @include transition;
 
@@ -34,6 +54,10 @@
 
     & + & {
       margin-left: 60px;
+
+      @include media-breakpoint-down(md) {
+        margin-left: 20px;
+      }
     }
   }
 }

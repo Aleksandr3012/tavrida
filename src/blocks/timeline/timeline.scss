@@ -6,11 +6,19 @@
     max-width: 270px;
     flex-shrink: 0;
 
+    @include media-breakpoint-down(lg) {
+      max-width: 240px;
+    }
+
     &:first-child {
       margin-left: 65px;
 
       @include media-breakpoint-down(xl) {
         margin-left: 30px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 20px;
       }
     }
 
@@ -33,6 +41,10 @@
       height: 6px;
       content: '';
       background: #fff;
+
+      @include media-breakpoint-down(lg) {
+        width: 250px;
+      }
     }
 
     & + & {
