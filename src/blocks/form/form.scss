@@ -188,6 +188,15 @@
     @include media-breakpoint-down(sm) {
       margin-left: 10px;
     }
+
+    a {
+
+      @include transition;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
   }
 
   &__file-name {
@@ -212,6 +221,12 @@
     height: 24px;
     background: url(../img/form-remove.svg) no-repeat;
     background-size: contain;
+
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
   }
 
   &__portfolio {
@@ -246,6 +261,12 @@
     height: 12px;
     background: url(../img/portfolio-remove.svg) no-repeat;
     background-size: contain;
+
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
   }
 
   &__team-input {
@@ -265,6 +286,12 @@
     height: 48px;
     background: #c9df55 url(../img/form-plus-participants.svg) no-repeat center;
     border-radius: 5px;
+
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
   }
 
   &__item-warning {
@@ -326,5 +353,11 @@
     height: 20px;
     background: url(../img/team-close.svg) no-repeat;
     background-size: contain;
+
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
   }
 }

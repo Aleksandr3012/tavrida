@@ -17,6 +17,13 @@
     font-weight: 900;
     color: #fff;
 
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+      color: #fff;
+    }
+
     & + & {
       margin-left: 60px;
     }

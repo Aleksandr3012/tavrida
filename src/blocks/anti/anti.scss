@@ -1,12 +1,18 @@
 .anti {
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
   padding: 40px 20px 40px 40px;
   display: flex;
   min-height: 330px;
   background-position: center;
   background-size: cover;
   border-radius: 20px;
+
+  @include transition;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   &:before {
     position: absolute;

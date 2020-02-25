@@ -64,6 +64,8 @@
     border: 1.29167px solid #4dc5c6;
     border-radius: 323px;
 
+    @include transition;
+
     &:before {
       margin-right: 20px;
       display: block;
@@ -72,6 +74,11 @@
       content: '';
       background: url(../img/play-past.svg) no-repeat;
       background-size: contain;
+    }
+
+    &:hover {
+      opacity: .7;
+      color: #4dc5c6;
     }
   }
 
