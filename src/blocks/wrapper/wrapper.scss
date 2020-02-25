@@ -1,9 +1,25 @@
 .wrapper {
+  position: relative;
   padding-left: 7.4vw;
 
   @include media-breakpoint-down(md) {
     padding-top: 50px;
     padding-left: 0;
     overflow: hidden;
+  }
+
+  &--popup {
+
+    &:after {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: rgba(#000, .7);
+    }
   }
 }

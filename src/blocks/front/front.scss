@@ -56,4 +56,17 @@
       text-align: left;
     }
   }
+
+  &__signup {
+    position: relative;
+    max-height: calc(100vh - 72px);
+
+    .ps__rail-y {
+      right: 10px !important;
+    }
+
+    .ps__thumb-y {
+      background: $gray-500 !important;
+    }
+  }
 }
