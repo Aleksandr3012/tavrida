@@ -523,3 +523,21 @@
 
 .select2-results__option {
 }
+
+/* Custom Scrollbar */
+
+.mCustomScrollbar {
+  margin-left: -65px;
+}
+
+.mCSB_container {
+  display: flex !important;
+}
+
+.mCustomScrollBox {
+}
+
+.mCSB_scrollTools {
+  z-index: -1 !important;
+  opacity: 0 !important;
+}

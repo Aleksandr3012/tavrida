@@ -85,7 +85,7 @@
     margin-bottom: -155px;
     display: flex;
     overflow: hidden;
-    width: calc(100% + 65px);
+    width: calc(100% + 130px);
     align-items: flex-start;
 
     & + & {
@@ -94,6 +94,10 @@
   }
 
   &__headliner-item {
+
+    &:first-child {
+      margin-left: 65px;
+    }
 
     & + & {
       margin-left: 30px;
