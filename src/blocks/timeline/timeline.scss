@@ -8,6 +8,10 @@
 
     &:first-child {
       margin-left: 65px;
+
+      @include media-breakpoint-down(xl) {
+        margin-left: 30px;
+      }
     }
 
     &:before {
@@ -38,6 +42,10 @@
 
   &__item-header {
     word-spacing: 100vw;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 16px;
+    }
   }
 
   &__item-dscr {
@@ -47,5 +55,9 @@
     font-weight: 300;
     text-transform: uppercase;
     color: #fff;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 14px;
+    }
   }
 }

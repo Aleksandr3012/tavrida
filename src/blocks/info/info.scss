@@ -5,6 +5,11 @@
   background: url(../img/info-bg.jpg) no-repeat center;
   background-size: cover;
 
+  @include media-breakpoint-down(xl) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
   &__top {
     margin-top: 87px;
     margin-bottom: 65px;
@@ -23,6 +28,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include media-breakpoint-down(xl) {
+      margin: 0 30px;
+    }
   }
 
   &__restriction-age {
@@ -50,6 +59,10 @@
 
   &__dates {
     font-family: $font-family-sans-serif;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 25px;
+    }
   }
 
   &__past {
@@ -66,6 +79,11 @@
 
     @include transition;
 
+    @include media-breakpoint-down(xl) {
+      padding-right: 20px;
+      font-size: 20px;
+    }
+
     &:before {
       margin-right: 20px;
       display: block;
@@ -74,6 +92,12 @@
       content: '';
       background: url(../img/play-past.svg) no-repeat;
       background-size: contain;
+
+      @include media-breakpoint-down(xl) {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+      }
     }
 
     &:hover {
@@ -87,6 +111,11 @@
     margin-left: -65px;
     overflow: hidden;
     width: calc(100% + 130px);
+
+    @include media-breakpoint-down(xl) {
+      margin-left: -30px;
+      width: calc(100% + 60px);
+    }
   }
 
   &__headliners {
@@ -96,8 +125,8 @@
     width: calc(100% + 130px);
     align-items: flex-start;
 
-    & + & {
-      margin-left: 30px;
+    @include media-breakpoint-down(xl) {
+      width: calc(100% + 60px);
     }
   }
 
@@ -105,6 +134,10 @@
 
     &:first-child {
       margin-left: 65px;
+
+      @include media-breakpoint-down(xl) {
+        margin-left: 30px;
+      }
     }
 
     & + & {

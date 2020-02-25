@@ -541,6 +541,10 @@
 
 .mCustomScrollbar {
   margin-left: -65px;
+
+  @include media-breakpoint-down(xl) {
+    margin-left: -30px;
+  }
 }
 
 .mCSB_container {
