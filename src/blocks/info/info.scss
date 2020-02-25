@@ -77,8 +77,9 @@
 
   &__timeline {
     margin-bottom: 95px;
+    margin-left: -65px;
     overflow: hidden;
-    width: calc(100% + 65px);
+    width: calc(100% + 130px);
   }
 
   &__headliners {
