@@ -3,4 +3,9 @@
   padding-top: 60px;
   background: url(../img/anti-list-bg.svg) no-repeat top -60px center;
   background-size: cover;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
 }

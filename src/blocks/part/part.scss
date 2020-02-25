@@ -79,6 +79,7 @@
     @include media-breakpoint-down(lg) {
       position: static;
       z-index: auto;
+      margin-top: auto;
       height: auto;
       opacity: 1;
       color: #fff !important;

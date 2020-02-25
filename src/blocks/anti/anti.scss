@@ -3,12 +3,18 @@
   margin-bottom: 40px;
   padding: 40px 20px 40px 40px;
   display: flex;
+  width: 100%;
   min-height: 330px;
   background-position: center;
   background-size: cover;
   border-radius: 20px;
 
   @include transition;
+
+  @include media-breakpoint-down(xl) {
+    padding: 20px;
+    min-height: 0;
+  }
 
   &:hover {
     transform: scale(1.1);
@@ -37,6 +43,10 @@
   &__header {
     display: flex;
     justify-content: space-between;
+
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 50px;
+    }
   }
 
   &__type {
@@ -55,10 +65,19 @@
     font-size: 180px;
     line-height: .7;
     font-weight: 900;
+    color: #fff;
     background-image: url(../img/mask.svg);
     background-position: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 100px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 80px;
+    }
   }
 
   &__footer {
@@ -72,6 +91,10 @@
     font-weight: 900;
     text-transform: uppercase;
     color: #fff;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 18px;
+    }
   }
 
   &__date {
