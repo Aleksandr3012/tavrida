@@ -2,3 +2,16 @@ mixin menu(data)
   .menu&attributes(attributes)
     a.menu__btn(href="#")
     .menu__content
+      .menu__content-top Мен
+      .menu__wrapper
+        .menu__links-list
+          .menu__sections-list
+            a.menu__section(href="#") Форум
+            a.menu__section(href="#") Фестиваль
+          a.menu__link(href="#") Как добраться
+          a.menu__link(href="#") Информация о фестивале
+          a.menu__link(href="#") Партнеры
+          a.menu__link(href="#") Контакты
+        +socials.socials--horisontal
+        .menu__text 10-12 Июля 2020
+        .menu__text г. Судак, Бухта Капсель
