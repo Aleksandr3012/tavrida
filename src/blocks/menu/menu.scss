@@ -19,9 +19,93 @@
     &:hover {
       opacity: .8;
     }
+
+    &--active {
+      position: relative;
+      z-index: 1;
+      background: url(../img/menu-close.svg) no-repeat center;
+      border-bottom: 0;
+    }
   }
 
   &__content {
     display: none;
+
+    &--active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      max-width: 74.17%;
+      height: 100vh;
+      background: #fff;
+    }
+  }
+
+  &__content-top {
+    padding-left: 211px;
+    display: flex;
+    height: 9.72vh;
+    align-items: center;
+    color: $primary;
+    border-bottom: 1px solid #476fb2;
+  }
+
+  &__wrapper {
+    padding: 105px 20px 90px 211px;
+  }
+
+  &__links-list {
+    margin-bottom: 104px;
+  }
+
+  &__sections-list {
+    margin-bottom: 78px;
+  }
+
+  &__section {
+    display: block;
+    font-family: $font-family-serif;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 700;
+    color: $dark;
+
+    @include transition;
+
+    & + & {
+      margin-top: 32px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-family: $font-family-serif;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    color: $dark;
+
+    @include transition;
+
+    & + & {
+      margin-top: 54px;
+    }
+  }
+
+  &__socials {
+    margin-bottom: 104px;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000;
+
+    & + & {
+      margin-top: 13px;
+    }
   }
 }

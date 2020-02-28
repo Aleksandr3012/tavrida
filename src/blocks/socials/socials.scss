@@ -51,4 +51,18 @@
       background-size: contain;
     }
   }
+
+  &--horisontal {
+    flex-direction: row;
+
+    .socials__item {
+      width: 36px;
+      height: 36px;
+
+      & + .socials__item {
+        margin-top: 0;
+        margin-left: 53px;
+      }
+    }
+  }
 }
