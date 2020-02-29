@@ -59,9 +59,18 @@
       width: 36px;
       height: 36px;
 
+      @include media-breakpoint-down(lg) {
+        width: 24px;
+        height: 24px;
+      }
+
       & + .socials__item {
         margin-top: 0;
         margin-left: 53px;
+
+        @include media-breakpoint-down(lg) {
+          margin-left: 20px;
+        }
       }
     }
   }

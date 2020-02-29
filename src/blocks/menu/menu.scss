@@ -25,6 +25,11 @@
       z-index: 1;
       background: url(../img/menu-close.svg) no-repeat center;
       border-bottom: 0;
+
+      @include media-breakpoint-down(md) {
+        background-size: 40%;
+        border-right: 0;
+      }
     }
   }
 
@@ -35,33 +40,73 @@
       position: fixed;
       top: 0;
       left: 0;
-      display: block;
+      display: flex;
       width: 100%;
       max-width: 74.17%;
       height: 100vh;
+      flex-direction: column;
       background: #fff;
+
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      }
     }
   }
 
   &__content-top {
+    margin-bottom: 0;
     padding-left: 211px;
     display: flex;
     height: 9.72vh;
     align-items: center;
     color: $primary;
     border-bottom: 1px solid #476fb2;
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 100px;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-left: 60px;
+    }
   }
 
   &__wrapper {
     padding: 105px 20px 90px 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    @media screen and (max-height: 1000px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 100px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 20px;
+      padding-left: 60px;
+      padding-bottom: 20px;
+    }
   }
 
   &__links-list {
-    margin-bottom: 104px;
   }
 
   &__sections-list {
     margin-bottom: 78px;
+
+    @media screen and (max-height: 1000px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__section {
@@ -72,10 +117,18 @@
     font-weight: 700;
     color: $dark;
 
+    @include media-breakpoint-down(lg) {
+      font-size: 30px;
+    }
+
     @include transition;
 
     & + & {
       margin-top: 32px;
+
+      @media screen and (max-height: 1000px) {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -89,13 +142,20 @@
 
     @include transition;
 
+    @include media-breakpoint-down(lg) {
+      font-size: 20px;
+    }
+
     & + & {
       margin-top: 54px;
+
+      @media screen and (max-height: 1000px) {
+        margin-top: 20px;
+      }
     }
   }
 
   &__socials {
-    margin-bottom: 104px;
   }
 
   &__text {

@@ -15,6 +15,7 @@
   }
 
   @include media-breakpoint-down(md) {
+    z-index: 5;
     width: 100%;
     height: auto;
     flex-direction: row;
