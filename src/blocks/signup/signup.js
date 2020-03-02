@@ -1,6 +1,13 @@
 $('.js-registration').click(function (e) {
   e.preventDefault();
-  $('.signup').fadeIn('fast');
+  $('#registration').fadeIn('fast');
+  $('.wrapper').addClass('wrapper--popup');
+  $('body').addClass('body--popup');
+});
+
+$('.js-login').click(function (e) {
+  e.preventDefault();
+  $('#login').fadeIn('fast');
   $('.wrapper').addClass('wrapper--popup');
   $('body').addClass('body--popup');
 });
@@ -13,7 +20,7 @@ $('.signup__close').click(function (e) {
 });
 
 $(document).click(function (e) {
-  if ($(e.target).closest('.signup').length === 0 && $(e.target).closest('.js-registration').length === 0) {
+  if ($(e.target).closest('.signup').length === 0 && $(e.target).closest('.js-registration').length === 0 && $(e.target).closest('.js-login').length === 0) {
     $('.signup').fadeOut('fast');
     $('.wrapper').removeClass('wrapper--popup');
   $('body').removeClass('body--popup');

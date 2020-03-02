@@ -6,8 +6,13 @@ mixin front(data)
           +logo({
             img: 'logo.svg'
           })
-          a.btn.btn-outline-secondary.js-registration(href="#") Регистрация
-          +signup.front__signup
+          .d-flex
+            a.btn.btn-outline-secondary.mr-20.js-login(href="#") Войти
+            a.btn.btn-outline-secondary.js-registration(href="#") Регистрация
+            +signup.front__signup#registration
+            +signup({
+              modifier: 'login'
+            }).front__signup#login
         .front__content
           h1.front__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО
           .front__content-right
