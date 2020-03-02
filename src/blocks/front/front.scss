@@ -58,12 +58,13 @@
   }
 
   &__signup {
-    position: relative;
+    position: fixed !important;
     z-index: 1;
+    left: calc(7.6% + 35px) !important;
     max-height: calc(100vh - 72px);
 
     @include media-breakpoint-down(xl) {
-      max-width: calc(100% - 140px) !important;
+      max-width: calc(92.4% - 140px) !important;
     }
 
     @include media-breakpoint-down(lg) {
@@ -72,13 +73,15 @@
 
     @include media-breakpoint-down(md) {
       top: 86px !important;
-      max-height: none;
+      left: 35px !important;
+      max-height: calc(100vh - 122px) !important;
     }
 
     @include media-breakpoint-down(sm) {
       top: 0 !important;
       left: 0 !important;
       max-width: none !important;
+      max-height: none !important;
     }
 
     .ps__rail-y {

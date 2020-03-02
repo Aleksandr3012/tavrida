@@ -18,6 +18,10 @@
 
   &--popup {
 
+    @include media-breakpoint-down(sm) {
+      z-index: 5;
+    }
+
     &:after {
       position: absolute;
       z-index: 1;
