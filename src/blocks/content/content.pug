@@ -1,11 +1,15 @@
 mixin content(data)
   .content&attributes(attributes)
     .content__wrapper
-      .content__festival.content__section
+      .content__forum.content__section
         .content__header
+          h3.mb-0 Форум
+          a.btn.btn-outline-secondary(href="#") Подробнее
+      .content__festival.content__section
+        .content__header.content__header--festival
           h3.mb-0 ФЕСТИВАЛЬ
           a.btn.btn-outline-secondary(href="#") Подробнее
-        .content__events-wrapper
+        //.content__events-wrapper
           +event({
             picture: 'event-1.jpg'
           })
@@ -33,11 +37,7 @@ mixin content(data)
           +event({
             picture: 'event-3.jpg'
           })
-      .content__forum.content__section
-        .content__header.content__header--forum
-          h3.mb-0 Форум
-          a.btn.btn-outline-secondary(href="#") Подробное расписание
-        .content__items-wrapper
+        //.content__items-wrapper
           +item({
             picture: 'item-1.jpg',
             title: 'Гончарное дело'

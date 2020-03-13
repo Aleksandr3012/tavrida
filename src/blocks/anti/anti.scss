@@ -1,7 +1,8 @@
 .anti {
   position: relative;
   margin-bottom: 40px;
-  padding: 40px 20px 40px 40px;
+  //  padding: 40px 20px 40px 40px;
+  padding: 67px 45px 60px 67px;
   display: flex;
   width: 100%;
   min-height: 330px;
@@ -17,7 +18,7 @@
   }
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   &:before {
@@ -41,6 +42,7 @@
   }
 
   &__header {
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
 
@@ -51,7 +53,7 @@
 
   &__type {
     font-family: $font-family-serif;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1;
     font-weight: 900;
     word-spacing: 100vw;
@@ -62,7 +64,7 @@
   &__number {
     opacity: .7;
     font-family: $font-family-serif;
-    font-size: 180px;
+    font-size: 227px;
     line-height: .7;
     font-weight: 900;
     color: #fff;
@@ -83,10 +85,17 @@
   &__footer {
   }
 
-  &__title {
-    margin-bottom: 10px;
-    font-family: $font-family-serif;
+  &__date {
+    margin-bottom: 15px;
     font-size: 23px;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: $font-family-serif;
+    font-size: 25px;
     line-height: 1;
     font-weight: 900;
     text-transform: uppercase;
@@ -97,9 +106,19 @@
     }
   }
 
-  &__date {
-    font-size: 14px;
-    font-weight: 900;
+  &__dscr {
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
     color: #fff;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 15px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+    }
   }
 }

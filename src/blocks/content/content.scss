@@ -1,4 +1,12 @@
 .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  @include media-breakpoint-down(md) {
+    position: static;
+  }
 
   &__section {
     position: relative;
@@ -27,10 +35,6 @@
   }
 
   &__header {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
     padding: 25px 70px;
     display: flex;
     width: 100%;
@@ -46,7 +50,7 @@
       padding: 15px 20px;
     }
 
-    &--forum {
+    &--festival {
       padding-right: 143px;
 
       @include media-breakpoint-down(xml) {
