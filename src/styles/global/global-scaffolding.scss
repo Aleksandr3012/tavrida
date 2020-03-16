@@ -7,6 +7,10 @@ body {
   &.body--popup {
     overflow: hidden;
 
+    @include media-breakpoint-down(sm) {
+      position: fixed;
+    }
+
     &:after {
       position: absolute;
       z-index: 2;
