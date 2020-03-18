@@ -153,6 +153,46 @@ mixin registration(data)
               .form__item.form-group
                 label.form__label Какие Ваши уникальные навыки будут полезны в работе волонтера на Фестивале и почему? 
                 textarea.input.input--textarea.input--textarea-wide.form-control(placeholder="Текст")
+          .row
+            .col-md-4.col-xml-3.d-flex
+              .form__item.form-group
+                label.form__label Ваш размер одежды
+                .registration__size
+                  .custom-control.custom-radio
+                    input#size1.custom-control-input(type='radio', name='type')
+                    label.custom-control-label(for='size1') XS
+                  .custom-control.custom-radio
+                    input#size2.custom-control-input(type='radio', name='type')
+                    label.custom-control-label(for='size2') S
+                  .custom-control.custom-radio
+                    input#size3.custom-control-input(type='radio', name='type')
+                    label.custom-control-label(for='size3') M
+                  .custom-control.custom-radio
+                    input#size4.custom-control-input(type='radio', name='type')
+                    label.custom-control-label(for='size4') L
+                  .custom-control.custom-radio
+                    input#size5.custom-control-input(type='radio', name='type')
+                    label.custom-control-label(for='size5') XL
+                  .custom-control.custom-radio
+                    input#size6.custom-control-input(type='radio', name='type')
+                    label.custom-control-label(for='size6') XXL
+                  .custom-control.custom-radio
+                    input#size7.custom-control-input(type='radio', name='type')
+                    label.custom-control-label(for='size7') XXXL
+            .col-md-4.col-xml-3.d-flex
+              .form__item.form-group
+                label.form__label Выберите предпочитаемую функцию
+                select.select
+                  option(disabled, selected) Выберите из списка
+                  option Функция 1
+                  option Функция 2
+            .col-md-4.col-xml-3.d-flex.align-items-end
+              .form__item.form-group.mb-0
+                label.form__label.mb-0 выбор функции осуществляется исходя из Вашего опыта, компетенций и желания. Выбор функции не означает назначение на данную позицию, но мы постараемся учесть Ваш интерес
+          .form__footer
+            button.btn.btn-primary.btn-green(type="submit") Отправить
+            p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
+              a(href="#") пользовательским соглашением
         else
           .row
             .col-md-6.col-xl-4.col-xml-3
