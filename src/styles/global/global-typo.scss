@@ -175,9 +175,34 @@ p,
   color: #828282;
 }
 
+.text-grayish {
+  color: rgba($black, .5);
+}
+
 ul {
+  margin-bottom: 0;
+  padding-left: 0;
 
   li {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 27px;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $black;
+
+    &:before {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      display: block;
+      width: 11px;
+      height: 11px;
+      content: '';
+      background: #ce3b65;
+      border-radius: 50%;
+    }
   }
 }
 

@@ -1,2 +1,100 @@
 .team {
+
+  &__front {
+    position: relative;
+    padding: 200px 0 160px;
+    min-height: 670px;
+    background-position: center;
+    background-size: cover;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+  }
+
+  &__front-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__front-back {
+    margin-bottom: 65px;
+    display: block;
+    width: 36px;
+    height: 30px;
+    background: url(../img/team-back.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__front-content {
+    display: flex;
+  }
+
+  &__front-title {
+  }
+
+  &__front-info {
+    margin-left: 100px;
+    padding-top: 12px;
+  }
+
+  &__front-age {
+    font-family: $font-family-serif;
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url(../img/team-front-mask.svg);
+    background-position: center -10px center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__front-type {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  &__info {
+    margin: 90px 0;
+  }
+
+  &__info-dscr {
+    margin-bottom: 0;
+    font-family: $font-family-sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: none;
+    color: $black;
+  }
+
+  &__info-reasons {
+  }
+
+  &__info-reasons-header {
+    margin-bottom: 40px;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    color: $black;
+  }
+
+  &__info-field {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    color: $black;
+  }
 }
