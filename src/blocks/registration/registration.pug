@@ -109,51 +109,96 @@ mixin registration(data)
               .form__team-item-id ID 1235598
               .form__team-item-name Гановерский А.В.
               a.form__team-item-remove(href="#")
-        .row
-          .col-md-6.col-xl-4.col-xml-3
-            .form__item.form-group
-              label.form__label Фото-портфолио в сфере искусства
-              .form__portfolio
-                .custom-file.custom-file--blue.custom-file--photo
-                  input#customFile1.custom-file-input(type='file')
-                  label.custom-file-label(for='customFile') Добавить фото
-                .form__portfolio-list
-                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
-                    a.form__portfolio-item-remove(href="#")
-                  .form__portfolio-item(style="background-image: url(./img/portfolio-2.jpg);")
-                    a.form__portfolio-item-remove(href="#")
-                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
-                    a.form__portfolio-item-remove(href="#")
-                  .form__portfolio-item(style="background-image: url(./img/portfolio-2.jpg);")
-                    a.form__portfolio-item-remove(href="#")
-                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
-                    a.form__portfolio-item-remove(href="#")
-                  .form__portfolio-item(style="background-image: url(./img/portfolio-2.jpg);")
-                    a.form__portfolio-item-remove(href="#")
-                  .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
-                    a.form__portfolio-item-remove(href="#")
-                  .form__portfolio-item(style="background-image: url(./img/portfolio-2.jpg);")
-                    a.form__portfolio-item-remove(href="#")
-                  .form__portfolio-item.form__portfolio-item--empty
-                  .form__portfolio-item.form__portfolio-item--empty
-          .col-md-6.col-xl-4.col-xml-3
-            .form__item.form-group
-              label.form__label Видео портфолио
-              input.input.form-control(type="text", placeholder="Ссылка на видео")
-              input.input.form-control(type="text", placeholder="Краткое описание")
-        .row
-          .col-md-4.col-xml-2
-            .form__item.form-group
-              label.form__label Творческое задание
-              .form__file
-                .custom-file.custom-file--blue
-                  input#customFile1.custom-file-input(type='file')
-                  label.custom-file-label(for='customFile') Добавить файл
-          .col-md-4.d-flex.align-items-center
-            .form__file-name Filename.pdf 
-            .form__file-size 258 mb
-            a.form__file-remove(href="#")
-        .form__footer
-          button.btn.btn-primary.btn-green(type="submit") Зарегистрироваться
-          p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
-            a(href="#") пользовательским соглашением
+        if data && data.modifier == 'team'
+          .registration__type
+            .registration__type-top
+              .registration__type-header Выберите тип участия
+              .registration__type-content
+                .custom-control.custom-radio
+                  input#type1.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='type1') Волонтер
+                .custom-control.custom-radio
+                  input#type2.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='type2') Координатор
+          .row
+            .col-xml-8
+              .registration__type-dscr
+                p.registration__type-dscr-item.registration__type-dscr-item--active Волонтер это - считает, что после принятия этого закона, когда люди раньше начнут выходить на пенсию, возникнет более 1,5 млн. безработных. Их не удастся быстро трудоустроить. Так быстро новые трудовые места не появятся
+          .row
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Ваш профессиональный опыт и компетенции
+                textarea.input.input--textarea.form-control(placeholder="Текст")
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Расскажите о Вашем опыте волонтерской деятельности
+                textarea.input.input--textarea.form-control(placeholder="Текст")
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Расскажите о Ваших достижениях
+                textarea.input.input--textarea.form-control(placeholder="Текст")
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Чем Вы предпочитаете заниматься в свободное время?
+                textarea.input.input--textarea.form-control(placeholder="Текст")
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Почему Вы хотите стать волонтером Фестиваля?
+                textarea.input.input--textarea.form-control(placeholder="Текст")
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Что вы хотите получить от работы на Фестивале? 
+                textarea.input.input--textarea.form-control(placeholder="Текст")
+            .col-12
+              .form__item.form-group
+                label.form__label Какие Ваши уникальные навыки будут полезны в работе волонтера на Фестивале и почему? 
+                textarea.input.input--textarea.input--textarea-wide.form-control(placeholder="Текст")
+        else
+          .row
+            .col-md-6.col-xl-4.col-xml-3
+              .form__item.form-group
+                label.form__label Фото-портфолио в сфере искусства
+                .form__portfolio
+                  .custom-file.custom-file--blue.custom-file--photo
+                    input#customFile1.custom-file-input(type='file')
+                    label.custom-file-label(for='customFile') Добавить фото
+                  .form__portfolio-list
+                    .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                      a.form__portfolio-item-remove(href="#")
+                    .form__portfolio-item(style="background-image: url(./img/portfolio-2.jpg);")
+                      a.form__portfolio-item-remove(href="#")
+                    .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                      a.form__portfolio-item-remove(href="#")
+                    .form__portfolio-item(style="background-image: url(./img/portfolio-2.jpg);")
+                      a.form__portfolio-item-remove(href="#")
+                    .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                      a.form__portfolio-item-remove(href="#")
+                    .form__portfolio-item(style="background-image: url(./img/portfolio-2.jpg);")
+                      a.form__portfolio-item-remove(href="#")
+                    .form__portfolio-item(style="background-image: url(./img/portfolio-1.jpg);")
+                      a.form__portfolio-item-remove(href="#")
+                    .form__portfolio-item(style="background-image: url(./img/portfolio-2.jpg);")
+                      a.form__portfolio-item-remove(href="#")
+                    .form__portfolio-item.form__portfolio-item--empty
+                    .form__portfolio-item.form__portfolio-item--empty
+            .col-md-6.col-xl-4.col-xml-3
+              .form__item.form-group
+                label.form__label Видео портфолио
+                input.input.form-control(type="text", placeholder="Ссылка на видео")
+                input.input.form-control(type="text", placeholder="Краткое описание")
+          .row
+            .col-md-4.col-xml-2
+              .form__item.form-group
+                label.form__label Творческое задание
+                .form__file
+                  .custom-file.custom-file--blue
+                    input#customFile1.custom-file-input(type='file')
+                    label.custom-file-label(for='customFile') Добавить файл
+            .col-md-4.d-flex.align-items-center
+              .form__file-name Filename.pdf 
+              .form__file-size 258 mb
+              a.form__file-remove(href="#")
+          .form__footer
+            button.btn.btn-primary.btn-green(type="submit") Зарегистрироваться
+            p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
+              a(href="#") пользовательским соглашением

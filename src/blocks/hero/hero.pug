@@ -1,0 +1,7 @@
+mixin hero(data)
+  .hero(style="background-image: url(../img/" + data.bg + ');')&attributes(attributes)
+    +header-inner({
+      modifier: 'new'
+    }).header-inner--alone
+    .container.hero__content
+      h1.mb-0!= data.title

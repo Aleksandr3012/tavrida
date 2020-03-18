@@ -1,0 +1,6 @@
+mixin step(data)
+  .step&attributes(attributes)
+    img.step__icon(src="./img/" + data.icon, alt)
+    .step__number= data.number
+    h5= data.title
+    p.text-gray= data.dscr

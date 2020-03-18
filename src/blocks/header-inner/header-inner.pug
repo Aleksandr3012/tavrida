@@ -1,15 +1,23 @@
 mixin header-inner(data)
   .header-inner&attributes(attributes)
     .header-inner__wrapper
-      +logo({
-        img: 'logo.svg'
-      }).header-inner__logo
+      if data && data.modifier == 'new'
+        +logo({
+          img: 'logo-new.svg'
+        }).header-inner__logo
+      else
+        +logo({
+          img: 'logo.svg'
+        }).header-inner__logo
       .header-inner__menu
         a.header-inner__link(href="#") Как добраться
         a.header-inner__link(href="#") Где жить?
         a.header-inner__link(href="#") Лайн-ап
       .d-flex
-        a.btn.btn-outline-secondary.mr-20.js-login(href="#") Войти
+        if data && data.modifier == 'new'
+          a.header-inner__login(href="#")
+        else
+          a.btn.btn-outline-secondary.mr-20.js-login(href="#") Войти
         a.btn.btn-outline-secondary.js-registration(href="#") Регистрация
       +signup#registration
       +signup({

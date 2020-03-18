@@ -1,6 +1,11 @@
 mixin part(data)
   .part(style="background-color: " + data.color)&attributes(attributes)
-    .part__top(style="background-color: " + data.color)
-    h5.part__title= data.title
-    p.part__dscr= data.dscr
-    a.btn.btn-primary.part__btn.btn-green(href="#") Узнать больше
+    .part__content-top
+      .part__top(style="background-color: " + data.color)
+      h5.part__title= data.title
+      p.part__dscr= data.dscr
+    a.btn.btn-primary.part__btn.btn-green(href="#") 
+      if data && data.modifier == 'team'
+        |Подробнее
+      else
+        |Узнать больше

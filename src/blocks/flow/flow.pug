@@ -1,0 +1,18 @@
+mixin flow(data)
+  .flow(style="background-color:" + data.color)&attributes(attributes)
+    .flow__top
+      .flow__number= data.number
+      .flow__top-content
+        h5= data.date
+        each item in data.content
+          p= item
+    .flow__footer
+      p.mb-0 Даты регистрации:
+        span.font-weight-bold.d-block 14.03-20.04
+      .flow__footer-right
+        .d-flex
+          p.mb-0 На Форум:   
+          p.font-weight-bold.ml-20.ml-lg-50.mb-0 11 мая   
+        .d-flex
+          p.mb-0 С Форума:   
+          p.font-weight-bold.ml-20.ml-lg-50.mb-0 11 мая 

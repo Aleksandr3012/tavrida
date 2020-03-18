@@ -1,0 +1,35 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    +hero({
+      bg: 'hero-1.jpg',
+      title: 'Я хочу <br>присоединиться <br>к команде'
+    })
+    .bg-primary.py-30.pt-lg-80.pb-lg-70
+      .container
+        h2.h2--default.text-white.mb-30.mb-lg-55 Команды «Таврида – 2020» 
+        .row
+          .col-lg-4.d-flex
+            +part({
+              modifier: 'team',
+              color: '#EFC825',
+              title: 'координаторы Форума',
+              dscr: 'Новый формат волонтерского корпуса – Центр практики арт-кластера «Таврида». Прокачай свои скиллы на самом творческом форуме страны'
+            }).part--new
+          .col-lg-4.d-flex
+            +part({
+              modifier: 'team',
+              color: '#CE3B65',
+              title: 'Волонтеры Фестиваля',
+              dscr: 'Открыт набор в команду Фестиваля фестивалей «ТАВРИДА-АРТ». Неделя очень интенсивной работы – мир, любовь, искусство, 600 волонтеров и тим-лидеров'
+            }).part--new
+          .col-lg-4.d-flex
+            +part({
+              modifier: 'team',
+              color: '#67BAC3',
+              title: 'РЕЗИДЕНТЫ ТАВРИДЫ',
+              dscr: 'Программа кадрового резерва «Резиденты Тавриды» реализуется с 2019 года'
+            }).part--new
+    +partners
+    +footer
