@@ -1,0 +1,128 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    .team
+      .team__front
+        .container
+          a.team__front-back(href="#")
+            .team__content
+              h1.team__title Волонтеры фестиваля
+              .team__front-info
+                .team__front-age 20-35 лет
+                .team__front-type гражданин РФ
+      .team__info
+        .container
+          .team__info
+            .team__info-top
+              h4.team__dscr Фестиваль фестивалей «Таврида – АРТ» пройдёт в 2020 году во второй раз. Чтобы реализовать задуманное, мы приглашаем в команду начинающих специалистов и тех, кто хочет развиваться в области коммуникаций, маркетинге и ивент-индустрии:
+              .team__info-reasons
+                ul
+                  li 450 волонтеров
+                  li 150 лидеров волонтерских команд
+            h5.team__info-field
+              span.font-weight-bold Направления работы на форуме координаторы выбирают сами,
+              | основываясь на своих компетенциях и интересах: прибытия и отъезды, работа со зрителями, волонтеры дневных активностей, волонтеры главной сцены, волонтеры штаба, протокол, управление инфраструктурой, медиа, служба сопровождения целевых аудиторий и волонтеры арт-кварталов «Таврида AРТ», «Таврида Кино», «Таврида Лит & Театр», «Таврида Музыка», «Таврида Юмор», «Таврида Танцы».
+    .bg-primary.py-30.pt-lg-50.pb-lg-30
+      .container
+        h2.h2--default.text-white.mb-30.mb-lg-50 Когда
+        .row
+          .col-lg-4.d-flex
+            .dates.dates--volunteer
+              h5.mb-10 Для волонтера
+              .dates__item
+                p.dates__item-header Регистрация:
+                p.font-weight-bold.mb-0 14 марта-1 июня
+              .dates__item
+                p.dates__item-header Собеседования:
+                p.font-weight-bold.mb-0 1-12 июня
+              .dates__item
+                p.dates__item-header Обучение:
+                p.font-weight-bold.mb-0 14-25 июня
+              .dates__item
+                p.dates__item-header Отправление на Фестиваль:
+                p.font-weight-bold.mb-0 5 июля
+              .dates__item
+                p.dates__item-header Отправление с Фестиваля: 
+                p.font-weight-bold.mb-0 13 июля
+          .col-lg-4.d-flex
+            .dates.dates--teamlead
+              h5.mb-10 для тим-лидера
+              .dates__item
+                p.dates__item-header Регистрация:
+                p.font-weight-bold.mb-0 14 марта-1 июня
+              .dates__item
+                p.dates__item-header Собеседования:
+                p.font-weight-bold.mb-0 18-22 мая (г.Судак)
+              .dates__item
+                p.dates__item-header Отправление на Фестиваль:
+                p.font-weight-bold.mb-0 5 июля
+              .dates__item
+                p.dates__item-header Отправление с Фестиваля: 
+                p.font-weight-bold.mb-0 13 июля
+          .col-lg-4.d-flex
+            .dates.dates--comment
+              h5.text-white.mb-0 На фестивале волонтеры и тим-лидеры будут задействованы в период с 5 по 13 июля, а перед этим пройдут отбор и обучение.
+    .container
+      h3.mb-40.mb-lg-100 Как проходит отбор
+      h5.font-weight-normal Механика отбора волонтеров и тим-лидеров отличается. Волонтеры проходят отбор в заочной форме, а тим-лидеры – в очно-заочной.
+      h5 для волонтера
+      .team__steps
+        .row
+          .col
+            +step({
+              icon: 'step-1.svg',
+              number: '1',
+              title: 'Регистрация',
+              dscr: 'подача заявки на этом сайте, подробное и качественное заполнение анкеты'
+            })
+          .col
+            +step({
+              icon: 'step-2.svg',
+              number: '2',
+              title: 'Экспертная оценка анкеты ',
+              dscr: 'эксперты проверяют все анкеты на корректность, насколько подробно, логично и грамотно сформированы ответы'
+            })
+          .col
+            +step({
+              icon: 'step-3.svg',
+              number: '3',
+              title: 'Онлайн-собеседование ',
+              dscr: 'опытные наставники проводят собеседования с кандидатами на предмет мотивации участия в проекте и понимания его целей'
+            })
+          .col
+            +step({
+              icon: 'step-5.svg',
+              number: '4',
+              title: 'Обучение в онлайн-университете',
+              dscr: 'в рамках обучения волонтеры получают информацию о форуме, базовые знания о работе в команде и тайм-менеджменте'
+            })
+      h5 Для тим-лидеров
+      .team__steps
+        .row
+          .col
+            +step({
+              icon: 'step-1.svg',
+              number: '1',
+              title: 'Регистрация',
+              dscr: 'подача заявки на этом сайте, подробное и качественное заполнение анкеты'
+            })
+          .col
+            +step({
+              icon: 'step-6.svg',
+              number: '2',
+              title: 'Очный отбор',
+              dscr: 'Участие в творческой антишколе Форума «Волонтеры Фестиваля» с 18 по 22 мая. По итогам работы антишколы из 250 участников эксперты выберут 150, которые станут тим-лидерами.'
+            })
+          .col
+            +step({
+              icon: 'step-5.svg',
+              number: '3',
+              title: 'Обучение в онлайн-университете',
+              dscr: 'в рамках обучения волонтеры получают информацию о форуме, базовые знания о работе в команде и тайм-менеджменте'
+            })
+    +registration({
+      modifier: 'team'
+    }).registration--blue
+    +partners
+    +footer
