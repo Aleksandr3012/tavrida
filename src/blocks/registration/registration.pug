@@ -1,7 +1,10 @@
 mixin registration(data)
   .registration&attributes(attributes)
     .container
-      h2.h2--default.text-white.mb-15 Регистрация на фестиваль
+      if data && data.title
+        h2.h2--default.text-white.mb-15= data.title
+      else
+        h2.h2--default.text-white.mb-15 Регистрация на фестиваль
       form.form(action="#", method="POST")
         .row
           .col-md-4.col-xml-3
@@ -137,6 +140,7 @@ mixin registration(data)
               .form__item.form-group
                 label.form__label Расскажите о Ваших достижениях
                 textarea.input.input--textarea.form-control(placeholder="Текст")
+          .row
             .col-md-4.col-xml-3
               .form__item.form-group
                 label.form__label Чем Вы предпочитаете заниматься в свободное время?
@@ -149,7 +153,7 @@ mixin registration(data)
               .form__item.form-group
                 label.form__label Что вы хотите получить от работы на Фестивале? 
                 textarea.input.input--textarea.form-control(placeholder="Текст")
-            .col-12
+            .col-xml-9
               .form__item.form-group
                 label.form__label Какие Ваши уникальные навыки будут полезны в работе волонтера на Фестивале и почему? 
                 textarea.input.input--textarea.input--textarea-wide.form-control(placeholder="Текст")
@@ -187,8 +191,8 @@ mixin registration(data)
                   option Функция 1
                   option Функция 2
             .col-md-4.col-xml-3.d-flex.align-items-end
-              .form__item.form-group.mb-0
-                label.form__label.mb-0 выбор функции осуществляется исходя из Вашего опыта, компетенций и желания. Выбор функции не означает назначение на данную позицию, но мы постараемся учесть Ваш интерес
+              .form__item.form-group
+                label.form__label.form__label--sm.mb-0 выбор функции осуществляется исходя из Вашего опыта, компетенций и желания. Выбор функции не означает назначение на данную позицию, но мы постараемся учесть Ваш интерес
           .form__footer
             button.btn.btn-primary.btn-green(type="submit") Отправить
             p.form__footer-agreement Нажимая кнопку я соглашаюсь с 

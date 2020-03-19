@@ -50,6 +50,20 @@
     }
   }
 
+  &__size {
+    margin-right: -8px;
+    display: flex;
+    width: calc(100% + 8px);
+
+    .custom-radio {
+      flex-grow: 1;
+    }
+
+    .custom-control-label {
+      width: 100%;
+    }
+  }
+
   &--blue {
     padding: 60px 0;
     background: $primary url(../img/form-blue-bg.svg) no-repeat right bottom;
@@ -82,5 +96,9 @@
         color: #c9df55;
       }
     }
+  }
+
+  &--no-bg {
+    background: $primary;
   }
 }

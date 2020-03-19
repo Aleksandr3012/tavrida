@@ -119,6 +119,10 @@
     line-height: 19px;
     font-weight: 600;
     color: #828282;
+
+    &--sm {
+      font-size: 14px;
+    }
   }
 
   &__info {
