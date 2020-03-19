@@ -11,10 +11,14 @@ mixin header-inner(data)
           +logo({
             img: 'logo.svg'
           }).header-inner__logo
-        .header-inner__menu
-          a.header-inner__link(href="#") Как добраться
-          a.header-inner__link(href="#") Где жить?
-          a.header-inner__link(href="#") Лайн-ап
+        if data && data.modifier2 == 'about'
+          .header-inner__menu
+            a.header-inner__link(href="#") О фестивале
+        else
+          .header-inner__menu
+            a.header-inner__link(href="#") Как добраться
+            a.header-inner__link(href="#") Где жить?
+            a.header-inner__link(href="#") Лайн-ап
       .d-flex
         if data && data.modifier == 'new'
           a.header-inner__login.js-login(href="#")

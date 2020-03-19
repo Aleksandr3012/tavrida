@@ -47,7 +47,7 @@ mixin highlights(data)
           })
 
 mixin highlights__article(data)
-  .highlights__article&attributes(attributes)
+  a.highlights__article(href="#")&attributes(attributes)
     h4.highlights__article-header= data.header
     .highlights__article-picture(style="background-image: url(./img/" + data.img + ');')
       .highlights__article-number= data.number

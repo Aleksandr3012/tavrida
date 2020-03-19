@@ -1,5 +1,7 @@
 .highlights {
+  position: relative;
   padding: 80px 0 30px;
+  height: 100%;
 
   &__section {
     margin-bottom: 50px;
@@ -112,5 +114,16 @@
   }
 
   &__article-dscr {
+  }
+
+  .ps__rail-y {
+    z-index: 1;
+    right: 0 !important;
+    margin-top: 0 !important;
+    height: 100% !important;
+
+    .ps__thumb-y {
+      background: $gray-500 !important;
+    }
   }
 }

@@ -110,4 +110,17 @@
       justify-content: flex-end;
     }
   }
+
+  &--summary {
+
+    .header-inner__wrapper {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    .header-inner__menu {
+      margin-right: auto;
+      margin-left: 85px;
+    }
+  }
 }

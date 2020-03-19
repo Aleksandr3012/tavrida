@@ -1,0 +1,16 @@
+mixin summary(data)
+  .summary&attributes(attributes)
+    +header-inner({
+      modifier: 'new',
+      modifier2: 'about'
+    }).header-inner--alone.header-inner--summary
+    .container.summary__wrapper
+      h1.summary__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО
+      .summary__content
+        img.summary__logo(src="./img/front-logo.svg", alt)
+        h4.summary__subheader ФЕстиваль <br>творческих <br>сообществ'
+        a.summary__later(href="#") Как это было в 2019 году
+        h4.summary__subheader До встречи летом 2020 году
+        .summary__restriction
+          .summary__restriction-dscr для<br>зрителей
+          .summary__restriction-age 16+
