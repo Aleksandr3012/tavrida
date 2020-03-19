@@ -24,7 +24,7 @@
       width: calc(100% - 90px);
       height: 16px;
       content: '';
-      background: url(../img/step-arrow.svg) no-repeat;
+      background: url(../img/step-arrow.svg) no-repeat left center;
       background-size: contain;
     }
   }
@@ -35,5 +35,15 @@
     font-weight: 700;
     text-transform: none;
     color: $black;
+  }
+
+  &--last {
+
+    .step__number {
+
+      &:after {
+        display: none;
+      }
+    }
   }
 }

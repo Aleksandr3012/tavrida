@@ -1,2 +1,29 @@
 .dates {
+  padding: 30px;
+  width: 100%;
+  border-radius: 20px;
+
+  &__item {
+    margin-bottom: 5px;
+    display: flex;
+  }
+
+  &__item-header {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  &__content-header {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  &--comment {
+    padding: 65px 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+  }
 }

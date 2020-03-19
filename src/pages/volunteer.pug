@@ -10,8 +10,8 @@ block content
         .container.team__front-wrapper
           a.team__front-back(href="#")
           .team__front-content
-            h1.team__front-title Волонтеры фестиваля
-            .team__front-info
+            h1.team__front-title.pr-xml-100 Волонтеры <br>фестиваля
+            .team__front-info.pl-xml-100
               .team__front-age 20-35 лет
               .team__front-type гражданин РФ
       .team__info
@@ -19,12 +19,12 @@ block content
           .team__info
             .row
               .col-lg-6
-                .team__info-top
-                  h4.team__dscr Фестиваль фестивалей «Таврида – АРТ» пройдёт в 2020 году во второй раз. Чтобы реализовать задуманное, мы приглашаем в команду начинающих специалистов и тех, кто хочет развиваться в области коммуникаций, маркетинге и ивент-индустрии:
-                  .team__info-reasons
-                    ul
-                      li 450 волонтеров
-                      li 150 лидеров волонтерских команд
+                h4.team__info-dscr Фестиваль фестивалей «Таврида – АРТ» пройдёт в 2020 году во второй раз. Чтобы реализовать задуманное, мы приглашаем в команду начинающих специалистов и тех, кто хочет развиваться в области коммуникаций, маркетинге и ивент-индустрии:
+              .col-lg-4.offset-lg-1
+                .team__info-reasons
+                  ul
+                    li 450 волонтеров
+                    li 150 лидеров волонтерских команд
             .row
               .col-lg-9
                 h5.team__info-field
@@ -35,8 +35,8 @@ block content
         h2.h2--default.text-white.mb-30.mb-lg-50 Когда
         .row
           .col-lg-4.d-flex
-            .dates.dates--volunteer
-              h5.mb-10 Для волонтера
+            .dates(style="background-color: #EFC825;")
+              h5.mb-15.text-dark Для волонтера
               .dates__item
                 p.dates__item-header Регистрация:
                 p.font-weight-bold.mb-0 14 марта-1 июня
@@ -53,8 +53,8 @@ block content
                 p.dates__item-header Отправление с Фестиваля: 
                 p.font-weight-bold.mb-0 13 июля
           .col-lg-4.d-flex
-            .dates.dates--teamlead
-              h5.mb-10 для тим-лидера
+            .dates(style="background-color: #67BAC3;")
+              h5.mb-15.text-dark для тим-лидера
               .dates__item
                 p.dates__item-header Регистрация:
                 p.font-weight-bold.mb-0 14 марта-1 июня
@@ -69,10 +69,10 @@ block content
                 p.font-weight-bold.mb-0 13 июля
           .col-lg-4.d-flex
             .dates.dates--comment
-              h5.text-white.mb-0 На фестивале волонтеры и тим-лидеры будут задействованы в период с 5 по 13 июля, а перед этим пройдут отбор и обучение.
-    .container
-      h3.mb-40.mb-lg-100 Как проходит отбор
-      h5.font-weight-normal Механика отбора волонтеров и тим-лидеров отличается. Волонтеры проходят отбор в заочной форме, а тим-лидеры – в очно-заочной.
+              h5.dates__content-header На фестивале волонтеры и тим-лидеры будут задействованы в период с 5 по 13 июля, а перед этим пройдут отбор и обучение.
+    .container.my-40.my-lg-80
+      h3.text-dark.mb-10 Как проходит отбор
+      h5.h5--default Механика отбора волонтеров и тим-лидеров отличается. Волонтеры проходят отбор в заочной форме, а тим-лидеры – в очно-заочной.
       h5 для волонтера
       .team__steps
         .row
@@ -103,7 +103,8 @@ block content
               number: '4',
               title: 'Обучение в онлайн-университете',
               dscr: 'в рамках обучения волонтеры получают информацию о форуме, базовые знания о работе в команде и тайм-менеджменте'
-            })
+            }).step--last
+          .col
       h5 Для тим-лидеров
       .team__steps
         .row
@@ -127,9 +128,11 @@ block content
               number: '3',
               title: 'Обучение в онлайн-университете',
               dscr: 'в рамках обучения волонтеры получают информацию о форуме, базовые знания о работе в команде и тайм-менеджменте'
-            })
+            }).step--last
+          .col
+          .col
     +registration({
       modifier: 'team'
-    }).registration--blue
+    }).registration--blue.registration--no-bg
     +partners
     +footer
