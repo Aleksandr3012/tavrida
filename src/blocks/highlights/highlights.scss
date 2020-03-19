@@ -177,20 +177,7 @@
     }
   }
 
-  //  .ps__rail-y {
-  //    z-index: 1;
-  //    right: 0 !important;
-  ////    left: 0!important;
-  //    margin-top: 0 !important;
-  ////    height: 100% !important;
-  //    height: 1000px!important;
-  //    width: 100px!important;
-  //    background: red!important;
-  //    z-index: 99999!important;
-  //    top: 0!important;
-  //
-  //    .ps__thumb-y {
-  //      background: $gray-500 !important;
-  //    }
-  //  }
+  .ps__rail-y {
+    display: none;
+  }
 }
