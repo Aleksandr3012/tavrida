@@ -1,0 +1,116 @@
+.highlights {
+  padding: 80px 0 30px;
+
+  &__section {
+    margin-bottom: 50px;
+  }
+
+  &__section-picture {
+    max-width: 100%;
+  }
+
+  &__section-content {
+    position: relative;
+    padding: 0 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--wave {
+
+      &:before {
+        position: absolute;
+        bottom: 15px;
+        left: -145px;
+        display: block;
+        width: 304px;
+        height: 104px;
+        content: '';
+        background: url(../img/wave.svg) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__article {
+    margin-bottom: 20px;
+
+    &--column {
+
+      .highlights__article-picture {
+
+        &:after {
+          position: absolute;
+          top: 65%;
+          right: -15px;
+          display: block;
+          width: 31px;
+          height: 180px;
+          content: '';
+          background: url(../img/column.svg) no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
+    &--dot {
+
+      .highlights__article-picture {
+
+        &:after {
+          position: absolute;
+          top: -37px;
+          right: -37px;
+          display: block;
+          width: 70px;
+          height: 70px;
+          content: '';
+          background: url(../img/dot.svg) no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+
+  &__article-header {
+    margin-bottom: 33px;
+    color: $black;
+  }
+
+  &__article-picture {
+    position: relative;
+    padding-top: 69%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__article-number {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-family: $font-family-serif;
+    font-size: 62px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url(../img/flow-mask.svg);
+    background-position: center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__article-content {
+    padding-top: 30px;
+  }
+
+  &__article-title {
+    font-family: $font-family-serif;
+    font-size: 20px;
+    line-height: 1;
+    color: $primary;
+  }
+
+  &__article-dscr {
+  }
+}

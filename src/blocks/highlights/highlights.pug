@@ -1,0 +1,56 @@
+mixin highlights(data)
+  .highlights&attributes(attributes)
+    .container
+      .highlights__section
+        .row
+          .col-md-6
+            img.hightlights__section-picture(src="./img/highlights-1.jpg", alt)
+          .col-md-6.d-flex
+            .highlights__section-content.highlights__section-content--wave
+              h4.text-dark Арт-кластер
+              h5.h5--default.mb-0 Таврида - это платформа, объединяющая на одной территории форум молодых деятелей культуры и искусства, фестиваль творческих сообществ «Таврида – АРТ», арт-парк и образовательный центр «Арт-резиденция «Таврида».
+      .highlights__section
+        .row
+          .col-md-6.d-flex
+            .highlights__section-content
+              h4.text-dark ФОРУМ
+              h5.h5--default Проводится в Крыму с 2015 года, за это время его участниками стали 
+                a(href="#") 17000 представителей творческих сообществ в возрасте 
+                | 18-35 лет со всей страны.
+              h5.h5--default.mb-0 Ежегодно событие посещают лидеры арт-индустрии: художники, актеры и режиссеры, музыканты, хореографы, архитекторы и дизайнеры, литераторы и др. 
+          .col-md-6
+            img.hightlights__section-picture(src="./img/highlights-2.jpg", alt)
+      .row
+        .col-lg-4
+          +highlights__article({
+            header: 'Фест',
+            img: 'h-article-1.jpg',
+            number: '92 000',
+            title: '92 000 зрителей',
+            dscr: 'Самая большая площадка кастингов и возможностей для самореализации молодых деятелей культуры и искусства'
+          }).highlights__article--column
+        .col-lg-4
+          +highlights__article({
+            header: 'Арт-парк',
+            img: 'h-article-2.jpg',
+            number: '20',
+            title: '20 инсталляций и арт-объектов',
+            dscr: 'Пространство для творчества молодых архитекторов, дизайнеров, художников, скульпторов и других представителей креативных индустрий'
+          }).highlights__article--dot
+        .col-lg-4
+          +highlights__article({
+            header: 'АРТ-РЕЗ',
+            img: 'h-article-3.jpg',
+            number: '365',
+            title: 'Круглогодичная образовательная площадка',
+            dscr: 'для молодых деятелей культуры и искусства'
+          })
+
+mixin highlights__article(data)
+  .highlights__article&attributes(attributes)
+    h4.highlights__article-header= data.header
+    .highlights__article-picture(style="background-image: url(./img/" + data.img + ');')
+      .highlights__article-number= data.number
+    .highlights__article-content
+      h6.highlights__article-title= data.title
+      p.highlights__article-dscr= data.dscr
