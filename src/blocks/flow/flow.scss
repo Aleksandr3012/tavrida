@@ -1,16 +1,34 @@
 .flow {
+  margin-bottom: 44px;
   width: 100%;
+  border-radius: 20px;
 
   &__top {
+    padding: 30px;
+    display: flex;
+    border-radius: 20px;
   }
 
   &__number {
+    margin-right: 23px;
+    font-family: $font-family-serif;
+    font-size: 136px;
+    line-height: .77;
+    font-weight: 900;
+    color: #fff;
+    background-image: url(../img/flow-mask.svg);
+    background-position: center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &__top-content {
   }
 
   &__footer {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__footer-right {
