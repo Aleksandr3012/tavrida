@@ -102,4 +102,12 @@
       }
     }
   }
+
+  &--front {
+
+    .header-inner__wrapper {
+      padding-right: 140px;
+      justify-content: flex-end;
+    }
+  }
 }

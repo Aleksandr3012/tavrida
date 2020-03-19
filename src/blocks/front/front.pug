@@ -1,6 +1,20 @@
 mixin front(data)
   .front&attributes(attributes)
+    video.front__bg(width='320', height='240', autoplay="autoplay", muted)
+      source(src='./img/front.mp4', type='video/mp4')
+    +header-inner({
+      modifier: 'new',
+      modifier2: 'front'
+    }).header-inner--alone.header-inner--front
     .container
+      .front__container
+        img.front__logo(src="./img/front-logo.svg", alt)
+        h1.front__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО
+    +signup.front__signup#registration
+    +signup({
+      modifier: 'login'
+    }).front__signup#login
+    //.container
       .section__content.front__wrapper
         .front__header
           +logo({
