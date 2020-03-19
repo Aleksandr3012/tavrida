@@ -55,11 +55,20 @@
     display: flex;
     width: calc(100% + 8px);
 
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+    }
+
     .custom-radio {
       flex-grow: 1;
+
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 10px;
+      }
     }
 
     .custom-control-label {
+      padding: 0 5px;
       width: 100%;
     }
   }

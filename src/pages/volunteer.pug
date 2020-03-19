@@ -10,8 +10,8 @@ block content
         .container.team__front-wrapper
           a.team__front-back(href="#")
           .team__front-content
-            h1.team__front-title.pr-xml-100 Волонтеры <br>фестиваля
-            .team__front-info.pl-xml-100
+            h1.team__front-title.pr-xl-100 Волонтеры <br>фестиваля
+            .team__front-info.pl-xl-100
               .team__front-age 20-35 лет
               .team__front-type гражданин РФ
       .team__info
@@ -34,7 +34,7 @@ block content
       .container
         h2.h2--default.text-white.mb-30.mb-lg-50 Когда
         .row
-          .col-lg-4.d-flex
+          .col-xl-4.d-flex
             .dates(style="background-color: #EFC825;")
               h5.mb-15.text-dark Для волонтера
               .dates__item
@@ -52,7 +52,7 @@ block content
               .dates__item
                 p.dates__item-header Отправление с Фестиваля: 
                 p.font-weight-bold.mb-0 13 июля
-          .col-lg-4.d-flex
+          .col-xl-4.d-flex
             .dates(style="background-color: #67BAC3;")
               h5.mb-15.text-dark для тим-лидера
               .dates__item
@@ -67,37 +67,37 @@ block content
               .dates__item
                 p.dates__item-header Отправление с Фестиваля: 
                 p.font-weight-bold.mb-0 13 июля
-          .col-lg-4.d-flex
+          .col-xl-4.d-flex
             .dates.dates--comment
               h5.dates__content-header На фестивале волонтеры и тим-лидеры будут задействованы в период с 5 по 13 июля, а перед этим пройдут отбор и обучение.
     .container.my-40.my-lg-80
       h3.text-dark.mb-10 Как проходит отбор
       h5.h5--default Механика отбора волонтеров и тим-лидеров отличается. Волонтеры проходят отбор в заочной форме, а тим-лидеры – в очно-заочной.
-      h5 для волонтера
+      h5.text-dark.my-20.my-lg-40 для волонтера
       .team__steps
         .row
-          .col
+          .col-md-6.col-lg-4.col-xl
             +step({
               icon: 'step-1.svg',
               number: '1',
               title: 'Регистрация',
               dscr: 'подача заявки на этом сайте, подробное и качественное заполнение анкеты'
             })
-          .col
+          .col-md-6.col-lg-4.col-xl
             +step({
               icon: 'step-2.svg',
               number: '2',
               title: 'Экспертная оценка анкеты ',
               dscr: 'эксперты проверяют все анкеты на корректность, насколько подробно, логично и грамотно сформированы ответы'
             })
-          .col
+          .col-md-6.col-lg-4.col-xl
             +step({
               icon: 'step-3.svg',
               number: '3',
               title: 'Онлайн-собеседование ',
               dscr: 'опытные наставники проводят собеседования с кандидатами на предмет мотивации участия в проекте и понимания его целей'
             })
-          .col
+          .col-md-6.col-lg-4.col-xl
             +step({
               icon: 'step-5.svg',
               number: '4',
@@ -105,24 +105,24 @@ block content
               dscr: 'в рамках обучения волонтеры получают информацию о форуме, базовые знания о работе в команде и тайм-менеджменте'
             }).step--last
           .col
-      h5 Для тим-лидеров
+      h5.text-dark.my-20.my-lg-40 Для тим-лидеров
       .team__steps
         .row
-          .col
+          .col-md-6.col-lg-4.col-xl
             +step({
               icon: 'step-1.svg',
               number: '1',
               title: 'Регистрация',
               dscr: 'подача заявки на этом сайте, подробное и качественное заполнение анкеты'
             })
-          .col
+          .col-md-6.col-lg-4.col-xl
             +step({
               icon: 'step-6.svg',
               number: '2',
               title: 'Очный отбор',
               dscr: 'Участие в творческой антишколе Форума «Волонтеры Фестиваля» с 18 по 22 мая. По итогам работы антишколы из 250 участников эксперты выберут 150, которые станут тим-лидерами.'
             })
-          .col
+          .col-md-6.col-lg-4.col-xl
             +step({
               icon: 'step-5.svg',
               number: '3',

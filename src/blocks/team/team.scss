@@ -7,6 +7,11 @@
     background-position: center;
     background-size: cover;
 
+    @include media-breakpoint-down(md) {
+      padding: 150px 0 100px;
+      min-height: 400px;
+    }
+
     &:before {
       position: absolute;
       top: 0;
@@ -34,7 +39,16 @@
   }
 
   &__front-content {
+    padding-left: 125px;
     display: flex;
+
+    @include media-breakpoint-down(xl) {
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
   }
 
   &__front-title {
@@ -43,6 +57,14 @@
   &__front-info {
     margin-left: 100px;
     padding-top: 12px;
+
+    @include media-breakpoint-down(xl) {
+      padding-top: 0;
+    }
+
+    @include media-breakpoint-down(xl) {
+      margin-left: 0;
+    }
   }
 
   &__front-age {
@@ -79,6 +101,10 @@
   }
 
   &__info-reasons {
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 40px;
+    }
   }
 
   &__info-reasons-header {
@@ -87,6 +113,10 @@
     font-weight: 700;
     text-transform: none;
     color: $black;
+
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 20px;
+    }
   }
 
   &__info-field {

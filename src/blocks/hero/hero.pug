@@ -3,5 +3,6 @@ mixin hero(data)
     +header-inner({
       modifier: 'new'
     }).header-inner--alone
-    .container.hero__content
-      h1.mb-0!= data.title
+    .container
+      .hero__content
+        h1.mb-0!= data.title

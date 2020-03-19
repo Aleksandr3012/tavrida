@@ -7,6 +7,10 @@
     padding: 30px;
     display: flex;
     border-radius: 20px;
+
+    @include media-breakpoint-down(xml) {
+      padding: 20px;
+    }
   }
 
   &__number {
@@ -20,15 +24,31 @@
     background-position: center center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-down(xml) {
+      margin-right: 15px;
+      font-size: 100px;
+    }
   }
 
   &__top-content {
+
+    p {
+
+      @include media-breakpoint-down(xml) {
+        font-size: 16px;
+      }
+    }
   }
 
   &__footer {
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
+
+    @include media-breakpoint-down(xml) {
+      padding: 20px;
+    }
   }
 
   &__footer-right {

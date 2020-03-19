@@ -72,5 +72,23 @@
     left: 0;
     padding: 65px 65px 20px;
     width: 100%;
+
+    @include media-breakpoint-down(lg) {
+      padding: 20px;
+    }
+
+    .header-inner__logo {
+
+      @include media-breakpoint-down(lg) {
+        max-width: 150px;
+      }
+    }
+
+    .header-inner__link {
+
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+      }
+    }
   }
 }

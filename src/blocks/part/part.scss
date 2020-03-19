@@ -123,6 +123,14 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include media-breakpoint-down(xl) {
+      padding: 30px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 20px;
+    }
+
     .part__content-top {
     }
 
@@ -137,6 +145,10 @@
       font-size: 20px;
       line-height: 1.5;
       font-weight: 600;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+      }
     }
 
     .part__btn {
