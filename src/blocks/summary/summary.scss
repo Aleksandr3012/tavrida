@@ -1,5 +1,6 @@
 .summary {
   position: relative;
+  margin-bottom: 90px;
   padding: 150px 0 50px;
   display: flex;
   min-height: 100vh;
@@ -7,9 +8,33 @@
   background-position: top center;
   background-size: cover;
 
+  @include media-breakpoint-down(lg) {
+    min-height: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 40px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    background: url(../img/summary-pic.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
   &__wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: flex-end;
+
+    @include media-breakpoint-down(lg) {
+      padding-right: 40px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__contours {
@@ -21,14 +46,38 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+    }
   }
 
   &__logo {
     margin-bottom: 35px;
     max-width: 100%;
+
+    @include media-breakpoint-down(xl) {
+      max-width: 300px;
+    }
   }
 
   &__subheader {
+    font-size: 32px;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 24px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 16px;
+    }
+
+    br {
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
   }
 
   &__later {
@@ -47,6 +96,7 @@
     @include transition;
 
     @include media-breakpoint-down(xl) {
+      margin: 40px 0;
       padding-right: 20px;
       font-size: 20px;
     }
@@ -82,6 +132,10 @@
     margin-top: 55px;
     display: flex;
     align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+    }
   }
 
   &__restriction-age {
