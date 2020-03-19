@@ -15,11 +15,7 @@ mixin header-inner(data)
         a.header-inner__link(href="#") Лайн-ап
       .d-flex
         if data && data.modifier == 'new'
-          a.header-inner__login(href="#")
+          a.header-inner__login.js-login(href="#")
         else
           a.btn.btn-outline-secondary.mr-20.js-login(href="#") Войти
         a.btn.btn-outline-secondary.js-registration(href="#") Регистрация
-      +signup#registration
-      +signup({
-        modifier: 'login'
-      })#login

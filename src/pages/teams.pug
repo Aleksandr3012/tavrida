@@ -6,9 +6,10 @@ block content
       bg: 'hero-1.jpg',
       title: 'Я хочу <br>присоединиться <br>к команде'
     })
-    .bg-primary.py-30.pt-lg-80.pb-lg-70
-      .container
-        h2.h2--default.text-white.mb-30.mb-lg-55 Команды «Таврида – 2020» 
+    +signup#registration
+    +signup({
+      modifier: 'login'
+    })#login
         .row
           .col-lg-4.d-flex
             +part({
@@ -33,3 +34,7 @@ block content
             }).part--new
     +partners
     +footer
+    +signup#registration
+    +signup({
+      modifier: 'login'
+    })#login

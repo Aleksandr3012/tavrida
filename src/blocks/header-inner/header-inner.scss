@@ -20,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       flex-direction: column;
       align-items: flex-start;
     }
@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       margin-bottom: 20px;
     }
   }
@@ -42,7 +42,7 @@
     font-weight: 900;
     color: #fff;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       font-size: 16px;
     }
 
@@ -63,17 +63,28 @@
   }
 
   &__login {
+    margin-right: 17px;
+    width: 48px;
+    height: 48px;
+    background: url(../img/header-login.svg) no-repeat center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+
+  .btn-outline-secondary {
+    padding: 10px 55px;
+    display: inline-flex;
+    align-items: center;
   }
 
   &--alone {
     position: absolute;
-    //    z-index: 1;
     top: 0;
     left: 0;
     padding: 65px 65px 20px;
     width: 100%;
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       padding: 20px;
     }
 
