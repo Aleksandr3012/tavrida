@@ -1,2 +1,39 @@
 .step {
+  position: relative;
+
+  &__icon {
+  }
+
+  &__number {
+    margin: 35px 0;
+    display: flex;
+    width: 62px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: $primary;
+    border: 3px solid $primary;
+    border-radius: 50%;
+
+    &:after {
+      position: absolute;
+      left: 90px;
+      width: calc(100% - 90px);
+      height: 16px;
+      content: '';
+      background: url(../img/step-arrow.svg) no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__header {
+    margin-bottom: 15px;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    color: $black;
+  }
 }
