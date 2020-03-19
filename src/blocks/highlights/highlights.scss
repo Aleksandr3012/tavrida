@@ -4,6 +4,10 @@
   &__content {
     padding: 80px 0;
     height: 100vh;
+
+    @include media-breakpoint-down(md) {
+      height: auto;
+    }
   }
 
   &__section {
@@ -12,6 +16,10 @@
 
   &__section-picture {
     max-width: 100%;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__section-content {
@@ -20,6 +28,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include media-breakpoint-down(xl) {
+      padding: 0 50px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
 
     &--wave {
 
@@ -31,14 +51,28 @@
         width: 304px;
         height: 104px;
         content: '';
-        background: url(../img/wave.svg) no-repeat;
+        background: url(../img/wave.svg) no-repeat center;
         background-size: contain;
+
+        @include media-breakpoint-down(xml) {
+          width: 200px;
+          height: 80px;
+        }
+
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
       }
     }
   }
 
   &__article {
     margin-bottom: 20px;
+    display: block;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 40px;
+    }
 
     &--column {
 
@@ -54,6 +88,10 @@
           content: '';
           background: url(../img/column.svg) no-repeat;
           background-size: contain;
+
+          @include media-breakpoint-down(md) {
+            display: none;
+          }
         }
       }
     }
@@ -72,6 +110,10 @@
           content: '';
           background: url(../img/dot.svg) no-repeat;
           background-size: contain;
+
+          @include media-breakpoint-down(md) {
+            display: none;
+          }
         }
       }
     }
@@ -80,6 +122,10 @@
   &__article-header {
     margin-bottom: 33px;
     color: $black;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__article-picture {
@@ -103,6 +149,10 @@
     background-position: center center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 40px;
+    }
   }
 
   &__article-content {
@@ -114,9 +164,17 @@
     font-size: 20px;
     line-height: 1;
     color: $primary;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 18px;
+    }
   }
 
   &__article-dscr {
+
+    @include media-breakpoint-down(lg) {
+      font-size: 16px;
+    }
   }
 
   //  .ps__rail-y {

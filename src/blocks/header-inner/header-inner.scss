@@ -108,6 +108,10 @@
     .header-inner__wrapper {
       padding-right: 140px;
       justify-content: flex-end;
+
+      @include media-breakpoint-down(md) {
+        padding-right: 0;
+      }
     }
   }
 

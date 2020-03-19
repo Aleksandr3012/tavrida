@@ -1,7 +1,9 @@
 .front {
-  //  background: url(../img/front.jpg) no-repeat top center;
-  //  background-size: cover;
   position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding: 100px 0 50px;
+  }
 
   &:before {
     position: absolute;
@@ -79,6 +81,10 @@
   &__logo {
     margin-bottom: 147px;
     max-width: 100%;
+
+    @include media-breakpoint-down(md) {
+      max-width: 50%;
+    }
   }
 
   &__bg {
