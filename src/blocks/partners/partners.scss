@@ -1,6 +1,10 @@
 .partners {
   padding-top: 40px;
 
+  @media screen and (max-height: 719px) {
+    padding-top: 20px;
+  }
+
   &__row {
     margin-bottom: 18px;
     padding: 10px 0;
@@ -21,6 +25,10 @@
   &__row-wrapper {
     position: relative;
     padding-left: 110px;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 60px;
+    }
 
     @include media-breakpoint-down(sm) {
       padding-left: 0;
@@ -74,25 +82,31 @@
 
   &__row-content {
     padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+
+    @media screen and (max-height: 719px) {
+      padding-top: 10px;
+    }
 
     @include media-breakpoint-down(sm) {
-      flex-wrap: wrap;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    
+    .slick-track {
+      display: flex;
+      align-items: center;
     }
   }
 
   &__item {
     margin-bottom: 20px;
-    display: flex;
+    display: flex!important;
     width: 100%;
-    max-width: 16.66%;
     justify-content: center;
     align-items: center;
 
-    @include media-breakpoint-down(lg) {
-      max-width: 20%;
+    @media screen and (max-height: 719px) {
+      margin-bottom: 10px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -112,6 +126,32 @@
     @include media-breakpoint-down(xl) {
       max-width: 80px;
       max-height: 80px;
+    }
+  }
+  
+  .slick-arrow {
+
+    @include media-breakpoint-down(md) {
+      display: block!important;
+    }
+    
+    &.slick-disabled {
+      display: none!important;
+    }
+  }
+  
+  .slick-prev {
+
+    @include media-breakpoint-down(md) {
+      left: -30px;
+    }
+  }
+  
+  .slick-next {
+    right: -40px;
+
+    @include media-breakpoint-down(md) {
+      right: -30px;
     }
   }
 }

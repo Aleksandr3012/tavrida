@@ -16,92 +16,20 @@
       flex-direction: column;
       justify-content: flex-end;
     }
-
-    .partners__row {
-
-      &--light {
-        background: rgba(#efc825, .2);
-
-        .partners__row-content {
-          position: relative;
-
-          &:after {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            width: 100px;
-            height: 100%;
-            content: '';
-            background: linear-gradient(to left, #fcf4d3, transparent);
-
-            @include media-breakpoint-down(md) {
-              display: none;
-            }
-          }
-        }
-      }
-
-      &--dark {
-        background: rgba($primary, .2);
-
-        .partners__row-content {
-          position: relative;
-
-          &:after {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            width: 100px;
-            height: 100%;
-            content: '';
-            background: linear-gradient(to left, #dae2f0, transparent);
-
-            @include media-breakpoint-down(md) {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-
-    .partners__row-content {
-      position: relative;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      flex-wrap: nowrap;
+    
+    .partners__row-wrapper {
+      padding-right: 40px;
 
       @include media-breakpoint-down(md) {
-        padding-bottom: 0;
-        flex-wrap: wrap;
+        padding-right: 0;
       }
     }
-
+    
     .partners__item {
-      margin-right: 96px;
-      margin-bottom: 0;
-      width: auto;
-
-      @include media-breakpoint-down(lg) {
-        margin-right: 30px;
-      }
 
       @include media-breakpoint-down(md) {
         margin-bottom: 20px;
       }
-
-      @include media-breakpoint-down(sm) {
-        margin-right: 0;
-        width: 100%;
-        max-width: 50%;
-      }
-    }
-
-    .mCSB_container {
-      margin-bottom: 0 !important;
-      display: flex !important;
-      align-items: center !important;
     }
   }
 }

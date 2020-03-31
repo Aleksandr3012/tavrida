@@ -11,11 +11,22 @@ if ($(window).width() > 992) {
   });
 }
 
-if ($(window).width() > 992 && $('.section .partners__row-content').length) {
-  $('.section .partners__row-content').mCustomScrollbar({
-    axis: "x",
-    mousewheel: {
-      enable: true
-    }
+if ($(window).width() > 767 && $('.partners__row-content').length) {
+
+  $('.partners__row-content').slick({
+    slidesToShow: 6,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: 'unslick'
+      },
+    ]
   });
 }
