@@ -1,2 +1,39 @@
 .question {
+  margin-bottom: 16px;
+  background: #fff;
+  border-radius: 20px;
+
+  &__header {
+    padding: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:after {
+      display: block;
+      width: 24px;
+      height: 24px;
+      content: '';
+      background: url(../img/question-plus.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__content {
+    padding: 0 23px 23px;
+    display: none;
+    max-width: 80%;
+  }
+
+  &--active {
+
+    .question__header {
+
+      &:after {
+        background: url(../img/question-minus.svg) no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
 }
