@@ -77,8 +77,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    //    margin: 0 -20px;
-    //    width: calc(100% + 40px)
 
     @include media-breakpoint-down(sm) {
       flex-wrap: wrap;
@@ -86,6 +84,7 @@
   }
 
   &__item {
+    margin-bottom: 20px;
     display: flex;
     width: 100%;
     max-width: 16.66%;
@@ -102,13 +101,10 @@
   }
 
   &__logo {
-    margin-right: 96px;
-    margin-bottom: 20px;
     max-width: 130px;
     max-height: 130px;
 
     @include media-breakpoint-down(xml) {
-      margin-right: 30px;
       max-width: 100px;
       max-height: 100px;
     }

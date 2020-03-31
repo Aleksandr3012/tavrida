@@ -10,3 +10,12 @@ if ($(window).width() > 992) {
     }
   });
 }
+
+if ($(window).width() > 992 && $('.section .partners__row-content').length) {
+  $('.section .partners__row-content').mCustomScrollbar({
+    axis: "x",
+    mousewheel: {
+      enable: true
+    }
+  });
+}
