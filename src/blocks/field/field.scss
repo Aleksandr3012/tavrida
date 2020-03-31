@@ -1,2 +1,15 @@
 .field {
+  margin-bottom: 55px;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 40px;
+    display: flex;
+    width: 79px;
+    height: 77px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
 }

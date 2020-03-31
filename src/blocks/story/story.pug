@@ -1,2 +1,10 @@
 mixin story(data)
   .story&attributes(attributes)
+    a.story__media(href="#", style="background-image: url(./img/" + data.img + ");")
+    .story__content
+      .story__header
+        .story__userpic(style="background-image: url(./img/" + data.userpic + ");")
+        .story__header-content
+          .story__date 14.04.2020
+          .story__author Калининский ВИКТОР
+      .story__dscr Описание в несколько строк для наглядности отображенгия информации в блоке историй успеха
