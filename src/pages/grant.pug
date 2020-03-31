@@ -1,0 +1,117 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    .team
+      .team__front(style="background-image: url(./img/team-front-3.jpg);")
+        +header-inner({
+          modifier: 'new'
+        }).header-inner--alone
+        .container.team__front-wrapper
+          a.team__front-back(href="#")
+          .team__front-content
+            h1.team__front-title Грантовый <br>конкурс
+            .team__front-info
+              .team__front-age 20-35 лет
+              .team__front-type гражданин РФ
+    .container
+      h3 Направления конкурса
+      p.mb-30.mb-lg-70 Грантовый конкурс – это возможность получить поддержку на реализацию проекта
+      .row
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-1.svg',
+            dscr: 'Добровольчество'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-2.svg',
+            dscr: 'Инициативы творческой молодежи'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-3.svg',
+            dscr: 'Молодежные медиа'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-4.svg',
+            dscr: 'Патриотическое воспитание'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-5.svg',
+            dscr: 'Профилактика негативных проявлений в молодежной среде и межнациональное взаимодействие'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-6.svg',
+            dscr: 'Развитие социальных лифтов'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-7.svg',
+            dscr: 'Спорт, ЗОЖ, Туризм'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-8.svg',
+            dscr: 'Студенческие инициативы'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-9.svg',
+            dscr: 'Укрепление семейных ценностей'
+          })
+    +participation
+    +faq
+    .container
+      h3 История успеха
+      .item-slider
+        +story({
+          img: 'story-1.jpg',
+          userpic: 'story-user-1.jpg'
+        })
+        +story({
+          img: 'story-2.jpg',
+          userpic: 'story-user-2.jpg'
+        })
+        +story({
+          img: 'story-3.jpg',
+          userpic: 'story-user-3.jpg'
+        })
+        +story({
+          img: 'story-1.jpg',
+          userpic: 'story-user-1.jpg'
+        })
+        +story({
+          img: 'story-2.jpg',
+          userpic: 'story-user-2.jpg'
+        })
+        +story({
+          img: 'story-3.jpg',
+          userpic: 'story-user-3.jpg'
+        })
+      h3 Полезные материалы
+      .row
+        .col-sm-6.col-lg-4
+          +document({
+            header: 'Методические рекомендации Всероссийского конкурса молодежных проектов среди физических лиц 2020',
+            title: 'Namepdf.pdf'
+          })
+        .col-sm-6.col-lg-4
+          +document({
+            header: 'Критерии оценки и порядок определения победителей',
+            title: 'kriterii-ocenki.pdf'
+          })
+        .col-sm-6.col-lg-4
+          +document({
+            header: 'Постановление Правительства Российской Федерации от 13 августа 2016 г. № 795 «О Всероссийском конкурсе молодежных проектов»',
+            title: 'Postanovlenie_Pravitelstva_RF_ot_1.pdf'
+          })
+    +partners
+    +footer
+    +signup#registration
+    +signup({
+      modifier: 'login'
+    })#login
