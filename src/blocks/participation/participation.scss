@@ -1,2 +1,60 @@
 .participation {
+  padding: 55px 0 80px;
+  background: #715f7a;
+
+  &__content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    max-width: 200px;
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-child(2n + 2) {
+      margin-top: 373px;
+
+      &:before {
+        position: absolute;
+        right: 100%;
+        bottom: calc(100% - 55px);
+        display: block;
+        width: 177px;
+        height: 389px;
+        content: '';
+        background: url(../img/participation-arrow--left.svg) no-repeat;
+        background-size: contain;
+      }
+
+      &:after {
+        position: absolute;
+        bottom: calc(100% - 55px);
+        left: 100%;
+        display: block;
+        width: 177px;
+        height: 389px;
+        content: '';
+        background: url(../img/participation-arrow--right.svg) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__item-icon {
+    margin-bottom: 5px;
+    width: 112px;
+    height: 112px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__item-comment {
+    font-size: 16px;
+    text-align: center;
+  }
 }
