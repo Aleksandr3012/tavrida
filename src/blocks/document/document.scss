@@ -1,2 +1,15 @@
 .document {
+  display: flex;
+
+  &__icon {
+    margin-right: 24px;
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    background: url(../img/document-icon.svg) no-repeat center;
+    background-size: contain;
+  }
+
+  &__content {
+  }
 }

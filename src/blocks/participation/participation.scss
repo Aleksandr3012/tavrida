@@ -14,43 +14,88 @@
     max-width: 200px;
     flex-direction: column;
     align-items: center;
+    background: blue;
 
     &:nth-child(2n + 2) {
       margin-top: 373px;
 
-      &:before {
-        position: absolute;
-        right: 100%;
-        bottom: calc(100% - 55px);
-        display: block;
-        width: 177px;
-        height: 389px;
-        content: '';
-        background: url(../img/participation-arrow--left.svg) no-repeat;
-        background-size: contain;
+      .participation__item-icon-wrapper {
+
+        &:before {
+          position: absolute;
+          z-index: 0;
+          top: auto;
+          right: calc(100% - 17px);
+          //          right: 100%;
+          bottom: calc(100% - 55px);
+          left: auto;
+          display: block;
+          width: 177px;
+          height: 389px;
+          content: '';
+          background: url(../img/participation-arrow--left.svg) no-repeat;
+          background-size: contain;
+        }
+
+        &:after {
+          position: absolute;
+          z-index: 0;
+          top: auto;
+          right: auto;
+          bottom: calc(100% - 55px);
+          left: calc(50% + 20px);
+          display: block;
+          width: 177px;
+          height: 389px;
+          content: '';
+          background: url(../img/participation-arrow--right.svg) no-repeat;
+          background-size: contain;
+        }
       }
 
-      &:after {
-        position: absolute;
-        bottom: calc(100% - 55px);
-        left: 100%;
-        display: block;
-        width: 177px;
-        height: 389px;
-        content: '';
-        background: url(../img/participation-arrow--right.svg) no-repeat;
-        background-size: contain;
+      .participation__item-icon {
+        margin-left: 30px;
       }
     }
   }
 
-  &__item-icon {
-    margin-bottom: 5px;
-    width: 112px;
+  &__item-icon-content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: #715f7a;
+    }
+  }
+
+  &__item-icon-wrapper {
+    position: relative;
+    display: flex;
+    width: 140px;
+    max-width: 100%;
     height: 112px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    background-color: #715f7a;
+  }
+
+  &__item-icon {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 5px;
+    max-width: 100%;
   }
 
   &__item-comment {

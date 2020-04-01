@@ -93,23 +93,24 @@ block content
             img: 'story-3.jpg',
             userpic: 'story-user-3.png'
           }).item-slider__card
-      h3 Полезные материалы
-      .row
-        .col-sm-6.col-lg-4
-          +document({
-            header: 'Методические рекомендации Всероссийского конкурса молодежных проектов среди физических лиц 2020',
-            title: 'Namepdf.pdf'
-          })
-        .col-sm-6.col-lg-4
-          +document({
-            header: 'Критерии оценки и порядок определения победителей',
-            title: 'kriterii-ocenki.pdf'
-          })
-        .col-sm-6.col-lg-4
-          +document({
-            header: 'Постановление Правительства Российской Федерации от 13 августа 2016 г. № 795 «О Всероссийском конкурсе молодежных проектов»',
-            title: 'Postanovlenie_Pravitelstva_RF_ot_1.pdf'
-          })
+      .container.mb-30.mb-lg-75
+        h3.mt-15.text-dark.mb-30.mb-lg-65 Полезные материалы
+        .row
+          .col-sm-6.col-lg-4
+            +document({
+              header: 'Методические рекомендации Всероссийского конкурса молодежных проектов среди физических лиц 2020',
+              title: 'Namepdf.pdf'
+            })
+          .col-sm-6.col-lg-4
+            +document({
+              header: 'Критерии оценки и порядок определения победителей',
+              title: 'kriterii-ocenki.pdf'
+            })
+          .col-sm-6.col-lg-4
+            +document({
+              header: 'Постановление Правительства Российской Федерации от 13 августа 2016 г. № 795 «О Всероссийском конкурсе молодежных проектов»',
+              title: 'Postanovlenie_Pravitelstva_RF_ot_1.pdf'
+            })
     +partners
     +footer
     +signup#registration
