@@ -2,10 +2,19 @@
   padding: 55px 0 80px;
   background: #715f7a;
 
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 15px;
+  }
+
   &__content {
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+
+    @include media-breakpoint-down(lg) {
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
   }
 
   &__item {
@@ -14,10 +23,24 @@
     max-width: 200px;
     flex-direction: column;
     align-items: center;
-    background: blue;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 40px;
+      padding: 0 20px;
+      width: 33.33%;
+      max-width: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
 
     &:nth-child(2n + 2) {
       margin-top: 373px;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 0;
+      }
 
       .participation__item-icon-wrapper {
 
@@ -25,8 +48,7 @@
           position: absolute;
           z-index: 0;
           top: auto;
-          right: calc(100% - 17px);
-          //          right: 100%;
+          right: 100%;
           bottom: calc(100% - 55px);
           left: auto;
           display: block;
@@ -35,6 +57,22 @@
           content: '';
           background: url(../img/participation-arrow--left.svg) no-repeat;
           background-size: contain;
+
+          @media screen and (max-width: 1699px) {
+            right: 90%;
+          }
+
+          @media screen and (max-width: 1499px) {
+            right: 70%;
+          }
+
+          @media screen and (max-width: 1399px) {
+            right: 50%;
+          }
+
+          @include media-breakpoint-down(lg) {
+            display: none;
+          }
         }
 
         &:after {
@@ -43,13 +81,29 @@
           top: auto;
           right: auto;
           bottom: calc(100% - 55px);
-          left: calc(50% + 20px);
+          left: 100%;
           display: block;
           width: 177px;
           height: 389px;
           content: '';
           background: url(../img/participation-arrow--right.svg) no-repeat;
           background-size: contain;
+
+          @media screen and (max-width: 1699px) {
+            left: 90%;
+          }
+
+          @media screen and (max-width: 1499px) {
+            left: 70%;
+          }
+
+          @media screen and (max-width: 1399px) {
+            left: 50%;
+          }
+
+          @include media-breakpoint-down(lg) {
+            display: none;
+          }
         }
       }
 
@@ -98,8 +152,26 @@
     max-width: 100%;
   }
 
+  &__dscr {
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+
+    span {
+      display: none;
+
+      @include media-breakpoint-down(lg) {
+        display: inline;
+      }
+    }
+  }
+
   &__item-comment {
     font-size: 16px;
     text-align: center;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 14px;
+    }
   }
 }
