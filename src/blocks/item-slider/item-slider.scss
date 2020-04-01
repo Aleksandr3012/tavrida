@@ -14,28 +14,46 @@
   }
 
   .slick-arrow {
+    top: -87px;
+    width: 16px;
+    height: 31px;
+
+    @include media-breakpoint-down(lg) {
+      top: -78px;
+    }
+
+    @include media-breakpoint-down(md) {
+      top: -58px;
+      display: block !important;
+    }
 
     &.slick-prev {
-      top: -87px;
       right: 68px;
       left: auto;
       margin-top: 0;
-      width: 16px;
-      height: 31px;
       background: url(../img/arrow-simple-left.svg) no-repeat center;
       background-size: contain;
       transform: none;
+
+      @include media-breakpoint-down(lg) {
+        right: 50px;
+      }
     }
 
     &.slick-next {
-      top: -87px;
       right: 0;
       margin-top: 0;
       margin-bottom: 0;
-      width: 16px;
-      height: 31px;
       background: url(../img/arrow-simple-right.svg) no-repeat center;
       background-size: contain;
+
+      @include media-breakpoint-down(sm) {
+        right: 15px;
+      }
+    }
+
+    &.slick-disabled {
+      display: block !important;
     }
   }
 }
