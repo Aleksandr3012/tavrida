@@ -22,4 +22,10 @@
 
   &__content {
   }
+
+  &__link {
+    margin-bottom: 0;
+    word-break: break-all;
+    color: $primary;
+  }
 }
