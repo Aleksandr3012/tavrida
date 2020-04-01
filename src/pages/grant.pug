@@ -65,33 +65,34 @@ block content
           })
     +participation
     +faq
-    .container.py-30.py-lg-90
-      h3.text-dark.mb-30.mb-lg-50 История успеха
-      .item-slider
-        +story({
-          img: 'story-1.jpg',
-          userpic: 'story-user-1.png'
-        })
-        +story({
-          img: 'story-2.jpg',
-          userpic: 'story-user-2.png'
-        })
-        +story({
-          img: 'story-3.jpg',
-          userpic: 'story-user-3.png'
-        })
-        +story({
-          img: 'story-1.jpg',
-          userpic: 'story-user-1.png'
-        })
-        +story({
-          img: 'story-2.jpg',
-          userpic: 'story-user-2.png'
-        })
-        +story({
-          img: 'story-3.jpg',
-          userpic: 'story-user-3.png'
-        })
+    .item-slider__wrapper
+      .container.py-30.py-lg-90
+        h3.text-dark.mb-30.mb-lg-50 История успеха
+        .item-slider
+          +story({
+            img: 'story-1.jpg',
+            userpic: 'story-user-1.png'
+          }).item-slider__card
+          +story({
+            img: 'story-2.jpg',
+            userpic: 'story-user-2.png'
+          }).item-slider__card
+          +story({
+            img: 'story-3.jpg',
+            userpic: 'story-user-3.png'
+          }).item-slider__card
+          +story({
+            img: 'story-1.jpg',
+            userpic: 'story-user-1.png'
+          }).item-slider__card
+          +story({
+            img: 'story-2.jpg',
+            userpic: 'story-user-2.png'
+          }).item-slider__card
+          +story({
+            img: 'story-3.jpg',
+            userpic: 'story-user-3.png'
+          }).item-slider__card
       h3 Полезные материалы
       .row
         .col-sm-6.col-lg-4

@@ -1,2 +1,41 @@
 .item-slider {
+  margin: 0 -15px;
+
+  &__wrapper {
+    overflow: hidden;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  &__card {
+    margin: 0 15px;
+  }
+
+  .slick-arrow {
+
+    &.slick-prev {
+      top: -87px;
+      right: 68px;
+      left: auto;
+      margin-top: 0;
+      width: 16px;
+      height: 31px;
+      background: url(../img/arrow-simple-left.svg) no-repeat center;
+      background-size: contain;
+      transform: none;
+    }
+
+    &.slick-next {
+      top: -87px;
+      right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 16px;
+      height: 31px;
+      background: url(../img/arrow-simple-right.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
 }
