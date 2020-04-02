@@ -23,6 +23,7 @@ $(document).click(function (e) {
     if ($(e.target).closest('.signup').length === 0
         && $(e.target).closest('.dz-hidden-input').length === 0
         && $(e.target).closest('.container-item-remove').length === 0
+        && $(e.target).closest('.language-item-remove').length === 0
         && $(e.target).closest('.js-registration').length === 0
         && $(e.target).closest('.js-login').length === 0
     ) {
