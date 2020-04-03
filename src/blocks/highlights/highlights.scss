@@ -2,8 +2,11 @@
   position: relative;
 
   &__content {
-    padding: 80px 0;
+    padding: 20px 0;
+    display: flex;
     height: 100vh;
+    flex-direction: column;
+    justify-content: center;
 
     @include media-breakpoint-down(md) {
       height: auto;
@@ -11,7 +14,11 @@
   }
 
   &__section {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @media screen and (max-height: 799px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__section-picture {
@@ -41,6 +48,20 @@
       margin-bottom: 20px;
     }
 
+    h4 {
+
+      @media screen and (max-height: 799px) {
+        font-size: 25px;
+      }
+    }
+
+    h5 {
+
+      @media screen and (max-height: 799px) {
+        font-size: 16px;
+      }
+    }
+
     &--wave {
 
       &:before {
@@ -67,10 +88,10 @@
   }
 
   &__article {
-    margin-bottom: 20px;
+    //    margin-bottom: 20px;
     display: block;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin-bottom: 40px;
     }
 
@@ -83,8 +104,8 @@
           top: 65%;
           right: -15px;
           display: block;
-          width: 31px;
-          height: 180px;
+          width: 20px;
+          height: 100px;
           content: '';
           background: url(../img/column.svg) no-repeat;
           background-size: contain;
@@ -120,8 +141,13 @@
   }
 
   &__article-header {
-    margin-bottom: 33px;
+    //    margin-bottom: 33px;
+    margin-bottom: 20px;
     color: $black;
+
+    @media screen and (max-height: 799px) {
+      font-size: 25px;
+    }
 
     @include media-breakpoint-down(sm) {
       margin-bottom: 20px;
@@ -130,7 +156,8 @@
 
   &__article-picture {
     position: relative;
-    padding-top: 69%;
+    //    padding-top: 69%;
+    padding-top: 40%;
     background-position: center;
     background-size: cover;
   }
@@ -157,23 +184,41 @@
 
   &__article-content {
     padding-top: 30px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 20px;
+    }
   }
 
   &__article-title {
+    margin-bottom: 0;
     font-family: $font-family-serif;
     font-size: 20px;
     line-height: 1;
     color: $primary;
 
+    @media screen and (max-height: 799px) {
+      font-size: 15px;
+    }
+
     @include media-breakpoint-down(lg) {
       font-size: 18px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 10px;
     }
   }
 
   &__article-dscr {
+    display: none;
 
     @include media-breakpoint-down(lg) {
       font-size: 16px;
+    }
+
+    @include media-breakpoint-down(md) {
+      display: block;
     }
   }
 
