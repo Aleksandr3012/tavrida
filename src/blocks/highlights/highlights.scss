@@ -56,6 +56,7 @@
     }
 
     h5 {
+      font-size: 20px;
 
       @media screen and (max-height: 799px) {
         font-size: 16px;
@@ -67,7 +68,7 @@
       &:before {
         position: absolute;
         bottom: 15px;
-        left: -145px;
+        left: -200px;
         display: block;
         width: 304px;
         height: 104px;
@@ -183,7 +184,7 @@
   }
 
   &__article-content {
-    padding-top: 30px;
+    padding-top: 20px;
 
     @include media-breakpoint-down(md) {
       padding-top: 20px;
@@ -191,7 +192,7 @@
   }
 
   &__article-title {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-family: $font-family-serif;
     font-size: 20px;
     line-height: 1;
@@ -211,7 +212,11 @@
   }
 
   &__article-dscr {
-    display: none;
+    //    display: none;
+
+    @media screen and (max-height: 799px) {
+      font-size: 16px;
+    }
 
     @include media-breakpoint-down(lg) {
       font-size: 16px;
