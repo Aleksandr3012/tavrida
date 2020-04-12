@@ -28,7 +28,6 @@
   }
 
   &__column {
-    margin-bottom: 20px;
     padding-right: 10px;
 
     @include media-breakpoint-down(sm) {
@@ -36,12 +35,12 @@
     }
 
     &:before {
-      content: attr(data-header);
 
       @include media-breakpoint-down(sm) {
         margin-bottom: 5px;
         display: block;
         font-size: 16px;
+        content: attr(data-header);
       }
     }
 
@@ -106,6 +105,12 @@
     height: 20px;
     background: url(../img/edit.svg) no-repeat center;
     background-size: contain;
+
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
 
     @include media-breakpoint-down(sm) {
       position: absolute;
