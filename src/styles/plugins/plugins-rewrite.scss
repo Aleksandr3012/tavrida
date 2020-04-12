@@ -55,6 +55,13 @@
   &.btn-sm {
     padding: 8px 15px;
   }
+
+  &.btn-link {
+
+    &--gray {
+      color: rgba(#000, .5);
+    }
+  }
 }
 
 .nav-tabs {
@@ -88,6 +95,32 @@
       &.active {
         background: #efc825;
         border: 0;
+      }
+    }
+  }
+
+  &--headers {
+
+    .nav-item {
+
+      & + .nav-item {
+        margin-left: 70px;
+      }
+
+      .nav-link {
+        padding: 0;
+        min-width: 0;
+        max-width: none;
+        font-size: 25px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #c9df55;
+        border: 0;
+
+        &.active {
+          color: #333;
+          background: transparent;
+        }
       }
     }
   }
