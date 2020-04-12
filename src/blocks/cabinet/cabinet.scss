@@ -62,6 +62,11 @@
     max-width: 386px;
     background: #f2f2f2;
     border-radius: 20px;
+
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 40px;
+      margin-left: 0;
+    }
   }
 
   &__user-top {

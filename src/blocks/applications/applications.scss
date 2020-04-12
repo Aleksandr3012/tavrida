@@ -3,14 +3,21 @@
   &__row {
     padding: 25px 0;
     display: flex;
+    align-items: center;
     border-bottom: 1px solid rgba(#000, .2);
 
     &--header {
       padding-bottom: 12px;
+      align-items: flex-start;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
     }
   }
 
   &__column {
+    padding-right: 10px;
 
     &:nth-child(1) {
       flex-basis: 25%;
@@ -55,7 +62,7 @@
     }
   }
 
-  &__statur-reason {
+  &__status-reason {
     font-size: 12px;
     line-height: 1.5;
     font-weight: 600;

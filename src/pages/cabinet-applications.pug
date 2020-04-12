@@ -10,12 +10,12 @@ block content
               a.link-back(href="#")
               h2.h2--default.mb-0 Личный кабинет
             a.cabinet__logout(href="#") Выйти
-          .row
-            .col-lg-8
+          .row.flex-column-reverse.flex-xml-row
+            .col-xml-8
               h5.mb-0.text-dark Заявки
               +applications
               a.btn.btn-green.mt-45(href="#") Новая заявка
-            .col-lg-4
+            .col-xml-4
               .cabinet__user
                 .cabinet__user-top
                   .cabinet__user-picture(style="background-image: url(./img/cabinet-user.jpg);")
