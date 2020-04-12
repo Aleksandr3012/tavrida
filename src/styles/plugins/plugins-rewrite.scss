@@ -58,6 +58,12 @@
 
   &.btn-link {
 
+    @include transition;
+
+    &:hover {
+      opacity: .7;
+    }
+
     &--gray {
       color: rgba(#000, .5);
     }
@@ -116,6 +122,12 @@
         text-transform: uppercase;
         color: #c9df55;
         border: 0;
+
+        @include transition;
+
+        &:hover {
+          opacity: .75;
+        }
 
         &.active {
           color: #333;
