@@ -232,4 +232,48 @@ block content
                 a.btn.btn-link(href="#") Отменить изменения
                 button.btn.btn-primary.btn-green(type="submit") Сохранить
           #edit2.tab-pane.fade(role='tabpanel')
+            form.form(action="#", method="POST")
+              .container
+                .row
+                  .col-lg-4
+                    .form__item.form-group
+                      label.form__label Фамилия
+                      input.input.form-control(type="text", placeholder="Введите вашу фамилию")
+                  .col-lg-4
+                    .form__item.form-group
+                      label.form__label Имя
+                      input.input.form-control(type="text", placeholder="Введите ваше имя")
+                  .col-lg-4
+                    .form__item.form-group
+                      label.form__label Отчество
+                      input.input.form-control(type="text", placeholder="Введите ваше отчество")
+                .row
+                  .col-lg-4
+                    .form__item.form-group
+                      label.form__label Телефон
+                      input.input.input--phone.form-control(type="text", placeholder="+7 ( ___ ) ___ - __ - __")
+                  .col-lg-4
+                    .form__item.form-group
+                      label.form__label E-mail
+                      input.input.input--email.form-control(type="email", placeholder="sample@sample.com")
+                .form__footer
+                  a.btn.btn-link(href="#") Отменить изменения
+                  button.btn.btn-primary.btn-green(type="submit") Сохранить
+            form.form(action="#", method="POST")
+              .container
+                p.font-weight-bold.font-family-serif.mb-20 Смена пароля
+                .row
+                  .col-lg-4
+                    .form__item.form-group
+                      label.form__label Старый пароль
+                      input.input.form-control(type="password")
+                  .col-lg-4
+                    .form__item.form-group
+                      label.form__label Новый пароль
+                      input.input.form-control(type="password")
+                  .col-lg-4
+                    .form__item.form-group
+                      label.form__label Повторите пароль
+                      input.input.form-control(type="password")
+                button.btn.btn-primary.btn-green(type="submit") Сменить пароль
       +footer-short
