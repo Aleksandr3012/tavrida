@@ -68,7 +68,10 @@
                           </div>
                         </div>
                         <div class="col-8 d-flex flex-column justify-content-between">
-                          <p class="font-weight-bold mb-0">Горбатов Вячеслав Георгиевич</p>
+                          <div class="form__item form-group mb-lg-5">
+                            <label class="form__label">Дата рождения</label>
+                            <input class="input form-control" type="text" placeholder="__.__.____">
+                          </div>
                           <div class="form__item form-group mb-lg-0">
                             <label class="form__label">Страна</label>
                             <select class="select">
@@ -83,9 +86,13 @@
                     <div class="col-md-5 mt-15 mt-md-0">
                       <div class="row row--h-100">
                         <div class="col-lg-6 d-flex flex-column justify-content-between">
-                          <div>
-                            <p class="font-weight-bold mb-lg-5">+7 ( 975 ) 966 - 55 - 43</p>
-                            <p class="p--xs">sample@sample.com</p>
+                          <div class="form__item form-group">
+                            <label class="form__label">Пол</label>
+                            <select class="select">
+                              <option disabled selected>Выберите</option>
+                              <option>Мужской</option>
+                              <option>Женский</option>
+                            </select>
                           </div>
                           <div class="form__item form-group mb-lg-0">
                             <label class="form__label">Федеральный округ</label>
@@ -96,11 +103,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="col-lg-6 d-flex flex-column justify-content-between">
-                          <div class="form__item form-group mb-lg-5">
-                            <label class="form__label">Дата рождения</label>
-                            <input class="input form-control" type="text" placeholder="__.__.____">
-                          </div>
+                        <div class="col-lg-6 d-flex flex-column justify-content-end">
                           <div class="form__item form-group mb-lg-0">
                             <label class="form__label">Регион</label>
                             <select class="select">
@@ -110,16 +113,6 @@
                             </select>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 d-flex flex-column justify-content-between">
-                      <div class="form__item form-group">
-                        <label class="form__label">Пол</label>
-                        <select class="select">
-                          <option disabled selected>Выберите</option>
-                          <option>Мужской</option>
-                          <option>Женский</option>
-                        </select>
                       </div>
                     </div>
                   </div>
@@ -372,9 +365,8 @@
                     </div>
                   </div>
                 </div><a class="form__add" href="#">Добавить</a>
-                <div class="form__footer">
-                  <button class="btn btn-primary btn-green" type="submit">Сохранить информацию</button>
-                  <p class="form__footer-agreement">Нажимая кнопку я соглашаюсь с <a href="#">пользовательским соглашением</a></p>
+                <div class="form__footer"><a class="btn btn-link" href="#">Отменить изменения</a>
+                  <button class="btn btn-primary btn-green" type="submit">Сохранить</button>
                 </div>
               </div>
             </div>

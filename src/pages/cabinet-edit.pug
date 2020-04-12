@@ -33,7 +33,9 @@ block content
                           input#customFile1.custom-file-input(type='file')
                           label.custom-file-label(for='customFile1') Добавить личное фото
                       .col-8.d-flex.flex-column.justify-content-between
-                        p.font-weight-bold.mb-0 Горбатов Вячеслав Георгиевич
+                        .form__item.form-group.mb-lg-5
+                          label.form__label Дата рождения
+                          input.input.form-control(type="text", placeholder="__.__.____")
                         .form__item.form-group.mb-lg-0
                           label.form__label Страна
                           select.select
@@ -43,32 +45,25 @@ block content
                   .col-md-5.mt-15.mt-md-0
                     .row.row--h-100
                       .col-lg-6.d-flex.flex-column.justify-content-between
-                        div
-                          p.font-weight-bold.mb-lg-5 +7 ( 975 ) 966 - 55 - 43
-                          p.p--xs sample@sample.com
+                        .form__item.form-group
+                          label.form__label Пол
+                          select.select
+                            option(disabled, selected) Выберите
+                            option Мужской
+                            option Женский
                         .form__item.form-group.mb-lg-0
                           label.form__label Федеральный округ
                           select.select
                             option(disabled, selected) Выберите
                             option Округ 1
                             option Округ 2
-                      .col-lg-6.d-flex.flex-column.justify-content-between
-                        .form__item.form-group.mb-lg-5
-                          label.form__label Дата рождения
-                          input.input.form-control(type="text", placeholder="__.__.____")
+                      .col-lg-6.d-flex.flex-column.justify-content-end
                         .form__item.form-group.mb-lg-0
                           label.form__label Регион
                           select.select
                             option(disabled, selected) Выберите
                             option Регион 1
                             option Регион 2
-                  .col-lg-3.d-flex.flex-column.justify-content-between
-                    .form__item.form-group
-                      label.form__label Пол
-                      select.select
-                        option(disabled, selected) Выберите
-                        option Мужской
-                        option Женский
                 .row
                   .col-lg-4
                     .form__item.form-group
@@ -234,8 +229,7 @@ block content
                     input.input.form-control(type="text")
               a.form__add(href="#") Добавить
               .form__footer
-                button.btn.btn-primary.btn-green(type="submit") Сохранить информацию
-                p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
-                  a(href="#") пользовательским соглашением
+                a.btn.btn-link(href="#") Отменить изменения
+                button.btn.btn-primary.btn-green(type="submit") Сохранить
           #edit2.tab-pane.fade(role='tabpanel')
       +footer-short
