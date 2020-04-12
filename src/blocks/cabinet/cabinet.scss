@@ -79,6 +79,9 @@
     width: 104px;
     height: 104px;
     flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
     border-radius: 50%;
   }
 
