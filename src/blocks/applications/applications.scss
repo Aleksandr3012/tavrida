@@ -1,4 +1,5 @@
 .applications {
+  margin-top: 7px;
 
   @include media-breakpoint-down(sm) {
     margin-top: 20px;
@@ -6,13 +7,15 @@
 
   &__row {
     position: relative;
-    padding: 25px 0;
+    padding: 17px 0;
     display: flex;
+    min-height: 72px;
     align-items: center;
     border-bottom: 1px solid rgba(#000, .2);
 
     &--header {
       padding-bottom: 12px;
+      min-height: 0;
       align-items: flex-start;
 
       @include media-breakpoint-down(sm) {

@@ -125,6 +125,7 @@
         padding: 0;
         min-width: 0;
         max-width: none;
+        font-family: $font-family-serif;
         font-size: 25px;
         font-weight: 900;
         text-transform: uppercase;
@@ -132,6 +133,10 @@
         border: 0;
 
         @include transition;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 20px;
+        }
 
         &:hover {
           opacity: .75;

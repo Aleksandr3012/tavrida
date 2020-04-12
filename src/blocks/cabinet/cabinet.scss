@@ -1,5 +1,6 @@
 .cabinet {
   display: flex;
+  overflow: hidden;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
@@ -10,7 +11,7 @@
 
   &__header {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,6 +87,7 @@
   }
 
   &__user-content {
+    margin-top: 8px;
   }
 
   &__user-edit {
