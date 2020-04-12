@@ -1,0 +1,46 @@
+mixin applications(data)
+  .applications&attributes(attributes)
+    .applications__row.applications__row--header
+      .applications__column
+        .applications__header-item Название мероприятия
+      .applications__column
+        .applications__header-item Дата\время подачи заявки
+      .applications__column
+        .applications__header-item Дата\время обновления заявки
+      .applications__column
+        .applications__header-item Статус заявки
+      .applications__column
+    .applications__row
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold Название Заявки
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold.applications__status.applications__status--consideration На рассмотрении
+      .applications__column
+        a.applications__edit(href="#")
+    .applications__row
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold Название Заявки
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold.applications__status.applications__status--accepted Одобрена
+      .applications__column
+        a.applications__edit.applications__edit--inactive(href="#")
+    .applications__row
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold Название Заявки
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+      .applications__column
+        p.p--xs.mb-0.font-family-serif.font-weight-bold.applications__status.applications__status--rejected Отклонена
+        .applications__status-reason Краткая причина отклонения
+      .applications__column
+        a.applications__edit(href="#")

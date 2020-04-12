@@ -1,0 +1,28 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    .cabinet
+      .cabinet__content
+        .container
+          .cabinet__header
+            .cabinet__header-content
+              a.link-back(href="#")
+              h2.h2--default.mb-0 Личный кабинет
+            a.cabinet__logout(href="#") Выйти
+          .row
+            .col-lg-8
+              h5.mb-0.text-dark Заявки
+              +applications
+              a.btn.btn-green.mt-45(href="#") Новая заявка
+            .col-lg-4
+              .cabinet__user
+                .cabinet__user-top
+                  .cabinet__user-picture(style="background-image: url(./img/cabinet-user.jpg);")
+                  .cabinet__user-content
+                    p.font-weight-bold.mb-10 Горбатов Валентина Александровна
+                    p.mb-5 +7 (985 ) 656 - 44 - 23
+                    p.p--xs sample@sample.com
+                a.cabinet__user-edit(href="#")
+                  p.p--xs.mb-0.font-weight-bold Редактировать профиль
+      +footer-short

@@ -1,0 +1,77 @@
+.applications {
+
+  &__row {
+    padding: 25px 0;
+    display: flex;
+    border-bottom: 1px solid rgba(#000, .2);
+
+    &--header {
+      padding-bottom: 12px;
+    }
+  }
+
+  &__column {
+
+    &:nth-child(1) {
+      flex-basis: 25%;
+    }
+
+    &:nth-child(2) {
+      flex-basis: 24%;
+    }
+
+    &:nth-child(3) {
+      flex-basis: 24%;
+    }
+
+    &:nth-child(4) {
+      flex-basis: 24%;
+    }
+
+    &:nth-child(5) {
+      flex-basis: 3%;
+    }
+  }
+
+  &__header-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  &__status {
+    margin-bottom: 0;
+
+    &--accepted {
+      color: #c9df55;
+    }
+
+    &--consideration {
+      color: #efc825;
+    }
+
+    &--rejected {
+      color: #ce3b65;
+    }
+  }
+
+  &__statur-reason {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: rgba(#333, .5);
+  }
+
+  &__edit {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/edit.svg) no-repeat center;
+    background-size: contain;
+
+    &--inactive {
+      background: url(../img/edit--inactive.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
+}
