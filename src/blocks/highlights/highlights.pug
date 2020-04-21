@@ -4,56 +4,47 @@ mixin highlights(data)
       .highlights__content
         .highlights__section
           .row
-            .col-md-6.col-lg-3
+            .col-md-6
               img.highlights__section-picture(src="./img/highlights-1.jpg", alt)
-            .col-md-6.col-lg-9.d-flex
+            .col-md-6.d-flex
               .highlights__section-content.highlights__section-content--wave
-                h4.text-dark Арт-кластер «Таврида»
-                h5.h5--default.mb-0 Платформа, объединяющая на одной территории форум молодых деятелей культуры и искусств «Таврида», фестиваль фестивалей «Таврида – АРТ», арт-парк и образовательный центр «Арт-резиденция «Таврида».
-        .highlights__section
-          .row
-            .col-md-6.col-lg-9.d-flex
-              .highlights__section-content
-                h4.text-dark Форум молодых деятелей культуры и искусств «Таврида»
-                h5.h5--default Проводится в Крыму с 2015 года. За это время его участниками стали 17 000 представителей творческих сообществ в возрасте 18 – 35 лет со всей страны.
-                h5.h5--default.mb-0 Ежегодно в событии принимают участие лидеры арт-индустрии: художники, актеры и режиссеры, музыканты, хореографы, архитекторы и дизайнеры, литераторы и др.
-                p.mt-10.mb-20.mb-lg-0
-                  a.btn.btn-outline-secondary.btn-sm(style='background: #476fb2;', href='/event/forum') Подать заявку
-            .col-md-6.col-lg-3
-              img.highlights__section-picture(src="./img/highlights-2.jpg", alt)
+                h4.text-dark АРТ-КЛАСТЕР
+                h5.h5--default.mb-0 Таврида — это платформа, объединяющая на одной территории форум молодых деятелей культуры и искусства, фестиваль творческих сообществ «Таврида – АРТ», арт-парк и образовательный центр «Арт-резиденция «Таврида».
         .row
-          .col-lg-4
+          .col-sm-6.col-lg-3
             +highlights__article({
-              header: 'Фестиваль фестивалей «Таврида – АРТ 2020»',
+              header: 'ФОРУМ МОЛОДЫХ ДЕЯТЕЛЕЙ КУЛЬТУРЫ И ИСКУССТВ «ТАВРИДА»',
+              img: 'h-article-4.jpg',
+              title: 'ПРОВОДИТСЯ С 2015 ГОДА',
+              dscr: 'Ежегодно самый творческий форум объединяет на одной площадке лидеров креативных индустрий со всей страны. Фрешмены «Тавриды» (от 18 до 35 лет) под руководством признанных экспертов арт-рынка создают проекты, совместные коллаборации и творческие продукты во всех направлениях культуры и искусства: от архитектуры до поэзии, от музыки до индустрии моды'
+            }).highlights__article--column-yellow
+          .col-sm-6.col-lg-3
+            +highlights__article({
+              header: 'ФЕСТИВАЛЬ ФЕСТИВАЛЕЙ «ТАВРИДА – АРТ»',
               img: 'h-article-1.jpg',
-              number: '92 000',
-              title: '92 000 зрителей',
-              dscr: 'Самая большая площадка кастингов и возможностей для самореализации молодых деятелей культуры и искусства'
-            }).highlights__article--column
-            p.mb-20.mb-lg-0
-              a.btn.btn-outline-secondary.btn-sm(style='background: #ce3b65;', href='/event/festival') Подробнее
-          .col-lg-4
+              title: 'МИР. ЛЮБОВЬ. ИСКУССТВО.',
+              dscr: 'Кастинги от лидеров креативных индустрий, грантовый конкурс и другие возможности для творческой самореализации участников, кемпинги сообществ, а также три ярких тематических дня фестиваля для широкой аудитории зрителей'
+            }).highlights__article--wave
+          .col-sm-6.col-lg-3
             +highlights__article({
-              header: 'Арт-парк',
+              header: 'УНИКАЛЬНЫЙ ЛАНДШАФТ ДЛЯ ВДОХНОВЕНИЯ',
               img: 'h-article-2.jpg',
-              number: '20',
-              title: '20 инсталляций и арт-объектов',
-              dscr: 'Пространство для творчества молодых архитекторов, дизайнеров, художников, скульпторов и других представителей креативных индустрий'
+              title: 'ВДОХНОВЛЯЮЩИЙ УНИКАЛЬНЫМ ЛАНДШАФТОМ',
+              dscr: 'Территория, наполненная инсталляциями и арт-объектами, созданными молодыми архитекторами, независимыми художниками, студентами профильных вузов, скульпторами и креативными дизайнерами городской среды'
             }).highlights__article--dot
-          .col-lg-4
+          .col-sm-6.col-lg-3
             +highlights__article({
-              header: 'Арт-резиденция «Таврида»',
+              header: 'АРТ-РЕЗИДЕНЦИЯ «ТАВРИДА»',
               img: 'h-article-3.jpg',
-              number: '365',
-              title: 'Круглогодичная образовательная площадка',
-              dscr: 'для молодых деятелей культуры и искусства'
-            })
+              title: 'КРУГЛОГОДИЧНАЯ ОБРАЗОВАТЕЛЬНАЯ ПЛОЩАДКА',
+              dscr: 'Открытие стационарного образовательного центра для молодых деятелей культуры и искусств «Арт-резиденция «Таврида» планируется в 2022 году и позволит проекту перейти на круглогодичный и комплексный формат работы'
+            }).highlights__article--column-pink
 
 mixin highlights__article(data)
   a.highlights__article(href="#")&attributes(attributes)
-    h4.highlights__article-header= data.header
     .highlights__article-picture(style="background-image: url(./img/" + data.img + ');')
-      .highlights__article-number= data.number
+     .highlights__article-header= data.header
+     .highlights__article-decoration
     .highlights__article-content
-      h6.highlights__article-title= data.title
+      .highlights__article-title= data.title
       p.highlights__article-dscr= data.dscr
