@@ -251,7 +251,7 @@
     bottom: 0;
     left: 0;
     padding: 25px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 900;
     color: #fff;
@@ -281,13 +281,13 @@
 
   &__article-title {
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 900;
     color: $black;
 
     @include media-breakpoint-down(xml) {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       font-size: 16px;
     }
 
@@ -301,8 +301,11 @@
   }
 
   &__article-dscr {
-    font-size: 16px;
-    line-height: 1.25;
+    margin-bottom: 0;
+    font-family: $font-family-secondary;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
 
     @include media-breakpoint-down(xl) {
       font-size: 14px;
@@ -310,6 +313,10 @@
 
     @media screen and (max-height: 799px) {
       line-height: 1.1;
+    }
+
+    @media screen and (max-height: 749px) {
+      font-size: 12px;
     }
 
     @include media-breakpoint-down(md) {
