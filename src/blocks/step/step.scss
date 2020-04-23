@@ -32,19 +32,19 @@
 
   &__header {
     margin-bottom: 15px;
-    min-height: 50px;
+    //    min-height: 50px;
     font-family: $font-family-sans-serif;
     font-weight: 700;
     text-transform: none;
     color: $black;
 
-    @include media-breakpoint-down(xml) {
-      min-height: 40px;
-    }
-
-    @include media-breakpoint-down(sm) {
-      min-height: 0;
-    }
+    //    @include media-breakpoint-down(xml) {
+    //      min-height: 40px;
+    //    }
+    //
+    //    @include media-breakpoint-down(sm) {
+    //      min-height: 0;
+    //    }
   }
 
   &--last {
