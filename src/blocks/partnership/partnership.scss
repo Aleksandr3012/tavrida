@@ -3,4 +3,23 @@
   &__dscr {
     margin: 75px 0;
   }
+
+  &__info {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $tertiary;
+    border-radius: 20px;
+
+    &:before {
+      margin-right: 50px;
+      display: block;
+      width: 41px;
+      height: 175px;
+      flex-shrink: 0;
+      content: '';
+      background: url(../img/exclamation.svg) no-repeat;
+      background-size: contain;
+    }
+  }
 }

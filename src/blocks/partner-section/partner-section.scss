@@ -1,2 +1,39 @@
 .partner-section {
+  margin-bottom: 20px;
+  padding: 15px 25px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+
+  @include transition;
+
+  &:hover {
+    border-color: rgba(#fff, 0);
+    box-shadow: 0 4px 40px rgba(0, 0, 0, .25);
+  }
+
+  &__title {
+    margin-bottom: 0;
+    max-width: 120px;
+    font-family: $font-family-secondary;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__img {
+    flex-shrink: 0;
+  }
+
+  &--white {
+    border: 1px solid rgba(0, 0, 0, .25);
+
+    .partner-section__title {
+      color: $primary;
+    }
+  }
 }

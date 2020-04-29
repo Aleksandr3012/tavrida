@@ -8,7 +8,7 @@ block content
       modifier: 'linkBack'
     }).align-items-start
     .partnership
-      .container
+      .container.container--narrow
         .partnership__dscr
           .row
             .col-lg-7
@@ -21,36 +21,40 @@ block content
                 li предложить ваш товар или услугу для фуд-корта;
                 li поддержать политику гостеприимства в качестве партнера по размещению гостей;
                 li сделать ко-брендинг или коллаборацию с арт-кластером «Таврида».
-            .col-lg-5
+            .col-lg-4.offset-lg-1.d-flex
               .partnership__info
                 p.mb-0.font-secondary Сотрудничество с «Тавридой» — это максимально удобно и эффективно, потому что мы придерживаемся принципов открытости и прозрачности при отборе наших партнеров.
-        h2.h2--default СТАТЬ ПАРТНЕРОМ
+        h2.h2--default.text-dark.font-secondary.mb-lg-50 СТАТЬ ПАРТНЕРОМ
         .row
-          .col-sm-6.col-lg-3.col-xl-4
+          .col-sm-6.col-lg-4.col-xl-3.d-flex
             +partner-section({
-              title: 'СТАТЬ ПАРТНЕРОМ',
+              title: 'Стать Спонсором/ партнером ',
               bg: '#fff',
-              img: 'partner-section-1.jpg'
-            })
-          .col-sm-6.col-lg-3.col-xl-4
+              img: 'partner-section-1.svg',
+              modal: '#partner-general'
+            }).partner-section--white
+          .col-sm-6.col-lg-4.col-xl-3.d-flex
             +partner-section({
               title: 'Стать Участником маркета',
               bg: '#CE3B65',
-              img: 'partner-section-2.jpg'
+              img: 'partner-section-2.svg',
+              modal: '#partner-market'
             })
-          .col-sm-6.col-lg-3.col-xl-4
+          .col-sm-6.col-lg-4.col-xl-3.d-flex
             +partner-section({
               title: 'Стать Участником фуд-корта',
               bg: '#715F7A',
-              img: 'partner-section-3.jpg'
+              img: 'partner-section-3.svg',
+              modal: '#partner-food'
             })
-          .col-sm-6.col-lg-3.col-xl-4
+          .col-sm-6.col-lg-4.col-xl-3.d-flex
             +partner-section({
-              title: 'Стать Партнером по размещению гостей',
+              title: 'Стать Партнером по размещению гостей',
               bg: '#476FB2',
-              img: 'partner-section-4.jpg'
+              img: 'partner-section-4.svg',
+              modal: '#partner-rooms'
             })
-    +partners-list
+        +partners-list
     +footer
     +signup#registration
     +signup({

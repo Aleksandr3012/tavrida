@@ -207,6 +207,33 @@ ul {
 
   li {
   }
+
+  &.ul--gray {
+    padding-left: 0;
+
+    li {
+      position: relative;
+      margin-bottom: 16px;
+      padding-left: 27px;
+      list-style: none;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 600;
+      color: rgba($black, .5);
+
+      &:before {
+        position: absolute;
+        top: 9px;
+        left: 0;
+        display: block;
+        width: 11px;
+        height: 11px;
+        content: '';
+        background: $tertiary;
+        border-radius: 50%;
+      }
+    }
+  }
 }
 
 ol {
