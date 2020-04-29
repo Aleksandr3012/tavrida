@@ -1,0 +1,29 @@
+mixin partners-list(data)
+  .partners-list&attributes(attributes)
+    h2.h2--default.font-secondary.mb-lg-45 партнеры
+    p.font-secondary.mb-lg-60 Официальные партнеры:
+    .row
+      each val, index in ['Министерство Культуры РФ', 'Таврида Aqua', 'Black Star', 'Невская Палитра', 'Новая Волна', 'Издательская группа «Эксмо-АСТ»', 'Дом Шампанских вин «Новый Свет»', 'Ревизор.ру', 'Ультра Продакшн', 'Студия «Союз»', 'Ассоциация студенческих спортивных клубов', 'Российский Союз боевых искусств', '64Audio', 'Fonarev', 'SD Drum Show', 'Z.Sity', 'Музыкальная Академия Матвиенко', 'Мультимедиа Холдинг', 'РАМ им. Гнесиных', 'Русская Филармония', 'Благотворительный фонд «Искусство. Наука. Спорт»', 'Ассоциация Волонтерских центров', 'Всероссийское общество охраны памятников истории и культуры', 'Еврейский музей и центр толерантности', 'Общероссийская организация «Городские реновации»', 'Давинг-центр «Варяг»', 'Сеть АЗС в Крыму', 'Гольфкары и электромобили Eway', 'Программа мобильности волонтеров']
+        .col-6.col-sm-4.col-lg-3.col-xl-2
+          +partners-list__item({
+            logo: 'partner-logo-' + index + '.png',
+            title: val
+          })
+    p.font-secondary.mb-lg-60 Информационные партнеры:
+    .row
+      each val, index in ['Русское Радио', 'СТС', 'Ру.ТВ', 'DFM', 'Россия Сегодня', 'Наше Радио', 'Телеканал Россия', 'Телеканал Культура', 'Онлайн-журнал «Типичная Москва»', 'Туристический портал республики «Крым»', 'Телеканал «Точка отрыва»']
+        .col-6.col-sm-4.col-lg-3.col-xl-2
+          +partners-list__item({
+            logo: 'partner-logo-' + index + '.png',
+            title: val
+          })
+
+        
+        
+        
+  
+mixin partners-list__item(data)
+  .partners-list__item&attributes(attributes)
+    .partners-list__item-img-wrapper
+      img.partners-list__item-img(src="./img/" + data.logo, alt)
+    p.partners-list__item-title= data.title

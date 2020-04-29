@@ -31,4 +31,13 @@
       padding-left: 0;
     }
   }
+
+  &__link-back {
+    position: relative;
+    z-index: 1;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    background: url(../img/link-back--white.png) no-repeat !important;
+    background-size: contain !important;
+  }
 }

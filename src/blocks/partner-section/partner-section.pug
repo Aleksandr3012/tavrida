@@ -1,0 +1,4 @@
+mixin partner-section(data)
+  .partner-section(style="background-color: " + data.bg)&attributes(attributes)
+    p.p--xs.partners-section__title!= data.title
+    img.partners-section__img(src="./img/" + data.img, alt)

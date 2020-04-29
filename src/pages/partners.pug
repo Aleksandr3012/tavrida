@@ -1,0 +1,58 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    +hero({
+      bg: 'partners-front.jpg',
+      title: 'Стань <br>партнером <br>арт-кластера <br>«Таврида»',
+      modifier: 'linkBack'
+    }).align-items-start
+    .partnership
+      .container
+        .partnership__dscr
+          .row
+            .col-lg-7
+              .row
+                .col-lg-8
+                  h5.font-weight-semi.font-secondary.text-dark.text-transform-none.mb-35 Партнерство — это сила, поэтому мы рассмотрим ваши заявки и предложения о сотрудничестве в различных форматах. Свяжитесь с нами, если вы собираетесь:
+              ul.ul--gray
+                li стать спонсором или партнером Форума и Фестиваля «Таврида — АРТ»;
+                li поучаствовать в маркете;
+                li предложить ваш товар или услугу для фуд-корта;
+                li поддержать политику гостеприимства в качестве партнера по размещению гостей;
+                li сделать ко-брендинг или коллаборацию с арт-кластером «Таврида».
+            .col-lg-5
+              .partnership__info
+                p.mb-0.font-secondary Сотрудничество с «Тавридой» — это максимально удобно и эффективно, потому что мы придерживаемся принципов открытости и прозрачности при отборе наших партнеров.
+        h2.h2--default СТАТЬ ПАРТНЕРОМ
+        .row
+          .col-sm-6.col-lg-3.col-xl-4
+            +partner-section({
+              title: 'СТАТЬ ПАРТНЕРОМ',
+              bg: '#fff',
+              img: 'partner-section-1.jpg'
+            })
+          .col-sm-6.col-lg-3.col-xl-4
+            +partner-section({
+              title: 'Стать Участником маркета',
+              bg: '#CE3B65',
+              img: 'partner-section-2.jpg'
+            })
+          .col-sm-6.col-lg-3.col-xl-4
+            +partner-section({
+              title: 'Стать Участником фуд-корта',
+              bg: '#715F7A',
+              img: 'partner-section-3.jpg'
+            })
+          .col-sm-6.col-lg-3.col-xl-4
+            +partner-section({
+              title: 'Стать Партнером по размещению гостей',
+              bg: '#476FB2',
+              img: 'partner-section-4.jpg'
+            })
+    +partners-list
+    +footer
+    +signup#registration
+    +signup({
+      modifier: 'login'
+    })#login

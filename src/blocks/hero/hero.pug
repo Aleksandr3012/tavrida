@@ -4,5 +4,7 @@ mixin hero(data)
       modifier: 'new'
     }).header-inner--alone
     .container
+      if data && data.modifier == 'linkBack'
+        a.link-back.hero__link-back(href="#")
       .hero__content
         h1.mb-0!= data.title
