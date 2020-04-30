@@ -428,6 +428,16 @@
       font-weight: 700;
       color: #4f4f4f;
       border: 1px solid #bdbdbd;
+
+      @include media-breakpoint-down(lg) {
+        padding: 0 10px;
+        font-size: 12px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: 0 10px;
+        font-size: 11px;
+      }
     }
   }
 }

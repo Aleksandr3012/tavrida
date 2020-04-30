@@ -221,6 +221,11 @@ ul {
       font-weight: 600;
       color: rgba($black, .5);
 
+      @include media-breakpoint-down(xl) {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
       &:before {
         position: absolute;
         top: 9px;
@@ -231,6 +236,10 @@ ul {
         content: '';
         background: $tertiary;
         border-radius: 50%;
+
+        @include media-breakpoint-down(xl) {
+          top: 5px;
+        }
       }
     }
   }

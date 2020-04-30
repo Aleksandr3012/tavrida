@@ -2,6 +2,13 @@
 
   &__dscr {
     margin: 75px 0;
+
+    p {
+
+      @include media-breakpoint-down(xl) {
+        font-size: 16px;
+      }
+    }
   }
 
   &__info {
@@ -10,6 +17,14 @@
     align-items: center;
     border: 1px solid $tertiary;
     border-radius: 20px;
+
+    @include media-breakpoint-down(xl) {
+      padding: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+    }
 
     &:before {
       margin-right: 50px;

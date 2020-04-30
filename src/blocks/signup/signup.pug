@@ -21,21 +21,22 @@ mixin signup(data)
   else if data && data.modifier == 'partner-general'
     .signup&attributes(attributes)
       a.signup__close(href="#")
-      h2.h2--default.text-dark.mb-30 Стать партнером или спонсором
+      h2.signup__default-header.h2--default.text-dark.mb-30 Стать партнером или спонсором
       .signup__content
         form.form(action="#", method="POST")
-          .d-flex.align-items-center.mb-20.mb-lg-40
+          .signup__partners-section
             span.signup__radio-header Выберите, где вы хотите участвовать
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section1.custom-control-input(type='radio', name='section', checked)
-              label.custom-control-label(for='partner-section1') Форум
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section2.custom-control-input(type='radio', name='section')
-              label.custom-control-label(for='partner-section2') Фестиваль
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section3.custom-control-input(type='radio', name='section')
-              label.custom-control-label(for='partner-section3') Форум и Фестиваль
-            p.p--xs.text-primary.mb-0.ml-30 Форум проводится с июня по октябрь, Фестиваль с 8 по 12 июля
+            .signup__partners-section-content
+              .custom-control.custom-radio.custom-radio--dark
+                input#partner-section1.custom-control-input(type='radio', name='section', checked)
+                label.custom-control-label(for='partner-section1') Форум
+              .custom-control.custom-radio.custom-radio--dark
+                input#partner-section2.custom-control-input(type='radio', name='section')
+                label.custom-control-label(for='partner-section2') Фестиваль
+              .custom-control.custom-radio.custom-radio--dark.mr-0
+                input#partner-section3.custom-control-input(type='radio', name='section')
+                label.custom-control-label(for='partner-section3') Форум и Фестиваль
+            p.p--xs.text-primary.mb-0 Форум проводится с июня по октябрь, <br>Фестиваль с 8 по 12 июля
           .row
             .col-lg-4
               .form__item.form-group
@@ -77,21 +78,22 @@ mixin signup(data)
   else if data && data.modifier == 'partner-market'
     .signup&attributes(attributes)
       a.signup__close(href="#")
-      h2.h2--default.text-dark.mb-30 Стать участником маркета
+      h2.signup__default-header.h2--default.text-dark.mb-30 Стать участником маркета
       .signup__content
         form.form(action="#", method="POST")
-          .d-flex.align-items-center.mb-20.mb-lg-40
+          .signup__partners-section
             span.signup__radio-header Выберите, где вы хотите участвовать
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section1.custom-control-input(type='radio', name='section', checked)
-              label.custom-control-label(for='partner-section1') Форум
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section2.custom-control-input(type='radio', name='section')
-              label.custom-control-label(for='partner-section2') Фестиваль
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section3.custom-control-input(type='radio', name='section')
-              label.custom-control-label(for='partner-section3') Форум и Фестиваль
-            p.p--xs.text-primary.mb-0.ml-30 Форум проводится с июня по октябрь, Фестиваль с 8 по 12 июля
+            .signup__partners-section-content
+              .custom-control.custom-radio.custom-radio--dark
+                input#partner-section1.custom-control-input(type='radio', name='section', checked)
+                label.custom-control-label(for='partner-section1') Форум
+              .custom-control.custom-radio.custom-radio--dark
+                input#partner-section2.custom-control-input(type='radio', name='section')
+                label.custom-control-label(for='partner-section2') Фестиваль
+              .custom-control.custom-radio.custom-radio--dark.mr-0
+                input#partner-section3.custom-control-input(type='radio', name='section')
+                label.custom-control-label(for='partner-section3') Форум и Фестиваль
+            p.p--xs.text-primary.mb-0 Форум проводится с июня по октябрь, <br>Фестиваль с 8 по 12 июля
           .row
             .col-lg-4
               .form__item.form-group
@@ -137,21 +139,22 @@ mixin signup(data)
   else if data && data.modifier == 'partner-food'
     .signup&attributes(attributes)
       a.signup__close(href="#")
-      h2.h2--default.text-dark.mb-30 Стать участником фудкорта
+      h2.signup__default-header.h2--default.text-dark.mb-30 Стать участником фудкорта
       .signup__content
         form.form(action="#", method="POST")
-          .d-flex.align-items-center.mb-20.mb-lg-40
+          .signup__partners-section
             span.signup__radio-header Выберите, где вы хотите участвовать
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section1.custom-control-input(type='radio', name='section', checked)
-              label.custom-control-label(for='partner-section1') Форум
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section2.custom-control-input(type='radio', name='section')
-              label.custom-control-label(for='partner-section2') Фестиваль
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section3.custom-control-input(type='radio', name='section')
-              label.custom-control-label(for='partner-section3') Форум и Фестиваль
-            p.p--xs.text-primary.mb-0.ml-30 Форум проводится с июня по октябрь, Фестиваль с 8 по 12 июля
+            .signup__partners-section-content
+              .custom-control.custom-radio.custom-radio--dark
+                input#partner-section1.custom-control-input(type='radio', name='section', checked)
+                label.custom-control-label(for='partner-section1') Форум
+              .custom-control.custom-radio.custom-radio--dark
+                input#partner-section2.custom-control-input(type='radio', name='section')
+                label.custom-control-label(for='partner-section2') Фестиваль
+              .custom-control.custom-radio.custom-radio--dark.mr-0
+                input#partner-section3.custom-control-input(type='radio', name='section')
+                label.custom-control-label(for='partner-section3') Форум и Фестиваль
+            p.p--xs.text-primary.mb-0 Форум проводится с июня по октябрь, <br>Фестиваль с 8 по 12 июля
           .row
             .col-lg-4
               .form__item.form-group
@@ -208,21 +211,22 @@ mixin signup(data)
   else if data && data.modifier == 'partner-rooms'
     .signup&attributes(attributes)
       a.signup__close(href="#")
-      h2.h2--default.text-dark.mb-30 Стать Партнером по размещению гостей
+      h2.signup__default-header.h2--default.text-dark.mb-30 Стать Партнером по размещению гостей
       .signup__content
         form.form(action="#", method="POST")
-          .d-flex.align-items-center.mb-20.mb-lg-40
+          .signup__partners-section
             span.signup__radio-header Выберите, где вы хотите участвовать
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section1.custom-control-input(type='radio', name='section', checked)
-              label.custom-control-label(for='partner-section1') Форум
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section2.custom-control-input(type='radio', name='section')
-              label.custom-control-label(for='partner-section2') Фестиваль
-            .custom-control.custom-radio.custom-radio--dark
-              input#partner-section3.custom-control-input(type='radio', name='section')
-              label.custom-control-label(for='partner-section3') Форум и Фестиваль
-            p.p--xs.text-primary.mb-0.ml-30 Форум проводится с июня по октябрь, Фестиваль с 8 по 12 июля
+            .signup__partners-section-content
+              .custom-control.custom-radio.custom-radio--dark
+                input#partner-section1.custom-control-input(type='radio', name='section', checked)
+                label.custom-control-label(for='partner-section1') Форум
+              .custom-control.custom-radio.custom-radio--dark
+                input#partner-section2.custom-control-input(type='radio', name='section')
+                label.custom-control-label(for='partner-section2') Фестиваль
+              .custom-control.custom-radio.custom-radio--dark.mr-0
+                input#partner-section3.custom-control-input(type='radio', name='section')
+                label.custom-control-label(for='partner-section3') Форум и Фестиваль
+            p.p--xs.text-primary.mb-0 Форум проводится с июня по октябрь, <br>Фестиваль с 8 по 12 июля
           .row
             .col-lg-4
               .form__item.form-group

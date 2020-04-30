@@ -65,6 +65,12 @@ $(document).click(function (e) {
     }
 });
 
+//if ($(window).width() > 992 && $('.signup').length) {
+//  const ps3 = new PerfectScrollbar('.signup');
+//}
+
 if ($(window).width() > 992 && $('.signup').length) {
-  const ps3 = new PerfectScrollbar('.signup');
+  $('.signup').each(function() {
+    const ps3 = new PerfectScrollbar(this);
+  })
 }
