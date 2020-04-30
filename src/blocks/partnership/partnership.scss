@@ -35,6 +35,10 @@
       content: '';
       background: url(../img/exclamation.svg) no-repeat;
       background-size: contain;
+
+      @include media-breakpoint-down(xl) {
+        margin-right: 20px;
+      }
     }
   }
 }

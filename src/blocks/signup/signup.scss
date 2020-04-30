@@ -87,11 +87,9 @@
   }
 
   &__default-header {
-    max-width: 80%;
-
-    @include media-breakpoint-down(md) {
-      max-width: 85%;
-    }
+    margin-bottom: 40px;
+    max-width: 88%;
+    font-family: $font-family-secondary;
   }
 
   &__partners-section-comment {
