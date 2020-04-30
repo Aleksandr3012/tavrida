@@ -80,10 +80,6 @@
     display: flex;
     flex-shrink: 0;
 
-    @include media-breakpoint-down(md) {
-      margin-bottom: 20px;
-    }
-
     @include media-breakpoint-down(sm) {
       margin-top: 20px;
       margin-bottom: 10px;
@@ -95,6 +91,14 @@
 
     @include media-breakpoint-down(md) {
       max-width: 85%;
+    }
+  }
+
+  &__partners-section-comment {
+
+    @include media-breakpoint-down(md) {
+      margin-top: 20px;
+      width: 100%;
     }
   }
 
