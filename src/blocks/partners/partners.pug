@@ -1,96 +1,116 @@
 mixin partners(data)
   .partners&attributes(attributes)
     .container
-      h4.text-dark.mb-20.mb-xml-45 Партнеры
-    .partners__row.partners__row--light
+      h2.h2--default.text-dark.font-secondary.mb-lg-45 партнеры
+    if data && data.modifier == 'new'
+      .partners__row.partners__row--light
+        .container
+          .partners__row-wrapper
+            .partners__row-content
+              - for (var i = 0; i < 29; ++i) {
+                .partners__item
+                  img.partners__logo(src="./img/partner-logo-" + i + '.png', alt="Logo")
+              - }
+      .partners__row.partners__row--dark
+        .container
+          .partners__row-wrapper
+            .partners__row-content
+              - for (var i = 0; i < 11; ++i) {
+                .partners__item
+                  img.partners__logo(src="./img/partner-logo-2-" + i + '.png', alt="Logo")
+              - }
+    else
       .container
-        .partners__row-wrapper
-          h6.partners__header 
-            span информационные
-          .partners__row-content
-            .partners__item
-              img.partners__logo(src="./img/partner-1.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-2.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-3.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-4.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-5.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-6.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-7.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-8.gif", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-9.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-10.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-11.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-12.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-14.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-15.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-16.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-17.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-18.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-19.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-20.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-21.png", alt="Logo")
-    .partners__row.partners__row--dark
-      .container
-        .partners__row-wrapper
-          h6.partners__header 
-            span тематические
-          .partners__row-content
-            .partners__item
-              img.partners__logo(src="./img/partner-22.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-23.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-24.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-25.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-26.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-27.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-28.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-29.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-30.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-31.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-32.jpg", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-33.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-34.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-35.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-36.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-37.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-38.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-39.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-40.png", alt="Logo")
-            .partners__item
-              img.partners__logo(src="./img/partner-41.png", alt="Logo")
+        h4.text-dark.mb-20.mb-xml-45 Партнеры
+      .partners__row.partners__row--light
+        .container
+          .partners__row-wrapper
+            h6.partners__header 
+              span информационные
+            .partners__row-content
+              .partners__item
+                img.partners__logo(src="./img/partner-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-2.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-3.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-4.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-5.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-6.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-7.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-8.gif", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-9.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-10.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-11.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-12.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-14.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-15.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-16.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-17.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-18.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-19.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-20.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-21.png", alt="Logo")
+      .partners__row.partners__row--dark
+        .container
+          .partners__row-wrapper
+            h6.partners__header 
+              span тематические
+            .partners__row-content
+              .partners__item
+                img.partners__logo(src="./img/partner-22.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-23.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-24.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-25.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-26.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-27.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-28.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-29.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-30.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-31.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-32.jpg", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-33.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-34.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-35.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-36.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-37.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-38.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-39.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-40.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/partner-41.png", alt="Logo")

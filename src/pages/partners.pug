@@ -54,7 +54,10 @@ block content
               img: 'partner-section-4.svg',
               modal: '#partner-rooms'
             }).js-partner-rooms
-        +partners-list
+        //+partners-list
+    +partners({
+      modifier: 'new'
+    }).partners--new
     +footer
     +signup#registration
     +signup({
