@@ -32,31 +32,43 @@ block content
               bg: '#fff',
               img: 'partner-section-1.svg',
               modal: '#partner-general'
-            }).partner-section--white
+            }).partner-section--white.js-partner-general
           .col-sm-6.col-lg-4.col-xl-3.d-flex
             +partner-section({
               title: 'Стать Участником маркета',
               bg: '#CE3B65',
               img: 'partner-section-2.svg',
               modal: '#partner-market'
-            })
+            }).js-partner-market
           .col-sm-6.col-lg-4.col-xl-3.d-flex
             +partner-section({
               title: 'Стать Участником фуд-корта',
               bg: '#715F7A',
               img: 'partner-section-3.svg',
               modal: '#partner-food'
-            })
+            }).js-partner-food
           .col-sm-6.col-lg-4.col-xl-3.d-flex
             +partner-section({
               title: 'Стать Партнером по размещению гостей',
               bg: '#476FB2',
               img: 'partner-section-4.svg',
               modal: '#partner-rooms'
-            })
+            }).js-partner-rooms
         +partners-list
     +footer
     +signup#registration
     +signup({
       modifier: 'login'
     })#login
+    +signup({
+      modifier: 'partner-general'
+    })#partner-general
+    +signup({
+      modifier: 'partner-market'
+    })#partner-market
+    +signup({
+      modifier: 'partner-food'
+    })#partner-food
+    +signup({
+      modifier: 'partner-rooms'
+    })#partner-rooms

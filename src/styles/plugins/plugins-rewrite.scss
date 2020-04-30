@@ -415,6 +415,21 @@
       display: none;
     }
   }
+
+  &--dark {
+    flex-shrink: 0;
+
+    .custom-control-label {
+      padding: 0 26px;
+      width: auto;
+      height: 42px;
+      font-family: $font-family-secondary;
+      font-size: 16px;
+      font-weight: 700;
+      color: #4f4f4f;
+      border: 1px solid #bdbdbd;
+    }
+  }
 }
 
 /* Slick */

@@ -1,4 +1,5 @@
 mixin signup(data)
+
   if data && data.modifier == 'login'
     .signup&attributes(attributes)
       a.signup__close(href="#")
@@ -16,6 +17,63 @@ mixin signup(data)
                 input.input.form-control(type="password", placeholder="Введите пароль")
           .form__footer
             button.btn.btn-primary.btn-green(type="submit") Вход
+
+  else if data && data.modifier == 'partner-general'
+    .signup&attributes(attributes)
+      a.signup__close(href="#")
+      h2.h2--default.text-dark.mb-30 Стать партнером или спонсором
+      .signup__content
+        form.form(action="#", method="POST")
+          .d-flex.align-items-center.mb-20.mb-lg-40
+            span.signup__radio-header Выберите, где вы хотите участвовать
+            .custom-control.custom-radio.custom-radio--dark
+              input#partner-section1.custom-control-input(type='radio', name='section', checked)
+              label.custom-control-label(for='partner-section1') Форум
+            .custom-control.custom-radio.custom-radio--dark
+              input#partner-section2.custom-control-input(type='radio', name='section')
+              label.custom-control-label(for='partner-section2') Фестиваль
+            .custom-control.custom-radio.custom-radio--dark
+              input#partner-section3.custom-control-input(type='radio', name='section')
+              label.custom-control-label(for='partner-section3') Форум и Фестиваль
+            p.p--xs.text-primary.mb-0.ml-30 Форум проводится с июня по октябрь, Фестиваль с 8 по 12 июля
+          .row
+            .col-lg-4
+              .form__item.form-group
+                label.form__label ФИО контактного лица
+                input.input.form-control(type="text", placeholder="Заполните поле")
+            .col-lg-4
+              .form__item.form-group
+                label.form__label Телефон
+                input.input.form-control(type="text", placeholder="+7 ( ___ ) ___ - __ - __")
+            .col-lg-4
+              .form__item.form-group
+                label.form__label E-mail
+                input.input.form-control(type="email", placeholder="sample@sample.com")
+            .col-lg-4
+              .form__item.form-group
+                label.form__label Название бренда
+                input.input.form-control(type="text", placeholder="Заполните поле")
+            .col-lg-4
+              .form__item.form-group
+                label.form__label Ссылка на сайт
+                input.input.form-control(type="text", placeholder="http:\\")
+            .col-lg-4
+              .form__item.form-group
+                label.form__label Ссылка на соц.сеть
+                input.input.form-control(type="text", placeholder="http:\\")
+            .col-lg-4
+              .form__item.form-group
+                label.form__label Категория товара
+                input.input.form-control(type="text", placeholder="Заполните поле")
+            .col-lg-8
+              .form__item.form-group
+                label.form__label Желаемая форма участия 
+                input.input.form-control(type="text", placeholder="Опишите ваше предложение")
+          .form__footer
+            button.btn.btn-primary.btn-green(type="submit") Отправить
+            p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
+              a(href="#") пользовательским соглашением
+            
   else 
     .signup&attributes(attributes)
       a.signup__close(href="#")

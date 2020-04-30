@@ -50,6 +50,15 @@
     background-size: contain;
   }
 
+  &__radio-header {
+    margin-right: 50px;
+    font-family: $font-family-secondary;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: $dark;
+  }
+
   .ps__rail-y {
     right: 10px !important;
   }
