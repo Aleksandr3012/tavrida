@@ -157,12 +157,22 @@
 
   &--new {
 
+    .container {
+      padding-right: 40px;
+
+      @include media-breakpoint-down(sm) {
+        padding-right: 10px;
+      }
+    }
+
     .partners__row {
+      margin-bottom: 35px;
       padding: 25px 0;
     }
 
     .partners__row-wrapper {
-      padding-left: 0;
+      padding-right: 40px;
+      padding-left: 40px;
     }
 
     .partners__row-content {
@@ -178,14 +188,19 @@
       background: #fff;
       border-radius: 10px;
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         margin: 0 10px;
+      }
+
+      @include media-breakpoint-down(sm) {
         max-width: none;
         min-height: 100px;
       }
     }
 
     .partners__logo {
+      max-width: 80%;
+      max-height: 90%;
     }
 
     .slick-arrow {
@@ -193,12 +208,22 @@
       width: 52px;
       height: 52px;
 
+      @include media-breakpoint-down(md) {
+        margin-top: -20px;
+        width: 40px;
+        height: 40px;
+      }
+
+      &.slick-disabled {
+        display: block !important;
+      }
+
       &.slick-prev {
-        left: 0;
+        left: -40px;
       }
 
       &.slick-next {
-        right: 0;
+        right: -40px;
       }
     }
   }
