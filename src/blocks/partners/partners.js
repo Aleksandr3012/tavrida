@@ -1,6 +1,6 @@
 if ($('.partners--new .partners__row-content').length) {
 
-  $('.partners__row-content').slick({
+  $('.partners__row-content').not('.slick-initialized').slick({
     slidesToShow: 6,
     infinite: false,
     responsive: [
@@ -19,9 +19,7 @@ if ($('.partners--new .partners__row-content').length) {
     ]
   });
   
-  $('.partners__row-content').on('init reinit', function(slick) {
-    var item = $('.partners__item');
-    var itemWidth = item.width();
-    item.css('height', itemWidth);
-  });
+  var item = $('.partners__item');
+  var itemWidth = item.width();
+  item.css('height', itemWidth);
 }

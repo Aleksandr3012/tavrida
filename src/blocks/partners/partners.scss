@@ -201,6 +201,10 @@
     .partners__logo {
       max-width: 80%;
       max-height: 90%;
+
+      @include media-breakpoint-down(sm) {
+        max-height: 90px;
+      }
     }
 
     .slick-arrow {

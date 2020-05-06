@@ -11,9 +11,9 @@ if ($(window).width() > 992) {
   });
 }
 
-if ($(window).width() > 767 && $('.partners__row-content').length) {
+if ($(window).width() > 767 && $('.partners__row-content').length && !$('.partners').hasClass('partners--new')) {
 
-  $('.partners__row-content').slick({
+  $('.partners__row-content').not('.slick-initialized').slick({
     slidesToShow: 6,
     infinite: false,
     responsive: [
