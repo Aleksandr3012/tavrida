@@ -75,6 +75,11 @@ h3,
   @include media-breakpoint-down(lg) {
     font-size: 25px;
   }
+
+  &.h3--default {
+    font-size: 35px;
+    line-height: 1.23;
+  }
 }
 
 h4,
@@ -181,7 +186,7 @@ p,
 }
 
 .font-weight-semi {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .font-weight-black {
@@ -202,6 +207,10 @@ p,
 
 .text-grayish {
   color: rgba($black, .5);
+}
+
+.text-yellow {
+  color: #efc825;
 }
 
 .text-transform-none {

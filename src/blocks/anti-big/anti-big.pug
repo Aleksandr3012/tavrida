@@ -1,0 +1,29 @@
+mixin anti-big(data)
+  .anti-big(style="background-image: url(./img/" + data.bg + ');')&attributes(attributes)
+    .anti-big__wrapper
+      .anti-big__top
+        .anti-big__header
+          .anti-big__header-left
+            h3.h3--default.mb-0.font-secondary.text-white 1 ‒ 5 июня
+            p.anti-big__dates-header.font-secondary проектные даты
+          a.anti-big__online.font-secondary(href="#") Онлайн формат
+        h3.h3--default.mb-30.font-secondary.text-white= data.title
+        p.p--xs.text-white.font-secondary.anti-big__dscr= data.dscr
+      .anti-big__bottom
+        p.p--xs.text-white.font-weight-bold.mb-10.font-secondary.text-uppercase Кураторы
+        .row.justify-content-between
+          each curator in data.curators
+            .col-sm-4
+              p.p--xs.text-white.font-weight-bold.font-secondary.mb-5= curator.name
+              p.p--xs.font-weight-bold.mb-0.font-secondary
+                a.text-yellow(href="mailto:" + curator.email)= curator.email
+        .anti-big__bottom-tasks
+          p.p--xs.text-white.font-weight-bold.mb-0.font-secondary.text-uppercase Задания:
+          a.btn.btn-green.font-secondary.font-weight-bold.text-uppercase.anti-big__btn(href="#") Визуальная карта
+          a.btn.btn-green.font-secondary.font-weight-bold.text-uppercase.anti-big__btn(href="#") Индустрия моды
+        .anti-big__bottom-footer
+          p.p--xs.text-white.font-weight-bold.mb-0.font-secondary.text-uppercase Дедлайн подачи заявок: 
+            span.text-yellow 25 июня
+          p.p--xs.text-white.font-weight-bold.mb-0.font-secondary.text-uppercase
+            a.text-yellow(href="#") Описание антишколы
+

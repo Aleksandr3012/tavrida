@@ -1,6 +1,72 @@
 mixin anti-list(data)
   .anti-list&attributes(attributes)
     .container
+      h2.h2--default.text-dark.mb-20.mb-lg-30.font-secondary Творческие антишколы 2020
+      h5.text-dark.mb-30.mb-lg-50.font-secondary Что нового в этом году?
+      .row
+        .col-sm-6.col-lg-4.col-xl-3
+          +anti-feature({
+            icon: 'anti-feature-1.svg',
+            dscr: '«Творческие антишколы» ‒ новые форматы традиционных смен'
+          })
+        .col-sm-6.col-lg-4.col-xl-3
+          +anti-feature({
+            icon: 'anti-feature-2.svg',
+            dscr: 'Продюсерское сопровождение талантливых участников'
+          })
+        .col-sm-6.col-lg-4.col-xl-3
+          +anti-feature({
+            icon: 'anti-feature-3.svg',
+            dscr: 'Программа лояльности'
+          })
+        .col-sm-6.col-lg-4.col-xl-3
+          +anti-feature({
+            icon: 'anti-feature-4.svg',
+            dscr: 'Удобные и универсальные творческие пространства'
+          })
+        .col-sm-6.col-lg-4.col-xl-3
+          +anti-feature({
+            icon: 'anti-feature-5.svg',
+            dscr: 'Свободный выход за территорию арт-кластера'
+          })
+        .col-sm-6.col-lg-4.col-xl-3
+          +anti-feature({
+            icon: 'anti-feature-6.svg',
+            dscr: 'Tavrida Bookstore и библиотека нон-фикшн'
+          })
+        .col-sm-6.col-lg-4.col-xl-3
+          +anti-feature({
+            icon: 'anti-feature-7.svg',
+            dscr: 'Грантовый конкурс до 2 500 000 рублей на твой проект'
+          })
+      p.p--xs.font-secondary.text-uppercase.font-weight-semi.mt-20.mb-30.mb-lg-50 *УКАЗАННЫЕ ДАТЫ ПРОВЕДЕНИЯ АНТИШКОЛ ФОРУМА ЯВЛЯЮТСЯ ПРОЕКТНЫМИ И МОГУТ БЫТЬ ИЗМЕНЕНЫ
+      .row
+        .col-lg-6.d-flex
+          +anti-big({
+            bg: 'anti-big-1.jpg',
+            title: 'Творческая антишкола организаторов и тим-лидеров фестиваля',
+            dscr: 'Менеджеры в сфере культуры, резиденты арт-кластера, специалисты по работе с молодежью в регионах РФ, молодые сотрудники региональных министерств культуры, специалисты по учебно-воспитательной работе',
+            curators: [
+              {name: 'Артемьева Ксения', email: 'artemeva@crki.art'},
+              {name: 'Ильичева Мария', email: 'ilicheva@crki.art'},
+              {name: 'Ильичева Мария', email: 'ilicheva@crki.art'}
+            ]
+          })
+        .col-lg-6.d-flex
+          +anti-big({
+            bg: 'anti-big-2.jpg',
+            title: 'Творческая антишкола  современных музыкальных направлений',
+            dscr: 'Музыканты, вокалисты, битмейкеры, авторы собственных музыкальных произведений, sound-продюсеры',
+            curators: [
+              {name: 'Артемьева Ксения', email: 'artemeva@crki.art'},
+              {name: 'Ильичева Мария', email: 'ilicheva@crki.art'}
+            ]
+          })
+
+
+//mixin anti-list(data)
+  .anti-list&attributes(attributes)
+    .container
       h2.h2--default.mb-30.mb-lg-70 Творческие антишколы 2020
       .row.justify-content-center
         .col-md-6.d-flex
@@ -93,4 +159,3 @@ mixin anti-list(data)
             picture: 'anti-15.jpg',
             title: 'Повышение региональной привлекательности'
           })
-
