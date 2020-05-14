@@ -4,26 +4,26 @@ mixin anti-big(data)
       .anti-big__top
         .anti-big__header
           .anti-big__header-left
-            h3.h3--default.mb-0.font-secondary.text-white 1 ‒ 5 июня
+            h3.h3--default.mb-0.font-secondary.text-white.anti-big__date 1 ‒ 5 июня
             p.anti-big__dates-header.font-secondary проектные даты
           a.anti-big__online.font-secondary(href="#") Онлайн формат
-        h3.h3--default.mb-25.font-secondary.text-white= data.title
+        h3.h3--default.mb-25.font-secondary.text-white.anti-big__title= data.title
         p.p--xs.text-white.font-secondary.anti-big__dscr= data.dscr
       .anti-big__bottom
         p.p--xs.text-white.font-weight-bold.mb-10.font-secondary.text-uppercase Кураторы
         .row.justify-content-between
           each curator in data.curators
-            .col-sm-4
+            .col-sm-4.mb-20.mb-sm-0
               p.p--xs.text-white.font-weight-bold.font-secondary.mb-5= curator.name
               p.p--xs.font-weight-bold.mb-0.font-secondary
-                a.text-yellow(href="mailto:" + curator.email)= curator.email
+                a.text-yellow.anti-big__curator-email(href="mailto:" + curator.email)= curator.email
         .anti-big__bottom-tasks
-          p.p--xs.text-white.font-weight-bold.mb-0.font-secondary.text-uppercase Задания:
+          p.p--xs.text-white.font-weight-bold.font-secondary.text-uppercase.anti-big__tasks-header Задания:
           a.btn.btn-green.font-secondary.font-weight-bold.text-uppercase.anti-big__btn(href="#") Визуальная карта
           a.btn.btn-green.font-secondary.font-weight-bold.text-uppercase.anti-big__btn(href="#") Индустрия моды
         .anti-big__bottom-footer
-          p.p--xs.text-white.font-weight-bold.mb-0.font-secondary.text-uppercase Дедлайн подачи заявок: 
-            span.text-yellow 25 июня
+          p.p--xs.text-white.font-weight-bold.mb-0.font-secondary.text-uppercase.mb-20.mb-md-0 Дедлайн подачи заявок: 
+            span.text-yellow 25 июня
           p.p--xs.text-white.font-weight-bold.mb-0.font-secondary.text-uppercase
             a.text-yellow(href="#") Описание антишколы
 

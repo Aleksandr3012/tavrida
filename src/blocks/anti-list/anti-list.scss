@@ -1,8 +1,14 @@
 .anti-list {
   margin-bottom: 50px;
   padding-top: 60px;
-  //  background: url(../img/anti-list-bg.svg) no-repeat top -60px center;
-  //  background-size: cover;
+
+  .container {
+    padding-right: 20px;
+
+    @include media-breakpoint-down(sm) {
+      padding-right: 10px;
+    }
+  }
 
   @include media-breakpoint-down(lg) {
     margin-bottom: 0;
