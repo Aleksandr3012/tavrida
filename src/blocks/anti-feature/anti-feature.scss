@@ -1,7 +1,9 @@
 .anti-feature {
   margin-bottom: 80px;
+  padding-right: 40px;
 
   @include media-breakpoint-down(lg) {
     margin-bottom: 40px;
+    padding-right: 0;
   }
 }
