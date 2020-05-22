@@ -67,6 +67,10 @@
     }
   }
 
+  &__front-info-dscr {
+    max-width: 360px;
+  }
+
   &__front-age {
     font-family: $font-family-serif;
     font-size: 52px;
