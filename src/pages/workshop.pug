@@ -122,6 +122,43 @@ block content
             li
               span Расскажи про твоё место силы
               p.p--xxs Условия выполнения задания: файл в формате word.doc, не больше 50 предложений
+    
+    .registration.registration--gray
+      .container
+        h2.h2--default.mb-15 Регистрация на воркшоп
+        p.p--xxs.font-weight-semi Для регистрации на воркшоп необходимо выполнить все пункты творческого задания одной из команд и приложить портфолио, где будет описан ваш опыт, примеры работ и навыки. 
+        form.form(action="#", method="POST")
+          .registration__type
+            .registration__type-top
+              .registration__type-header В какую команду вы хотите подать заявку
+              .registration__type-content
+                .custom-control.custom-radio
+                  input#workshopType1.custom-control-input(type='radio', name='type', checked)
+                  label.custom-control-label(for='workshopType1') Weld Queen
+                .custom-control.custom-radio
+                  input#workshopType2.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='workshopType2') Роман и Чеслав
+                .custom-control.custom-radio
+                  input#workshopType3.custom-control-input(type='radio', name='type')
+                  label.custom-control-label(for='workshopType2') Артель художников
+          .row
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Место работы (если есть)
+                input.input.form-control(type="text", placeholder="Заполните поле")
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Ссылка на портфолио
+                input.input.form-control(type="text", placeholder="http:\\")
+          .row
+            .col-12
+              .form__item.form-group
+                label.form__label Загрузите все файлы с заданиями на любой облачный диск и прикрепи ссылку на папку в этом поле (обязательно)
+                input.input.form-control(type="text", placeholder="http:\\")
+          .form__footer
+            button.btn.btn-primary.btn-green(type="submit") Отправить
+            p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
+              a(href="#") пользовательским соглашением
     +partners({
       modifier: 'new'
     }).partners--new
