@@ -3,24 +3,35 @@ mixin workshop-team(data)
     .workshop-team__content
       .workshop-team__number= data.number
       .workshop-team__leaders
-        if data.photo.length == 1
-          each photo in data.photo
-            img.img-fluid(src="./img/" + photo, alt="Photo")
-        else
-          each photo in data.photo
-            img.workshop-team__leader-img(src="./img/" + photo, alt="Photo")
-        .workshop-team__leaders-name= data.name
-        - for (var i = 0; i < data.dscr.text.length; ++i) {
-          p.p--xs!= data.dscr.text[i]
-          if data && data.dscr.instagram
-            a.workshop-team__instagram(href="#")= data.dscr.instagram[i]
-          if data && data.dscr.facebook
-            a.workshop-team__facebook(href="#")= data.dscr.facebook[i]
-        - }
+        .workshop-team__leaders-photo
+          if data.photo.length == 1
+            each photo in data.photo
+              img.img-fluid(src="./img/" + photo, alt="Photo")
+          else
+            each photo in data.photo
+              img.workshop-team__leader-img(src="./img/" + photo, alt="Photo")
+        .workshop-team__leaders-content
+          h5.font-secondary.text-dark.mb-25.font-weight-bold.text-transform-none= data.name
+          - for (var i = 0; i < data.dscr.text.length; ++i) {
+            .workshop-team__dscr-wrapper
+              p.p--xs.mb-20!= data.dscr.text[i]
+              if data && data.dscr.modifier == 'no-link'
+                .workshop-team__socials
+                  if data && data.dscr.instagram
+                    a.workshop-team__instagram(href="#")
+                  if data && data.dscr.facebook
+                    a.workshop-team__facebook(href="#")
+              else
+                if data && data.dscr.instagram
+                  a.workshop-team__instagram(href="#")= data.dscr.instagram[i]
+                if data && data.dscr.facebook
+                  a.workshop-team__facebook(href="#")= data.dscr.facebook[i]
+          - }
       p.workshop-team__dates Даты строительства обектов: 
         span.font-weight-bold= data.dates
       .workshop-team__footer
-        a.btn.btn-green(href="#") Подать заявку
-        a.btn.btn-green(href="#") Программа воркшопа
-    if block
-      block
+        a.btn.btn-green.mr-25.workshop-team__btn(href="#") Подать заявку
+        a.btn.btn-green.mr-25.workshop-team__btn(href="#") Программа воркшопа
+    .workshop-team__task
+      if block
+        block

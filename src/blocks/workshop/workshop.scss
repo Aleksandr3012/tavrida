@@ -14,8 +14,17 @@
   }
 
   &__program {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__program-text {
+    color: rgba(#333, .7);
   }
 
   &__program-item {
+    max-width: 480px;
   }
 }
