@@ -1,2 +1,21 @@
 .workshop {
+  padding-top: 45px;
+  font-family: $font-family-secondary;
+
+  &__about-item {
+    margin-bottom: 50px;
+    padding-right: 130px;
+    display: flex;
+  }
+
+  &__about-item-icon {
+    width: 235px;
+    flex-shrink: 0;
+  }
+
+  &__program {
+  }
+
+  &__program-item {
+  }
 }

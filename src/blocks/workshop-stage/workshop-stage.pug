@@ -1,2 +1,8 @@
 mixin workshop-stage(data)
   .workshop-stage&attributes(attributes)
+    .workshop-stage__circle
+      .workshop-stage__number= data.number
+      .workshop-stage__circle-header этап
+    .workshop-stage__content
+      p.font-weight-bold.mb-15.text-white= data.date
+      p.p--xs.mb-0.text-white!= data.dscr
