@@ -110,4 +110,42 @@
   &--no-bg {
     background: $primary;
   }
+
+  &--gray {
+    background: rgba(#c4c4c4, .2);
+
+    .form__label {
+      color: #4f4f4f;
+    }
+
+    .registration__type-header {
+      font-family: $font-family-secondary;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .custom-radio {
+      margin-right: 30px;
+      background: #fff;
+      border-radius: 5px;
+
+      .custom-control-input {
+
+        &:checked ~ .custom-control-label {
+          border-color: #efc825;
+        }
+      }
+
+      .custom-control-label {
+        min-width: 248px;
+        font-family: $font-family-secondary;
+        font-size: 16px;
+        font-weight: 700;
+        color: #4f4f4f;
+        border: 1px solid #bdbdbd;
+      }
+    }
+  }
 }
