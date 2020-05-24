@@ -4,6 +4,12 @@
   align-items: flex-start;
   font-family: $font-family-secondary;
 
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   p {
     font-family: $font-family-secondary;
   }
@@ -11,6 +17,10 @@
   &__content {
     position: relative;
     padding-right: 40px;
+
+    @include media-breakpoint-down(sm) {
+      padding-right: 0;
+    }
   }
 
   &__number {
@@ -38,6 +48,10 @@
   &__leaders {
     margin-top: 40px;
     display: flex;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__leaders-photo {
@@ -47,6 +61,10 @@
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
+    }
 
     img {
       border-radius: 10px;
@@ -68,6 +86,10 @@
   }
 
   &__leaders-name {
+
+    @include media-breakpoint-down(sm) {
+      font-size: 25px;
+    }
   }
 
   &__dscr-wrapper {
@@ -129,6 +151,10 @@
 
   &__footer {
     display: flex;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__btn {
@@ -140,6 +166,12 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #000;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      min-width: none;
+    }
   }
 
   &__task {
@@ -148,6 +180,16 @@
     flex-shrink: 0;
     border: 1px solid #ce3b65;
     border-radius: 5px;
+
+    @include media-breakpoint-down(xl) {
+      margin-top: 40px;
+      width: auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
+      padding: 20px;
+    }
 
     ol {
       padding-left: 0;
@@ -160,6 +202,10 @@
         padding-left: 32px;
         counter-increment: item;
 
+        @include media-breakpoint-down(sm) {
+          padding-left: 20px;
+        }
+
         &:before {
           position: absolute;
           top: 2px;
@@ -170,6 +216,10 @@
           font-weight: 700;
           content: counter(item);
           color: $dark;
+
+          @include media-breakpoint-down(sm) {
+            min-width: 15px;
+          }
         }
       }
 

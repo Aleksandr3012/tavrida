@@ -126,10 +126,28 @@
       color: #333;
     }
 
+    .registration__type-content {
+      margin-left: -15px;
+      width: calc(100% + 30px);
+
+      @include media-breakpoint-down(sm) {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
     .custom-radio {
-      margin-right: 30px;
+      margin: 0 15px;
+      flex-grow: 1;
+      flex-basis: 250px;
       background: #fff;
       border-radius: 5px;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+        width: 100%;
+        flex-basis: auto;
+      }
 
       .custom-control-input {
 
@@ -139,7 +157,7 @@
       }
 
       .custom-control-label {
-        min-width: 248px;
+        width: 100%;
         font-family: $font-family-secondary;
         font-size: 16px;
         font-weight: 700;

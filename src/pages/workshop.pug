@@ -3,16 +3,16 @@ block content
   +header
   .wrapper
     .team
-      .team__front(style="background-image: url(./img/team-front-1.jpg);")
+      .team__front(style="background-image: url(./img/workshop-front.jpg);")
         +header-inner({
           modifier: 'new'
         }).header-inner--alone
         .container.team__front-wrapper
           a.team__front-back(href="#")
           .team__front-content
-            h1.team__front-title РЕГИСТРАЦИЯ <br>НА ВОРКШОП <br>АРТ-ПАРКА
+            h1.team__front-title.mb-40.mb-xl-0 РЕГИСТРАЦИЯ <br>НА ВОРКШОП <br>АРТ-ПАРКА
             .team__front-info
-              h5.text-white.mb-35.text-transform-none.font-secondary Для кого
+              h5.text-white.mb-20.mb-xl-35.text-transform-none.font-secondary Для кого
               p.p--xs.text-white.team__front-info-dscr.font-secondary.p--lh-lg архитекторы, перформеры, дизайнеры городской среды, промышленные дизайнеры, авторы инсталляций, художники, скульпторы, представители сайнс-арт, строители
     .workshop
       .container
@@ -31,7 +31,7 @@ block content
         h5.text-dark.font-secondary.text-transform-none.font-weight-bold Программа воркшопа включает в себя три этапа:
         .workshop__program
           .workshop__program-item
-            p.p--xs.mt-25.workshop__program-text.mb-30.mb-lg-65.pr-30.pr-lg-90 Воркшоп - теоретическое и практическое обучающее мероприятие, на котором участники получают знания самостоятельно и/или совместно с экспертами
+            p.p--xs.mt-25.workshop__program-text.mb-30.mb-xml-65.pr-30.pr-xml-90 Воркшоп - теоретическое и практическое обучающее мероприятие, на котором участники получают знания самостоятельно и/или совместно с экспертами
             +workshop-stage({
               number: '1',
               date: 'с 25 мая по 8 июня',
@@ -53,7 +53,7 @@ block content
               span.font-weight-bold 8 июня
             p.p--xs.font-secondary Результаты отбора: 
               span.font-weight-bold 11 июня 
-        h2.h2--default Команды
+        h2.h2--default.font-secondary.mb-30.mb-lg-60 Команды
         +workshop-team({
           number: '#1',
           photo: ['workshop-1.jpg'],
@@ -132,9 +132,9 @@ block content
         form.form(action="#", method="POST")
           .registration__type.mb-30
             .row
-              .col-md-4.col-xml-3.d-flex.align-items-center
+              .col-xl-4.col-xml-3.d-flex.align-items-center.mb-20.mb-xl-0
                 .registration__type-header В какую команду вы хотите подать заявку
-              .col-md-8.col-xml-9
+              .col-xl-8.col-xml-6
                 .registration__type-content
                   .custom-control.custom-radio
                     input#workshopType1.custom-control-input(type='radio', name='type', checked)
@@ -155,9 +155,9 @@ block content
                 label.form__label Ссылка на портфолио
                 input.input.form-control(type="text", placeholder="http:\\")
           .row
-            .col-9
+            .col-xml-9
               .form__item.form-group
-                label.form__label Загрузите все файлы с заданиями на любой облачный диск и прикрепи ссылку на папку в этом поле (обязательно)
+                label.form__label Загрузите все файлы с заданиями на любой облачный диск и прикрепите ссылку на папку в этом поле (обязательно)
                 input.input.form-control(type="text", placeholder="http:\\")
           .form__footer.mt-20
             button.btn.btn-primary.btn-green(type="submit") Отправить

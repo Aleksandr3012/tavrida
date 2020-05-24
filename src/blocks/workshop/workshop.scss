@@ -6,18 +6,53 @@
     margin-bottom: 50px;
     padding-right: 130px;
     display: flex;
+
+    @include media-breakpoint-down(xl) {
+      padding-right: 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+      align-items: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__about-item-icon {
     width: 235px;
     flex-shrink: 0;
+
+    @include media-breakpoint-down(xl) {
+      padding-right: 20px;
+      width: 150px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__program {
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-left: -38px;
     display: flex;
+    width: calc(100% + 76px);
     justify-content: space-between;
+
+    @include media-breakpoint-down(xl) {
+      margin-left: -20px;
+      width: calc(100% + 40px);
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin: 0 0 40px;
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   &__program-text {
@@ -25,6 +60,18 @@
   }
 
   &__program-item {
-    max-width: 480px;
+    margin: 0 38px;
+    flex-basis: 480px;
+
+    @include media-breakpoint-down(xl) {
+      margin: 0 20px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      margin-left: 0;
+      flex-basis: auto;
+    }
   }
 }

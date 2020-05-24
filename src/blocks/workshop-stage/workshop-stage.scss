@@ -5,6 +5,14 @@
   color: #fff;
   border-radius: 10px;
 
+  @include media-breakpoint-down(xl) {
+    padding: 30px 30px 30px 40px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 20px 30px;
+  }
+
   &__circle {
     position: absolute;
     top: 30px;
@@ -17,6 +25,18 @@
     align-items: center;
     background: #715f7a;
     border-radius: 50%;
+
+    @include media-breakpoint-down(xl) {
+      top: 20px;
+      left: -30px;
+      width: 60px;
+      height: 60px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      position: static;
+      margin-bottom: 20px;
+    }
   }
 
   &__number {
@@ -24,6 +44,10 @@
     line-height: 1;
     font-weight: 900;
     color: #efc825;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 25px;
+    }
   }
 
   &__circle-header {
@@ -54,6 +78,10 @@
       content: '';
       background: url(../img/workshop-arrow-1.svg) no-repeat center;
       background-size: contain;
+
+      @include media-breakpoint-down(xml) {
+        display: none;
+      }
     }
   }
 
@@ -71,6 +99,10 @@
       content: '';
       background: url(../img/workshop-arrow-2.svg) no-repeat center;
       background-size: contain;
+
+      @include media-breakpoint-down(xml) {
+        display: none;
+      }
     }
   }
 

@@ -11,7 +11,7 @@ mixin workshop-team(data)
             each photo in data.photo
               img.workshop-team__leader-img(src="./img/" + photo, alt="Photo")
         .workshop-team__leaders-content
-          h5.font-secondary.text-dark.mb-25.font-weight-bold.text-transform-none= data.name
+          h5.font-secondary.text-dark.mb-25.font-weight-bold.text-transform-none.workshop-team__leaders-name= data.name
           - for (var i = 0; i < data.dscr.text.length; ++i) {
             .workshop-team__dscr-wrapper
               p.p--xs.mb-20!= data.dscr.text[i]
@@ -30,8 +30,8 @@ mixin workshop-team(data)
       p.workshop-team__dates Даты строительства обектов: 
         span.font-weight-bold= data.dates
       .workshop-team__footer
-        a.btn.btn-green.mr-25.workshop-team__btn(href="#") Подать заявку
-        a.btn.btn-green.mr-25.workshop-team__btn(href="#") Программа воркшопа
+        a.btn.btn-green.mr-md-25.workshop-team__btn(href="#") Подать заявку
+        a.btn.btn-green.mr-md-25.workshop-team__btn(href="#") Программа воркшопа
     .workshop-team__task
       if block
         block

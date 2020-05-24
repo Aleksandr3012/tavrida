@@ -34,8 +34,14 @@
     display: block;
     width: 36px;
     height: 30px;
-    background: url(../img/team-back.svg) no-repeat;
+    background: url(../img/team-back.png) no-repeat;
     background-size: contain;
+
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
   }
 
   &__front-content {
@@ -69,6 +75,10 @@
 
   &__front-info-dscr {
     max-width: 360px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: none;
+    }
   }
 
   &__front-age {
