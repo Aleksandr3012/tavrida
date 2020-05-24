@@ -2,8 +2,8 @@ extends ../templates/template.pug
 block content
   +header
   .wrapper
-    .team
-      .team__front(style="background-image: url(./img/workshop-front.jpg);")
+    .team.team--lg
+      .team__front.team__front--lg(style="background-image: url(./img/workshop-front.jpg);")
         +header-inner({
           modifier: 'new'
         }).header-inner--alone
@@ -11,7 +11,7 @@ block content
           a.team__front-back(href="#")
           .team__front-content
             h1.team__front-title.mb-40.mb-xl-0 РЕГИСТРАЦИЯ <br>НА ВОРКШОП <br>АРТ-ПАРКА
-            .team__front-info
+            .team__front-info.team__front-info--workshop
               h5.text-white.mb-20.mb-xl-35.text-transform-none.font-secondary Для кого
               p.p--xs.text-white.team__front-info-dscr.font-secondary.p--lh-lg архитекторы, перформеры, дизайнеры городской среды, промышленные дизайнеры, авторы инсталляций, художники, скульпторы, представители сайнс-арт, строители
     .workshop
@@ -22,12 +22,14 @@ block content
             .workshop__about-item
               .workshop__about-item-icon
                 img.img-fluid(src="./img/workshop-about-1.svg", alt="Icon")
-              p.font-secondary.font-weight-normal Воркшопы арт-парка – одна из программ арт-кластера «Таврида», направленная на разработку концепций новых арт-объектов, которые станут частью экспозиции арт-парка
+              .workshop__about-content
+                p.font-secondary.font-weight-normal Воркшопы арт-парка – одна из программ арт-кластера «Таврида», направленная на разработку концепций новых арт-объектов, которые станут частью экспозиции арт-парка
           .col-lg-6
             .workshop__about-item
               .workshop__about-item-icon
                 img.img-fluid(src="./img/workshop-about-2.svg", alt="Icon")
-              p.font-secondary.font-weight-normal В результате воркшопов участники совместно с экспертами возведут скульптуры, спроектированные на онлайн-воркшопе, которые станут выставочными экспонатами арт-парка на территории арт-кластера «Таврида»
+              .workshop__about-content
+                p.font-secondary.font-weight-normal В результате воркшопов участники совместно с экспертами возведут скульптуры, спроектированные на онлайн-воркшопе, которые станут выставочными экспонатами арт-парка на территории арт-кластера «Таврида»
         h5.text-dark.font-secondary.text-transform-none.font-weight-bold Программа воркшопа включает в себя три этапа:
         .workshop__program
           .workshop__program-item
@@ -49,7 +51,7 @@ block content
               date: 'с 11 июля по 5 августа',
               dscr: 'Полноценная физическая работа участников и экспертов на территории арт-парка «Таврида», подразумевающая реализацию и строительство разработанной скульптуры'
             }).workshop-stage--green
-            p.p--xs.mt-30.mt-lg-60.mb-15.font-secondary Дедлайн подачи заявок: 
+            p.p--xs.mt-30.mt-lg-65.mb-20.mb-lg-30.font-secondary Дедлайн подачи заявок: 
               span.font-weight-bold 8 июня
             p.p--xs.font-secondary Результаты отбора: 
               span.font-weight-bold 11 июня 
@@ -64,7 +66,7 @@ block content
             instagram: ['weldqueen.com']
           },
         }).workshop-team--red
-          h5.text-dark.mb-30.text-transform-none.font-weight-bold.font-secondary Творческое задание от Weld Queen
+          h5.text-dark.mb-25.mb-lg-35.text-transform-none.font-weight-bold.font-secondary Творческое задание от Weld Queen
           ol
             li
               span Составьте CV, сфера деятельности сейчас и цели в жизни
@@ -88,7 +90,7 @@ block content
             instagram: ['romanermakov.com', 'woodgears.ru']
           },
         }).workshop-team--dark
-          h5.text-dark.mb-30.text-transform-none.font-weight-bold.font-secondary Творческое задание от Романа и Чеслава
+          h5.text-dark.mb-25.mb-lg-35.text-transform-none.font-weight-bold.font-secondary Творческое задание от Романа и Чеслава
           ol
             li
               span Создайте свой футуристический объект <br>Создайте/нарисуйте композицию из геометрических объемов (шар, цилиндр, конус, параллелепипед, куб и т.д.) и предложите её цветовую раскраску
@@ -111,7 +113,7 @@ block content
             modifier: 'no-link'
           }
         }).workshop-team--yellow
-          h5.text-dark.mb-30.text-transform-none.font-weight-bold.font-secondary Творческое задание от Артели свободных художников
+          h5.text-dark.mb-25.mb-lg-35.text-transform-none.font-weight-bold.font-secondary Творческое задание от Артели свободных художников
           ol
             li
               span Создайте свой объект «Место силы». Учитывая климатические условия бухты Капсель (песчаные бури, солнце, морской ветер), придумай интерактивный арт-объект или малую архитектурную форму из материалов: доски, металл, бетон, фанера, гофрированная труба, рабица, камень. Арт-объект должен органично вписываться в холмистый ландшафт арт-парка
@@ -125,10 +127,10 @@ block content
     
     .registration.registration--gray.py-30.py-lg-75
       .container
-        h2.h2--default.mb-25.text-dark.font-secondary Регистрация на воркшоп
+        h2.h2--default.mb-25.mb-lg-35.text-dark.font-secondary Регистрация на воркшоп
         .row
-          .col-lg-9
-            p.p--xxs.font-weight-semi.font-secondary Для регистрации на воркшоп необходимо выполнить все пункты творческого задания одной из команд и приложить портфолио, где будет описан ваш опыт, примеры работ и навыки. 
+          .col-lg-7
+            p.p--xxs.font-weight-semi.font-secondary Для регистрации на воркшоп необходимо выполнить все пункты творческого задания одной из команд и приложить портфолио, где будет описан ваш опыт, примеры работ и навыки. 
         form.form(action="#", method="POST")
           .registration__type.mb-30
             .row

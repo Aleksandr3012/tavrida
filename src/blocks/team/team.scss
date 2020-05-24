@@ -22,6 +22,10 @@
       content: '';
       background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     }
+
+    &--lg {
+      padding-bottom: 60px;
+    }
   }
 
   &__front-wrapper {
@@ -70,6 +74,14 @@
 
     @include media-breakpoint-down(lg) {
       margin-left: 0;
+    }
+
+    &--workshop {
+      margin-left: 220px;
+
+      @include media-breakpoint-down(lg) {
+        margin-left: 0;
+      }
     }
   }
 

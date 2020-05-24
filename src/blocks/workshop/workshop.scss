@@ -35,6 +35,14 @@
     }
   }
 
+  &__about-content {
+    padding-top: 15px;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+    }
+  }
+
   &__program {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -56,6 +64,7 @@
   }
 
   &__program-text {
+    font-family: $font-family-secondary;
     color: rgba(#333, .7);
   }
 
