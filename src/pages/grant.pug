@@ -11,11 +11,22 @@ block content
           a.team__front-back(href="#")
           .team__front-content
             h1.team__front-title Грантовый <br>конкурс
+            .team__front-subheader
+              .team__front-user
+                .team__front-age 18 — 30 лет
+                .team__front-type гражданин РФ
+              p.team__front-contacts По всем вопросам: 
+                a(href="#") grant@crki.art
             .team__front-info
-              .team__front-age 20-35 лет
-              .team__front-type гражданин РФ
+              img.team__front-logo(src="./img/grant-logo-1.svg", alt)
+              img.team__front-logo(src="./img/grant-logo-2.svg", alt)
+    .container
+      .row
+        .col-lg-10.offset-lg-1
+          h5.font-weight-semi С 2015 на площадке «Тавриды» проводится конкурс грантовой поддержки молодежных инициатив. За это время его победителями стали 833 человека, на реализацию проектов которых выделено более 246 миллионов рублей. Оператором грантового конкурса молодежных инициатив является Федеральное агентства по делам молодёжи. Конкурс входит в платформу «Россия страна возможностей». 
+          a.btn.btn-green(href="#") подать заявку на грант
     .container.mt-30.mb-10.mt-lg-100.mb-lg-45
-      h3.text-dark.mb-20 Направления конкурса
+      h3.text-dark.mb-20 Номинации конкурса
       p.mb-30.mb-lg-70 Грантовый конкурс – это возможность получить поддержку на реализацию проекта
       .row
         .col-sm-6.col-lg-4
@@ -64,53 +75,70 @@ block content
             dscr: 'Укрепление семейных ценностей'
           })
     +participation
-    +faq
     .item-slider__wrapper
       .container.py-30.py-lg-90
         h3.text-dark.mb-30.mb-lg-50 История успеха
         .item-slider
-          +story({
-            img: 'story-1.jpg',
-            userpic: 'story-user-1.png'
-          }).item-slider__card
-          +story({
-            img: 'story-2.jpg',
-            userpic: 'story-user-2.png'
-          }).item-slider__card
-          +story({
-            img: 'story-3.jpg',
-            userpic: 'story-user-3.png'
-          }).item-slider__card
-          +story({
-            img: 'story-1.jpg',
-            userpic: 'story-user-1.png'
-          }).item-slider__card
-          +story({
-            img: 'story-2.jpg',
-            userpic: 'story-user-2.png'
-          }).item-slider__card
-          +story({
-            img: 'story-3.jpg',
-            userpic: 'story-user-3.png'
-          }).item-slider__card
-      .container.mb-30.mb-lg-75
-        h3.mt-15.text-dark.mb-30.mb-lg-65 Полезные материалы
-        .row
-          .col-sm-6.col-xl-4
-            +document({
-              header: 'Методические рекомендации Всероссийского конкурса молодежных проектов среди физических лиц 2020',
-              title: 'Namepdf.pdf'
+          .item-slider__card
+            +story({
+              name: 'Евгений Жуков',
+              place: 'Тамбовская область',
+              project: 'Кинопроект «CAST»'
             })
-          .col-sm-6.col-xl-4
-            +document({
-              header: 'Критерии оценки и порядок определения победителей',
-              title: 'kriterii-ocenki.pdf'
+            +story({
+              name: 'Евгений Демьянов',
+              place: 'Хабаровский край',
+              project: 'Дальневосточный фестиваль современного танца «Амурский Стиль»'
             })
-          .col-sm-6.col-xl-4
-            +document({
-              header: 'Постановление Правительства Российской Федерации от 13 августа 2016 г. № 795 «О Всероссийском конкурсе молодежных проектов»',
-              title: 'Postanovlenie_Pravitelstva_RF_ot_1.pdf'
+          .item-slider__card
+            +story({
+              name: 'Мария Конотоп',
+              place: 'Воронежская область',
+              project: 'Спектакль #НайденаЖива'
             })
+            +story({
+              name: 'Алина Галиаскарова',
+              place: 'г. Санкт-Петербург',
+              project: 'Короткометражный фильм «Выстрел»'
+            })
+          .item-slider__card
+            +story({
+              name: 'Ирина Кошевая',
+              place: 'Рязанская область',
+              project: 'Книга «Про театр детям»'
+            })
+            +story({
+              name: 'Денис Козловский',
+              place: 'Тамбовская область',
+              project: 'Межрегиональный молодежный пленэр «Места силы»'
+            })
+          .item-slider__card
+            +story({
+              name: 'Евгений Жуков',
+              place: 'Тамбовская область',
+              project: 'Кинопроект «CAST»'
+            })
+            +story({
+              name: 'Мария Конотоп',
+              place: 'Воронежская область',
+              project: 'Спектакль #НайденаЖива'
+            })
+    +faq
+    .container.mb-30.mb-lg-75
+      h3.mt-15.text-dark.mb-30.mb-lg-65 Полезные материалы
+      .row
+        .col-sm-6.col-xl-4
+          +document({
+            link: 'Методические рекомендации Всероссийского конкурса молодежных проектов среди физических лиц 2020',
+          })
+        .col-sm-6.col-xl-4
+          +document({
+            link: 'Критерии оценки и порядок определения победителей',
+          })
+        .col-sm-6.col-xl-4
+          +document({
+            link: 'Постановление Правительства Российской Федерации от 13 августа 2016 г. № 795 «О Всероссийском конкурсе молодежных проектов»',
+          })
     +partners
     +footer
     +signup#registration
