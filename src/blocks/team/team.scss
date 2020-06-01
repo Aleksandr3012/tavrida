@@ -39,6 +39,10 @@
         font-family: $font-family-secondary;
         font-size: 90px;
         line-height: 1.22;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 45px;
+        }
       }
 
       .team__front-content {
@@ -49,6 +53,11 @@
         margin-left: 100px;
         font-family: $font-family-secondary;
         line-height: 1.2;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 40px;
+          margin-left: 0;
+        }
 
         a {
 
@@ -62,6 +71,11 @@
       .team__front-subheader {
         display: flex;
         align-items: center;
+
+        @include media-breakpoint-down(sm) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
 
       .team__front-age {
@@ -77,6 +91,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include media-breakpoint-down(xl) {
+          padding-right: 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+          flex-direction: row;
+        }
       }
 
       .team__front-type {
@@ -245,8 +267,17 @@
   &__front-logo {
     max-width: 100%;
 
+    @include media-breakpoint-down(sm) {
+      max-width: 150px;
+    }
+
     & + & {
       margin-top: 55px;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 0;
+        margin-left: 50px;
+      }
     }
   }
 }
