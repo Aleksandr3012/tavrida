@@ -25,7 +25,42 @@
 
     &--new {
 
+      .team__front-back {
+        margin-bottom: 0;
+      }
+
       .team__front-title {
+        margin-bottom: 27px;
+        font-family: $font-family-secondary;
+      }
+
+      .team__front-content {
+        justify-content: space-between;
+      }
+
+      .team__front-contacts {
+        margin-left: 100px;
+        font-family: $font-family-secondary;
+      }
+
+      .team__front-subheader {
+        display: flex;
+      }
+
+      .team__front-age {
+        font-family: $font-family-secondary;
+        color: #fff;
+        background: transparent;
+        -webkit-text-fill-color: #fff;
+      }
+
+      .team__front-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .team__front-type {
         font-family: $font-family-secondary;
       }
     }

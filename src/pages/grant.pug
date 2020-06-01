@@ -9,25 +9,28 @@ block content
         }).header-inner--alone
         .container.team__front-wrapper
           a.team__front-back(href="#")
-          .team__front-content
-            h1.team__front-title Грантовый <br>конкурс
-            .team__front-subheader
-              .team__front-user
-                .team__front-age 18 — 30 лет
-                .team__front-type гражданин РФ
-              p.team__front-contacts По всем вопросам: 
-                a(href="#") grant@crki.art
-            .team__front-info
-              img.team__front-logo(src="./img/grant-logo-1.svg", alt="Logo")
-              img.team__front-logo(src="./img/grant-logo-2.svg", alt="Logo")
+          .row
+            .col-lg-10.offset-lg-1
+              .team__front-content
+                .team__front-container
+                  h1.team__front-title Грантовый <br>конкурс
+                  .team__front-subheader
+                    .team__front-user
+                      .team__front-age 18 — 30 лет
+                      .team__front-type гражданин РФ
+                    p.team__front-contacts.text-white.font-weight-semi По всем вопросам: <br>
+                      a.text-yellow(href="#") grant@crki.art
+                .team__front-info
+                  img.team__front-logo(src="./img/grant-logo-1.svg", alt="Logo")
+                  img.team__front-logo(src="./img/grant-logo-2.svg", alt="Logo")
     .container
       .row
         .col-lg-10.offset-lg-1
-          h5.font-weight-semi С 2015 на площадке «Тавриды» проводится конкурс грантовой поддержки молодежных инициатив. За это время его победителями стали 833 человека, на реализацию проектов которых выделено более 246 миллионов рублей. Оператором грантового конкурса молодежных инициатив является Федеральное агентства по делам молодёжи. Конкурс входит в платформу «Россия страна возможностей». 
-          a.btn.btn-green(href="#") подать заявку на грант
+          h5.font-weight-semi.text-dark.font-secondary.text-transform-none.py-30.pt-lg-65.pb-lg-50.text--lh-md С 2015 на площадке «Тавриды» проводится конкурс грантовой поддержки молодежных инициатив. За это время его победителями стали 833 человека, на реализацию проектов которых выделено более 246 миллионов рублей. Оператором грантового конкурса молодежных инициатив является Федеральное агентства по делам молодёжи. Конкурс входит в платформу «Россия страна возможностей». 
+          a.btn.btn-green.btn-green--new(href="#") подать заявку на грант
     .container.mt-30.mb-10.mt-lg-100.mb-lg-45
-      h3.text-dark.mb-20 Номинации конкурса
-      p.mb-30.mb-lg-70 Грантовый конкурс – это возможность получить поддержку на реализацию проекта
+      h3.text-dark.mb-20.font-secondary Номинации конкурса
+      p.mb-30.mb-lg-70.font-secondary Грантовый конкурс – это возможность получить поддержку на реализацию проекта
       .row
         .col-sm-6.col-lg-4
           +field({
