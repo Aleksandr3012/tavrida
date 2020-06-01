@@ -3,6 +3,12 @@
   width: 100%;
   max-width: 520px;
 
+  @include transition;
+
+  &:hover {
+    opacity: .8;
+  }
+
   &__media {
     position: relative;
     padding-top: 60%;
@@ -45,7 +51,7 @@
   }
 
   &__header {
-    margin-top: 28px;
+    margin-top: 34px;
     margin-bottom: 15px;
     display: flex;
     align-items: baseline;
