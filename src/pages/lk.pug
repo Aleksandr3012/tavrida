@@ -7,13 +7,13 @@ block content
         .container
           .cabinet__header
             .cabinet__header-content
-              a.link-back(href="#")
-              h2.h2--default.mb-0 Личный кабинет
+              a.link-back.link-back--dark(href="#")
+              h2.h2--default.mb-0.text-dark Личный кабинет
             a.cabinet__logout(href="#") Выйти
         
           .row.flex-column-reverse.flex-xml-row
-            .col-xml-8
-              ul.nav.nav-tabs.nav-tabs--headers.mb-30
+            .col-xml-9
+              ul.nav.nav-tabs.nav-tabs--lk.mb-30
                 li.nav-item
                   a.nav-link.active(data-toggle='tab', href='#lk1', role='tab', aria-selected='true') Заявки
                 li.nav-item
@@ -26,13 +26,10 @@ block content
                   a.nav-link(data-toggle='tab', href='#lk5', role='tab', aria-selected='false') Связаться с Тавридой
               .tab-content
                 #lk1.tab-pane.fade.show.active(role='tabpanel')
-                  .row.flex-column-reverse.flex-xml-row
-                    .col-xml-8
-                      h5.mb-0.text-dark Заявки
-                      +applications({
-                        modifier: 'new'
-                      })
-                      a.btn.btn-green.mt-45(href="#") Новая заявка
+                  +applications({
+                    modifier: 'new'
+                  })
+                  a.btn.btn-green.mt-45(href="#") Новая заявка
                 #lk2.tab-pane.fade(role='tabpanel')
                   +lk-event({
                     picture: 'lk-1.jpg',
@@ -120,17 +117,17 @@ block content
                           label.form__label Ваше сообщение
                           textarea.input.input--textarea.form-control
                     button.btn.btn-green(type="submit") Отправить
-            .col-xml-4
+            .col-xml-3
               .cabinet__user-new
                 .cabinet__user-new-id ID 4487420
-                  .cabinet__user-new-top
-                    .cabinet__user-new-picture(style="background-image: url(./img/cabinet-user.jpg);")
-                    a.cabinet__user-link(href="#") Сменить фото
-                  .cabinet__user-content
-                    p.font-weight-bold.mb-20 Горбатов Валентина Александровна
-                    p.mb-10 +7 (985 ) 656 - 44 - 23
-                    p.p--xs 
-                      a(href="#") sample@sample.com
-                a.cabinet__user-edit(href="#")
-                  p.p--xs.mb-0.font-weight-bold Редактировать профиль
+                .cabinet__user-new-top
+                  .cabinet__user-new-picture(style="background-image: url(./img/cabinet-user-new.png);")
+                  a.cabinet__user-link(href="#") Сменить фото
+                .cabinet__user-content
+                  p.font-weight-bold.mb-20.font-secondary Горбатов Валентина Александровна
+                  p.mb-10.font-secondary +7 (985 ) 656 - 44 - 23
+                  p.p--xs.font-secondary 
+                    a(href="#") sample@sample.com
+                  a.cabinet__user-edit(href="#")
+                    p.p--xs.mb-0.font-weight-bold.font-secondary Редактировать профиль
       +footer-short

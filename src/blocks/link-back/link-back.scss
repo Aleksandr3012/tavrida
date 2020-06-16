@@ -9,4 +9,9 @@
   @include media-breakpoint-down(sm) {
     margin-bottom: 10px;
   }
+
+  &--dark {
+    background: url(../img/link-back--dark.svg) no-repeat;
+    background-size: contain;
+  }
 }

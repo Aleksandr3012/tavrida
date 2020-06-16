@@ -259,6 +259,56 @@
       }
     }
   }
+
+  &--lk {
+
+    .nav-item {
+
+      @include media-breakpoint-down(sm) {
+        margin-right: 20px;
+      }
+
+      & + .nav-item {
+        margin-left: 70px;
+
+        @include media-breakpoint-down(sm) {
+          margin-left: 0;
+        }
+      }
+
+      .nav-link {
+        padding: 0;
+        padding-bottom: 0;
+        min-width: 0;
+        max-width: none;
+        height: auto;
+        font-family: $font-family-secondary;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #333;
+        border: 0;
+        border-bottom: 3px solid transparent;
+        border-radius: 0;
+
+        @include transition;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 20px;
+        }
+
+        &:hover {
+          opacity: .75;
+        }
+
+        &.active {
+          color: #ce3b65;
+          background: transparent;
+          border-bottom: 3px solid #ce3b65;
+        }
+      }
+    }
+  }
 }
 
 .custom-file {
