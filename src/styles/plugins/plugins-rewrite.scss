@@ -15,6 +15,14 @@
     padding: 0 10px;
   }
 
+  &.container--default {
+    padding-right: 40px;
+
+    @include media-breakpoint-down(sm) {
+      padding-right: 10px;
+    }
+  }
+
   &.container--narrow {
 
     .row {
@@ -270,6 +278,14 @@
 
       & + .nav-item {
         margin-left: 70px;
+
+        @include media-breakpoint-down(xml) {
+          margin-left: 50px;
+        }
+
+        @include media-breakpoint-down(xl) {
+          margin-left: 25px;
+        }
 
         @include media-breakpoint-down(sm) {
           margin-left: 0;

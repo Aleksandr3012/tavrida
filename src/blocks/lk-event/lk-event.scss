@@ -2,6 +2,10 @@
   margin-bottom: 45px;
   display: flex;
 
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+
   &__picture {
     margin-right: 30px;
     width: 100%;
@@ -10,6 +14,16 @@
     flex-shrink: 0;
     background-position: top center;
     background-size: cover;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 400px;
+      height: 220px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__content {

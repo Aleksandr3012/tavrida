@@ -116,11 +116,16 @@
     position: relative;
     padding: 50px 30px 35px;
     display: flex;
+    max-width: 386px;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background: #f2f2f2;
     border-radius: 20px;
+
+    @include media-breakpoint-down(xml) {
+      margin-bottom: 40px;
+    }
   }
 
   &__user-new-id {
@@ -169,8 +174,13 @@
     margin-right: 26px;
     width: 16px;
     height: 16px;
+    flex-shrink: 0;
     background: #c4c4c4;
     border-radius: 50%;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 10px;
+    }
 
     &--active {
       background: $primary;

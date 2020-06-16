@@ -86,4 +86,8 @@
     text-align: center;
     color: $primary;
   }
+
+  &--bordered {
+    border-right: 1px solid $primary;
+  }
 }
