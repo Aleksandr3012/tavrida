@@ -158,4 +158,47 @@
     font-weight: 700;
     color: $primary;
   }
+
+  &__quiz-steps-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__quiz-step {
+    margin-right: 26px;
+    width: 16px;
+    height: 16px;
+    background: #c4c4c4;
+    border-radius: 50%;
+
+    &--active {
+      background: $primary;
+    }
+  }
+
+  &__quiz-step-number {
+    font-family: $font-family-secondary;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #bdbdbd;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  &__quiz-question {
+  }
+
+  &__quiz-question-header {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__quiz-btn {
+    margin-top: 40px;
+  }
 }

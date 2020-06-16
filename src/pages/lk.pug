@@ -47,35 +47,37 @@ block content
                     dscr: 'Грантовый конкурс на «Тавриде» — возможность получить финансовую поддержку творческого проекта! В 2020 году победители конкурса получат до 3 млн. рублей на реализацию идей.'
                   })
                 #lk3.tab-pane.fade(role='tabpanel')
-                  h4.mb-30 Заголовок опроса в несколько строк для наглядности
-                  .lk__quiz-steps-wrapper
-                    .lk__quiz-step.lk__quiz-step--active
-                    .lk__quiz-step.lk__quiz-step--active
-                    .lk__quiz-step
-                    .lk__quiz-step
-                    .lk__quiz-step
-                    .lk__quiz-step
-                    .lk__quiz-step
-                    .lk__quiz-step
-                    .lk__quiz-step-number
-                      span 2 
-                      | из 8
-                  form.lk__quiz-question(action="#", method="POST")
-                    .lk__quiz-question-header
-                      h4.mb-0.mr-10.mr-lg-30 2
-                      p.p--xs Вопрос опроса часть входной группы территории Тавриды, который представляет собой арку
-                    .custom-control.custom-radio
-                      input#answer1.custom-control-input(type='radio', name='answer')
-                      label.custom-control-label(for='answer1') Ответ первый
-                    .custom-control.custom-radio
-                      input#answer2.custom-control-input(type='radio', name='answer')
-                      label.custom-control-label(for='answer2') Второй ответ подлинее
-                    .custom-control.custom-radio
-                      input#answer3.custom-control-input(type='radio', name='answer')
-                      label.custom-control-label(for='answer3') Третий ответ
-                    button.btn.btn-green(type="submit") Далее
+                  .row
+                    .col-lg-7
+                      h4.mb-30.text-dark.font-secondary Заголовок опроса в несколько строк для наглядности
+                      .cabinet__quiz-steps-wrapper
+                        .cabinet__quiz-step.cabinet__quiz-step--active
+                        .cabinet__quiz-step.cabinet__quiz-step--active
+                        .cabinet__quiz-step
+                        .cabinet__quiz-step
+                        .cabinet__quiz-step
+                        .cabinet__quiz-step
+                        .cabinet__quiz-step
+                        .cabinet__quiz-step
+                        .cabinet__quiz-step-number
+                          span 2 
+                          | из 8
+                      form.cabinet__quiz-question(action="#", method="POST")
+                        .cabinet__quiz-question-header
+                          h4.mb-0.mr-10.mr-lg-30.text-dark.font-secondary 2
+                          p.p--xs.font-secondary.mb-0 Вопрос опроса часть входной группы территории Тавриды, который представляет собой арку
+                        .custom-control.custom-radio.custom-radio--default
+                          input#answer1.custom-control-input(type='radio', name='answer')
+                          label.custom-control-label(for='answer1') Ответ первый
+                        .custom-control.custom-radio.custom-radio--default
+                          input#answer2.custom-control-input(type='radio', name='answer')
+                          label.custom-control-label(for='answer2') Второй ответ подлинее
+                        .custom-control.custom-radio.custom-radio--default
+                          input#answer3.custom-control-input(type='radio', name='answer')
+                          label.custom-control-label(for='answer3') Третий ответ
+                        button.btn.btn-green.cabinet__quiz-btn(type="submit") Далее
                 #lk4.tab-pane.fade(role='tabpanel')
-                  h4.mb-20.mb-lg-50 Документы
+                  h4.mb-20.mb-lg-50.text-dark Документы
                   .row
                     .col-sm-6.col-lg-5
                       +document({
@@ -100,7 +102,7 @@ block content
                         title: 'Логотип'
                       })
                 #lk5.tab-pane.fade(role='tabpanel')
-                  h4.mb-15 ФОрма обратной связи
+                  h4.mb-15.text-dark ФОрма обратной связи
                   p.p--sm Описание формы для наглядности. Ответ придет на Ваш e-mail указанный при регистрации аккаунта
                   form.form(action="#", method="POST")
                     .row

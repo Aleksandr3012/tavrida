@@ -1,2 +1,31 @@
 .lk-event {
+  margin-bottom: 45px;
+  display: flex;
+
+  &__picture {
+    margin-right: 30px;
+    width: 100%;
+    max-width: 528px;
+    height: 280px;
+    flex-shrink: 0;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__content-top {
+    margin-bottom: 20px;
+  }
+
+  &__content-bottom {
+  }
+
+  &__date {
+    color: #bdbdbd;
+  }
 }
