@@ -141,6 +141,12 @@
 
     @include transition;
 
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      top: 10px;
+      right: 40px;
+    }
+
     &:hover {
       opacity: .75;
     }
@@ -151,8 +157,27 @@
 
     .applications__row {
 
+      @include media-breakpoint-down(sm) {
+        padding: 10px 0;
+      }
+
+      p {
+
+        @include media-breakpoint-down(lg) {
+          font-size: 14px !important;
+        }
+
+        @include media-breakpoint-down(sm) {
+          font-size: 16px !important;
+        }
+      }
+
       &--header {
         align-items: flex-end;
+
+        @include media-breakpoint-down(md) {
+          text-align: center;
+        }
       }
     }
 
@@ -162,6 +187,10 @@
       line-height: 1.5;
       font-weight: 600;
       color: rgba(#333, .5);
+
+      @include media-breakpoint-down(lg) {
+        font-size: 11px;
+      }
     }
 
     .applications__column {
@@ -169,6 +198,10 @@
 
       &:nth-child(1) {
         flex-basis: 10%;
+
+        @include media-breakpoint-down(lg) {
+          flex-basis: 14%;
+        }
       }
 
       &:nth-child(2) {
@@ -184,6 +217,10 @@
         flex-direction: column;
         align-items: center;
         flex-basis: 20%;
+
+        @include media-breakpoint-down(sm) {
+          align-items: flex-start;
+        }
       }
 
       &:nth-child(5) {
@@ -191,16 +228,30 @@
         flex-direction: column;
         align-items: center;
         flex-basis: 8%;
+
+        @include media-breakpoint-down(sm) {
+          align-items: flex-start;
+        }
       }
 
       &:nth-child(6) {
         flex-basis: 20%;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 20px;
+          margin-bottom: 0;
+        }
       }
 
       &:nth-child(7) {
         display: flex;
         justify-content: center;
         flex-basis: 5%;
+
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 0;
+          align-items: flex-start;
+        }
       }
     }
 
@@ -209,6 +260,10 @@
       display: inline-flex;
       color: #fff;
       border-radius: 3px;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 14px;
+      }
 
       &--accepted {
         background: #efc825;

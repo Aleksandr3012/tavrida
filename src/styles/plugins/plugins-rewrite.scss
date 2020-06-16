@@ -272,8 +272,9 @@
 
     .nav-item {
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(lg) {
         margin-right: 20px;
+        margin-bottom: 15px;
       }
 
       & + .nav-item {
@@ -287,7 +288,7 @@
           margin-left: 25px;
         }
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
           margin-left: 0;
         }
       }
@@ -309,8 +310,8 @@
 
         @include transition;
 
-        @include media-breakpoint-down(sm) {
-          font-size: 20px;
+        @include media-breakpoint-down(lg) {
+          font-size: 14px;
         }
 
         &:hover {
