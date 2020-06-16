@@ -107,13 +107,13 @@ block content
                         modifier: 'new'
                       }).document--new
                 #lk5.tab-pane.fade(role='tabpanel')
-                  h4.mb-15.text-dark ФОрма обратной связи
-                  p.p--sm Описание формы для наглядности. Ответ придет на Ваш e-mail указанный при регистрации аккаунта
+                  h4.mb-15.text-dark.font-secondary ФОрма обратной связи
+                  p.p--sm.font-secondary.mb-30 Описание формы для наглядности. Ответ придет на Ваш e-mail указанный при регистрации аккаунта
                   form.form(action="#", method="POST")
                     .row
                       .col-lg-4
-                        .form__item.form-group.mb-lg-0
-                          label.form__label Тема вопроса (если есть)
+                        .form__item.form-group.mb-15
+                          label.form__label.font-secondary.font-weight-normal Тема вопроса (если есть)
                           select.select
                             option(disabled, selected) Выберите из списка
                             option Вариант 1
@@ -121,9 +121,9 @@ block content
                     .row
                       .col-lg-8
                         .form__item.form-group
-                          label.form__label Ваше сообщение
+                          label.form__label.font-secondary.font-weight-normal Ваше сообщение
                           textarea.input.input--textarea.form-control
-                    button.btn.btn-green(type="submit") Отправить
+                    button.btn.btn-green.font-secondary.mt-20(type="submit") Отправить
             .col-xml-3
               .cabinet__user-new
                 .cabinet__user-new-id ID 4487420
