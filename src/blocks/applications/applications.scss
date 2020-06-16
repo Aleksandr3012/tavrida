@@ -153,7 +153,6 @@
   }
 
   &--new {
-    margin-top: -25px;
     font-family: $font-family-secondary;
 
     @include media-breakpoint-down(sm) {
@@ -174,6 +173,7 @@
 
         @include media-breakpoint-down(sm) {
           font-size: 16px !important;
+          font-weight: 400 !important;
         }
       }
 
@@ -201,6 +201,14 @@
 
     .applications__column {
       flex-basis: 1 !important;
+
+      &:before {
+
+        @include media-breakpoint-down(sm) {
+          font-size: 17px;
+          font-weight: 700;
+        }
+      }
 
       &:nth-child(1) {
         flex-basis: 10%;
@@ -238,6 +246,10 @@
         @include media-breakpoint-down(sm) {
           align-items: flex-start;
         }
+
+        .applications__header-item {
+          text-align: center;
+        }
       }
 
       &:nth-child(6) {
@@ -265,6 +277,8 @@
       padding: 5px 10px;
       display: inline-flex;
       font-size: 14px;
+      font-weight: 700 !important;
+      text-align: center;
       color: #fff;
       border-radius: 3px;
 

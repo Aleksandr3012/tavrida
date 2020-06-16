@@ -13,7 +13,7 @@ block content
         
           .row.flex-column-reverse.flex-xml-row
             .col-xml-9
-              ul.nav.nav-tabs.nav-tabs--lk.mb-30
+              ul.nav.nav-tabs.nav-tabs--lk
                 li.nav-item
                   a.nav-link.active(data-toggle='tab', href='#lk1', role='tab', aria-selected='true') Заявки
                 li.nav-item
@@ -30,7 +30,7 @@ block content
                     modifier: 'new'
                   }).applications--new
                   a.btn.btn-green.mt-45(href="#") Новая заявка
-                #lk2.tab-pane.fade(role='tabpanel')
+                #lk2.tab-pane.fade.pt-20.pt-lg-40(role='tabpanel')
                   +lk-event({
                     picture: 'lk-1.jpg',
                     title: 'Фестиваль «Таврида — АРТ»',
@@ -46,7 +46,7 @@ block content
                     title: 'Грантовый конкурс',
                     dscr: 'Грантовый конкурс на «Тавриде» — возможность получить финансовую поддержку творческого проекта! В 2020 году победители конкурса получат до 3 млн. рублей на реализацию идей.'
                   })
-                #lk3.tab-pane.fade(role='tabpanel')
+                #lk3.tab-pane.fade.pt-20.pt-lg-40(role='tabpanel')
                   .row
                     .col-lg-7
                       h4.mb-30.text-dark.font-secondary Заголовок опроса в несколько строк для наглядности
@@ -64,7 +64,7 @@ block content
                           | из 8
                       form.cabinet__quiz-question(action="#", method="POST")
                         .cabinet__quiz-question-header
-                          h4.mb-0.mr-10.mr-lg-30.text-dark.font-secondary 2
+                          h4.mb-0.mr-10.mr-lg-20.text-dark.font-secondary 2
                           p.p--xs.font-secondary.mb-0 Вопрос опроса часть входной группы территории Тавриды, который представляет собой арку
                         .custom-control.custom-radio.custom-radio--default
                           input#answer1.custom-control-input(type='radio', name='answer')
@@ -76,37 +76,38 @@ block content
                           input#answer3.custom-control-input(type='radio', name='answer')
                           label.custom-control-label(for='answer3') Третий ответ
                         button.btn.btn-green.cabinet__quiz-btn(type="submit") Далее
-                #lk4.tab-pane.fade(role='tabpanel')
-                  h4.mb-20.mb-lg-50.text-dark Документы
+                #lk4.tab-pane.fade.pt-20.pt-lg-40(role='tabpanel')
+                  h4.mb-20.mb-lg-50.text-dark.font-secondary Документы
                   .row
-                    .col-sm-6.col-lg-5
+                    .col-sm-6.col-lg-4
                       +document({
                         title: 'Название файле или его содержимого для актуализации информации',
                         modifier: 'new'
                       }).document--new
-                    .col-sm-6.col-lg-5
+                    .col-sm-6.col-lg-4
                       +document({
                         title: 'Название файле или его содержимого для актуализации информации',
                         modifier: 'new'
                       }).document--new
-                    .col-sm-6.col-lg-5
+                  .row
+                    .col-sm-6.col-lg-4
                       +document({
                         title: 'Название файле или его содержимого для актуализации информации',
                         modifier: 'new'
                       }).document--new
-                    .col-sm-6.col-lg-5
+                    .col-sm-6.col-lg-4
                       +document({
                         title: 'Название файле или его содержимого для актуализации информации',
                         modifier: 'new'
                       }).document--new
                   h4.mb-20.mb-lg-50.text-dark.font-secondary Медиа
                   .row
-                    .col-sm-6.col-lg-5
+                    .col-sm-6.col-lg-4
                       +document({
                         title: 'Логотип',
                         modifier: 'new'
                       }).document--new
-                #lk5.tab-pane.fade(role='tabpanel')
+                #lk5.tab-pane.fade.pt-20.pt-lg-40(role='tabpanel')
                   h4.mb-15.text-dark.font-secondary ФОрма обратной связи
                   p.p--sm.font-secondary.mb-30 Описание формы для наглядности. Ответ придет на Ваш e-mail указанный при регистрации аккаунта
                   form.form(action="#", method="POST")
