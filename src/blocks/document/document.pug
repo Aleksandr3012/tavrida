@@ -2,5 +2,10 @@ mixin document(data)
   a.document(href="#")&attributes(attributes)
     .document__icon
     .document__content
-      p.document__link= data.title
+      p.document__link.font-secondary= data.title
+      if data && data.modifier == 'new'
+        .document__info
+          p.p--sm.text-primary.font-weight-bold.font-secondary Filename.pdf
+          p.p--sm.font-secondary.ml-20.document__size 2 mb
+          
 

@@ -28,4 +28,32 @@
     word-break: break-all;
     color: $primary;
   }
+
+  &__size {
+    font-weight: 400 !important;
+  }
+
+  &--new {
+    margin-bottom: 40px;
+
+    .document__icon {
+      margin-right: 18px;
+      width: 28px;
+      height: 38px;
+      flex-shrink: 0;
+      background: url(../img/document-new.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    .document__link {
+      font-weight: 400;
+      color: #333;
+    }
+
+    .document__info {
+      margin-top: 10px;
+      display: flex;
+      align-items: baseline;
+    }
+  }
 }
