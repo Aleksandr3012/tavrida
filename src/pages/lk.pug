@@ -2,13 +2,13 @@ extends ../templates/template.pug
 block content
   +header.header--bordered
   .wrapper
-    .cabinet
+    .cabinet.cabinet--new
       .cabinet__content
         .container.container--default
           .cabinet__header
             .cabinet__header-content
               a.link-back.link-back--dark(href="#")
-              h2.h2--default.mb-0.text-dark Личный кабинет
+              h2.h2--default.mb-0.text-dark.font-secondary Личный кабинет
             a.cabinet__logout(href="#") Выйти
         
           .row.flex-column-reverse.flex-xml-row
@@ -131,7 +131,7 @@ block content
                   .cabinet__user-new-picture(style="background-image: url(./img/cabinet-user-new.png);")
                   a.cabinet__user-link(href="#") Сменить фото
                 .cabinet__user-content
-                  p.font-weight-bold.mb-20.font-secondary Горбатов Валентина Александровна
+                  p.font-weight-bold.mb-15.font-secondary Горбатов Валентина Александровна
                   p.mb-10.font-secondary +7 (985 ) 656 - 44 - 23
                   p.p--xs.font-secondary 
                     a(href="#") sample@sample.com

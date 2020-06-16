@@ -17,6 +17,7 @@
 
   &.container--default {
     padding-right: 40px;
+    max-width: 1700px;
 
     @include media-breakpoint-down(sm) {
       padding-right: 10px;
@@ -172,6 +173,12 @@
 
   &.btn-sm {
     padding: 8px 15px;
+  }
+
+  &.btn-xs {
+    padding: 6px 15px;
+    font-family: $font-family-secondary;
+    font-size: 14px;
   }
 
   &.btn-link {
