@@ -3,6 +3,12 @@
   display: flex;
   align-items: center;
 
+  p {
+    font-family: $font-family-secondary;
+    font-size: 16px;
+    font-weight: 600 !important;
+  }
+
   @include media-breakpoint-down(lg) {
     margin-bottom: 30px;
     flex-direction: column;

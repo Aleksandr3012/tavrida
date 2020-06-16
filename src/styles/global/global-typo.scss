@@ -58,7 +58,7 @@ h2,
     }
 
     @include media-breakpoint-down(sm) {
-      font-size: 30px;
+      font-size: 27px;
     }
   }
 }
@@ -187,6 +187,10 @@ p,
   &.p--xxs {
     font-size: 14px;
   }
+}
+
+.text--lh-md {
+  line-height: 1.5;
 }
 
 .font-weight-medium {

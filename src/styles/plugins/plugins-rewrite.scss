@@ -171,6 +171,14 @@
     }
   }
 
+  &.btn-green--new {
+    padding: 19px 40px;
+    font-family: $font-family-secondary;
+    font-size: 16px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+  }
+
   &.btn-sm {
     padding: 8px 15px;
   }

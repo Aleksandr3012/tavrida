@@ -1,215 +1,283 @@
 .team {
 
+  &__front {
+    position: relative;
+    padding: 200px 0 160px;
+    min-height: 670px;
+    background-position: top center;
+    background-size: cover;
+
+    @include media-breakpoint-down(md) {
+      padding: 150px 0 100px;
+      min-height: 400px;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    &--new {
+      padding-bottom: 100px;
+
+      &:before {
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, .52) 100%);
+      }
+
+      .team__front-back {
+        margin-bottom: 10px;
+      }
+
+      .team__front-title {
+        margin-bottom: 27px;
+        font-family: $font-family-secondary;
+        font-size: 90px;
+        line-height: 1.22;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 45px;
+        }
+      }
+
+      .team__front-content {
+        justify-content: space-between;
+      }
+
+      .team__front-contacts {
+        margin-left: 100px;
+        font-family: $font-family-secondary;
+        line-height: 1.2;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 40px;
+          margin-left: 0;
+        }
+
+        a {
+
+          &:hover {
+            opacity: .75;
+            color: $yellow;
+          }
+        }
+      }
+
+      .team__front-subheader {
+        display: flex;
+        align-items: center;
+
+        @include media-breakpoint-down(sm) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      .team__front-age {
+        font-family: $font-family-secondary;
+        color: #fff;
+        background: transparent;
+        -webkit-text-fill-color: #fff;
+      }
+
+      .team__front-info {
+        margin-left: 0;
+        padding-right: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media-breakpoint-down(xl) {
+          padding-right: 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+          flex-direction: row;
+        }
+      }
+
+      .team__front-type {
+        font-family: $font-family-secondary;
+      }
+    }
+
+    &--lg {
+      padding-bottom: 60px;
+    }
+  }
+
   &__front-wrapper {
+    position: relative;
+    z-index: 1;
   }
 
   &__front-back {
+    margin-bottom: 65px;
+    display: block;
+    width: 36px;
+    height: 30px;
+    background: url(../img/team-back.png) no-repeat;
+    background-size: contain;
+
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
   }
 
   &__front-content {
+    padding-left: 125px;
+    display: flex;
+
+    @include media-breakpoint-down(xl) {
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
   }
 
   &__front-title {
   }
 
-  &__front-subheader {
+  &__front-info {
+    margin-left: 100px;
+    padding-top: 12px;
+
+    @include media-breakpoint-down(xl) {
+      padding-top: 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-left: 0;
+    }
+
+    &--workshop {
+      margin-left: 220px;
+
+      @include media-breakpoint-down(lg) {
+        margin-left: 0;
+      }
+    }
   }
 
-  &__front-user {
+  &__front-info-dscr {
+    max-width: 360px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: none;
+    }
   }
 
-  //  .container.team__front-wrapper
-  //          a.team__front-back(href="#")
-  //          .team__front-content
-  //            h1.team__front-title Грантовый <br>конкурс
-  //            .team__front-subheader
-  //              .team__front-user
-  //                .team__front-age 18 — 30 лет
-  //                .team__front-type гражданин РФ
-  //              p.team__front-contacts По всем вопросам:
-  //                a(href="#") grant@crki.art
-  //            .team__front-info
-  //              img.team__front-logo(src="./img/grant-logo-1.svg", alt)
-  //              img.team__front-logo
+  &__front-age {
+    font-family: $font-family-serif;
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url(../img/team-front-mask.svg);
+    background-position: center -10px center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-  //  &__front {
-  //    position: relative;
-  //    padding: 200px 0 160px;
-  //    min-height: 670px;
-  //    background-position: top center;
-  //    background-size: cover;
-  //
-  //    @include media-breakpoint-down(md) {
-  //      padding: 150px 0 100px;
-  //      min-height: 400px;
-  //    }
-  //
-  //    &:before {
-  //      position: absolute;
-  //      top: 0;
-  //      left: 0;
-  //      display: block;
-  //      width: 100%;
-  //      height: 100%;
-  //      content: '';
-  //      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-  //    }
-  //
-  //    &--lg {
-  //      padding-bottom: 60px;
-  //    }
-  //  }
-  //
-  //  &__front-wrapper {
-  //    position: relative;
-  //    z-index: 1;
-  //  }
-  //
-  //  &__front-back {
-  //    margin-bottom: 65px;
-  //    display: block;
-  //    width: 36px;
-  //    height: 30px;
-  //    background: url(../img/team-back.png) no-repeat;
-  //    background-size: contain;
-  //
-  //    @include transition;
-  //
-  //    &:hover {
-  //      opacity: .75;
-  //    }
-  //  }
-  //
-  //  &__front-content {
-  //    padding-left: 125px;
-  //    display: flex;
-  //
-  //    @include media-breakpoint-down(xl) {
-  //      padding-left: 0;
-  //    }
-  //
-  //    @include media-breakpoint-down(lg) {
-  //      flex-direction: column;
-  //    }
-  //  }
-  //
-  //  &__front-title {
-  //  }
-  //
-  //  &__front-info {
-  //    margin-left: 100px;
-  //    padding-top: 12px;
-  //
-  //    @include media-breakpoint-down(xl) {
-  //      padding-top: 0;
-  //    }
-  //
-  //    @include media-breakpoint-down(lg) {
-  //      margin-left: 0;
-  //    }
-  //
-  //    &--workshop {
-  //      margin-left: 220px;
-  //
-  //      @include media-breakpoint-down(lg) {
-  //        margin-left: 0;
-  //      }
-  //    }
-  //  }
-  //
-  //  &__front-info-dscr {
-  //    max-width: 360px;
-  //
-  //    @include media-breakpoint-down(lg) {
-  //      max-width: none;
-  //    }
-  //  }
-  //
-  //  &__front-age {
-  //    font-family: $font-family-serif;
-  //    font-size: 52px;
-  //    line-height: 1;
-  //    font-weight: 900;
-  //    text-transform: uppercase;
-  //    color: #fff;
-  //    background-image: url(../img/team-front-mask.svg);
-  //    background-position: center -10px center;
-  //    -webkit-background-clip: text;
-  //    -webkit-text-fill-color: transparent;
-  //  }
-  //
-  //  &__front-type {
-  //    font-size: 20px;
-  //    line-height: 1.2;
-  //    font-weight: 500;
-  //    color: #fff;
-  //  }
-  //
-  //  &__info {
-  //    margin: 90px 0;
-  //
-  //    ul {
-  //      margin-bottom: 0;
-  //      padding-left: 0;
-  //
-  //      li {
-  //        position: relative;
-  //        margin-bottom: 24px;
-  //        padding-left: 27px;
-  //        list-style: none;
-  //        font-size: 20px;
-  //        line-height: 1.2;
-  //        color: $black;
-  //
-  //        &:before {
-  //          position: absolute;
-  //          top: 8px;
-  //          left: 0;
-  //          display: block;
-  //          width: 11px;
-  //          height: 11px;
-  //          content: '';
-  //          background: #ce3b65;
-  //          border-radius: 50%;
-  //        }
-  //      }
-  //    }
-  //  }
-  //
-  //  &__info-dscr {
-  //    margin-bottom: 0;
-  //    font-family: $font-family-sans-serif;
-  //    line-height: 1.2;
-  //    font-weight: 600;
-  //    text-transform: none;
-  //    color: $black;
-  //  }
-  //
-  //  &__info-reasons {
-  //
-  //    @include media-breakpoint-down(md) {
-  //      margin-top: 40px;
-  //    }
-  //  }
-  //
-  //  &__info-reasons-header {
-  //    margin-bottom: 40px;
-  //    font-family: $font-family-sans-serif;
-  //    font-weight: 700;
-  //    text-transform: none;
-  //    color: $black;
-  //
-  //    @include media-breakpoint-down(xl) {
-  //      margin-bottom: 20px;
-  //    }
-  //  }
-  //
-  //  &__info-field {
-  //    margin-top: 40px;
-  //    margin-bottom: 0;
-  //    font-family: $font-family-sans-serif;
-  //    font-weight: 400;
-  //    text-transform: none;
-  //    color: $black;
-  //  }
+  &__front-type {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  &__info {
+    margin: 90px 0;
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 0;
+
+      li {
+        position: relative;
+        margin-bottom: 24px;
+        padding-left: 27px;
+        list-style: none;
+        font-size: 20px;
+        line-height: 1.2;
+        color: $black;
+
+        &:before {
+          position: absolute;
+          top: 8px;
+          left: 0;
+          display: block;
+          width: 11px;
+          height: 11px;
+          content: '';
+          background: #ce3b65;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &__info-dscr {
+    margin-bottom: 0;
+    font-family: $font-family-sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: none;
+    color: $black;
+  }
+
+  &__info-reasons {
+
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+    }
+  }
+
+  &__info-reasons-header {
+    margin-bottom: 40px;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    color: $black;
+
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__info-field {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    color: $black;
+  }
+
+  &__front-logo {
+    max-width: 100%;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 150px;
+    }
+
+    & + & {
+      margin-top: 55px;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 0;
+        margin-left: 50px;
+      }
+    }
+  }
 }
