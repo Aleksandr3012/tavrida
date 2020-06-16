@@ -1,46 +1,117 @@
 mixin applications(data)
   .applications&attributes(attributes)
-    .applications__row.applications__row--header
-      .applications__column
-        .applications__header-item Название мероприятия
-      .applications__column
-        .applications__header-item Дата\время подачи заявки
-      .applications__column
-        .applications__header-item Дата\время обновления заявки
-      .applications__column
-        .applications__header-item Статус заявки
-      .applications__column
-    .applications__row
-      .applications__column(data-header="Название мероприятия")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold Название Заявки
-      .applications__column(data-header="Дата и время подачи заявки")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
-      .applications__column(data-header="Дата и время обновления заявки")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
-      .applications__column(data-header="Статус заявки")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold.applications__status.applications__status--consideration На рассмотрении
-      .applications__column
-        a.applications__edit(href="#")
-    .applications__row
-      .applications__column(data-header="Название мероприятия")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold Название Заявки
-      .applications__column(data-header="Дата и время подачи заявки")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
-      .applications__column(data-header="Дата и время обновления заявки")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
-      .applications__column(data-header="Статус заявки")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold.applications__status.applications__status--accepted Одобрена
-      .applications__column
-        a.applications__edit.applications__edit--inactive(href="#")
-    .applications__row
-      .applications__column(data-header="Название мероприятия")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold Название Заявки
-      .applications__column(data-header="Дата и время подачи заявки")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
-      .applications__column(data-header="Дата и время обновления заявки")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
-      .applications__column(data-header="Статус заявки")
-        p.p--xs.mb-0.font-family-serif.font-weight-bold.applications__status.applications__status--rejected Отклонена
-        .applications__status-reason Краткая причина отклонения
-      .applications__column
-        a.applications__edit(href="#")
+    
+    if data && data.modifier == 'new'
+      .applications__row.applications__row--header
+        .applications__column
+          .applications__header-item Мероприятие
+        .applications__column
+          .applications__header-item Направление
+        .applications__column
+          .applications__header-item Дата подачи
+        .applications__column
+          .applications__header-item Статус
+        .applications__column
+          .applications__header-item Оценка от экспертов
+        .applications__column
+          .applications__header-item 
+        .applications__column
+          .applications__header-item Операции
+        .applications__column
+
+      .applications__row
+        .applications__column(data-header="Мероприятие")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold Форум
+        .applications__column(data-header="Направление")
+          p.p--xs.mb-0.font-family-secondary Антишкола музыки
+        .applications__column(data-header="Дата подачи")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold 12.02.2020
+        .applications__column(data-header="Статус")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold.applications__status.applications__status--consideration На рассмотрении
+        .applications__column(data-header="Оценка от экспертов")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold 7
+        .applications__column
+          a.btn.btn-green.btn-sm(href="#") Заявка на грант
+        .applications__column
+          a.applications__edit(href="#", title="Редактировать")
+          a.applications__remove(href="#", title="Отозвать")
+
+      .applications__row
+        .applications__column(data-header="Мероприятие")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold Форум
+        .applications__column(data-header="Направление")
+          p.p--xs.mb-0.font-family-secondary Антишкола музыки
+        .applications__column(data-header="Дата подачи")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold 12.02.2020
+        .applications__column(data-header="Статус")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold.applications__status.applications__status--accepted Одобрена
+        .applications__column(data-header="Оценка от экспертов")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold 7
+        .applications__column
+          a.btn.btn-green.btn-sm(href="#") Заявка на грант
+        .applications__column
+          a.applications__edit.applications__edit--inactive(href="#", title="Редактировать")
+          a.applications__remove(href="#", title="Отозвать")
+
+      .applications__row
+        .applications__column(data-header="Мероприятие")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold Форум
+        .applications__column(data-header="Направление")
+          p.p--xs.mb-0.font-family-secondary Антишкола музыки
+        .applications__column(data-header="Дата подачи")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold 12.02.2020
+        .applications__column(data-header="Статус")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold.applications__status.applications__status--rejected Отклоненна
+        .applications__column(data-header="Оценка от экспертов")
+          p.p--xs.mb-0.font-family-secondary.font-weight-bold 2
+        .applications__column
+          a.btn.btn-green.btn-sm(href="#") Заявка на грант
+        .applications__column
+          a.applications__edit(href="#", title="Редактировать")
+          a.applications__remove(href="#", title="Отозвать")
+  
+    else
+      .applications__row.applications__row--header
+        .applications__column
+          .applications__header-item Название мероприятия
+        .applications__column
+          .applications__header-item Дата\время подачи заявки
+        .applications__column
+          .applications__header-item Дата\время обновления заявки
+        .applications__column
+          .applications__header-item Статус заявки
+        .applications__column
+      .applications__row
+        .applications__column(data-header="Название мероприятия")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold Название Заявки
+        .applications__column(data-header="Дата и время подачи заявки")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+        .applications__column(data-header="Дата и время обновления заявки")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+        .applications__column(data-header="Статус заявки")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold.applications__status.applications__status--consideration На рассмотрении
+        .applications__column
+          a.applications__edit(href="#", title="Редактировать")
+      .applications__row
+        .applications__column(data-header="Название мероприятия")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold Название Заявки
+        .applications__column(data-header="Дата и время подачи заявки")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+        .applications__column(data-header="Дата и время обновления заявки")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+        .applications__column(data-header="Статус заявки")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold.applications__status.applications__status--accepted Одобрена
+        .applications__column
+          a.applications__edit.applications__edit--inactive(href="#")
+      .applications__row
+        .applications__column(data-header="Название мероприятия")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold Название Заявки
+        .applications__column(data-header="Дата и время подачи заявки")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+        .applications__column(data-header="Дата и время обновления заявки")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold 12.02.2020 в 14:00
+        .applications__column(data-header="Статус заявки")
+          p.p--xs.mb-0.font-family-serif.font-weight-bold.applications__status.applications__status--rejected Отклонена
+          .applications__status-reason Краткая причина отклонения
+        .applications__column
+          a.applications__edit(href="#", title="Редактировать")

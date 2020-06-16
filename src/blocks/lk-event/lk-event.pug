@@ -1,0 +1,10 @@
+mixin lk-event(data)
+  .lk-event&attributes(attributes)
+    .lk-event__picture(style="background-image: url(./img/" + data.picture + ");")
+    .lk-event__content
+      .lk-event__content-top
+        h4.mb-5= data.title
+        p.p--sm.text-gray 10.07.2020 - 12.07.2020
+        p.p--xs= data.dscr
+      .lk-event__content-bottom
+        a.btn.btn-green(href="#") Подробнее

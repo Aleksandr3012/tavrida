@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Title</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <!--mixin anti-list(data)
+  .anti-list&attributes(attributes)
+    .container
+      h2.h2--default.mb-30.mb-lg-70 Творческие антишколы 2020
+      .row.justify-content-center
+        .col-md-6.d-flex
+          +anti({
+            number: '1',
+            picture: 'anti-1.jpg',
+            title: 'Организаторы'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '2',
+            picture: 'anti-2.jpg',
+            title: 'Волонтеры фестиваля'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '3',
+            picture: 'anti-3.jpg',
+            title: 'Современные музыкальные направления'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '4',
+            picture: 'anti-4.jpg',
+            title: 'Индустрия моды'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '5',
+            picture: 'anti-5.jpg',
+            title: 'Визуальная культура'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '6',
+            picture: 'anti-6.jpg',
+            title: 'Дизайн архитектуры'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '7',
+            picture: 'anti-7.jpg',
+            title: 'Театр '
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '8',
+            picture: 'anti-8.jpg',
+            title: 'Классическая музыка'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '9',
+            picture: 'anti-9.jpg',
+            title: 'КИНО'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '10',
+            picture: 'anti-10.jpg',
+            title: 'Культурный юмор'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '11',
+            picture: 'anti-11.jpg',
+            title: 'Хореографическое искусство'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '12',
+            picture: 'anti-12.jpg',
+            title: 'Народное искусство'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '13',
+            picture: 'anti-13.jpg',
+            title: 'Литература и медиа'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '14',
+            picture: 'anti-14.jpg',
+            title: 'Арт-академия'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '15',
+            picture: 'anti-15.jpg',
+            title: 'Повышение региональной привлекательности'
+          })
+  -->
+  <body>
+      <div class="header">
+        <div class="header__top">
+            <div class="menu"><a class="menu__btn" href="#"></a>
+              <div class="menu__content">
+                <h4 class="menu__content-top">Меню</h4>
+                <div class="menu__wrapper">
+                  <div class="menu__links-list">
+                    <div class="menu__sections-list"><a class="menu__section" href="#">Форум</a><a class="menu__section" href="#">Фестиваль</a></div><a class="menu__link" href="#">Как добраться</a><a class="menu__link" href="#">Информация о фестивале</a><a class="menu__link" href="#">Партнеры</a><a class="menu__link" href="#">Контакты</a>
+                  </div>
+                    <div class="socials socials--horisontal menu__socials"><a class="socials__item socials__item--vk" href="#"></a><a class="socials__item socials__item--fb" href="#"></a><a class="socials__item socials__item--tw" href="#"></a><a class="socials__item socials__item--ig" href="#"></a></div>
+                  <div class="menu__text-wrapper">
+                    <div class="menu__text">10-12 ИЮЛЯ 2020</div>
+                    <div class="menu__text">г. Судак, Бухта Капсель</div>
+                  </div>
+                </div>
+              </div>
+            </div><a class="logo header__logo" href="index.html"><img class="logo__img" src="./img/logo--colored.svg" alt="Logo"></a>
+        </div>
+        <div class="header__bottom">
+            <div class="socials"><a class="socials__item socials__item--vk" href="#"></a><a class="socials__item socials__item--fb" href="#"></a><a class="socials__item socials__item--tw" href="#"></a><a class="socials__item socials__item--ig" href="#"></a></div>
+          <div class="header__info">20-26 АВГУСТА 2020</div>
+          <div class="header__info">г. Судак, Бухта Капсель</div><a class="header__route" href="#">Как проехать</a>
+        </div>
+      </div>
+    <div class="wrapper">
+      <div class="cabinet">
+        <div class="cabinet__content">
+          <div class="container">
+            <div class="cabinet__header">
+              <div class="cabinet__header-content"><a class="link-back" href="#"></a>
+                <h2 class="h2--default mb-0">Личный кабинет</h2>
+              </div><a class="cabinet__logout" href="#">Выйти</a>
+            </div>
+            <div class="row flex-column-reverse flex-xml-row">
+              <div class="col-xml-8">
+                <ul class="nav nav-tabs nav-tabs--headers mb-30">
+                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#lk1" role="tab" aria-selected="true">Заявки</a></li>
+                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#lk2" role="tab" aria-selected="false">Мероприятия</a></li>
+                  <li class="nav-item"><a class="nav-link nav-link--notification" data-toggle="tab" href="#lk3" role="tab" aria-selected="false">Пройти опрос</a></li>
+                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#lk4" role="tab" aria-selected="false">Полезные материалы</a></li>
+                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#lk5" role="tab" aria-selected="false">Связаться с Тавридой</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="lk1" role="tabpanel">
+                    <div class="row flex-column-reverse flex-xml-row">
+                      <div class="col-xml-8">
+                        <h5 class="mb-0 text-dark">Заявки</h5>
+                          <div class="applications">
+                            <div class="applications__row applications__row--header">
+                              <div class="applications__column">
+                                <div class="applications__header-item">Мероприятие</div>
+                              </div>
+                              <div class="applications__column">
+                                <div class="applications__header-item">Направление</div>
+                              </div>
+                              <div class="applications__column">
+                                <div class="applications__header-item">Дата подачи</div>
+                              </div>
+                              <div class="applications__column">
+                                <div class="applications__header-item">Статус</div>
+                              </div>
+                              <div class="applications__column">
+                                <div class="applications__header-item">Оценка от экспертов</div>
+                              </div>
+                              <div class="applications__column">
+                                <div class="applications__header-item"> </div>
+                              </div>
+                              <div class="applications__column">
+                                <div class="applications__header-item">Операции</div>
+                              </div>
+                              <div class="applications__column"></div>
+                            </div>
+                            <div class="applications__row">
+                              <div class="applications__column" data-header="Мероприятие">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold">Форум</p>
+                              </div>
+                              <div class="applications__column" data-header="Направление">
+                                <p class="p--xs mb-0 font-family-secondary">Антишкола музыки</p>
+                              </div>
+                              <div class="applications__column" data-header="Дата подачи">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold">12.02.2020</p>
+                              </div>
+                              <div class="applications__column" data-header="Статус">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold applications__status applications__status--consideration">На рассмотрении</p>
+                              </div>
+                              <div class="applications__column" data-header="Оценка от экспертов">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold">7</p>
+                              </div>
+                              <div class="applications__column"><a class="btn btn-green btn-sm" href="#">Заявка на грант</a></div>
+                              <div class="applications__column"><a class="applications__edit" href="#" title="Редактировать"></a><a class="applications__remove" href="#" title="Отозвать"></a></div>
+                            </div>
+                            <div class="applications__row">
+                              <div class="applications__column" data-header="Мероприятие">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold">Форум</p>
+                              </div>
+                              <div class="applications__column" data-header="Направление">
+                                <p class="p--xs mb-0 font-family-secondary">Антишкола музыки</p>
+                              </div>
+                              <div class="applications__column" data-header="Дата подачи">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold">12.02.2020</p>
+                              </div>
+                              <div class="applications__column" data-header="Статус">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold applications__status applications__status--accepted">Одобрена</p>
+                              </div>
+                              <div class="applications__column" data-header="Оценка от экспертов">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold">7</p>
+                              </div>
+                              <div class="applications__column"><a class="btn btn-green btn-sm" href="#">Заявка на грант</a></div>
+                              <div class="applications__column"><a class="applications__edit applications__edit--inactive" href="#" title="Редактировать"></a><a class="applications__remove" href="#" title="Отозвать"></a></div>
+                            </div>
+                            <div class="applications__row">
+                              <div class="applications__column" data-header="Мероприятие">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold">Форум</p>
+                              </div>
+                              <div class="applications__column" data-header="Направление">
+                                <p class="p--xs mb-0 font-family-secondary">Антишкола музыки</p>
+                              </div>
+                              <div class="applications__column" data-header="Дата подачи">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold">12.02.2020</p>
+                              </div>
+                              <div class="applications__column" data-header="Статус">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold applications__status applications__status--rejected">Отклоненна</p>
+                              </div>
+                              <div class="applications__column" data-header="Оценка от экспертов">
+                                <p class="p--xs mb-0 font-family-secondary font-weight-bold">2</p>
+                              </div>
+                              <div class="applications__column"><a class="btn btn-green btn-sm" href="#">Заявка на грант</a></div>
+                              <div class="applications__column"><a class="applications__edit" href="#" title="Редактировать"></a><a class="applications__remove" href="#" title="Отозвать"></a></div>
+                            </div>
+                          </div><a class="btn btn-green mt-45" href="#">Новая заявка</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="lk2" role="tabpanel">
+                      <div class="lk-event">
+                        <div class="lk-event__picture" style="background-image: url(./img/lk-1.jpg);"></div>
+                        <div class="lk-event__content">
+                          <div class="lk-event__content-top">
+                            <h4 class="mb-5">Фестиваль «Таврида — АРТ»</h4>
+                            <p class="p--sm text-gray">10.07.2020 - 12.07.2020</p>
+                            <p class="p--xs">Место творчества и вдохновения! Участников фестиваля ждут ежедневные кастинги, грантовый конкурс, знакомство с единомышленниками, обмен идеями, творческие коллаборации и создание коллективных арт-манифестов.</p>
+                          </div>
+                          <div class="lk-event__content-bottom"><a class="btn btn-green" href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                      <div class="lk-event">
+                        <div class="lk-event__picture" style="background-image: url(./img/lk-2.jpg);"></div>
+                        <div class="lk-event__content">
+                          <div class="lk-event__content-top">
+                            <h4 class="mb-5">Форум молодых деятелей культуры искусства «Таврида»</h4>
+                            <p class="p--sm text-gray">10.07.2020 - 12.07.2020</p>
+                            <p class="p--xs">Ежегодно Форум объединяет творческих и креативных людей со всей России. Это место, где знакомятся, учатся, творят, обмениваются идеями, начинают свою карьеру и становятся друзьями.</p>
+                          </div>
+                          <div class="lk-event__content-bottom"><a class="btn btn-green" href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                      <div class="lk-event">
+                        <div class="lk-event__picture" style="background-image: url(./img/lk-3.jpg);"></div>
+                        <div class="lk-event__content">
+                          <div class="lk-event__content-top">
+                            <h4 class="mb-5">Грантовый конкурс</h4>
+                            <p class="p--sm text-gray">10.07.2020 - 12.07.2020</p>
+                            <p class="p--xs">Грантовый конкурс на «Тавриде» — возможность получить финансовую поддержку творческого проекта! В 2020 году победители конкурса получат до 3 млн. рублей на реализацию идей.</p>
+                          </div>
+                          <div class="lk-event__content-bottom"><a class="btn btn-green" href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="lk3" role="tabpanel">
+                    <h4 class="mb-30">Заголовок опроса в несколько строк для наглядности</h4>
+                    <div class="lk__quiz-steps-wrapper">
+                      <div class="lk__quiz-step lk__quiz-step--active"></div>
+                      <div class="lk__quiz-step lk__quiz-step--active"></div>
+                      <div class="lk__quiz-step"></div>
+                      <div class="lk__quiz-step"></div>
+                      <div class="lk__quiz-step"></div>
+                      <div class="lk__quiz-step"></div>
+                      <div class="lk__quiz-step"></div>
+                      <div class="lk__quiz-step"></div>
+                      <div class="lk__quiz-step-number"><span>2 </span>из 8</div>
+                    </div>
+                    <form class="lk__quiz-question" action="#" method="POST">
+                      <div class="lk__quiz-question-header">
+                        <h4 class="mb-0 mr-10 mr-lg-30">2</h4>
+                        <p class="p--xs">Вопрос опроса часть входной группы территории Тавриды, который представляет собой арку</p>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input class="custom-control-input" id="answer1" type="radio" name="answer">
+                        <label class="custom-control-label" for="answer1">Ответ первый</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input class="custom-control-input" id="answer2" type="radio" name="answer">
+                        <label class="custom-control-label" for="answer2">Второй ответ подлинее</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input class="custom-control-input" id="answer3" type="radio" name="answer">
+                        <label class="custom-control-label" for="answer3">Третий ответ</label>
+                      </div>
+                      <button class="btn btn-green" type="submit">Далее</button>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="lk4" role="tabpanel">
+                    <h4 class="mb-20 mb-lg-50">Документы</h4>
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-5"><a class="document" href="#">
+                            <div class="document__icon"></div>
+                            <div class="document__content">
+                              <p class="document__link">Название файле или его содержимого для актуализации информации</p>
+                            </div></a>
+                      </div>
+                      <div class="col-sm-6 col-lg-5"><a class="document" href="#">
+                            <div class="document__icon"></div>
+                            <div class="document__content">
+                              <p class="document__link">Название файле или его содержимого для актуализации информации</p>
+                            </div></a>
+                      </div>
+                      <div class="col-sm-6 col-lg-5"><a class="document" href="#">
+                            <div class="document__icon"></div>
+                            <div class="document__content">
+                              <p class="document__link">Название файле или его содержимого для актуализации информации</p>
+                            </div></a>
+                      </div>
+                      <div class="col-sm-6 col-lg-5"><a class="document" href="#">
+                            <div class="document__icon"></div>
+                            <div class="document__content">
+                              <p class="document__link">Название файле или его содержимого для актуализации информации</p>
+                            </div></a>
+                      </div>
+                    </div>
+                    <h4 class="mb-20 mb-lg-50">Медиа</h4>
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-5"><a class="document" href="#">
+                            <div class="document__icon"></div>
+                            <div class="document__content">
+                              <p class="document__link">Логотип</p>
+                            </div></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="lk5" role="tabpanel">
+                    <h4 class="mb-15">ФОрма обратной связи</h4>
+                    <p class="p--sm">Описание формы для наглядности. Ответ придет на Ваш e-mail указанный при регистрации аккаунта</p>
+                    <form class="form" action="#" method="POST">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="form__item form-group mb-lg-0">
+                            <label class="form__label">Тема вопроса (если есть)</label>
+                            <select class="select">
+                              <option disabled selected>Выберите из списка</option>
+                              <option>Вариант 1</option>
+                              <option>Вариант 2</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-8">
+                          <div class="form__item form-group">
+                            <label class="form__label">Ваше сообщение</label>
+                            <textarea class="input input--textarea form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-green" type="submit">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xml-4">
+                <div class="cabinet__user-new">
+                  <div class="cabinet__user-new-id">ID 4487420
+                    <div class="cabinet__user-new-top">
+                      <div class="cabinet__user-new-picture" style="background-image: url(./img/cabinet-user.jpg);"></div><a class="cabinet__user-link" href="#">Сменить фото</a>
+                    </div>
+                    <div class="cabinet__user-content">
+                      <p class="font-weight-bold mb-20">Горбатов Валентина Александровна</p>
+                      <p class="mb-10">+7 (985 ) 656 - 44 - 23</p>
+                      <p class="p--xs"> <a href="#">sample@sample.com</a></p>
+                    </div>
+                  </div><a class="cabinet__user-edit" href="#">
+                    <p class="p--xs mb-0 font-weight-bold">Редактировать профиль</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="footer-short"> 
+            <div class="container">Официальный сайт арт-кластера «Таврида»</div>
+          </div>
+      </div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

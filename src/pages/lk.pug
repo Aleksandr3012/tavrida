@@ -1,0 +1,136 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    .cabinet
+      .cabinet__content
+        .container
+          .cabinet__header
+            .cabinet__header-content
+              a.link-back(href="#")
+              h2.h2--default.mb-0 Личный кабинет
+            a.cabinet__logout(href="#") Выйти
+        
+          .row.flex-column-reverse.flex-xml-row
+            .col-xml-8
+              ul.nav.nav-tabs.nav-tabs--headers.mb-30
+                li.nav-item
+                  a.nav-link.active(data-toggle='tab', href='#lk1', role='tab', aria-selected='true') Заявки
+                li.nav-item
+                  a.nav-link(data-toggle='tab', href='#lk2', role='tab', aria-selected='false') Мероприятия
+                li.nav-item
+                  a.nav-link.nav-link--notification(data-toggle='tab', href='#lk3', role='tab', aria-selected='false') Пройти опрос
+                li.nav-item
+                  a.nav-link(data-toggle='tab', href='#lk4', role='tab', aria-selected='false') Полезные материалы
+                li.nav-item
+                  a.nav-link(data-toggle='tab', href='#lk5', role='tab', aria-selected='false') Связаться с Тавридой
+              .tab-content
+                #lk1.tab-pane.fade.show.active(role='tabpanel')
+                  .row.flex-column-reverse.flex-xml-row
+                    .col-xml-8
+                      h5.mb-0.text-dark Заявки
+                      +applications({
+                        modifier: 'new'
+                      })
+                      a.btn.btn-green.mt-45(href="#") Новая заявка
+                #lk2.tab-pane.fade(role='tabpanel')
+                  +lk-event({
+                    picture: 'lk-1.jpg',
+                    title: 'Фестиваль «Таврида — АРТ»',
+                    dscr: 'Место творчества и вдохновения! Участников фестиваля ждут ежедневные кастинги, грантовый конкурс, знакомство с единомышленниками, обмен идеями, творческие коллаборации и создание коллективных арт-манифестов.'
+                  })
+                  +lk-event({
+                    picture: 'lk-2.jpg',
+                    title: 'Форум молодых деятелей культуры искусства «Таврида»',
+                    dscr: 'Ежегодно Форум объединяет творческих и креативных людей со всей России. Это место, где знакомятся, учатся, творят, обмениваются идеями, начинают свою карьеру и становятся друзьями.'
+                  })
+                  +lk-event({
+                    picture: 'lk-3.jpg',
+                    title: 'Грантовый конкурс',
+                    dscr: 'Грантовый конкурс на «Тавриде» — возможность получить финансовую поддержку творческого проекта! В 2020 году победители конкурса получат до 3 млн. рублей на реализацию идей.'
+                  })
+                #lk3.tab-pane.fade(role='tabpanel')
+                  h4.mb-30 Заголовок опроса в несколько строк для наглядности
+                  .lk__quiz-steps-wrapper
+                    .lk__quiz-step.lk__quiz-step--active
+                    .lk__quiz-step.lk__quiz-step--active
+                    .lk__quiz-step
+                    .lk__quiz-step
+                    .lk__quiz-step
+                    .lk__quiz-step
+                    .lk__quiz-step
+                    .lk__quiz-step
+                    .lk__quiz-step-number
+                      span 2 
+                      | из 8
+                  form.lk__quiz-question(action="#", method="POST")
+                    .lk__quiz-question-header
+                      h4.mb-0.mr-10.mr-lg-30 2
+                      p.p--xs Вопрос опроса часть входной группы территории Тавриды, который представляет собой арку
+                    .custom-control.custom-radio
+                      input#answer1.custom-control-input(type='radio', name='answer')
+                      label.custom-control-label(for='answer1') Ответ первый
+                    .custom-control.custom-radio
+                      input#answer2.custom-control-input(type='radio', name='answer')
+                      label.custom-control-label(for='answer2') Второй ответ подлинее
+                    .custom-control.custom-radio
+                      input#answer3.custom-control-input(type='radio', name='answer')
+                      label.custom-control-label(for='answer3') Третий ответ
+                    button.btn.btn-green(type="submit") Далее
+                #lk4.tab-pane.fade(role='tabpanel')
+                  h4.mb-20.mb-lg-50 Документы
+                  .row
+                    .col-sm-6.col-lg-5
+                      +document({
+                        title: 'Название файле или его содержимого для актуализации информации'
+                      })
+                    .col-sm-6.col-lg-5
+                      +document({
+                        title: 'Название файле или его содержимого для актуализации информации'
+                      })
+                    .col-sm-6.col-lg-5
+                      +document({
+                        title: 'Название файле или его содержимого для актуализации информации'
+                      })
+                    .col-sm-6.col-lg-5
+                      +document({
+                        title: 'Название файле или его содержимого для актуализации информации'
+                      })
+                  h4.mb-20.mb-lg-50 Медиа
+                  .row
+                    .col-sm-6.col-lg-5
+                      +document({
+                        title: 'Логотип'
+                      })
+                #lk5.tab-pane.fade(role='tabpanel')
+                  h4.mb-15 ФОрма обратной связи
+                  p.p--sm Описание формы для наглядности. Ответ придет на Ваш e-mail указанный при регистрации аккаунта
+                  form.form(action="#", method="POST")
+                    .row
+                      .col-lg-4
+                        .form__item.form-group.mb-lg-0
+                          label.form__label Тема вопроса (если есть)
+                          select.select
+                            option(disabled, selected) Выберите из списка
+                            option Вариант 1
+                            option Вариант 2
+                    .row
+                      .col-lg-8
+                        .form__item.form-group
+                          label.form__label Ваше сообщение
+                          textarea.input.input--textarea.form-control
+                    button.btn.btn-green(type="submit") Отправить
+            .col-xml-4
+              .cabinet__user-new
+                .cabinet__user-new-id ID 4487420
+                  .cabinet__user-new-top
+                    .cabinet__user-new-picture(style="background-image: url(./img/cabinet-user.jpg);")
+                    a.cabinet__user-link(href="#") Сменить фото
+                  .cabinet__user-content
+                    p.font-weight-bold.mb-20 Горбатов Валентина Александровна
+                    p.mb-10 +7 (985 ) 656 - 44 - 23
+                    p.p--xs 
+                      a(href="#") sample@sample.com
+                a.cabinet__user-edit(href="#")
+                  p.p--xs.mb-0.font-weight-bold Редактировать профиль
+      +footer-short
