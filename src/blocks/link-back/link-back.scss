@@ -11,7 +11,13 @@
   }
 
   &--dark {
-    background: url(../img/link-back--dark.svg) no-repeat;
+    background: url(../img/link-back--dark.png) no-repeat;
     background-size: contain;
+
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
   }
 }

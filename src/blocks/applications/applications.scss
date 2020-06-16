@@ -138,6 +138,12 @@
     height: 24px;
     background: url(../img/lk-remove.svg) no-repeat;
     background-size: contain;
+
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
   }
 
   &--new {
@@ -215,6 +221,13 @@
       &--rejected {
         background: #ce3b65;
       }
+    }
+
+    .applications__edit {
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-size: 20px;
     }
   }
 }

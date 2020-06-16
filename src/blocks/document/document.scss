@@ -36,6 +36,12 @@
   &--new {
     margin-bottom: 40px;
 
+    @include transition;
+
+    &:hover {
+      opacity: .75;
+    }
+
     .document__icon {
       margin-right: 18px;
       width: 28px;
