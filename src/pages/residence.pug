@@ -1,0 +1,92 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    .residence
+      +hero({
+        title: 'АРТ-РЕЗИДЕНЦИЯ «ТАВРИДА»',
+        comment: '* эскиз проекта',
+        modifier: 'commented'
+      }).hero--commented
+    .container
+      .row
+        .col-lg-10.offset.lg-1 Открытие стационарного образовательного центра для молодых деятелей культуры и искусств «Арт-резиденция «Таврида» планируется в 2022 году и позволит проекту перейти на круглогодичный и комплексный формат работы.
+      h2.h2--default.mt-15.text-dark.mb-30.mb-lg-65.font-secondary ИНФРАСТРУКТУРА
+      .row
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-1.svg',
+            dscr: 'Добровольчество'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-2.svg',
+            dscr: 'Инициативы творческой молодежи'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-3.svg',
+            dscr: 'Молодежные медиа'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-4.svg',
+            dscr: 'Патриотическое воспитание'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-5.svg',
+            dscr: 'Профилактика негативных проявлений в молодежной среде и межнациональное взаимодействие'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-6.svg',
+            dscr: 'Развитие социальных лифтов'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-7.svg',
+            dscr: 'Спорт, ЗОЖ, Туризм'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-8.svg',
+            dscr: 'Студенческие инициативы'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-9.svg',
+            dscr: 'Укрепление семейных ценностей'
+          })
+    +faq
+    .container.mt-30.mt-lg-50.mb-30.mb-lg-75
+      h2.h2--default.mt-15.text-dark.mb-30.mb-lg-65.font-secondary Полезные материалы
+      .row
+        .col-sm-6.col-xl-4
+          +document({
+            link: 'Паспорт федерального проекта «Социальная активность»',
+          })
+        .col-sm-6.col-xl-4
+          +document({
+            link: 'Перечень поручений по итогам встречи с мастерами, выпускниками и студентами ВГИКа'
+          })
+        .col-sm-6.col-xl-4
+          +document({
+            link: 'Соглашение о совместном сотрудничестве администрации г. Судака, АНО «ЦРКИ» и Совета министров Республики Крым',
+          })
+        .col-sm-6.col-xl-4
+          +document({
+            link: 'Приказ о начале подготовительного периода строительства культурно-образовательного центра «Таврида»',
+          })
+        .col-sm-6.col-xl-4
+          +document({
+            link: 'Правила пребывания на территории арт-кластера «Таврида»',
+          })
+        .col-sm-6.col-xl-4
+          +document({
+            link: 'Правила эксплуатации транспортного средства на территории кластера «Таврида»',
+          })
+    +partners({
+      modifier: 'new'
+    }).partners--new
+    +footer

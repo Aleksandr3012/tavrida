@@ -8,3 +8,5 @@ mixin hero(data)
         a.link-back.hero__link-back(href="#")
       .hero__content
         h1.mb-0!= data.title
+        if data && data.comment
+          p.p--xs.text-white.font-secondary * эскиз проекта

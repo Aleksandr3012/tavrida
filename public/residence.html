@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Title</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <!--mixin anti-list(data)
+  .anti-list&attributes(attributes)
+    .container
+      h2.h2--default.mb-30.mb-lg-70 Творческие антишколы 2020
+      .row.justify-content-center
+        .col-md-6.d-flex
+          +anti({
+            number: '1',
+            picture: 'anti-1.jpg',
+            title: 'Организаторы'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '2',
+            picture: 'anti-2.jpg',
+            title: 'Волонтеры фестиваля'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '3',
+            picture: 'anti-3.jpg',
+            title: 'Современные музыкальные направления'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '4',
+            picture: 'anti-4.jpg',
+            title: 'Индустрия моды'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '5',
+            picture: 'anti-5.jpg',
+            title: 'Визуальная культура'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '6',
+            picture: 'anti-6.jpg',
+            title: 'Дизайн архитектуры'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '7',
+            picture: 'anti-7.jpg',
+            title: 'Театр '
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '8',
+            picture: 'anti-8.jpg',
+            title: 'Классическая музыка'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '9',
+            picture: 'anti-9.jpg',
+            title: 'КИНО'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '10',
+            picture: 'anti-10.jpg',
+            title: 'Культурный юмор'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '11',
+            picture: 'anti-11.jpg',
+            title: 'Хореографическое искусство'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '12',
+            picture: 'anti-12.jpg',
+            title: 'Народное искусство'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '13',
+            picture: 'anti-13.jpg',
+            title: 'Литература и медиа'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '14',
+            picture: 'anti-14.jpg',
+            title: 'Арт-академия'
+          })
+        .col-md-6.d-flex
+          +anti({
+            number: '15',
+            picture: 'anti-15.jpg',
+            title: 'Повышение региональной привлекательности'
+          })
+  -->
+  <body>
+      <div class="header">
+        <div class="header__top">
+            <div class="menu"><a class="menu__btn" href="#"></a>
+              <div class="menu__content">
+                <h4 class="menu__content-top">Меню</h4>
+                <div class="menu__wrapper">
+                  <div class="menu__links-list">
+                    <div class="menu__sections-list"><a class="menu__section" href="#">Форум</a><a class="menu__section" href="#">Фестиваль</a></div><a class="menu__link" href="#">Как добраться</a><a class="menu__link" href="#">Информация о фестивале</a><a class="menu__link" href="#">Партнеры</a><a class="menu__link" href="#">Контакты</a>
+                  </div>
+                    <div class="socials socials--horisontal menu__socials"><a class="socials__item socials__item--vk" href="#"></a><a class="socials__item socials__item--fb" href="#"></a><a class="socials__item socials__item--tw" href="#"></a><a class="socials__item socials__item--ig" href="#"></a></div>
+                  <div class="menu__text-wrapper">
+                    <div class="menu__text">10-12 ИЮЛЯ 2020</div>
+                    <div class="menu__text">г. Судак, Бухта Капсель</div>
+                  </div>
+                </div>
+              </div>
+            </div><a class="logo header__logo" href="index.html"><img class="logo__img" src="./img/logo--colored.svg" alt="Logo"></a>
+        </div>
+        <div class="header__bottom">
+            <div class="socials"><a class="socials__item socials__item--vk" href="#"></a><a class="socials__item socials__item--fb" href="#"></a><a class="socials__item socials__item--tw" href="#"></a><a class="socials__item socials__item--ig" href="#"></a></div>
+          <div class="header__info">20-26 АВГУСТА 2020</div>
+          <div class="header__info">г. Судак, Бухта Капсель</div><a class="header__route" href="#">Как проехать</a>
+        </div>
+      </div>
+    <div class="wrapper">
+      <div class="residence">
+          <div class="hero hero--commented" style="background-image: url(./img/undefined);">
+              <div class="header-inner header-inner--alone">
+                <div class="header-inner__wrapper"><a class="logo header-inner__logo" href="index.html"><img class="logo__img" src="./img/logo-new.svg" alt="Logo"></a>
+                  <div class="header-inner__menu"><a class="header-inner__link" href="#">Как добраться</a><a class="header-inner__link" href="#">Где жить?</a><a class="header-inner__link" href="#">Лайн-ап</a></div>
+                  <div class="d-flex"><a class="header-inner__login js-login" href="#"></a><a class="btn btn-outline-secondary js-registration" href="#">Регистрация</a>
+                  </div>
+                </div>
+              </div>
+            <div class="container">
+              <div class="hero__content">
+                <h1 class="mb-0">АРТ-РЕЗИДЕНЦИЯ «ТАВРИДА»</h1>
+                <p class="p--xs text-white font-secondary">* эскиз проекта</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset lg-1">Открытие стационарного образовательного центра для молодых деятелей культуры и искусств «Арт-резиденция «Таврида» планируется в 2022 году и позволит проекту перейти на круглогодичный и комплексный формат работы.</div>
+        </div>
+        <h2 class="h2--default mt-15 text-dark mb-30 mb-lg-65 font-secondary">ИНФРАСТРУКТУРА</h2>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+              <div class="field">
+                <div class="field__icon"><img class="img-fluid" src="./img/field-1.svg" alt></div>
+                <p class="mb-0 font-weight-medium">Добровольчество</p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="field">
+                <div class="field__icon"><img class="img-fluid" src="./img/field-2.svg" alt></div>
+                <p class="mb-0 font-weight-medium">Инициативы творческой молодежи</p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="field">
+                <div class="field__icon"><img class="img-fluid" src="./img/field-3.svg" alt></div>
+                <p class="mb-0 font-weight-medium">Молодежные медиа</p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="field">
+                <div class="field__icon"><img class="img-fluid" src="./img/field-4.svg" alt></div>
+                <p class="mb-0 font-weight-medium">Патриотическое воспитание</p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="field">
+                <div class="field__icon"><img class="img-fluid" src="./img/field-5.svg" alt></div>
+                <p class="mb-0 font-weight-medium">Профилактика негативных проявлений в молодежной среде и межнациональное взаимодействие</p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="field">
+                <div class="field__icon"><img class="img-fluid" src="./img/field-6.svg" alt></div>
+                <p class="mb-0 font-weight-medium">Развитие социальных лифтов</p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="field">
+                <div class="field__icon"><img class="img-fluid" src="./img/field-7.svg" alt></div>
+                <p class="mb-0 font-weight-medium">Спорт, ЗОЖ, Туризм</p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="field">
+                <div class="field__icon"><img class="img-fluid" src="./img/field-8.svg" alt></div>
+                <p class="mb-0 font-weight-medium">Студенческие инициативы</p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="field">
+                <div class="field__icon"><img class="img-fluid" src="./img/field-9.svg" alt></div>
+                <p class="mb-0 font-weight-medium">Укрепление семейных ценностей</p>
+              </div>
+          </div>
+        </div>
+      </div>
+        <div class="faq">
+          <div class="container">
+            <h2 class="h2--default font-secondary text-dark mb-20 mb-lg-70">Часто задаваемые вопросы</h2>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1">
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Нормативные акты, регламентирующие порядок проведения Конкурса?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Кто может принять участие в конкурсе?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Как принять участие в конкурсе?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">До какого момента необходимо подать заявку?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Почему не сохраняется проект?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Должен ли соответствовать проект тематике антишколы или арт-квартала?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Какой срок реализации проекта?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Как проходит защита проекта?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Каковы критерии оценки</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Какие документы необходимо прикрепить при подаче заявки</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Что взять с собой ?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Нужна ли презентация на защиту проекта?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Сколько проектов я могу подать на грантовый конкурс?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Могу ли я защитить проект вместо другого человека?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+                  <div class="question"><a class="question__header" href="#">
+                      <p class="font-weight-black text-primary mb-0 font-secondary text-uppercase">Что делать если АИС «Молодежь России» выдал ошибку?</p></a>
+                    <div class="question__content">
+                      <p>Прием заявок на грантовый конкурс будет проходить через АИС «Молодежь России». Для это необходимо создать проект в разделе «Мои проекты», далее прикрепить его к мероприятию. Обращаем внимание что после подачи заявки вносить изменения в проект будет НЕВОЗМОЖНО. Для того чтобы внести изменения необходимо отозвать заявку, внести правки и подать ее снова.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="container mt-30 mt-lg-50 mb-30 mb-lg-75">
+        <h2 class="h2--default mt-15 text-dark mb-30 mb-lg-65 font-secondary">Полезные материалы</h2>
+        <div class="row">
+          <div class="col-sm-6 col-xl-4"><a class="document" href="#">
+                <div class="document__icon"></div>
+                <div class="document__content">
+                  <p class="document__link font-secondary">Паспорт федерального проекта «Социальная активность»</p>
+                </div></a>
+          </div>
+          <div class="col-sm-6 col-xl-4"><a class="document" href="#">
+                <div class="document__icon"></div>
+                <div class="document__content">
+                  <p class="document__link font-secondary">Перечень поручений по итогам встречи с мастерами, выпускниками и студентами ВГИКа</p>
+                </div></a>
+          </div>
+          <div class="col-sm-6 col-xl-4"><a class="document" href="#">
+                <div class="document__icon"></div>
+                <div class="document__content">
+                  <p class="document__link font-secondary">Соглашение о совместном сотрудничестве администрации г. Судака, АНО «ЦРКИ» и Совета министров Республики Крым</p>
+                </div></a>
+          </div>
+          <div class="col-sm-6 col-xl-4"><a class="document" href="#">
+                <div class="document__icon"></div>
+                <div class="document__content">
+                  <p class="document__link font-secondary">Приказ о начале подготовительного периода строительства культурно-образовательного центра «Таврида»</p>
+                </div></a>
+          </div>
+          <div class="col-sm-6 col-xl-4"><a class="document" href="#">
+                <div class="document__icon"></div>
+                <div class="document__content">
+                  <p class="document__link font-secondary">Правила пребывания на территории арт-кластера «Таврида»</p>
+                </div></a>
+          </div>
+          <div class="col-sm-6 col-xl-4"><a class="document" href="#">
+                <div class="document__icon"></div>
+                <div class="document__content">
+                  <p class="document__link font-secondary">Правила эксплуатации транспортного средства на территории кластера «Таврида»</p>
+                </div></a>
+          </div>
+        </div>
+      </div>
+        <div class="partners partners--new">
+          <div class="container">
+            <h2 class="h2--default text-dark font-secondary mb-30 mb-lg-45">партнеры</h2>
+          </div>
+          <div class="partners__row partners__row--light">
+            <div class="container">
+              <div class="partners__row-wrapper">
+                <div class="partners__row-content">
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-0.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-1.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-3.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-4.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-5.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-6.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-7.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-8.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-9.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-10.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-11.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-12.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-13.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-14.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-15.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-16.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-17.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-18.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-19.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-20.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-21.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-22.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-23.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-24.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-25.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-26.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-27.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-28.png" alt="Logo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="partners__row partners__row--dark">
+            <div class="container">
+              <div class="partners__row-wrapper">
+                <div class="partners__row-content">
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-0.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-1.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-2.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-3.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-4.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-5.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-6.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-7.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-8.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-9.png" alt="Logo"></div>
+                  <div class="partners__item"><img class="partners__logo" src="./img/partner-logo-2-10.png" alt="Logo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="container">
+            <div class="footer__wrapper">
+              <div class="footer__left">
+                <div class="footer__left-top">
+                  <h4>Контакты</h4>
+                  <div class="footer__contacts">
+                    <div class="footer__contacts-item">
+                      <p class="p--sm text-uppercase text-white mb-15">Телефон:</p>
+                      <h5 class="mb-0"> <a href="tel:8 (800) 302-27-04 ">8 (800) 302-27-04 </a></h5>
+                    </div>
+                    <div class="footer__contacts-item">
+                      <p class="p--sm text-uppercase text-white mb-15">Сотрудничество:</p>
+                      <h5><a href="mailto:info@crki.art">info@crki.art</a></h5>
+                    </div>
+                    <div class="footer__contacts-item">
+                      <p class="p--sm text-uppercase text-white mb-15">Пресса:</p>
+                      <h5 class="mb-0"><a href="mailto:press@crki.art">press@crki.art</a></h5>
+                    </div>
+                  </div>
+                </div>
+                <p class="p--sm text-uppercase text-white mb-0">© Официальный сайт форума «Таврида»</p>
+              </div><img class="footer__map" src="./img/crimea.svg" alt="Crimea">
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
