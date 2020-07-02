@@ -73,4 +73,11 @@
       align-items: baseline;
     }
   }
+
+  &--normal {
+
+    .document__link {
+      word-break: normal;
+    }
+  }
 }

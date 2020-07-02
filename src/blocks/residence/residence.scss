@@ -1,2 +1,11 @@
 .residence {
+
+  &__dscr {
+    margin: 70px 0;
+    font-family: $font-family-secondary;
+    line-height: 1.5;
+    font-weight: 600;
+    text-transform: none;
+    color: $dark;
+  }
 }

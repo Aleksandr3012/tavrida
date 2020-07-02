@@ -6,86 +6,149 @@ block content
       +hero({
         title: 'АРТ-РЕЗИДЕНЦИЯ «ТАВРИДА»',
         comment: '* эскиз проекта',
+        bg: 'hero-2.jpg',
         modifier: 'commented'
       }).hero--commented
-    .container
+    .container.container--default
       .row
-        .col-lg-10.offset.lg-1 Открытие стационарного образовательного центра для молодых деятелей культуры и искусств «Арт-резиденция «Таврида» планируется в 2022 году и позволит проекту перейти на круглогодичный и комплексный формат работы.
-      h2.h2--default.mt-15.text-dark.mb-30.mb-lg-65.font-secondary ИНФРАСТРУКТУРА
+        .col-lg-10.offset-lg-1 
+          h5.residence__dscr Открытие стационарного образовательного центра для молодых деятелей культуры и искусств «Арт-резиденция «Таврида» планируется в 2022 году и позволит проекту перейти на круглогодичный и комплексный формат работы.
+    .container.container--default
+      h2.h2--default.mt-15.text-dark.mb-30.mb-lg-90.font-secondary ИНФРАСТРУКТУРА
       .row
         .col-sm-6.col-lg-4
           +field({
-            icon: 'field-1.svg',
-            dscr: 'Добровольчество'
+            icon: 'field-10.svg',
+            dscr: 'Культурный центр с концертным залом'
           })
         .col-sm-6.col-lg-4
           +field({
-            icon: 'field-2.svg',
-            dscr: 'Инициативы творческой молодежи'
+            icon: 'field-11.svg',
+            dscr: 'Творческая лаборатория'
           })
         .col-sm-6.col-lg-4
           +field({
-            icon: 'field-3.svg',
-            dscr: 'Молодежные медиа'
+            icon: 'field-12.svg',
+            dscr: 'Кинотеатр'
           })
         .col-sm-6.col-lg-4
           +field({
-            icon: 'field-4.svg',
-            dscr: 'Патриотическое воспитание'
+            icon: 'field-13.svg',
+            dscr: 'Киностудия'
           })
         .col-sm-6.col-lg-4
           +field({
-            icon: 'field-5.svg',
-            dscr: 'Профилактика негативных проявлений в молодежной среде и межнациональное взаимодействие'
+            icon: 'field-14.svg',
+            dscr: 'Танцевальная студия'
           })
         .col-sm-6.col-lg-4
           +field({
-            icon: 'field-6.svg',
-            dscr: 'Развитие социальных лифтов'
+            icon: 'field-15.svg',
+            dscr: 'Спортивный комплекс'
           })
         .col-sm-6.col-lg-4
           +field({
-            icon: 'field-7.svg',
-            dscr: 'Спорт, ЗОЖ, Туризм'
+            icon: 'field-16.svg',
+            dscr: 'Зона питания'
           })
         .col-sm-6.col-lg-4
           +field({
-            icon: 'field-8.svg',
-            dscr: 'Студенческие инициативы'
+            icon: 'field-17.svg',
+            dscr: 'Кампусы для сотрудников'
           })
         .col-sm-6.col-lg-4
           +field({
-            icon: 'field-9.svg',
-            dscr: 'Укрепление семейных ценностей'
+            icon: 'field-18.svg',
+            dscr: 'Кампусы для участников'
           })
-    +faq
-    .container.mt-30.mt-lg-50.mb-30.mb-lg-75
-      h2.h2--default.mt-15.text-dark.mb-30.mb-lg-65.font-secondary Полезные материалы
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-19.svg',
+            dscr: 'Благоустроенная набережная'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-20.svg',
+            dscr: 'Лодочный пирс'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-21.svg',
+            dscr: 'Общественные пространства под открытым небом'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-22.svg',
+            dscr: 'Выставочные площадки'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-23.svg',
+            dscr: 'Пешеходные дорожки'
+          })
+        .col-sm-6.col-lg-4
+          +field({
+            icon: 'field-24.svg',
+            dscr: 'Велосипедные дорожки'
+          })
+    .container.container--default.mt-20.mt-lg-55.mb-30.mb-lg-70
+      h2.h2--default.text-dark.mb-15.font-secondary АРХИТЕКТУРНАЯ КОНЦЕПЦИЯ
+      p.font-secondary.font-weight-normal.mb-40.mb-xl-80 *Все фото представляют собой эскизы проекта
+      .row
+        .col-lg-4.col-sm-6
+          +concept({
+            picture: 'concept-1.jpg'
+          })
+        .col-lg-4.col-sm-6
+          +concept({
+            picture: 'concept-2.jpg'
+          })
+        .col-lg-4.col-sm-6
+          +concept({
+            picture: 'concept-3.jpg'
+          })
+        .col-lg-4.col-sm-6
+          +concept({
+            picture: 'concept-4.jpg'
+          })
+        .col-lg-4.col-sm-6
+          +concept({
+            picture: 'concept-5.jpg'
+          })
+        .col-lg-4.col-sm-6
+          +concept({
+            picture: 'concept-6.jpg'
+          })
+    +faq({
+      modifier: 'residence'
+    })
+    .container.container--default.mt-30.mt-lg-75.mb-30
+      h2.h2--default.mt-15.text-dark.mb-30.mb-lg-55.font-secondary Полезные материалы
       .row
         .col-sm-6.col-xl-4
           +document({
             link: 'Паспорт федерального проекта «Социальная активность»',
-          })
+          }).mb-30.mb-lg-55.document--normal
         .col-sm-6.col-xl-4
           +document({
             link: 'Перечень поручений по итогам встречи с мастерами, выпускниками и студентами ВГИКа'
-          })
+          }).mb-30.mb-lg-55.document--normal
         .col-sm-6.col-xl-4
           +document({
             link: 'Соглашение о совместном сотрудничестве администрации г. Судака, АНО «ЦРКИ» и Совета министров Республики Крым',
-          })
+          }).mb-30.mb-lg-55.document--normal
         .col-sm-6.col-xl-4
           +document({
             link: 'Приказ о начале подготовительного периода строительства культурно-образовательного центра «Таврида»',
-          })
+          }).mb-30.mb-lg-55.document--normal
         .col-sm-6.col-xl-4
           +document({
             link: 'Правила пребывания на территории арт-кластера «Таврида»',
-          })
+          }).mb-30.mb-lg-55.document--normal
         .col-sm-6.col-xl-4
           +document({
             link: 'Правила эксплуатации транспортного средства на территории кластера «Таврида»',
-          })
+          }).mb-30.mb-lg-55.document--normal
     +partners({
       modifier: 'new'
     }).partners--new
