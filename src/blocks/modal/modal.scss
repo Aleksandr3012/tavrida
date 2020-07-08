@@ -1,6 +1,9 @@
 .modal {
+  //  display: none;
+  position: absolute;
+  top: -100vh;
+  left: -100vh;
   padding: 0;
-  display: none;
   overflow: visible;
   width: 100%;
   max-width: 71%;
@@ -13,6 +16,12 @@
     overflow: auto;
     max-width: none;
     height: 100vh;
+  }
+
+  &.fancybox-content {
+    position: relative;
+    top: auto;
+    left: auto;
   }
 
   &__slider {
