@@ -2,12 +2,25 @@
 
 @import 'mixins';
 
+/* Fix for Fancybox */
+@function max($numbers...) {
+
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+
+  @return m#{i}n(#{$numbers});
+}
+
 /* Plugins */
 @import 'plugins/fullpage.min';
 
 @import 'plugins/slick';
 
 @import 'plugins/perfect-scrollbar';
+
+@import 'plugins/jquery.fancybox.min';
 
 @import 'plugins/select2.min';
 
@@ -147,3 +160,5 @@
 @import './src/blocks/residence/residence';
 
 @import './src/blocks/concept/concept';
+
+@import './src/blocks/modal/modal';

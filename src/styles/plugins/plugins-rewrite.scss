@@ -923,3 +923,19 @@
   z-index: -1 !important;
   opacity: 0 !important;
 }
+
+/* Fancybox */
+
+.fancybox-close-small {
+  top: 13px !important;
+  right: 13px !important;
+  padding: 0;
+  width: 17px !important;
+  height: 17px !important;
+  background: url(../img/modal-close.svg) no-repeat center;
+  background-size: contain;
+
+  svg {
+    display: none;
+  }
+}
