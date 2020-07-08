@@ -939,3 +939,10 @@
     display: none;
   }
 }
+
+.fancybox-slide {
+
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+}

@@ -3,9 +3,16 @@
   display: none;
   overflow: visible;
   width: 100%;
-  max-width: 1360px;
+  max-width: 71%;
 
-  &__close {
+  @include media-breakpoint-down(lg) {
+    max-width: 90%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    overflow: auto;
+    max-width: none;
+    height: 100vh;
   }
 
   &__slider {
@@ -19,17 +26,51 @@
       background: red;
       border-radius: 0;
 
+      @include media-breakpoint-down(lg) {
+        top: 100%;
+        margin-top: 30px;
+        display: block !important;
+        width: 21px;
+        height: 42px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        top: auto;
+        bottom: 10px;
+        margin-top: 0;
+      }
+
       &.slick-prev {
         left: -97px;
         background: url(../img/modal-arrow--back.svg) no-repeat;
         background-size: contain;
         transform: none;
+
+        @include media-breakpoint-down(lg) {
+          left: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+          left: 20px;
+          background: url(../img/modal-arrow--back-dark.svg) no-repeat;
+          background-size: contain;
+        }
       }
 
       &.slick-next {
         right: -97px;
         background: url(../img/modal-arrow.svg) no-repeat;
         background-size: contain;
+
+        @include media-breakpoint-down(lg) {
+          right: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+          right: 20px;
+          background: url(../img/modal-arrow--dark.svg) no-repeat;
+          background-size: contain;
+        }
       }
     }
   }
@@ -37,12 +78,25 @@
   &__slider-item {
     display: grid !important;
     grid-template-columns: 6fr 4fr;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-breakpoint-down(md) {
+      display: flex !important;
+      flex-direction: column;
+    }
   }
 
   &__slider-picture {
     position: relative;
     padding-top: 100%;
     width: 100%;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 70%;
+    }
   }
 
   &__slider-img {
@@ -58,9 +112,34 @@
 
   &__slider-content {
     padding: 45px 70px 45px 60px;
+
+    @include media-breakpoint-down(xl) {
+      padding: 30px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 80px;
+    }
+
+    p {
+
+      @include media-breakpoint-down(xl) {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__slider-header {
+    padding-right: 40px;
     color: #715f7a;
   }
 }

@@ -1,5 +1,5 @@
 $("[data-fancybox]").fancybox({
-  beforeShow: function (instance, slide) {
+  afterLoad: function (instance, slide) {
 
     if ($('.modal__slider').length) {
       $('.modal__slider').slick({
