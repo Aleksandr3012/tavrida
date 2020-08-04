@@ -22,18 +22,20 @@ mixin summary(data)
         modifier2: 'about'
       }).header-inner--alone.header-inner--summary
       .container.summary__wrapper
-        .summary__content
-          .summary__content-left
-            h4.summary__subheader ФЕстиваль <br>творческих <br>сообществ
-            a.summary__later(href="#") Как это было в 2019 году
-            h4.summary__subheader До встречи летом 2020 году
-            h1.summary__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО
-          .summary__content-right
-            +summary__slider
-            .summary__restriction
-              .summary__restriction-dscr для<br>зрителей
-              .summary__restriction-age 16+
-            
+        .row.w-100
+          .col-lg-7.d-flex
+            .summary__content-left
+              h3.summary__subheader ФЕстиваль <br>творческих <br>сообществ
+              a.summary__later(href="#") Как это было в 2019 году
+              h4.summary__subcomment До встречи летом 2020 году
+              h1.summary__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО
+          .col-lg-5.d-flex
+            .summary__content-right
+              +summary__slider
+              .summary__restriction
+                .summary__restriction-dscr для<br>зрителей
+                .summary__restriction-age 16+
+
     else
     
       +header-inner({
@@ -65,5 +67,5 @@ mixin summary__slider-item(data)
       .summary__headliner-picture(style="background-image: url(./img/bi-2.jpg)")
         .summary__headliner-title БИ-2
     .summary__headliner-content
-      .p.mb-0.font-weight-black.text-white 16.07.2020
-      .p.mb-0.font-weight-black.text-white Фестиваль Нашествие на Тавриде
+      .p.mb-0.font-weight-black.text-white.text-uppercase.font-secondary 18.07.2020
+      .p.mb-0.font-weight-black.text-white.text-uppercase.font-secondary Фестиваль Нашествие на Тавриде
