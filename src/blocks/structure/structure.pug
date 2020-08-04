@@ -25,7 +25,7 @@ mixin structure(data)
       h5.text-white.font-secondary Механика отбора участников:
       +steps-list({
         modifier: 'selection'
-      })
+      }).steps-list--yellow
 
 
 
@@ -33,3 +33,7 @@ mixin structure(data)
 
 mixin structure__item(data)
   .structure__item&attributes(attributes)
+    .structure__item-top
+      .structure__item-number= data.number
+      p.font-weight-black.font-secondary.text-white.mb-0.text-uppercase= data.title
+    p.p--xs.mb-0.text-white.font-secondary= data.dscr

@@ -1,5 +1,6 @@
 mixin steps-list(data)
   .steps-list&attributes(attributes)
+  
     if data && data.modifier == 'selection'
       +steps-list__item({
         number: '1',
@@ -24,6 +25,28 @@ mixin steps-list(data)
       +steps-list__item({
         number: '6',
         title: 'Отправка писем с подтверждением участников'
+      })
+      
+    else if data && data.modifier == 'application'
+      +steps-list__item({
+        number: '1',
+        title: 'Зарегистрироваться* на официальном сайте и подать заявку в профильный арт-квартал или сквозной трек <span>*подать заявку можно только в ОДИН арт-квартал</span>'
+      })
+      +steps-list__item({
+        number: '2',
+        title: 'Прикрепить ссылку на портфолио'
+      })
+      +steps-list__item({
+        number: '3',
+        title: 'Прикрепить ссылку на видеовизитку «Хочу на Тавриду: почему я?»'
+      })
+      +steps-list__item({
+        number: '4',
+        title: 'Дождаться оценки кураторов арт-кварталов, которая появится в личном кабинете'
+      })
+      +steps-list__item({
+        number: '5',
+        title: 'Дождаться результатов рассмотрения заявки (в личном кабинете изменится статус заявки)'
       })
 
 

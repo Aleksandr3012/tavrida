@@ -1,2 +1,8 @@
 mixin banner(data)
   .banner&attributes(attributes)
+    .banner__picture
+      .banner__picture-content(style="background-image: url(./img/" + data.picture + ');')
+    .banner__content
+      h2.h2--default.mb-0.text-white.font-secondary= data.title
+      a.btn.btn-primary(href="#") Подробнее
+    

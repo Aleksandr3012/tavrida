@@ -1,2 +1,33 @@
 mixin transfer(data)
   .transfer&attributes(attributes)
+    .container
+      h2.h2--default.font-secondary Трансфер участников
+      .row
+        .col-lg-6
+          +transfer__item({
+            number: '1',
+            title: 'за счет органов исполнительной власти, реализующих государственную молодежную политику'
+          })
+          +transfer__item({
+            number: '2',
+            title: 'за счет твоего вуза/ссуза/работодателя'
+          })
+          +transfer__item({
+            number: '3',
+            title: 'за свой счет'
+          })
+        .col-lg-6
+          img.transfer__bus(src="./img/transfer-bus.svg", alt)
+          .transfer__bus-content
+            p.text-uppercase.font-weight-black.text-primary.font-secondary.mb-25 Автобусные рейсы до площадки Фестиваля
+            p.p--xs.font-secondary — от аэропорта г. Симферополя <br> <br>— от ж/д вокзала г. Симферополя <br>— от ж/д вокзала с. Владиславовка <br>— от автовокзала г. Судака
+            .transfer__bus-comment *о времени отправления трансфера сообщается заранее в информационном письме подтвержденному участнику
+
+
+
+
+
+mixin transfer__item(data)
+  .transfer__item&attributes(attributes)
+    .transfer__item-number= data.number
+    .p.mb-0.font-weight-bold.font-secondary= data.title

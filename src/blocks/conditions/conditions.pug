@@ -1,2 +1,23 @@
 mixin conditions(data)
   .conditions&attributes(attributes)
+    .container
+      h2.h2--default.font-secondary УСЛОВИЯ УЧАСТИЯ
+      .row
+        .col-sm-6
+          p.text-uppercase.font-weight-black.text-primary.font-secondary.mb-30 Участники Фестиваля - это
+          ul
+            li деятели культуры и искусств профильных направлений
+            li в возрасте от 18 до 35 лет на момент проведения фестиваля
+            li граждане Российской Федерации и граждане иностранных государств, говорящие на русском языке*
+              span.conditions__comment * - программа Фестиваля ведется только на русском языке.
+        .col-sm-6
+          p.text-uppercase.font-weight-black.text-primary.font-secondary.mb-30 Условия пребывания на Форуме
+          ul
+            li трехразовое питание-полевая кухня
+            li четырехместное проживание в туристических палатках
+            li фуд-корты на территории
+            li свободный выход за территорию проведения Фестиваля в установленное время (с 9:00 до 19:00)
+      p.text-uppercase.font-weight-black.text-primary.font-secondary.mb-40 Условия пребывания на Форуме
+      +steps-list({
+        modifier: 'application'
+      }).steps-list--blue
