@@ -14,6 +14,25 @@ mixin summary(data)
           .summary__restriction
             .summary__restriction-dscr для<br>зрителей
             .summary__restriction-age 16+
+  
+    else if data && data.modifier == 'new'
+    
+      +header-inner({
+        modifier: 'newest',
+        modifier2: 'about'
+      }).header-inner--alone.header-inner--summary
+      .container.summary__wrapper
+        .summary__content
+          .summary__content-left
+            h4.summary__subheader ФЕстиваль <br>творческих <br>сообществ
+            a.summary__later(href="#") Как это было в 2019 году
+            h4.summary__subheader До встречи летом 2020 году
+            h1.summary__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО
+          .summary__content-right
+            +summary__slider
+            .summary__restriction
+              .summary__restriction-dscr для<br>зрителей
+              .summary__restriction-age 16+
             
     else
     
@@ -25,9 +44,26 @@ mixin summary(data)
         h1.summary__contours #МИР <br>#ЛЮБОВЬ <br>#ИСКУСТВО
         .summary__content
           img.summary__logo(src="./img/front-logo.svg", alt)
-          h4.summary__subheader ФЕстиваль <br>творческих <br>сообществ'
+          h4.summary__subheader ФЕстиваль <br>творческих <br>сообществ
           a.summary__later(href="#") Как это было в 2019 году
           h4.summary__subheader До встречи летом 2020 году
           .summary__restriction
             .summary__restriction-dscr для<br>зрителей
             .summary__restriction-age 16+
+
+
+mixin summary__slider(data)
+  .summary__slider&attributes(attributes)
+    +summary__slider-item
+    +summary__slider-item
+    +summary__slider-item
+    
+    
+mixin summary__slider-item(data)
+  .summary__slider-item&attributes(attributes)
+    .summary__headliner
+      .summary__headliner-picture(style="background-image: url(./img/bi-2.jpg)")
+        .summary__headliner-title БИ-2
+    .summary__headliner-content
+      .p.mb-0.font-weight-black.text-white 16.07.2020
+      .p.mb-0.font-weight-black.text-white Фестиваль Нашествие на Тавриде

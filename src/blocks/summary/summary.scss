@@ -192,4 +192,14 @@
       flex-grow: 1;
     }
   }
+
+  &--new {
+
+    .summary__contours {
+      opacity: .5;
+      font-size: 56px;
+      line-height: 1;
+      align-self: flex-end;
+    }
+  }
 }
