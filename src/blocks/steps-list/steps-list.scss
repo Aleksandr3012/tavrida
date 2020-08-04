@@ -1,2 +1,62 @@
 .steps-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 1 1 calc(100% / 6);
+
+    &:last-child {
+      .steps-list__item-number {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__item-content {
+  }
+
+  &__item-number {
+    display: flex;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__item-number-content {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: $font-family-serif;
+    line-height: 1.2;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    flex-shrink: 0;
+  }
+
+  &__item-title {
+    margin-top: 33px;
+    padding-right: 25px;
+  }
+
+  &--yellow {
+    .steps-list__item-number {
+      &:after {
+        background: url(../img/steps-list-arrow--yellow.svg) no-repeat center right 10px;
+      }
+    }
+
+    .steps-list__item-number-content {
+      color: #efc825;
+      border-color: #efc825;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

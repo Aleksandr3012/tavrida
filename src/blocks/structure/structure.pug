@@ -13,7 +13,7 @@ mixin structure(data)
           .col-lg-4
             +structure__item({
               number: '2',
-              title: 'возможность заявить о себе',
+              title: 'возможность заявить о себе',
               dscr: 'участие в кастингах, питчинги проектов, возможность выступлений, показов собственных проектов участников'
             })
           .col-lg-4
@@ -22,7 +22,7 @@ mixin structure(data)
               title: 'свободный обмен опытом в среде единомышленников',
               dscr: 'networking, создание коллабораций, новых творческих объединений'
             })
-      h5.text-white.font-secondary Механика отбора участников:
+      h5.text-white.font-secondary.text-transform-none.font-weight-bold.mb-35 Механика отбора участников:
       +steps-list({
         modifier: 'selection'
       }).steps-list--yellow
@@ -35,5 +35,5 @@ mixin structure__item(data)
   .structure__item&attributes(attributes)
     .structure__item-top
       .structure__item-number= data.number
-      p.font-weight-black.font-secondary.text-white.mb-0.text-uppercase= data.title
+      p.font-weight-black.font-secondary.text-white.mb-0.text-uppercase.structure__item-title= data.title
     p.p--xs.mb-0.text-white.font-secondary= data.dscr

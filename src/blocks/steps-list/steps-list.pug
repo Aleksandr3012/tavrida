@@ -53,6 +53,7 @@ mixin steps-list(data)
 mixin steps-list__item(data)
   .steps-list__item&attributes(attributes)
     .steps-list__item-content
-      .steps-list__item-number= data.number
+      .steps-list__item-number
+        .steps-list__item-number-content= data.number
       .steps-list__item-title
-        p.mb-0.text-white.p--xs.font-secondary!= data.title
+        p.mb-0.text-white.p--xs.font-secondary.font-weight-bold!= data.title
