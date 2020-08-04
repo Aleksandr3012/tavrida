@@ -167,7 +167,6 @@ p,
     font-weight: 700;
 
     &.text-uppercase {
-
       @include media-breakpoint-down(xml) {
         font-size: 13px;
       }
@@ -218,7 +217,7 @@ p,
 }
 
 .text-grayish {
-  color: rgba($black, .5);
+  color: rgba($black, 0.5);
 }
 
 .text-yellow {
@@ -230,7 +229,6 @@ p,
 }
 
 ul {
-
   li {
   }
 
@@ -246,7 +244,7 @@ ul {
       font-size: 20px;
       line-height: 1.2;
       font-weight: 600;
-      color: rgba($black, .5);
+      color: rgba($black, 0.5);
 
       @include media-breakpoint-down(xl) {
         margin-bottom: 10px;
@@ -270,10 +268,47 @@ ul {
       }
     }
   }
+
+  &.ul--blue {
+    padding-left: 0;
+    padding-right: 20%;
+
+    li {
+      position: relative;
+      margin-bottom: 25px;
+      padding-left: 40px;
+      list-style: none;
+      font-family: $font-family-secondary;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #333;
+
+      @include media-breakpoint-down(xl) {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      &:before {
+        position: absolute;
+        top: 6px;
+        left: 0;
+        display: block;
+        width: 8px;
+        height: 8px;
+        content: '';
+        background: $primary;
+        border-radius: 50%;
+
+        @include media-breakpoint-down(xl) {
+          top: 5px;
+        }
+      }
+    }
+  }
 }
 
 ol {
-
   li {
   }
 }
@@ -294,14 +329,12 @@ a {
 }
 
 input {
-
   &:focus {
     outline: none;
   }
 }
 
 textarea {
-
   &:focus {
     outline: none;
   }

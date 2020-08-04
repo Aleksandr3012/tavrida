@@ -1,2 +1,11 @@
 .conditions {
+  padding: 95px 0 85px;
+
+  &__comment {
+    font-size: 12px;
+    line-height: 1.25;
+    color: rgba(#333, 0.5);
+    margin-top: 30px;
+    display: block;
+  }
 }

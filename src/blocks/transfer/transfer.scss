@@ -1,2 +1,53 @@
 .transfer {
+  padding: 75px 0 110px;
+  background: #efc825;
+
+  &__bus {
+    display: flex;
+    padding-right: 15%;
+  }
+
+  &__bus-img {
+    flex-shrink: 0;
+    margin-right: 56px;
+  }
+
+  &__bus-content {
+  }
+
+  &__bus-comment {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 27px;
+    font-family: $font-family-secondary;
+    line-height: 1.2;
+    color: rgba(#333, 0.5);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 37px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-number {
+    flex-shrink: 0;
+    font-weight: 900;
+    font-family: $font-family-serif;
+    line-height: 1.2;
+    font-size: 40px;
+    color: $primary;
+    border-radius: 50%;
+    border: 3px solid $primary;
+    margin-right: 33px;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
