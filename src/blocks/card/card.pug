@@ -1,0 +1,13 @@
+mixin card(data)
+  .card&attributes(attributes)
+    .card__picture(style="background-image: url(./img/" + data.picture + ');')
+      .card__decoration
+      .card__picture-content
+        if data && data.date
+          p.p--xs.font-weight-black.text-white.font-secondary.text-uppercase.mb-20= data.date
+        .h6.text-white.font-secondary.mt-auto.mb-0!= data.title
+    .card__content
+      p.p--xs.font-secondary= data.dscr
+      if data && data.modifier == 'open'
+        .d-flex.justify-content-center.mt-20.mt-lg-40
+          a.btn.btn-green(href="#") Принять участие

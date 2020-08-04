@@ -1,0 +1,106 @@
+.card {
+
+  &__picture {
+    position: relative;
+    padding-top: 83%;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 18px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: linear-gradient(359.1deg, rgba(0, 0, 0, .6) .95%, rgba(0, 0, 0, .28) 47.83%);
+      border-radius: 18px;
+    }
+  }
+
+  &__decoration {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__picture-content {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 40px 32px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin-top: 40px;
+
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  &--column-yellow {
+
+    .card__decoration {
+      top: -22px;
+      left: -16px;
+      width: 31px;
+      height: 180px;
+      background: #fec500;
+
+      @include media-breakpoint-down(xl) {
+        left: -10px;
+        width: 20px;
+        height: 120px;
+      }
+    }
+  }
+
+  &--column-pink {
+
+    .card__decoration {
+      bottom: 19px;
+      left: -8px;
+      width: 16px;
+      height: 92px;
+      background: #e2127e;
+    }
+  }
+
+  &--dot {
+
+    .card__decoration {
+      top: -30px;
+      right: -26px;
+      width: 78px;
+      height: 78px;
+      background: #e30020;
+      border-radius: 50%;
+    }
+  }
+
+  &--wave {
+
+    .card__decoration {
+      right: -36px;
+      bottom: -29px;
+      width: 214px;
+      height: 69px;
+      background: url(../img/wave.svg) no-repeat center;
+      background-size: contain;
+
+      @include media-breakpoint-down(xl) {
+        right: -15px;
+        width: 100px;
+        height: 32px;
+      }
+    }
+  }
+}
