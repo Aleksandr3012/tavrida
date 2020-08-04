@@ -1,0 +1,35 @@
+mixin structure(data)
+  .structure&attributes(attributes)
+    .container
+      h2.h2--default.text-white.font-secondary Модель программы и структура дней проведения фестиваля в арт-кварталах:
+      .structure__content
+        .row
+          .col-lg-4
+            +structure__item({
+              number: '1',
+              title: 'неформальное общение между участниками и экспертами',
+              dscr: 'отсутствие традиционных ролей «учитель-слушатель», творческие встречи, сессии вопросов и ответов, кейс-стади с топ-профессионалами, истории успехов и провалов и т.п.'
+            })
+          .col-lg-4
+            +structure__item({
+              number: '2',
+              title: 'возможность заявить о себе',
+              dscr: 'участие в кастингах, питчинги проектов, возможность выступлений, показов собственных проектов участников'
+            })
+          .col-lg-4
+            +structure__item({
+              number: '3',
+              title: 'свободный обмен опытом в среде единомышленников',
+              dscr: 'networking, создание коллабораций, новых творческих объединений'
+            })
+      h5.text-white.font-secondary Механика отбора участников:
+      +steps-list({
+        modifier: 'selection'
+      })
+
+
+
+
+
+mixin structure__item(data)
+  .structure__item&attributes(attributes)

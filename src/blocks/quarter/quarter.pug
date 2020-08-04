@@ -1,2 +1,14 @@
 mixin quarter(data)
   .quarter&attributes(attributes)
+    .quarter__picture(style="background-image: url(./img/" + data.picture + ");")
+      .quarter__picture-content
+        .quarter__picture-top
+          .quarter__picture-top-left
+            .p.mb-15.font-weight-black.text-uppercase.text-white.font-secondary= data.type
+            .h6.mb-0.text-white= data.title
+          .quarter__icon
+            img.quarter__icon-img(src="./img/" + data.icon, alt)
+        .p.font-secondary.text-white.mb-0= data.dscr
+    .quarter__content
+      .p.p--xs.mb-15.font-secondary.font-weight-bold Жители арт-квартала:
+      .p.p--xs.mb-0.font-secondary музыканты, вокалисты, sound-продюсеры, поэты, хореографы, авторы и исполнители вне жанрового материала

@@ -1,0 +1,35 @@
+mixin steps-list(data)
+  .steps-list&attributes(attributes)
+    if data && data.modifier == 'selection'
+      +steps-list__item({
+        number: '1',
+        title: 'Регистрация участников на официальном сайте арт-кластера'
+      })
+      +steps-list__item({
+        number: '2',
+        title: 'Подача заявки в арт-квартал'
+      })
+      +steps-list__item({
+        number: '3',
+        title: 'Прикрепление портфолио'
+      })
+      +steps-list__item({
+        number: '4',
+        title: 'Видео-визитка “Хочу на Тавриду: почему я?”'
+      })
+      +steps-list__item({
+        number: '5',
+        title: 'Оценка визиток/портфолио участников кураторами арт-кварталов'
+      })
+      +steps-list__item({
+        number: '6',
+        title: 'Отправка писем с подтверждением участников'
+      })
+
+
+mixin steps-list__item(data)
+  .steps-list__item&attributes(attributes)
+    .steps-list__item-content
+      .steps-list__item-number= data.number
+      .steps-list__item-title
+        p.mb-0.text-white.p--xs.font-secondary!= data.title
