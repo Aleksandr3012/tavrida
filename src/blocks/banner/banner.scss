@@ -1,2 +1,18 @@
 .banner {
+  padding: 54px 0 75px;
+
+  &__picture {
+  }
+
+  &__picture-content {
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--red {
+  }
 }

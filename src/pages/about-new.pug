@@ -96,23 +96,26 @@ block content
     +structure
     +conditions
     +transfer
-    .h2.h2--default.font-secondary.my-60.text-dark Описание дневных активностей
-    .h2.h2--default.font-secondary.my-60.text-dark Инфраструктура
-    .h2.h2--default.font-secondary.my-60.text-dark Информация для зрителей
-    +banner({
-      title: 'КЕМПИНГИ СООБЩЕСТВ',
-      picture: 'banner-1.jpg'
-    }).banner--red
+    .container
+      .h2.h2--default.font-secondary.my-60.text-dark Описание дневных активностей
+      .h2.h2--default.font-secondary.my-60.text-dark Инфраструктура
+      .h2.h2--default.font-secondary.my-60.text-dark Информация для зрителей
+      +banner({
+        title: 'КЕМПИНГИ СООБЩЕСТВ',
+        picture: 'banner-1.jpg'
+      }).banner--red
     +procession
-    +banner({
-      title: 'Грантовый конкурс',
-      picture: 'banner-2.jpg'
-    }).banner--red
+    .container
+      +banner({
+        title: 'Грантовый конкурс',
+        picture: 'banner-2.jpg'
+      }).banner--blue
     +exhibition
-    +banner({
-      title: 'Кастинги',
-      picture: 'banner-3.jpg'
-    }).banner--red
+    .container
+      +banner({
+        title: 'Кастинги',
+        picture: 'banner-3.jpg'
+      }).banner--green
     +map
     +registration({
       modifier: 'festival'
