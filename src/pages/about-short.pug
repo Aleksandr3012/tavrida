@@ -1,0 +1,19 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    +summary({
+      modifier: 'short'
+    })
+    .container
+      h2.h2--default.text-dark.mb-35 Карта фестиваля
+    +map
+    +registration({
+      modifier: 'festival'
+    }).registration--blue
+    +partners
+    +footer
+    +signup#registration
+    +signup({
+      modifier: 'login'
+    })#login

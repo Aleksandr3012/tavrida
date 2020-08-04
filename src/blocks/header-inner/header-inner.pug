@@ -7,6 +7,10 @@ mixin header-inner(data)
           +logo({
             img: 'logo-new.svg'
           }).header-inner__logo
+        else if data && data.modifier == 'newest'
+          +logo({
+            img: 'logo--newest.svg'
+          }).header-inner__logo
         else
           +logo({
             img: 'logo.svg'
@@ -20,7 +24,7 @@ mixin header-inner(data)
             a.header-inner__link(href="#") Где жить?
             a.header-inner__link(href="#") Лайн-ап
       .d-flex
-        if data && data.modifier == 'new'
+        if data && data.modifier == 'new' || data && data.modifier == 'newest'
           a.header-inner__login.js-login(href="#")
         else
           a.btn.btn-outline-secondary.mr-20.js-login(href="#") Войти
