@@ -1,4 +1,7 @@
 .card {
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 50px;
+  }
 
   &__picture {
     position: relative;
@@ -15,7 +18,7 @@
       width: 100%;
       height: 100%;
       content: '';
-      background: linear-gradient(359.1deg, rgba(0, 0, 0, .6) .95%, rgba(0, 0, 0, .28) 47.83%);
+      background: linear-gradient(359.1deg, rgba(0, 0, 0, 0.6) 0.95%, rgba(0, 0, 0, 0.28) 47.83%);
       border-radius: 18px;
     }
   }
@@ -47,7 +50,6 @@
   }
 
   &--column-yellow {
-
     .card__decoration {
       top: -22px;
       left: -16px;
@@ -64,7 +66,6 @@
   }
 
   &--column-pink {
-
     .card__decoration {
       bottom: 19px;
       left: -8px;
@@ -75,7 +76,6 @@
   }
 
   &--dot {
-
     .card__decoration {
       top: -30px;
       right: -26px;
@@ -87,7 +87,6 @@
   }
 
   &--wave {
-
     .card__decoration {
       right: -36px;
       bottom: -29px;

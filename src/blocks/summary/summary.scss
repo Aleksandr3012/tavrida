@@ -167,6 +167,16 @@
     font-weight: 900;
     text-transform: uppercase;
     color: #fff;
+
+    @include media-breakpoint-down(xl) {
+      max-width: 580px;
+      font-size: 54px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      max-width: 400px;
+      font-size: 32px;
+    }
   }
 
   &__content-left {
@@ -252,6 +262,10 @@
     background: url(../img/summary-pic.jpg) no-repeat;
     background-position: top center;
     background-size: cover;
+
+    @include media-breakpoint-down(sm) {
+      background-position: top left -100px;
+    }
 
     .summary__wrapper {
       align-items: stretch;
