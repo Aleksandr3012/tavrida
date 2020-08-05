@@ -293,6 +293,11 @@
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
+
+    .p {
+      font-family: $font-family-serif;
+      font-weight: 900;
+    }
   }
 
   &--short {
@@ -394,6 +399,7 @@
       margin: 40px 0;
       font-size: 20px;
       padding: 4px 50px 4px 4px;
+      border: 0;
 
       @include media-breakpoint-down(sm) {
         padding-right: 20px;
