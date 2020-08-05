@@ -311,6 +311,10 @@
       font-size: 56px;
       line-height: 1;
       align-self: flex-end;
+
+      @include media-breakpoint-down(sm) {
+        align-self: flex-start;
+      }
     }
 
     .summary__title {

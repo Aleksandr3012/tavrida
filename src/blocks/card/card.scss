@@ -48,6 +48,10 @@
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+
+    @include media-breakpoint-down(xl) {
+      padding: 20px;
+    }
   }
 
   &__content {
