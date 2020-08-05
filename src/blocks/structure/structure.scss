@@ -1,16 +1,25 @@
 .structure {
   background: #715f7a;
-  padding: 80px 0 85px;
+  padding: 80px 0 45px;
 
   &__content {
     margin-top: 140px;
     padding-bottom: 45px;
     border-bottom: 1px solid #fff;
     margin-bottom: 75px;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 0;
+    }
   }
 
   &__item {
     padding-right: 26%;
+
+    @include media-breakpoint-down(lg) {
+      padding-right: 0;
+      margin-bottom: 50px;
+    }
   }
 
   &__item-top {
@@ -27,6 +36,15 @@
     position: absolute;
     top: -109px;
     left: 0;
+
+    @include media-breakpoint-down(lg) {
+      position: static;
+      font-size: 100px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 60px;
+    }
   }
 
   &__item-title {

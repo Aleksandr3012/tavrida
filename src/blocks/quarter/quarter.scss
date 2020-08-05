@@ -13,6 +13,9 @@
     position: relative;
     border-radius: 18px;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
     @include transition;
 
     &:before {
@@ -38,6 +41,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include media-breakpoint-down(lg) {
+      padding: 15px;
+    }
   }
 
   &__picture-top {

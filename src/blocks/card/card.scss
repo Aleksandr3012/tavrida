@@ -17,6 +17,7 @@
     border-radius: 18px;
     @include transition;
     display: block;
+    background-repeat: no-repeat;
 
     &:before {
       position: absolute;

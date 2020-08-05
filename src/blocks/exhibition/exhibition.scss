@@ -1,5 +1,8 @@
 .exhibition {
   &__left {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 40px;
+    }
     &:after {
       content: '';
       display: block;
@@ -8,6 +11,10 @@
       background: url(../img/wave.svg) no-repeat center;
       background-size: contain;
       margin-top: 50px;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -15,6 +22,11 @@
     padding-left: 30px;
     border-left: 56px solid #fec500;
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+      border-left-width: 20px;
+      padding-left: 20px;
+    }
 
     &:after {
       content: '';
@@ -26,6 +38,10 @@
       position: absolute;
       right: -20px;
       margin-top: 10px;
+
+      @include media-breakpoint-down(lg) {
+        right: 0;
+      }
     }
   }
 }

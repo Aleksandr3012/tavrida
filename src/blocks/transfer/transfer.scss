@@ -2,14 +2,36 @@
   padding: 75px 0 110px;
   background: #efc825;
 
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0;
+  }
+
   &__bus {
     display: flex;
+    align-items: flex-start;
     padding-right: 15%;
+
+    @include media-breakpoint-down(xml) {
+      padding-right: 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 60px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__bus-img {
     flex-shrink: 0;
     margin-right: 56px;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
   }
 
   &__bus-content {
@@ -49,5 +71,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include media-breakpoint-down(lg) {
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+      margin-right: 20px;
+    }
   }
 }

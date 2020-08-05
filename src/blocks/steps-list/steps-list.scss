@@ -4,6 +4,19 @@
 
   &__item {
     flex: 0 1 calc(100% / 6);
+    margin-bottom: 40px;
+
+    @include media-breakpoint-down(xl) {
+      flex: 0 1 calc(100% / 4);
+    }
+
+    @include media-breakpoint-down(lg) {
+      flex: 0 1 calc(100% / 3);
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 1 calc(100% / 2);
+    }
 
     &:last-child {
       .steps-list__item-number {
@@ -40,11 +53,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include media-breakpoint-down(lg) {
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+    }
   }
 
   &__item-title {
     margin-top: 33px;
     padding-right: 25px;
+
+    p {
+      @include media-breakpoint-down(lg) {
+        font-size: 13px;
+      }
+    }
 
     span {
       font-size: 12px;

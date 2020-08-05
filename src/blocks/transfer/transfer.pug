@@ -3,7 +3,7 @@ mixin transfer(data)
     .container
       h2.h2--default.font-secondary.text-dark.mb-30.mb-lg-60 Трансфер участников
       .row
-        .col-lg-6
+        .col-xml-6.col-xl-5
           +transfer__item({
             number: '1',
             title: 'за счет органов исполнительной власти, реализующих государственную молодежную политику'
@@ -16,7 +16,7 @@ mixin transfer(data)
             number: '3',
             title: 'за свой счет'
           })
-        .col-lg-6
+        .col-xml-6.col-xl-7
           .transfer__bus
             img.transfer__bus-img(src="./img/transfer-bus.svg", alt)
             .transfer__bus-content
