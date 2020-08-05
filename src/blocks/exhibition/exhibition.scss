@@ -1,2 +1,31 @@
 .exhibition {
+  &__left {
+    &:after {
+      content: '';
+      display: block;
+      width: 136px;
+      height: 44px;
+      background: url(../img/wave.svg) no-repeat center;
+      background-size: contain;
+      margin-top: 50px;
+    }
+  }
+
+  &__right {
+    padding-left: 30px;
+    border-left: 56px solid #fec500;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 47px;
+      height: 47px;
+      border-radius: 50%;
+      background: #e30020;
+      position: absolute;
+      right: -20px;
+      margin-top: 10px;
+    }
+  }
 }
