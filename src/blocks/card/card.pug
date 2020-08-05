@@ -1,6 +1,6 @@
 mixin card(data)
   .card&attributes(attributes)
-    .card__picture(style="background-image: url(./img/" + data.picture + ');')
+    a.card__picture(href="#", style="background-image: url(./img/" + data.picture + ');')
       .card__decoration
       .card__picture-content
         if data && data.date

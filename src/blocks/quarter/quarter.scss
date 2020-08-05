@@ -2,11 +2,18 @@
   margin-bottom: 50px;
   display: block;
 
+  &:hover {
+    .quarter__picture {
+      opacity: 0.8;
+    }
+  }
+
   &__picture {
     padding-top: 83%;
     position: relative;
     border-radius: 18px;
     overflow: hidden;
+    @include transition;
 
     &:before {
       content: '';

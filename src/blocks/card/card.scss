@@ -3,12 +3,20 @@
     margin-bottom: 50px;
   }
 
+  &:hover {
+    .card__picture {
+      opacity: 0.75;
+    }
+  }
+
   &__picture {
     position: relative;
     padding-top: 83%;
     background-position: top center;
     background-size: cover;
     border-radius: 18px;
+    @include transition;
+    display: block;
 
     &:before {
       position: absolute;
