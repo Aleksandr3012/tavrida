@@ -2,6 +2,10 @@
   margin: 85px 0;
   padding: 54px 75px;
 
+  h2 {
+    color: #fff;
+  }
+
   &__picture {
   }
 
@@ -27,5 +31,9 @@
   &--green {
     background: #c9df55 url(../img/banner-green.png) no-repeat center right 10%;
     background-size: auto 100%;
+
+    h2 {
+      color: $dark;
+    }
   }
 }
