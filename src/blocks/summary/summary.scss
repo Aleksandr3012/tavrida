@@ -183,6 +183,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   &__subcomment {
@@ -190,6 +195,7 @@
     font-weight: 700;
     max-width: 400px;
     line-height: 1.23;
+    margin: 40px 0;
   }
 
   &__slider {
@@ -209,6 +215,34 @@
 
       &.slick-next {
         right: -39px;
+      }
+    }
+
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+
+      li {
+        list-style: none;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.slick-active {
+          button {
+            background: $primary;
+          }
+        }
+
+        button {
+          font-size: 0;
+          border-radius: 50%;
+          width: 10px;
+          height: 10px;
+        }
       }
     }
   }
@@ -256,6 +290,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
   }
 
   &--short {
@@ -290,6 +325,10 @@
       opacity: 0.5;
       font-size: 56px;
       line-height: 1;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 40px;
+      }
     }
 
     .summary__wrapper {
@@ -299,6 +338,24 @@
       padding-top: 65px;
       padding-bottom: 0;
       align-items: stretch;
+
+      @include media-breakpoint-down(lg) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      & > .row {
+        @include media-breakpoint-down(sm) {
+          margin-left: -10px;
+          margin-right: -10px;
+          width: calc(100% + 20px) !important;
+        }
+      }
     }
 
     .summary__content-left {
@@ -309,12 +366,18 @@
 
     .summary__content-right {
       width: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .summary__subheader {
       font-size: 48px;
       line-height: 1.2;
       font-family: $font-family-secondary;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 36px;
+      }
     }
 
     .summary__later {
@@ -326,13 +389,23 @@
       font-size: 20px;
       padding: 4px 50px 4px 4px;
 
+      @include media-breakpoint-down(sm) {
+        padding-right: 20px;
+        font-size: 16px;
+      }
+
       &:before {
         margin-right: 50px;
+
+        @include media-breakpoint-down(sm) {
+          margin-right: 20px;
+        }
       }
     }
 
     .summary__restriction {
       justify-content: flex-end;
+      margin-top: auto;
     }
   }
 }
