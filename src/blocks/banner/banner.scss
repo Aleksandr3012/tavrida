@@ -1,5 +1,6 @@
 .banner {
-  padding: 54px 0 75px;
+  margin: 85px 0;
+  padding: 54px 75px;
 
   &__picture {
   }
@@ -14,5 +15,17 @@
   }
 
   &--red {
+    background: #ce3b65 url(../img/banner-red.png) no-repeat center right 10%;
+    background-size: auto 100%;
+  }
+
+  &--blue {
+    background: #67bac3 url(../img/banner-blue.png) no-repeat center right 10%;
+    background-size: auto 100%;
+  }
+
+  &--green {
+    background: #c9df55 url(../img/banner-green.png) no-repeat center right 10%;
+    background-size: auto 100%;
   }
 }

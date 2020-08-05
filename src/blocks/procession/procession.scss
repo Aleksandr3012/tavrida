@@ -1,2 +1,48 @@
 .procession {
+  background: #715f7a;
+  padding: 90px 0;
+
+  &__item {
+    margin-bottom: 35px;
+    max-width: 300px;
+  }
+
+  &__item-number {
+    color: #efc825;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: $font-family-secondary;
+    line-height: 1.2;
+  }
+
+  &__features {
+    padding-left: 0;
+
+    li {
+      font-size: 20px;
+      line-height: 1.2;
+      color: #fff;
+      font-family: $font-family-secondary;
+      margin-bottom: 40px;
+      position: relative;
+      padding-left: 30px;
+      list-style: none;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border: 3px solid #efc825;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        left: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
