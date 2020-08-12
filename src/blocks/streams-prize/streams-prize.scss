@@ -1,2 +1,13 @@
 .streams-prize {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #c9df55;
+  padding: 0 40px;
+  border-top: 0;
+
+  p {
+    max-width: 520px;
+    font-weight: 500;
+  }
 }

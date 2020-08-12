@@ -1,2 +1,39 @@
 .prize {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__number {
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-family: $font-family-secondary;
+  }
+
+  &__comment {
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    font-weight: 700;
+    font-family: $font-family-secondary;
+  }
+
+  &--orange {
+    background: url(../img/prize-orange.svg) no-repeat center;
+    background-size: contain;
+  }
+
+  &--blue {
+    background: url(../img/prize-blue.svg) no-repeat center;
+    background-size: contain;
+  }
+
+  &--violet {
+    background: url(../img/prize-violet.svg) no-repeat center;
+    background-size: contain;
+  }
 }

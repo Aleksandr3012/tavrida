@@ -1,5 +1,15 @@
 mixin streams-feature(data)
   .streams-feature&attributes(attributes)
     .streams-feature__picture
-      img.streams-feature__picture(src="./img/" + data.picture, alt)
-      .h5.mb-0.text-dark= data.title
+      img.streams-feature__img(src="./img/" + data.icon, alt)
+    .streams-feature__title= data.title
+    if data && data.modifier == 'socials'
+      .streams-feature__socials
+        a.streams-feature__socials-item(href="#")
+          img.img-fluid(src="./img/socials-dark-tt.svg", alt)
+        a.streams-feature__socials-item(href="#")
+          img.img-fluid(src="./img/socials-dark-yt.svg", alt)
+        a.streams-feature__socials-item(href="#")
+          img.img-fluid(src="./img/socials-dark-ig.svg", alt)
+        a.streams-feature__socials-item(href="#")
+          img.img-fluid(src="./img/socials-dark-vk.svg", alt)

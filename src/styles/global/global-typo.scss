@@ -310,6 +310,18 @@ ul {
       }
     }
   }
+
+  &.ul--default {
+    li {
+      padding-left: 26px;
+      font-size: 20px;
+    }
+
+    li:before {
+      width: 6px;
+      height: 6px;
+    }
+  }
 }
 
 ol {

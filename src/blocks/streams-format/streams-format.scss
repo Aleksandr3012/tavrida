@@ -1,2 +1,68 @@
 .streams-format {
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #c9df55;
+  position: relative;
+  padding: 85px 40px 30px;
+  flex-grow: 1;
+  margin-bottom: 0;
+
+  &__icon {
+    position: absolute;
+    right: 30px;
+    top: -40px;
+  }
+
+  &__type {
+    color: #5a2e91;
+    font-size: 30px;
+    line-height: 1.15;
+    font-weight: 700;
+    font-family: $font-family-secondary;
+    padding: 1px 12px 1px 50px;
+    position: absolute;
+    left: 0;
+    color: #5a2e91;
+    top: 30px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding-left: 0;
+    max-width: 484px;
+
+    li {
+      font-family: $font-family-secondary;
+      margin-bottom: 15px;
+      list-style: none;
+      position: relative;
+      padding-left: 33px;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 21px;
+        height: 10px;
+        margin-right: 12px;
+        background: url(../img/wavy.svg) no-repeat center;
+        background-size: contain;
+        flex-shrink: 0;
+        position: absolute;
+        left: 0;
+        top: 5px;
+      }
+    }
+  }
+
+  &--online {
+    .streams-format__type {
+      background: #c9df55;
+    }
+  }
+
+  &--offline {
+    .streams-format__type {
+      background: #ce3b65;
+      color: #efc825;
+    }
+  }
 }

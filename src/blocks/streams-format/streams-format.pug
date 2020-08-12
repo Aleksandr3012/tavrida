@@ -1,8 +1,8 @@
 mixin streams-format(data)
   .streams-format&attributes(attributes)
-    img.streams-format__icon(src="./img/" + data.picture, alt)
+    img.streams-format__icon(src="./img/" + data.icon, alt)
     .streams-format__type= data.type
-    p.text-dark= data.dscr
+    p.text-dark.font-secondary.font-weight-normal.mb-40= data.dscr
     if block
       block
     
