@@ -1,0 +1,8 @@
+mixin streams-format(data)
+  .streams-format&attributes(attributes)
+    img.streams-format__icon(src="./img/" + data.picture, alt)
+    .streams-format__type= data.type
+    p.text-dark= data.dscr
+    if block
+      block
+    

@@ -1,0 +1,183 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    .streams
+      .streams__front(style="background-image: url(./img/streams-front.jpg);")
+        +header-inner({
+          modifier: 'newest'
+        }).header-inner--alone
+        .container
+          .streams__front-content
+            h1.streams__front-header Фестиваль стримов и концертов во дворах «Таврида рядом»
+            h2.streams__front-subheader 4 — 6 сентября 2020
+            p.streams__front-comment ОРГАНИЗАТОРЫ ФЕСТИВАЛЯ:
+              a(href="#") streamfest@crki.art
+      .streams__features
+        .container
+          .row
+            .col-lg-4
+              +streams-feature({
+                icon: 'streams-feature-1.svg',
+                title: '3 дня Фестиваля'
+              })
+            .col-lg-4
+              +streams-feature({
+                icon: 'streams-feature-2.svg',
+                title: '3 000 стримов в различных социальных сетях: ',
+                modifier: 'socials'
+              })
+            .col-lg-4
+              +streams-feature({
+                icon: 'streams-feature-2.svg',
+                title: 'Финансовая поддержка для молодых деятелей культуры и искусств'
+              })
+          .text-center
+            a.btn.btn-green.btn-green--new(href="#") ПОДАТЬ ЗАЯВКУ НА ФЕСТИВАЛЬ
+        .container
+          h2.h2--default КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ ФЕСТИВАЛЯ
+          .row
+            .col-sm-6.col-lg-3
+              +stream-current({
+                picture: 'stream-current-1.jpg',
+                title: 'музыка'
+              })
+            .col-sm-6.col-lg-3
+              +stream-current({
+                picture: 'stream-current-2.jpg',
+                title: 'изобразительное искусство'
+              })
+            .col-sm-6.col-lg-3
+              +stream-current({
+                picture: 'stream-current-3.jpg',
+                title: 'театр '
+              })
+            .col-sm-6.col-lg-3
+              +stream-current({
+                picture: 'stream-current-4.jpg',
+                title: 'хореография'
+              })
+          .row
+            .col-sm-6.col-lg-4
+              +stream-current({
+                picture: 'stream-current-5.jpg',
+                title: 'кино'
+              })
+            .col-sm-6.col-lg-4
+              +stream-current({
+                picture: 'stream-current-6.jpg',
+                title: 'литература'
+              })
+            .col-sm-6.col-lg-4
+              +stream-current({
+                picture: 'stream-current-7.jpg',
+                title: 'юмор'
+              })
+        .container
+          .streams__formats
+            h2.h2--default ФОРМАТЫ ФЕСТИВАЛЯ
+            .row
+              .col-lg-6
+                +streams-format({
+                  type: 'онлайн',
+                  icon: 'streams-format-1.svg',
+                  dscr: 'стримы в социальных сетях:',
+                })
+                  ul
+                    li 
+                      span.font-weight-bold образовательно-просветительские мероприятия: 
+                      | лекции, мастер-классы, творческие встречи с известными представителями арт-индустрии своего региона на тему культуры и искусства;
+                    li 
+                      span.font-weight-bold творческие мероприятия: 
+                      | концерты, спектакли, выставки, перформансы;
+                    li 
+                      span.font-weight-bold авторские мероприятия: 
+                      | шоу, интеграции и т. п. на тему культуры и искусства.
+                +streams-prize({
+                  dscr: 'за проведенные онлайн-мероприятия участники могут получить финансовую поддержку в размере:',
+                  price: '5 000',
+                  color: 'orange'
+                })
+              .col-lg-6
+                +streams-format({
+                  type: 'офлайн',
+                  icon: 'streams-format-2.svg',
+                  dscr: 'дворовые концерты и мероприятия на открытых площадках своего региона:',
+                })
+                  ul
+                    li
+                      span.font-weight-bold образовательно-просветительские: 
+                      | лекции на открытых площадках своего города, мастер-классы для детей, оставшихся без попечения родителей, творческие встречи с известными представителями арт-индустрии своего региона на тему культуры и искусства;
+                    li
+                      span.font-weight-bold творческие мероприятия: 
+                      | добрососедские концерты во дворах своего города, уличные спектакли, выставки, перформансы;
+                    li
+                      span.font-weight-bold авторские мероприятия: 
+                      | творческие вечера, квиз, шоу, интеграции на тему культуры и искусства.
+                +streams-prize({
+                  dscr: 'за проведенные офлайн-мероприятия участники могут получить финансовую поддержку в размере:',
+                  price: '10 000',
+                  color: 'blue'
+                })
+                +streams-prize({
+                  dscr: 'если автором офлайн-проекта является коллектив (2 участников и более), то сумма финансовой поддержки за реализованные творческие и авторские мероприятия составит: ',
+                  price: '30 000',
+                  color: 'violet'
+                })
+            .streams__formats-comment *Каждый участник имеет возможность подать 5 заявок на проведение онлайн-мероприятия и 5 заявок на проведение офлайн-мероприятия.
+        .container
+          h2.h2--default УСЛОВИЯ УЧАСТИЯ В ФЕСТИВАЛЕ
+          .row
+            .col-lg-8
+              h5 Участники Фестиваля – это:
+              ul
+                li физические лица, граждане Российской Федерации вне зависимости  от текущего места жительства в возрасте от 18 до 35 лет на момент проведения Фестиваля (4 ‒ 6 сентября 2020 года);
+                li молодые деятели культуры и искусств;
+                li представители различных направлений искусств: музыки, театра, литературы, живописи, хореографии;
+                li сольные исполнители и коллективы.
+            .col-lg-4
+              a.streams__document(href="#") Положение о проведении Фестиваля в 2020 году
+        .streams__participation
+          +streams__participation-item({
+            number: '1',
+            content: '<a href="#">Авторизоваться</a> на официальном сайте арт-кластера «Таврида»'
+          }).streams__participation-item--left
+          +streams__participation-item({
+            number: '2',
+            content: '<a href="#">Авторизоваться</a> на официальном сайте арт-кластера «Таврида»'
+          }).streams__participation-item--right
+          +streams__participation-item({
+            number: '3',
+            content: '<a href="#">Подать заявку</a> на Фестиваль до 31 августа и дождаться подтверждения от модератора'
+          }).streams__participation-item--left
+          +streams__participation-item({
+            number: '4',
+            content: 'Сделать пост на своей личной странице в социальный сетях, в котором необходимо рассказать  в Фестивале стримов и концертов во дворах «Таврида рядом» с использованием официального хештега #ТавридаРядом'
+          }).streams__participation-item--right
+          +streams__participation-item({
+            number: '5',
+            content: 'Провести онлайн- или офлайн-мероприятие в даты, указанные при подаче заявки'
+          }).streams__participation-item--left
+          +streams__participation-item({
+            number: '6',
+            content: 'Сделать запись прямого эфира и разместить ее на своей личной странице в социальных сетях с использованием официального хештега #ТавридаРядом'
+          }).streams__participation-item--right
+          +streams__participation-item({
+            number: '7',
+            content: 'В течение 12 часов после проведения онлайн- или офлайн-мероприятия необходимо заполнить Google форму, которая будет направлена каждому участнику за день до проведения мероприятия. При заполнении Google формы участнику необходимо прикрепить ссылку на файлообменник (рекомендуем использовать Яндекс диск или Google диск), на котором будут собраны все отчетные материалы (фото, скриншоты, запись эфира, ссылки на публикации).'
+          }).streams__participation-item--left.streams__participation-item--sm
+          +streams__participation-item({
+            number: '8',
+            content: 'Дождаться экспертной оценки о назначении финансовой поддержки'
+          }).streams__participation-item--right
+    +registration({
+      modifier: 'streams'
+    })
+    +footer
+
+
+mixin streams__participation-item(data)
+  .streams__participation-item&attributes(attributes)
+    .streams__participation-item-number= data.number
+    .streams__participation-item-content!= data.content
+    

@@ -1,0 +1,6 @@
+mixin streams-prize(data)
+  .streams-prize&attributes(attributes)
+    p.mb-0 за проведенные онлайн-мероприятия участники могут получить финансовую поддержку в размере:
+    +prize({
+      amount: data.price
+    })

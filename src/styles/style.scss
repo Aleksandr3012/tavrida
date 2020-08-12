@@ -4,12 +4,10 @@
 
 /* Fix for Fancybox */
 @function max($numbers...) {
-
   @return m#{a}x(#{$numbers});
 }
 
 @function min($numbers...) {
-
   @return m#{i}n(#{$numbers});
 }
 
@@ -180,3 +178,10 @@
 @import './src/blocks/exhibition/exhibition';
 
 @import './src/blocks/steps-list/steps-list';
+
+@import './src/blocks/streams/streams';
+@import './src/blocks/streams-feature/streams-feature';
+@import './src/blocks/stream-current/stream-current';
+@import './src/blocks/prize/prize';
+@import './src/blocks/streams-format/streams-format';
+@import './src/blocks/streams-prize/streams-prize';

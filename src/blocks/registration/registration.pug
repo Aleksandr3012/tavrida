@@ -112,6 +112,86 @@ mixin registration(data)
               .form__team-item-id ID 1235598
               .form__team-item-name Гановерский А.В.
               a.form__team-item-remove(href="#")
+              
+        if data && data.modifier == 'streams'
+          h2.h2--default ПОДАТЬ ЗАЯВКУ
+          p.p--sm заявки принимаются до 31 августа 2020 года
+          .registration__radio-wrapper
+            .registration__radio-header Выбери формат участия:
+            .registration__radio-content
+              .custom-control.custom-radio
+                input#format1.custom-control-input(type='radio', name='format')
+                label.custom-control-label(for='format1') Online
+              .custom-control.custom-radio
+                input#format2.custom-control-input(type='radio', name='format')
+                label.custom-control-label(for='format2') Offline
+          .registration__radio-wrapper
+            .registration__radio-header Выбери форму заявки:
+            .registration__radio-content
+              .custom-control.custom-radio
+                input#form1.custom-control-input(type='radio', name='form')
+                label.custom-control-label(for='form1') Индивидуальная
+              .custom-control.custom-radio
+                input#form2.custom-control-input(type='radio', name='form')
+                label.custom-control-label(for='form2') Коллективная
+          .registration__radio-wrapper
+            .registration__radio-header Участвовал ли ты в проектах арт-кластера «Таврида»?
+            .registration__radio-content
+              .custom-control.custom-radio
+                input#participation1.custom-control-input(type='radio', name='participation')
+                label.custom-control-label(for='participation1') Да
+              .custom-control.custom-radio
+                input#participation2.custom-control-input(type='radio', name='participation')
+                label.custom-control-label(for='participation2') Нет
+          .row
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Тематика мастер-класса/эфира
+                select.select
+                  option(disabled, selected) Выберите из списка
+                  option Опция 1
+                  option Опция 2
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Направление
+                select.select
+                  option(disabled, selected) Выберите из списка
+                  option Направление 1
+                  option Направление 2
+          .row
+            .col-xml-9
+              .form__item.form-group
+                label.form__label Краткая концепция и цель твоего эфира
+                textarea.input.input--textarea.form-control
+          .row
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Ссылка на социальную сеть (аккаунт), где будет проходить трансляция / будет выложено видео
+                input.input.form-control(type="text", placeholder="http:\\")
+          .row
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Дата проведения онлайн-трансляции
+                select.select
+                  option(disabled, selected) Выберите из списка
+                  option Опция 1
+                  option Опция 2
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Выберите время
+                select.select
+                  option 14:45
+                  option Опция 1
+                  option Опция 2
+          .row
+            .col-md-4.col-xml-3
+              .form__item.form-group
+                label.form__label Контактный телефон
+                input.input.form-control(type="text", placeholder="+7 (____) ____ - ___ - ___")
+        .registration__streams-footer
+          button.btn.btn-green.btn-green--new(type="submit") Отправить
+          .registration__streams-footer-comment Нажимая кнопку, я соглашаюсь с правилами пользования сайтом Арт-кластера «Таврида» и с политикой обработки и защиты персональных данных.
+                  
         if data && data.modifier == 'team'
           .registration__type
             .registration__type-top

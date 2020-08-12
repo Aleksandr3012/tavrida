@@ -1,0 +1,5 @@
+mixin streams-feature(data)
+  .streams-feature&attributes(attributes)
+    .streams-feature__picture
+      img.streams-feature__picture(src="./img/" + data.picture, alt)
+      .h5.mb-0.text-dark= data.title
