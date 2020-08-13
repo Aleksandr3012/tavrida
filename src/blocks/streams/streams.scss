@@ -27,6 +27,11 @@
   &__front-content {
     position: relative;
     z-index: 1;
+    padding: 0 120px;
+
+    @include media-breakpoint-down(xml) {
+      padding: 0;
+    }
   }
 
   &__front-header {
@@ -54,7 +59,7 @@
     text-transform: uppercase;
     color: #fff;
     font-family: $font-family-secondary;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 
     @include media-breakpoint-down(xml) {
       font-size: 40px;
@@ -62,6 +67,7 @@
 
     @include media-breakpoint-down(lg) {
       font-size: 30px;
+      margin-bottom: 30px;
     }
 
     @include media-breakpoint-down(sm) {
