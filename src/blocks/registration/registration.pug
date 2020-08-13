@@ -197,6 +197,15 @@ mixin registration(data)
               .form__item.form-group
                 label.form__label Контактный телефон
                 input.input.input--new.form-control(type="text", placeholder="+7 (____) ____ - ___ - ___")
+          .row
+            .col-md-6.col-xl-4.col-xml-3
+              .form__item.form-group
+                label.form__label Выберите день
+                input.input.input--new.input--date.form-control(type="text")
+            .col-md-6.col-xl-4.col-xml-3
+              .form__item.form-group
+                label.form__label Выберите время
+                input.input.input--new.input--time.form-control(type="text")
         .form__footer
           button.btn.btn-green.btn-green--new.btn-sm(type="submit") Отправить
           p.form__footer-agreement Нажимая кнопку, я соглашаюсь с правилами пользования сайтом Арт-кластера «Таврида» и с политикой обработки и защиты персональных данных.
