@@ -17,7 +17,7 @@
     font-size: 16px;
     line-height: 19px;
     font-weight: 500;
-    color: rgba(#333, .5);
+    color: rgba(#333, 0.5);
   }
 
   & + & {
@@ -45,7 +45,17 @@
     resize: none;
   }
 
+  &--textarea-sm {
+    height: 106px !important;
+    font-family: $font-family-secondary;
+  }
+
   &--textarea-wide {
     height: 87px !important;
+  }
+
+  &--new {
+    font-family: $font-family-secondary;
+    font-size: 16px;
   }
 }

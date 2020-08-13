@@ -1,5 +1,4 @@
 .registration {
-
   &__type {
     margin-top: 30px;
   }
@@ -73,6 +72,23 @@
     }
   }
 
+  &__radio-header {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $font-family-secondary;
+    line-height: 17px;
+    color: #333;
+  }
+
+  &__radio-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__radio-btn {
+    min-width: 183px;
+  }
+
   &--blue {
     padding: 60px 0;
     background: $primary url(../img/form-blue-bg.svg) no-repeat right bottom;
@@ -90,7 +106,7 @@
     }
 
     .form__file-size {
-      color: rgba(#fff, .54);
+      color: rgba(#fff, 0.54);
     }
 
     .form__file-remove {
@@ -112,7 +128,7 @@
   }
 
   &--gray {
-    background: rgba(#c4c4c4, .2);
+    background: rgba(#c4c4c4, 0.2);
 
     .form__label {
       color: #4f4f4f;
@@ -150,7 +166,6 @@
       }
 
       .custom-control-input {
-
         &:checked ~ .custom-control-label {
           border-color: #efc825;
         }

@@ -310,82 +310,59 @@
           </div>
         </div>
       </div>
-        <div class="registration">
+        <div class="registration registration--gray streams__registration">
           <div class="container">
-            <h2 class="h2--default text-white mb-15">Регистрация на фестиваль</h2>
             <form class="form" action="#" method="POST">
-              <div class="row">
-                <div class="col-md-4 col-xml-3">
-                  <div class="form__item form-group">
-                    <label class="form__label">Фамилия</label>
-                    <input class="input form-control" type="text" placeholder="Введите вашу фамилию">
-                  </div>
+              <h2 class="h2--default text-dark font-secondary mb-10">ПОДАТЬ ЗАЯВКУ</h2>
+              <p class="p--sm font-secondary mb-30 mb-lg-45">заявки принимаются до 31 августа 2020 года</p>
+              <div class="row mb-20">
+                <div class="col-md-3 col-xl-2">
+                  <div class="registration__radio-header">Выбери формат участия:</div>
                 </div>
-                <div class="col-md-4 col-xml-3">
-                  <div class="form__item form-group">
-                    <label class="form__label">Имя</label>
-                    <input class="input form-control" type="text" placeholder="Введите ваше имя">
-                  </div>
-                </div>
-                <div class="col-md-4 col-xml-3">
-                  <div class="form__item form-group">
-                    <label class="form__label">Отчество</label>
-                    <input class="input form-control" type="text" placeholder="Введите ваше отчество">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-xml-3">
-                  <div class="form__item form-group">
-                    <label class="form__label">Телефон</label>
-                    <input class="input form-control" type="text" placeholder="+7 ( ___ ) ___ - __ - __">
-                  </div>
-                </div>
-                <div class="col-md-4 col-xml-3">
-                  <div class="form__item form-group">
-                    <label class="form__label">E-mail</label>
-                    <input class="input form-control" type="text" placeholder="sample@sample.com">
+                <div class="col-md-4 col-xl-3">
+                  <div class="registration__radio-content">
+                    <div class="custom-control custom-radio registration__radio-btn">
+                      <input class="custom-control-input" id="format1" type="radio" name="format" checked>
+                      <label class="custom-control-label" for="format1">Online</label>
+                    </div>
+                    <div class="custom-control custom-radio registration__radio-btn">
+                      <input class="custom-control-input" id="format2" type="radio" name="format">
+                      <label class="custom-control-label" for="format2">Offline</label>
+                    </div>
                   </div>
                 </div>
               </div>
-              <h2 class="h2--default">ПОДАТЬ ЗАЯВКУ</h2>
-              <p class="p--sm">заявки принимаются до 31 августа 2020 года</p>
-              <div class="registration__radio-wrapper">
-                <div class="registration__radio-header">Выбери формат участия:</div>
-                <div class="registration__radio-content">
-                  <div class="custom-control custom-radio">
-                    <input class="custom-control-input" id="format1" type="radio" name="format">
-                    <label class="custom-control-label" for="format1">Online</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input class="custom-control-input" id="format2" type="radio" name="format">
-                    <label class="custom-control-label" for="format2">Offline</label>
+              <div class="row mb-20">
+                <div class="col-md-3 col-xl-2">
+                  <div class="registration__radio-header">Выбери форму заявки:</div>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                  <div class="registration__radio-content">
+                    <div class="custom-control custom-radio registration__radio-btn">
+                      <input class="custom-control-input" id="form1" type="radio" name="form" checked>
+                      <label class="custom-control-label" for="form1">Индивидуальная</label>
+                    </div>
+                    <div class="custom-control custom-radio registration__radio-btn">
+                      <input class="custom-control-input" id="form2" type="radio" name="form">
+                      <label class="custom-control-label" for="form2">Коллективная</label>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="registration__radio-wrapper">
-                <div class="registration__radio-header">Выбери форму заявки:</div>
-                <div class="registration__radio-content">
-                  <div class="custom-control custom-radio">
-                    <input class="custom-control-input" id="form1" type="radio" name="form">
-                    <label class="custom-control-label" for="form1">Индивидуальная</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input class="custom-control-input" id="form2" type="radio" name="form">
-                    <label class="custom-control-label" for="form2">Коллективная</label>
-                  </div>
+              <div class="row mb-40">
+                <div class="col-md-3 col-xl-2">
+                  <div class="registration__radio-header">Участвовал ли ты в проектах арт-кластера «Таврида»?</div>
                 </div>
-              </div>
-              <div class="registration__radio-wrapper">
-                <div class="registration__radio-header">Участвовал ли ты в проектах арт-кластера «Таврида»?</div>
-                <div class="registration__radio-content">
-                  <div class="custom-control custom-radio">
-                    <input class="custom-control-input" id="participation1" type="radio" name="participation">
-                    <label class="custom-control-label" for="participation1">Да</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input class="custom-control-input" id="participation2" type="radio" name="participation">
-                    <label class="custom-control-label" for="participation2">Нет</label>
+                <div class="col-md-4 col-xl-3">
+                  <div class="registration__radio-content">
+                    <div class="custom-control custom-radio registration__radio-btn">
+                      <input class="custom-control-input" id="participation1" type="radio" name="participation" checked>
+                      <label class="custom-control-label" for="participation1">Да</label>
+                    </div>
+                    <div class="custom-control custom-radio registration__radio-btn">
+                      <input class="custom-control-input" id="participation2" type="radio" name="participation">
+                      <label class="custom-control-label" for="participation2">Нет</label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -393,7 +370,7 @@
                 <div class="col-md-4 col-xml-3">
                   <div class="form__item form-group">
                     <label class="form__label">Тематика мастер-класса/эфира</label>
-                    <select class="select">
+                    <select class="select select--new">
                       <option disabled selected>Выберите из списка</option>
                       <option>Опция 1</option>
                       <option>Опция 2</option>
@@ -403,7 +380,7 @@
                 <div class="col-md-4 col-xml-3">
                   <div class="form__item form-group">
                     <label class="form__label">Направление</label>
-                    <select class="select">
+                    <select class="select select--new">
                       <option disabled selected>Выберите из списка</option>
                       <option>Направление 1</option>
                       <option>Направление 2</option>
@@ -415,15 +392,15 @@
                 <div class="col-xml-9">
                   <div class="form__item form-group">
                     <label class="form__label">Краткая концепция и цель твоего эфира</label>
-                    <textarea class="input input--textarea form-control"></textarea>
+                    <textarea class="input input--textarea input--textarea-sm form-control"></textarea>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-4 col-xml-3">
+                <div class="col-lg-6">
                   <div class="form__item form-group">
                     <label class="form__label">Ссылка на социальную сеть (аккаунт), где будет проходить трансляция / будет выложено видео</label>
-                    <input class="input form-control" type="text" placeholder="http:\">
+                    <input class="input input--new form-control" type="text" placeholder="http:\">
                   </div>
                 </div>
               </div>
@@ -431,7 +408,7 @@
                 <div class="col-md-4 col-xml-3">
                   <div class="form__item form-group">
                     <label class="form__label">Дата проведения онлайн-трансляции</label>
-                    <select class="select">
+                    <select class="select select--new">
                       <option disabled selected>Выберите из списка</option>
                       <option>Опция 1</option>
                       <option>Опция 2</option>
@@ -441,7 +418,7 @@
                 <div class="col-md-4 col-xml-3">
                   <div class="form__item form-group">
                     <label class="form__label">Выберите время</label>
-                    <select class="select">
+                    <select class="select select--new">
                       <option>14:45</option>
                       <option>Опция 1</option>
                       <option>Опция 2</option>
@@ -453,66 +430,13 @@
                 <div class="col-md-4 col-xml-3">
                   <div class="form__item form-group">
                     <label class="form__label">Контактный телефон</label>
-                    <input class="input form-control" type="text" placeholder="+7 (____) ____ - ___ - ___">
+                    <input class="input input--new form-control" type="text" placeholder="+7 (____) ____ - ___ - ___">
                   </div>
-                </div>
-              </div>
-              <div class="registration__streams-footer">
-                <button class="btn btn-green btn-green--new" type="submit">Отправить</button>
-                <div class="registration__streams-footer-comment">Нажимая кнопку, я соглашаюсь с правилами пользования сайтом Арт-кластера «Таврида» и с политикой обработки и защиты персональных данных.</div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-xl-4 col-xml-3">
-                  <div class="form__item form-group">
-                    <label class="form__label">Фото-портфолио в сфере искусства</label>
-                    <div class="form__portfolio">
-                      <div class="custom-file custom-file--blue custom-file--photo">
-                        <input class="custom-file-input" id="customFile1" type="file">
-                        <label class="custom-file-label" for="customFile">Добавить фото</label>
-                      </div>
-                      <div class="form__portfolio-list">
-                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
-                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-2.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
-                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
-                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-2.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
-                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
-                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-2.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
-                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-1.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
-                        <div class="form__portfolio-item" style="background-image: url(./img/portfolio-2.jpg);"><a class="form__portfolio-item-remove" href="#"></a></div>
-                        <div class="form__portfolio-item form__portfolio-item--empty"></div>
-                        <div class="form__portfolio-item form__portfolio-item--empty"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-xl-4 col-xml-3">
-                  <div class="form__item form-group">
-                    <label class="form__label">Видео портфолио</label>
-                    <input class="input form-control" type="text" placeholder="Ссылка на видео">
-                    <input class="input form-control" type="text" placeholder="Краткое описание">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-xml-2">
-                  <div class="form__item form-group">
-                    <label class="form__label">Творческое задание</label>
-                    <div class="form__file">
-                      <div class="custom-file custom-file--blue">
-                        <input class="custom-file-input" id="customFile1" type="file">
-                        <label class="custom-file-label" for="customFile">Добавить файл</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center">
-                  <div class="form__file-name">Filename.pdf </div>
-                  <div class="form__file-size">258 mb</div><a class="form__file-remove" href="#"></a>
                 </div>
               </div>
               <div class="form__footer">
-                <button class="btn btn-primary btn-green" type="submit">Зарегистрироваться</button>
-                <p class="form__footer-agreement">Нажимая кнопку я соглашаюсь с <a href="#">пользовательским соглашением</a></p>
+                <button class="btn btn-green btn-green--new btn-sm" type="submit">Отправить</button>
+                <p class="form__footer-agreement">Нажимая кнопку, я соглашаюсь с правилами пользования сайтом Арт-кластера «Таврида» и с политикой обработки и защиты персональных данных.</p>
               </div>
             </form>
           </div>

@@ -1,2 +1,23 @@
 .select {
+  &--new {
+    & ~ .select2 {
+      .select2-selection__rendered {
+        font-family: $font-family-secondary;
+        font-size: 16px;
+      }
+
+      .select2-selection__arrow {
+        width: 14px;
+        height: 7px;
+        background: url(../img/select-arrow-new.svg) no-repeat center;
+        right: 20px;
+        top: 50%;
+        margin-top: -3.5px;
+
+        b {
+          display: none;
+        }
+      }
+    }
+  }
 }

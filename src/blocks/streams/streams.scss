@@ -184,4 +184,29 @@
       color: #efc825;
     }
   }
+
+  &__registration {
+    padding: 70px 0 90px;
+
+    .form__item {
+      margin-bottom: 25px;
+    }
+
+    .form__label {
+      font-family: $font-family-secondary;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .btn {
+      min-width: 248px;
+      min-height: 48px;
+    }
+
+    .form__footer-agreement {
+      font-size: 14px;
+      line-height: 17px;
+      color: #333;
+    }
+  }
 }
