@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-shrink: 0;
 
   &__number {
     font-size: 25px;

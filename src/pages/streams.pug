@@ -7,14 +7,14 @@ block content
         +header-inner({
           modifier: 'newest'
         }).header-inner--alone
-        .container
+        .container.container--default
           .streams__front-content
             h1.streams__front-header Фестиваль стримов и концертов во дворах «Таврида рядом»
             h2.streams__front-subheader 4 — 6 сентября 2020
             p.streams__front-comment ОРГАНИЗАТОРЫ ФЕСТИВАЛЯ: 
               a(href="#") streamfest@crki.art
       .streams__features
-        .container
+        .container.container--default
           .row
             .col-lg-4
               +streams-feature({
@@ -34,25 +34,25 @@ block content
               })
           .text-center.streams__features-btn
             a.btn.btn-green.btn-green--new(href="#") ПОДАТЬ ЗАЯВКУ НА ФЕСТИВАЛЬ
-      .container
+      .container.container--default
         h2.h2--default.text-dark.mb-30.mb-lg-50.font-secondary КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ ФЕСТИВАЛЯ
         .row
-          .col-sm-6.col-lg-3
+          .col-sm-6.col-xl-3
             +stream-current({
               picture: 'stream-current-1.jpeg',
               title: 'музыка'
             })
-          .col-sm-6.col-lg-3
+          .col-sm-6.col-xl-3
             +stream-current({
               picture: 'stream-current-2.jpeg',
               title: 'изобразительное искусство'
             })
-          .col-sm-6.col-lg-3
+          .col-sm-6.col-xl-3
             +stream-current({
               picture: 'stream-current-3.jpeg',
               title: 'театр '
             })
-          .col-sm-6.col-lg-3
+          .col-sm-6.col-xl-3
             +stream-current({
               picture: 'stream-current-4.jpeg',
               title: 'хореография'
@@ -73,11 +73,11 @@ block content
               picture: 'stream-current-7.jpeg',
               title: 'юмор'
             })
-      .container.mt-40.mt-lg-80
+      .container.container--default.mt-40.mt-lg-80
         .streams__formats
           h2.h2--default.text-dark.mb-40.mb-lg-75.font-secondary ФОРМАТЫ ФЕСТИВАЛЯ
           .row
-            .col-lg-6.d-flex
+            .col-xl-6.d-flex
               .streams__formats-column
                 +streams-format({
                   type: 'онлайн',
@@ -99,7 +99,7 @@ block content
                   price: '5 000',
                   color: 'orange'
                 })
-            .col-lg-6.d-flex
+            .col-xl-6.d-flex
               .streams__formats-column
                 +streams-format({
                   type: 'офлайн',
@@ -127,21 +127,21 @@ block content
                   color: 'violet'
                 }).streams__formats-item--red
         .streams__formats-comment *Каждый участник имеет возможность подать 5 заявок на проведение онлайн-мероприятия и 5 заявок на проведение офлайн-мероприятия.
-      .container.mb-40.mb-lg-90
+      .container.container--default.mb-40.mb-lg-90
         h2.h2--default.text-dark.font-secondary.mb-45 УСЛОВИЯ УЧАСТИЯ В ФЕСТИВАЛЕ
         .row
-          .col-lg-8
+          .col-xl-7.col-xxl-8
             h5.font-secondary.text-dark.text-transform-none.font-weight-bold.mb-40 Участники Фестиваля – это:
             ul.ul--blue.ul--default
               li физические лица, граждане Российской Федерации вне зависимости  от текущего места жительства в возрасте от 18 до 35 лет на момент проведения Фестиваля (4 ‒ 6 сентября 2020 года);
               li молодые деятели культуры и искусств;
               li представители различных направлений искусств: музыки, театра, литературы, живописи, хореографии;
               li сольные исполнители и коллективы.
-          .col-lg-4
+          .col-xl-5.col-xxl-4
             a.streams__document(href="#") Положение о проведении Фестиваля в 2020 году
       .streams__participation
-        .container
-          h2.h2--default.font-secondary.text-white Как стать участником Фестиваля?
+        .container.container--default
+          h2.h2--default.font-secondary.text-white.mb-30.mb-lg-55 Как стать участником Фестиваля?
           +streams__participation-item({
             number: '1',
             content: '<a href="#">Авторизоваться</a> на официальном <br>сайте арт-кластера «Таврида»'

@@ -83,6 +83,12 @@
   &__radio-content {
     display: flex;
     align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
   }
 
   &__radio-btn {

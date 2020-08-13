@@ -7,6 +7,11 @@
     min-height: 670px;
     margin-bottom: 88px;
 
+    @include media-breakpoint-down(sm) {
+      font-size: 40px;
+      min-height: 0;
+    }
+
     &:before {
       position: absolute;
       top: 0;
@@ -29,6 +34,18 @@
     line-height: 1.1;
     font-family: $font-family-secondary;
     margin-bottom: 45px;
+
+    @include media-breakpoint-down(xml) {
+      font-size: 70px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 26px;
+    }
   }
 
   &__front-subheader {
@@ -38,6 +55,18 @@
     color: #fff;
     font-family: $font-family-secondary;
     margin-bottom: 35px;
+
+    @include media-breakpoint-down(xml) {
+      font-size: 40px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+    }
   }
 
   &__front-comment {
@@ -47,9 +76,17 @@
     color: #fff;
     font-family: $font-family-secondary;
 
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+    }
+
     a {
       color: #f29400;
       font-size: 20px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -59,6 +96,10 @@
 
   &__features-btn {
     margin-top: 105px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+    }
   }
 
   &__formats {
@@ -68,6 +109,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 80px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    }
   }
 
   &__formats-item {
@@ -84,6 +133,10 @@
     font-family: $font-family-secondary;
     margin-top: 45px;
     margin-bottom: 60px;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 0;
+    }
   }
 
   &__document {
@@ -100,7 +153,20 @@
     line-height: 1.2;
     color: $primary;
     flex-shrink: 0;
-    padding: 45px 70px;
+    padding: 45px 60px;
+
+    @include media-breakpoint-down(xl) {
+      padding: 20px;
+      height: auto;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
 
     &:before {
       content: '';
@@ -111,6 +177,11 @@
       background: url(../img/document-icon.svg) no-repeat center;
       background-size: contain;
       flex-shrink: 0;
+
+      @include media-breakpoint-down(xs) {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
@@ -123,11 +194,26 @@
     display: flex;
     align-items: center;
 
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 40px;
+      align-items: flex-start;
+    }
+
+    br {
+      @include media-breakpoint-down(xml) {
+        display: none;
+      }
+    }
+
     &--left {
     }
 
     &--right {
       padding-left: 40px;
+
+      @include media-breakpoint-down(lg) {
+        padding-left: 0;
+      }
 
       &:before {
         content: '';
@@ -138,12 +224,24 @@
         background: url(../img/stream-timeline-arrows.svg) no-repeat center;
         margin-right: -15px;
         flex-shrink: 0;
+
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
       }
     }
 
     &--sm {
       .streams__participation-item-content {
         font-size: 16px;
+
+        @include media-breakpoint-down(xml) {
+          font-size: 14px;
+        }
+
+        @include media-breakpoint-down(lg) {
+          font-size: 18px;
+        }
       }
     }
 
@@ -171,6 +269,19 @@
     align-items: center;
     background: #715f7a;
     flex-shrink: 0;
+
+    @include media-breakpoint-down(lg) {
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
   }
 
   &__participation-item-content {
@@ -179,6 +290,16 @@
     color: #fff;
     font-weight: 600;
     font-family: $font-family-secondary;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 18px;
+      padding-top: 5px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+      font-weight: 400;
+    }
 
     a {
       color: #efc825;
@@ -198,9 +319,20 @@
       font-size: 14px;
     }
 
+    .form__footer {
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
     .btn {
       min-width: 248px;
       min-height: 48px;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+      }
     }
 
     .form__footer-agreement {

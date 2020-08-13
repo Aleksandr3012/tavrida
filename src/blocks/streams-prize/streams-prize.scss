@@ -6,8 +6,23 @@
   padding: 0 40px;
   border-top: 0;
 
+  @include media-breakpoint-down(xl) {
+    padding: 10px 20px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    flex-direction: column;
+    text-align: center;
+  }
+
   p {
     max-width: 520px;
     font-weight: 500;
+    margin-right: 20px;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 20px !important;
+      margin-right: 0;
+    }
   }
 }

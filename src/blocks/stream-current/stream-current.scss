@@ -10,6 +10,11 @@
   background-position: top center;
   @include transition;
 
+  @include media-breakpoint-down(xl) {
+    min-height: 250px;
+    padding: 20px;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -35,5 +40,9 @@
     position: relative;
     z-index: 2;
     text-transform: uppercase;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 17px;
+    }
   }
 }
