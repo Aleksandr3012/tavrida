@@ -1,2 +1,22 @@
 .announcement {
+  padding-top: 31.8%;
+  width: 100%;
+  display: block;
+  max-width: 1360px;
+  background: url(../img/announcement-bg.svg) no-repeat center;
+  background-size: contain;
+  position: relative;
+  margin: 100px 0;
+
+  &__title {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: $font-family-secondary;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 160px;
+    left: 27%;
+  }
 }
