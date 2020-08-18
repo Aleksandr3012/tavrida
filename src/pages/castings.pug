@@ -1,0 +1,92 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    .team.team--lg
+      .team__front.team__front--lg(style="background-image: url(./img/workshop-front.jpg);")
+        +header-inner({
+          modifier: 'newest'
+        }).header-inner--alone
+        .container.team__front-wrapper
+          a.team__front-back(href="#")
+          .team__front-content
+            .team__front-main
+              h1.team__front-title.mb-40.mb-xl-0 КАСТИНГИ
+              .team__front-comment По всем вопросам: 
+                a(href="#") cast@crki.art
+            .team__front-info.team__front-info--workshop
+              h5.text-white.mb-20.mb-xl-35.text-transform-none.font-secondary Единственная кастинг- платформа в России, объединяющая прослушивания, отборы и собеседования на стажировки от ведущих игроков арт-индустрии и медиакомпаний
+    .container
+      h2.h2--default Направления кастингов
+      .row
+        .col-lg-4
+          +casting-type({
+            icon: 'casting-icon-1.svg',
+            title: 'Музыка'
+          })
+        .col-lg-4
+          +casting-type({
+            icon: 'casting-icon-2.svg',
+            title: 'Хореография'
+          })
+        .col-lg-4
+          +casting-type({
+            icon: 'casting-icon-3.svg',
+            title: 'Театр и кино'
+          })
+        .col-lg-4
+          +casting-type({
+            icon: 'casting-icon-4.svg',
+            title: 'Литература'
+          })
+        .col-lg-4
+          +casting-type({
+            icon: 'casting-icon-5.svg',
+            title: 'Юмор'
+          })
+        .col-lg-4
+          +casting-type({
+            icon: 'casting-icon-6.svg',
+            title: 'АРТ'
+          })
+        .col-lg-4
+          +casting-type({
+            icon: 'casting-icon-7.svg',
+            title: 'Медиа'
+          })
+        .col-lg-4
+          +casting-type({
+            icon: 'casting-icon-8.svg',
+            title: 'Ивент'
+          })
+    .container
+      h2.h2--default Кастинги от партнеров
+    +castings-slider({
+      title: 'Музыка (25)'
+    })
+    +castings-slider({
+      title: 'Хореография (25)'
+    })
+    +castings-slider({
+      title: 'Театр и кино (25)'
+    })
+    +castings-slider({
+      title: 'Литература (25)'
+    })
+    +castings-slider({
+      title: 'Юмор (25)'
+    })
+    +castings-slider({
+      title: 'АРТ (25)'
+    })
+    +castings-slider({
+      title: 'Медиа (25)'
+    })
+    +castings-slider({
+      title: 'Ивент (25)'
+    })
+    +casting-stream
+    +partners({
+      modifier: 'new'
+    }).partners--new
+    +footer
