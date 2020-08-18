@@ -1,5 +1,4 @@
 .team {
-
   &__front {
     position: relative;
     padding: 200px 0 160px;
@@ -27,7 +26,7 @@
       padding-bottom: 100px;
 
       &:before {
-        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, .52) 100%);
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.52) 100%);
       }
 
       .team__front-back {
@@ -60,9 +59,8 @@
         }
 
         a {
-
           &:hover {
-            opacity: .75;
+            opacity: 0.75;
             color: $yellow;
           }
         }
@@ -109,6 +107,10 @@
     &--lg {
       padding-bottom: 60px;
     }
+
+    &--castings {
+      background-position: top -30% center;
+    }
   }
 
   &__front-wrapper {
@@ -127,7 +129,7 @@
     @include transition;
 
     &:hover {
-      opacity: .75;
+      opacity: 0.75;
     }
   }
 
@@ -165,6 +167,11 @@
       @include media-breakpoint-down(lg) {
         margin-left: 0;
       }
+    }
+
+    &--castings {
+      max-width: 460px;
+      margin-left: auto;
     }
   }
 
@@ -237,7 +244,6 @@
   }
 
   &__info-reasons {
-
     @include media-breakpoint-down(md) {
       margin-top: 40px;
     }
@@ -277,6 +283,29 @@
       @include media-breakpoint-down(lg) {
         margin-top: 0;
         margin-left: 50px;
+      }
+    }
+  }
+
+  &__front-comment {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #fff;
+    margin-top: 50px;
+    font-family: $font-family-secondary;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #f29400;
+      font-size: 20px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
       }
     }
   }

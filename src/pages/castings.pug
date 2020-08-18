@@ -3,7 +3,7 @@ block content
   +header
   .wrapper
     .team.team--lg
-      .team__front.team__front--lg(style="background-image: url(./img/workshop-front.jpg);")
+      .team__front.team__front--castings.team__front--lg(style="background-image: url(./img/castings-front.jpg);")
         +header-inner({
           modifier: 'newest'
         }).header-inner--alone
@@ -14,10 +14,10 @@ block content
               h1.team__front-title.mb-40.mb-xl-0 КАСТИНГИ
               .team__front-comment По всем вопросам: 
                 a(href="#") cast@crki.art
-            .team__front-info.team__front-info--workshop
-              h5.text-white.mb-20.mb-xl-35.text-transform-none.font-secondary Единственная кастинг- платформа в России, объединяющая прослушивания, отборы и собеседования на стажировки от ведущих игроков арт-индустрии и медиакомпаний
-    .container
-      h2.h2--default Направления кастингов
+            .team__front-info.team__front-info--castings
+              h5.text-white.mb-20.mb-xl-35.text-transform-none.font-secondary.font-weight-bold Единственная кастинг- платформа в России, объединяющая прослушивания, отборы и собеседования на стажировки от ведущих игроков арт-индустрии и медиакомпаний
+    .container.mt-40.mt-lg-90
+      h2.h2--default.text-dark.font-secondary.mb-30.mb-lg-60 Направления кастингов
       .row
         .col-lg-4
           +casting-type({
@@ -60,7 +60,7 @@ block content
             title: 'Ивент'
           })
     .container
-      h2.h2--default Кастинги от партнеров
+      h2.h2--default.text-dark.font-secondary Кастинги от партнеров
     +castings-slider({
       title: 'Музыка (25)'
     })
