@@ -1,2 +1,35 @@
 .casting {
+  display: flex !important;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__picture {
+    background-size: cover;
+    background-position: top center;
+    margin-bottom: 30px;
+    padding-top: 63.84%;
+  }
+
+  &__deadline {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: $font-family-secondary;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    .btn {
+      margin-top: auto;
+    }
+  }
 }

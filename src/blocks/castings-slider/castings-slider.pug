@@ -1,36 +1,38 @@
 mixin castings-slider(data)
   .castings-slider&attributes(attributes)
     .container
-      h5= data.header
-    +casting({
-      picture: 'casting-1.jpg',
-      title: 'Кастинг на роль мамочек в пьесу Виктора Разумова'
-    })
-    +casting({
-      picture: 'casting-2.jpg',
-      title: 'Шоу Голос на ТНТ'
-    })
-    +casting({
-      picture: 'casting-3.jpg',
-      title: 'Шоу Звезды в телике поют'
-    })
-    +casting({
-      picture: 'casting-4.jpg',
-      title: 'А ну ка спой'
-    })
-    +casting({
-      picture: 'casting-1.jpg',
-      title: 'Кастинг на роль мамочек в пьесу Виктора Разумова'
-    })
-    +casting({
-      picture: 'casting-2.jpg',
-      title: 'Шоу Голос на ТНТ'
-    })
-    +casting({
-      picture: 'casting-3.jpg',
-      title: 'Шоу Звезды в телике поют'
-    })
-    +casting({
-      picture: 'casting-4.jpg',
-      title: 'А ну ка спой'
-    })
+      h5.text-dark.font-secondary.font-weight-bold.mt-30.mt-lg-65.mb-50= data.title
+    .container
+      .castings-slider__content
+        +casting({
+          picture: 'casting-1.jpg',
+          title: 'Кастинг на роль мамочек в пьесу Виктора Разумова'
+        }).castings-slider__item
+        +casting({
+          picture: 'casting-2.jpg',
+          title: 'Шоу Голос на ТНТ'
+        }).castings-slider__item
+        +casting({
+          picture: 'casting-3.jpg',
+          title: 'Шоу Звезды в телике поют'
+        }).castings-slider__item
+        +casting({
+          picture: 'casting-4.jpg',
+          title: 'А ну ка спой'
+        }).castings-slider__item
+        +casting({
+          picture: 'casting-1.jpg',
+          title: 'Кастинг на роль мамочек в пьесу Виктора Разумова'
+        }).castings-slider__item
+        +casting({
+          picture: 'casting-2.jpg',
+          title: 'Шоу Голос на ТНТ'
+        }).castings-slider__item
+        +casting({
+          picture: 'casting-3.jpg',
+          title: 'Шоу Звезды в телике поют'
+        }).castings-slider__item
+        +casting({
+          picture: 'casting-4.jpg',
+          title: 'А ну ка спой'
+        }).castings-slider__item
