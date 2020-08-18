@@ -172,6 +172,11 @@
     &--castings {
       max-width: 460px;
       margin-left: auto;
+
+      @include media-breakpoint-down(lg) {
+        margin-left: 0;
+        margin-top: 40px;
+      }
     }
   }
 
@@ -295,9 +300,12 @@
     margin-top: 50px;
     font-family: $font-family-secondary;
 
+    @include media-breakpoint-down(lg) {
+      margin-top: 20px;
+    }
+
     @include media-breakpoint-down(sm) {
       font-size: 12px;
-      margin-top: 20px;
     }
 
     a {

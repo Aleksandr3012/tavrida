@@ -9,6 +9,10 @@
     padding: 0 23px;
     display: flex;
     height: auto;
+
+    @media (max-width: 1600px) {
+      padding: 0 10px;
+    }
   }
 
   .slick-list {
@@ -28,14 +32,31 @@
     top: 75px;
     margin-top: 0;
 
+    @include media-breakpoint-down(md) {
+      display: block !important;
+      width: 60px;
+      height: 60px;
+    }
+
+    @include media-breakpoint-down(md) {
+      top: 50%;
+      margin-top: -30px;
+    }
+
     &.slick-disabled {
       display: block;
     }
 
     &.slick-prev {
+      @include media-breakpoint-down(md) {
+        left: 0 !important;
+      }
     }
 
     &.slick-next {
+      @include media-breakpoint-down(md) {
+        right: 0 !important;
+      }
     }
   }
 }

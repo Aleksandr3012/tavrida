@@ -7,6 +7,10 @@
   margin-bottom: 36px;
   @include transition;
 
+  @media (max-width: 1600px) {
+    padding: 20px;
+  }
+
   &:hover {
     opacity: 0.75;
   }
@@ -16,6 +20,10 @@
     height: 49px;
     flex-shrink: 0;
     margin-right: 45px;
+
+    @media (max-width: 1600px) {
+      margin-right: 20px;
+    }
 
     img {
       max-width: 100%;
