@@ -7,6 +7,11 @@
     position: relative;
     max-width: 1220px;
     margin: 0 auto;
+    @include transition;
+
+    &:hover {
+      opacity: 0.9;
+    }
 
     &:before {
       content: '';

@@ -7,6 +7,11 @@
   background-size: contain;
   position: relative;
   margin: 100px 0;
+  @include transition;
+
+  &:hover {
+    opacity: 0.75;
+  }
 
   &__title {
     font-size: 50px;

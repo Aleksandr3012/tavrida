@@ -11,6 +11,11 @@
     background-position: top center;
     margin-bottom: 30px;
     padding-top: 63.84%;
+    @include transition;
+
+    &:hover {
+      opacity: 0.75;
+    }
   }
 
   &__deadline {
