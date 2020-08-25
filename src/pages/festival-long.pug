@@ -1,0 +1,22 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    .streams
+      .streams__front(style="background-image: url(./img/parade-front.jpg);")
+        +header-inner({
+          modifier: 'newest'
+        }).header-inner--alone
+        .container.container--default
+          .streams__front-content
+            h1.streams__front-header.streams__front-header--parade ПАРАД МАЛОМЕРНЫХ СУДОВ С УЧАСТИЕМ ТРЕХМАЧТОВОГО ФРЕГАТА «ХЕРСОНЕС»
+            h2.streams__front-subheader 5 сентября 2020
+    .container.container--default.mb-40.mb-lg-85
+      .row
+        .col-lg-8
+          h2.h2--default.font-secondary.text-dark.mb-25 Парад маломерных судов пройдет 5 сентября на фестивале фестивалей «Таврида ‒ АРТ»
+          p.font-weight-semi.font-secondary В параде лодок примут участие маломерные суда (яхты, галеры, фрегаты, старинные и современные катера и другие). Парад завершится конкурсом на самое ярко оформленное маломерное судно. Победители получат вознаграждение в виде сертификата, которым можно будет оплатить ремонт и техническое обслуживание своего судна.
+        .col-lg-4
+          .d-flex.justify-content-center.align-items-center
+            img.img-fluid(src="./img/wheel.svg", alt)
+    +footer
