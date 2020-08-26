@@ -1,0 +1,6 @@
+mixin festival-application(data)
+  .festival-application&attributes(attributes)
+    .festival-application__photo(style="background-image: url(./img/" + data.picture + ');')
+      h4.text-white.font-secondary.mb-0= data.title
+    p.text-center.font-weight-medium.text-dark.font-secondary.mb-20.mg-lg-45= data.dscr
+    a.btn.btn-green.btn-green--new(href="#") Подать заявку

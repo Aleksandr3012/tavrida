@@ -3,20 +3,175 @@ block content
   +header
   .wrapper
     .streams
-      .streams__front(style="background-image: url(./img/parade-front.jpg);")
+      .streams__front(style="background-image: url(./img/festival-long-front.jpg);")
         +header-inner({
           modifier: 'newest'
         }).header-inner--alone
         .container.container--default
-          .streams__front-content
-            h1.streams__front-header.streams__front-header--parade ПАРАД МАЛОМЕРНЫХ СУДОВ С УЧАСТИЕМ ТРЕХМАЧТОВОГО ФРЕГАТА «ХЕРСОНЕС»
-            h2.streams__front-subheader 5 сентября 2020
+          .streams__front-wrapper
+            .streams__front-content
+              h1.streams__front-header.streams__front-header--festival Фестиваль на площадке арт-кластера «Таврида»
+              h2.streams__front-subheader 2 ‒ 6 сентября 2020
+            a.streams__front-video(href="#")
+              .p.mb-0.text-white Онлайн трансляция <br>фестиваля
     .container.container--default.mb-40.mb-lg-85
       .row
+        .col-lg-10
+          h2.h2--default.font-secondary.text-dark.mb-25 Съемки шоу-концерта
+          p.font-weight-semi.font-secondary Участниками шоу-концерта станут известные российские исполнители в коллаборации с молодыми артистами арт-кластера «Таврида». Выступления пройдут на фоне арт-объектов – самых знаковых мест арт-кластера «Таврида».
+      h4.text-dark.font-secondary.mb-30 Артисты
+      .row
+        .col-sm-6.col-lg-4
+          +artist({
+            photo: 'artist-1.jpg',
+            name: 'Юлианна Караулова'
+          })
+        .col-sm-6.col-lg-4
+          +artist({
+            photo: 'artist-2.jpg',
+            name: 'ST'
+          })
+        .col-sm-6.col-lg-4
+          +artist({
+            photo: 'artist-3.jpg',
+            name: 'Серьга'
+          })
+        .col-sm-6.col-lg-4
+          +artist({
+            modifier: 'empty',
+            name: '?'
+          }).artist--empty
+      h4.text-dark.font-secondary.mb-30.mb-lg-60 Фестивали
+      .row
+        .col-sm-6.col-lg-4
+          +festival-item({
+            logo: 'festival-item-1.png'
+          })
+        .col-sm-6.col-lg-4
+          +festival-item({
+            logo: 'festival-item-2.png'
+          })
+        .col-sm-6.col-lg-4
+          +festival-item({
+            logo: 'festival-item-3.png'
+          })
+        .col-sm-6.col-lg-4
+          +festival-item({
+            logo: 'festival-item-4.png'
+          })
+      .row
+        .col-lg-10
+          h2.h2--default.font-secondary.text-dark.mb-25 Перформансы
+          p.font-weight-semi.font-secondary Часть программы фестиваля на площадке арт-кластера «Таврида» ‒ масштабные театрализованные перформансы: арт-шествие «Мы вместе», «Живые краски триколора», «Танцующие холмы», «Феникс» и другие события, в которых примут участие молодые деятели культуры и искусств, представители креативных индустрий от 18 до 35 лет
+      +performance({
+        picture: 'performance-1.jpg',
+        modifier: 'ltr',
+        title: 'ЖИВЫЕ КРАСКИ ТРИКОЛОРА',
+        dscr: 'В месте силы молодых талантов, в центре сосредоточения самых творческих и энергетически заряженных людей пройдет перформанс «Живые краски триколора». Он покажет, как ценно быть частью глобального сообщества и создавать команды единомышленников для продуктивного творчества.'
+      }).performance--ltr
+      +performance({
+        picture: 'performance-2.jpg',
+        modifier: 'rtl',
+        title: 'СВЕТОВОЙ ПЕРФОРМАНС «МЫ ВМЕСТЕ»',
+        dscr: 'Ценность слов определяется по тем смыслам, которые они несут. В процессе театрализованной постановки участники перформанса зажгут сотни фонариков, чтобы показать зрителям ценные и важные для всех слова: «Мир без войны», «мы вместе», «мир», «любовь», «искусство».'
+      }).performance--rtl
+      +performance({
+        picture: 'performance-3.jpg',
+        modifier: 'ltr',
+        title: 'ТАНЦУЮЩИЕ ХОЛМЫ',
+        dscr: 'На фоне живописных холмов соединятся в танце тысячи деятелей культуры и искусств. Они станут единым механизмом и создадут «живую волну» для того, чтобы показать созидательную силу совместного творчества.'
+      }).performance--ltr
+      +performance({
+        picture: 'performance-4.jpg',
+        modifier: 'rtl',
+        title: 'ФЕНИКС',
+        dscr: 'Зажигательный музыкальный перформанс, который позволит прикоснуться к мировым культурам и стать их частью. Этническая процессия, фольклорные мотивы, возрождение феникса, 500 человек, отбивающие ритм на бубнах и барабанах, ‒ это шоу запомнится надолго!'
+      }).performance--rtl
+    +festival-parade
+    +contemporary
+    +fashion
+    +festival-grant
+    .container
+      .row
         .col-lg-8
-          h2.h2--default.font-secondary.text-dark.mb-25 Парад маломерных судов пройдет 5 сентября на фестивале фестивалей «Таврида ‒ АРТ»
-          p.font-weight-semi.font-secondary В параде лодок примут участие маломерные суда (яхты, галеры, фрегаты, старинные и современные катера и другие). Парад завершится конкурсом на самое ярко оформленное маломерное судно. Победители получат вознаграждение в виде сертификата, которым можно будет оплатить ремонт и техническое обслуживание своего судна.
+          h2.h2--default.font-secondary.text-dark.mb-25 Развлекательная программа
+          p.font-weight-semi.font-secondary Ежедневно на фестивале фестивалей «Таврида ‒ АРТ» будет проходить развлекательная программа, включающая в себя различные форматы и тематики:
+      .row
+        .col-sm-6.col-lg-4
+          +fun({
+            photo: 'fun-1.jpg',
+            title: 'Ежедневные шоу-концерты с участием молодых артистов арт-кластера «Таврида»'
+          })
+        .col-sm-6.col-lg-4
+          +fun({
+            photo: 'fun-2.jpg',
+            title: 'Танцевальные мастер-классы по различным направлениям;'
+          })
+        .col-sm-6.col-lg-4
+          +fun({
+            photo: 'fun-3.jpg',
+            title: 'Тренинги по актерскому мастерству, сценическому движению, ораторскому искусству;'
+          })
+        .col-sm-6.col-lg-4
+          +fun({
+            photo: 'fun-4.jpg',
+            title: 'Многопрофильные тренировки и практики от спортивной студии «Лайф»;'
+          })
+        .col-sm-6.col-lg-4
+          +fun({
+            photo: 'fun-5.jpg',
+            title: 'Лекционные тренинги о творческом мышлении;'
+          })
+        .col-sm-6.col-lg-4
+          +fun({
+            photo: 'fun-6.jpg',
+            title: 'Мастер-классы по изобразительному искусству и кастомизации одежды'
+          })
+    .bg-gray
+      .container
+        .row
+          .col-lg-10
+            h2.h2--default.font-secondary.text-dark.mb-10 Подать заявку на Фестиваль Фестивалей
+            p.font-weight-semi.font-secondary.mb-30.mb-lg-65 Принять участие в Фестивале можно в 3 ролях, выбери свою
+        .row
+          .col-lg-4
+            +festival-application({
+              picture: 'festival-application-1.jpg',
+              title: 'Участники',
+              dscr: 'Молодые деятели культуры и искусств, представители творческих профессий, участники или резиденты арт-кластера «Таврида», которые будут задействованы в программе фестиваля: перформансах, флешмобах и творческих номерах.'
+            })
+          .col-lg-4
+            +festival-application({
+              picture: 'festival-application-2.jpg',
+              title: 'Волонтеры',
+              dscr: 'Целеустремленные, энергичные творческие люди, которые способны реализовывать проекты со смыслом и менять будущее. Участие в организации и проведении Фестиваля позволит прокачать скилы в команде неравнодушных профессионалов.'
+            })
+          .col-lg-4
+            +festival-application({
+              picture: 'festival-application-3.jpg',
+              title: 'Зрители',
+              dscr: 'Творческая молодежь из Республики Крым: студенты и преподаватели профильных дисциплин, участники творческих коллективов, активные участники социально-культурных мероприятий, которые смогут посетить Фестиваль в качестве гостя'
+            })
+    .container
+      .row
         .col-lg-4
-          .d-flex.justify-content-center.align-items-center
-            img.img-fluid(src="./img/wheel.svg", alt)
+          +festival-doc({
+            title: 'Программа Фестиваля',
+            info: 'pdf. 1.4 mb',
+            icon: 'festival-doc-1.svg'
+          }).festival-doc--red
+        .col-lg-4
+          +festival-doc({
+            title: 'Правила безопасности и пребывания на Фестивале',
+            info: 'материал на сайте',
+            icon: 'festival-doc-2.svg'
+          }).festival-doc--violet
+    +footer
+        .col-lg-4
+          +festival-doc({
+            title: 'Положение о проведении Фестиваля',
+            info: 'материал на сайте',
+            icon: 'festival-doc-3.svg'
+          }).festival-doc--blue
+    +footer
     +footer
