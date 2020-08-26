@@ -176,6 +176,14 @@
     text-transform: uppercase;
   }
 
+  &.btn-md {
+    padding: 13px 53px;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: $font-family-serif;
+  }
+
   &.btn-sm {
     padding: 8px 15px;
   }

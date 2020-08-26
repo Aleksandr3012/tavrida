@@ -1,2 +1,36 @@
 .festival-parade {
+  margin-top: 250px;
+
+  &__wrapper {
+    background: $primary;
+    padding: 65px 0;
+    position: relative;
+    margin-top: 75px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 930px;
+      height: 543px;
+      background: url(../img/festival-ship.svg) no-repeat center;
+      background-size: contain;
+      position: absolute;
+      right: 0;
+      bottom: calc(100% - 7px);
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__dscr {
+    margin-right: 90px;
+  }
+
+  &__btn {
+    flex-shrink: 0;
+  }
 }

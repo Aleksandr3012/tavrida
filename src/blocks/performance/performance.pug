@@ -4,15 +4,19 @@ mixin performance(data)
     if data && data.modifier == 'ltr'
       .row
         .col-lg-5
-          img.performance__picture(src="./img/" + data.picture, alt)
-        .col-lg-5.offset-lg-1
-          h4.text-dark.font-secondary.mb-25= data.title
-          p.font-weight-normal.text-dark.font-secondary.mb-0= data.dscr
+          .performance__picture-wrapper
+            img.performance__picture(src="./img/performance.jpg", alt)
+        .col-lg-5.offset-lg-1.d-flex
+          .performance__content
+            h4.text-dark.font-secondary.mb-25= data.title
+            p.font-weight-normal.text-dark.font-secondary.mb-0= data.dscr
           
     if data && data.modifier == 'rtl'
       .row
+        .col-lg-5.offset-lg-1.d-flex
+          .performance__content
+            h4.text-dark.font-secondary.mb-25= data.title
+            p.font-weight-normal.text-dark.font-secondary.mb-0= data.dscr
         .col-lg-5.offset-lg-1
-          h4.text-dark.font-secondary.mb-25= data.title
-          p.font-weight-normal.text-dark.font-secondary.mb-0= data.dscr
-        .col-lg-5.offset-lg-1
-          img.performance__picture(src="./img/" + data.picture, alt)
+          .performance__picture-wrapper
+            img.performance__picture(src="./img/performance.jpg", alt)
