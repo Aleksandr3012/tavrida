@@ -1,7 +1,8 @@
 mixin artist(data)
   a.artist(href="#")&attributes(attributes)
     if data && data.modifier == 'empty'
-      .artist__photo Следите за обновлениями. Может тут появится Ваш любимый исполнитель
+      .artist__photo 
+        .artist__photo-text Следите за обновлениями. Может тут появится Ваш любимый исполнитель
     else
       .artist__photo(style="background-image: url(./img/" + data.photo + ');')
-    h5.text-center.font-weight-semi.text-dark.font-secondary.mb-0= data.name
+    h5.text-center.font-weight-semi.text-dark.font-secondary.text-transform-none.mb-0= data.name

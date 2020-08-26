@@ -22,6 +22,89 @@
       content: '';
       background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     }
+
+    &--festival {
+      .streams__front-content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .streams__front-header {
+        font-size: 70px;
+        margin-bottom: 60px;
+
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 30px;
+        }
+      }
+
+      .streams__front-subheader {
+        font-size: 30px;
+        line-height: 1.21;
+      }
+    }
+  }
+
+  &__front-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__front-video-wrapper {
+    position: relative;
+  }
+
+  &__front-video {
+    width: 100%;
+    display: block;
+    height: 375px;
+    background: url(../img/festival-front-video.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: linear-gradient(180deg, rgba(74, 118, 168, 0.56) 0%, rgba(74, 118, 168, 0) 100%);
+    }
+  }
+
+  &__front-video-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 54px;
+      height: 54px;
+      background: url(../img/play-white.svg) no-repeat center;
+      background-size: contain;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__front-video-vk {
+    position: absolute;
+    left: 27px;
+    bottom: 19px;
+    width: 24px;
+    height: 24px;
+    background: url(../img/vk-white.svg) no-repeat center;
+    background-size: contain;
   }
 
   &__front-content {
@@ -81,6 +164,9 @@
     @include media-breakpoint-down(sm) {
       font-size: 20px;
     }
+  }
+
+  &__front-video {
   }
 
   &__front-comment {

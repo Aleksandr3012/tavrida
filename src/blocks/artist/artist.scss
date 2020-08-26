@@ -1,2 +1,40 @@
 .artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+
+  &__photo {
+    padding-top: 100%;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  &__photo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: $font-family-secondary;
+    line-height: 1.5;
+    color: rgba(#333, 0.5);
+    text-align: center;
+    width: 60%;
+  }
+
+  &--empty {
+    .artist__photo {
+      border: 1px dashed rgba(#000, 0.5);
+    }
+  }
 }

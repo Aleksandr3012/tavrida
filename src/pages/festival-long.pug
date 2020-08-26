@@ -3,40 +3,46 @@ block content
   +header
   .wrapper
     .streams
-      .streams__front(style="background-image: url(./img/festival-long-front.jpg);")
+      .streams__front.streams__front--festival(style="background-image: url(./img/festival-long-front.jpg);")
         +header-inner({
           modifier: 'newest'
         }).header-inner--alone
         .container.container--default
           .streams__front-wrapper
-            .streams__front-content
-              h1.streams__front-header.streams__front-header--festival Фестиваль на площадке арт-кластера «Таврида»
-              h2.streams__front-subheader 2 ‒ 6 сентября 2020
-            a.streams__front-video(href="#")
-              .p.mb-0.text-white Онлайн трансляция <br>фестиваля
+            .row
+              .col-lg-5.offset-lg-1
+                .streams__front-content
+                  h1.streams__front-header Фестиваль на площадке арт-кластера «Таврида»
+                  h2.streams__front-subheader 2 ‒ 6 сентября 2020
+              .col-lg-5
+                .streams__front-video-wrapper
+                  a.streams__front-video(href="#")
+                    .streams__front-video-content
+                      .p.mb-0.text-white.font-secondary.text-center Онлайн трансляция <br>фестиваля
+                  a.streams__front-video-vk(href="#")
     .container.container--default.mb-40.mb-lg-85
       .row
         .col-lg-10
           h2.h2--default.font-secondary.text-dark.mb-25 Съемки шоу-концерта
           p.font-weight-semi.font-secondary Участниками шоу-концерта станут известные российские исполнители в коллаборации с молодыми артистами арт-кластера «Таврида». Выступления пройдут на фоне арт-объектов – самых знаковых мест арт-кластера «Таврида».
-      h4.text-dark.font-secondary.mb-30 Артисты
+      h4.text-dark.font-secondary.mt-40.mg-lg-65.mb-30 Артисты
       .row
-        .col-sm-6.col-lg-4
+        .col-sm-6.col-lg-3
           +artist({
             photo: 'artist-1.jpg',
             name: 'Юлианна Караулова'
           })
-        .col-sm-6.col-lg-4
+        .col-sm-6.col-lg-3
           +artist({
             photo: 'artist-2.jpg',
             name: 'ST'
           })
-        .col-sm-6.col-lg-4
+        .col-sm-6.col-lg-3
           +artist({
             photo: 'artist-3.jpg',
             name: 'Серьга'
           })
-        .col-sm-6.col-lg-4
+        .col-sm-6.col-lg-3
           +artist({
             modifier: 'empty',
             name: '?'
