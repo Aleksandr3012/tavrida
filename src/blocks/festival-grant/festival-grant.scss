@@ -3,6 +3,10 @@
   border-bottom: 1px solid #000;
   padding: 135px 0;
 
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0;
+  }
+
   &__wrapper {
     overflow: hidden;
   }
@@ -16,5 +20,9 @@
     position: absolute;
     bottom: -136px;
     left: 0;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
   }
 }

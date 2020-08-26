@@ -1,22 +1,22 @@
 mixin performance(data)
-  .performance&attributes(attributes)
+  a.performance(href="#")&attributes(attributes)
   
     if data && data.modifier == 'ltr'
       .row
-        .col-lg-5
+        .col-lg-6.col-xl-5
           .performance__picture-wrapper
             img.performance__picture(src="./img/performance.jpg", alt)
-        .col-lg-5.offset-lg-1.d-flex
+        .col-lg-6.col-xl-5.offset-xl-1.d-flex
           .performance__content
             h4.text-dark.font-secondary.mb-25= data.title
             p.font-weight-normal.text-dark.font-secondary.mb-0= data.dscr
           
     if data && data.modifier == 'rtl'
       .row
-        .col-lg-5.offset-lg-1.d-flex
+        .col-lg-6.col-xl-5.offset-xl-1.d-flex
           .performance__content
             h4.text-dark.font-secondary.mb-25= data.title
             p.font-weight-normal.text-dark.font-secondary.mb-0= data.dscr
-        .col-lg-5.offset-lg-1
+        .col-lg-6.col-xl-5.offset-xl-1
           .performance__picture-wrapper
             img.performance__picture(src="./img/performance.jpg", alt)

@@ -1,5 +1,15 @@
 .fun {
   margin-bottom: 90px;
+  @include transition;
+  display: block;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 40px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   &__photo {
     padding-top: 83%;

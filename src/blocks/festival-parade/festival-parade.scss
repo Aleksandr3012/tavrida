@@ -7,16 +7,29 @@
     position: relative;
     margin-top: 75px;
 
+    @include media-breakpoint-down(md) {
+      margin-top: 30px;
+    }
+
     &:before {
       content: '';
       display: block;
       width: 930px;
       height: 543px;
-      background: url(../img/festival-ship.svg) no-repeat center;
+      background: url(../img/festival-ship.svg) no-repeat bottom right;
       background-size: contain;
       position: absolute;
       right: 0;
       bottom: calc(100% - 7px);
+
+      @include media-breakpoint-down(xml) {
+        width: 680px;
+        height: 380px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
     }
   }
 
@@ -24,10 +37,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__dscr {
     margin-right: 90px;
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+      margin-bottom: 30px !important;
+    }
   }
 
   &__btn {

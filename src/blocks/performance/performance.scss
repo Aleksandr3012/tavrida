@@ -1,5 +1,11 @@
 .performance {
   margin-bottom: 45px;
+  display: block;
+  @include transition;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   &__picture-wrapper {
     position: relative;
@@ -27,5 +33,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--rtl {
+    .row {
+      @include media-breakpoint-down(md) {
+        flex-direction: column-reverse;
+      }
+    }
   }
 }

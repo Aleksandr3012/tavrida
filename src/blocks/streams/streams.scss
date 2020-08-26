@@ -33,14 +33,27 @@
         font-size: 70px;
         margin-bottom: 60px;
 
+        @include media-breakpoint-down(xml) {
+          font-size: 60px;
+        }
+
+        @include media-breakpoint-down(xl) {
+          font-size: 50px;
+        }
+
         @include media-breakpoint-down(lg) {
           margin-bottom: 30px;
+          font-size: 36px;
         }
       }
 
       .streams__front-subheader {
         font-size: 30px;
         line-height: 1.21;
+
+        @include media-breakpoint-down(lg) {
+          font-size: 24px;
+        }
       }
     }
   }
@@ -66,6 +79,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include transition;
+
+    @include media-breakpoint-down(xl) {
+      max-height: 300px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
 
     &:after {
       content: '';

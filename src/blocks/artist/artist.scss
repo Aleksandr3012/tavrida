@@ -4,6 +4,11 @@
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
+  @include transition;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   &__photo {
     padding-top: 100%;
@@ -30,6 +35,14 @@
     color: rgba(#333, 0.5);
     text-align: center;
     width: 60%;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 14px;
+    }
   }
 
   &--empty {

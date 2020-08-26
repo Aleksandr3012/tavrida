@@ -1,4 +1,8 @@
 .festival-application {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 40px;
+  }
+
   &__photo {
     margin-bottom: 35px;
     height: 296px;
@@ -10,6 +14,11 @@
     overflow: hidden;
     background-size: cover;
     background-position: top center;
+    @include transition;
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     &:before {
       content: '';

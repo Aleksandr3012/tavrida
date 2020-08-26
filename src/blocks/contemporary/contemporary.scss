@@ -4,6 +4,10 @@
 
   &__picture {
     margin-bottom: -250px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
   }
 
   &__img {
