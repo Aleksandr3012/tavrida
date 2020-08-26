@@ -1,2 +1,18 @@
 .fashion {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__picture {
+    margin-right: 144px;
+    margin-top: -40px;
+    margin-bottom: -60px;
+    flex-shrink: 0;
+  }
+
+  &__header {
+    max-width: 500px;
+  }
 }

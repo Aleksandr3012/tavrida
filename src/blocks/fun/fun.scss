@@ -1,2 +1,11 @@
 .fun {
+  margin-bottom: 90px;
+
+  &__photo {
+    padding-top: 83%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+  }
 }

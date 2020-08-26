@@ -1,7 +1,7 @@
 extends ../templates/template.pug
 block content
   +header
-  .wrapper
+  .wrapper.wrapper--no-overflow
     .streams
       .streams__front.streams__front--festival(style="background-image: url(./img/festival-long-front.jpg);")
         +header-inner({
@@ -95,7 +95,7 @@ block content
     +festival-grant
     .container
       .row
-        .col-lg-8
+        .col-lg-8.mt-40.mt-lg-80.mb-30.mb-lg-70
           h2.h2--default.font-secondary.text-dark.mb-25 Развлекательная программа
           p.font-weight-semi.font-secondary Ежедневно на фестивале фестивалей «Таврида ‒ АРТ» будет проходить развлекательная программа, включающая в себя различные форматы и тематики:
       .row
@@ -129,11 +129,11 @@ block content
             photo: 'fun-6.jpg',
             title: 'Мастер-классы по изобразительному искусству и кастомизации одежды'
           })
-    .bg-gray
+    .bg-gray.mt-30.mt-lg-60.py-40.py-lg-80
       .container
         .row
-          .col-lg-10
-            h2.h2--default.font-secondary.text-dark.mb-10 Подать заявку на Фестиваль Фестивалей
+          .col-lg-11
+            h2.h2--default.font-secondary.text-dark.mb-15 Подать заявку на Фестиваль Фестивалей
             p.font-weight-semi.font-secondary.mb-30.mb-lg-65 Принять участие в Фестивале можно в 3 ролях, выбери свою
         .row
           .col-lg-4
@@ -154,26 +154,26 @@ block content
               title: 'Зрители',
               dscr: 'Творческая молодежь из Республики Крым: студенты и преподаватели профильных дисциплин, участники творческих коллективов, активные участники социально-культурных мероприятий, которые смогут посетить Фестиваль в качестве гостя'
             })
-    .container
+    .container.my-40.my-lg-100
       .row
-        .col-lg-4
+        .col-lg-4.d-flex
           +festival-doc({
             title: 'Программа Фестиваля',
             info: 'pdf. 1.4 mb',
             icon: 'festival-doc-1.svg'
           }).festival-doc--red
-        .col-lg-4
+        .col-lg-4.d-flex
           +festival-doc({
             title: 'Правила безопасности и пребывания на Фестивале',
             info: 'материал на сайте',
             icon: 'festival-doc-2.svg'
           }).festival-doc--violet
-    +footer
-        .col-lg-4
+        .col-lg-4.d-flex
           +festival-doc({
             title: 'Положение о проведении Фестиваля',
             info: 'материал на сайте',
             icon: 'festival-doc-3.svg'
           }).festival-doc--blue
+    +footer
     +footer
     +footer
