@@ -1,6 +1,6 @@
 .fashion {
   @include media-breakpoint-down(xl) {
-    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   &__wrapper {
@@ -9,7 +9,7 @@
     justify-content: center;
 
     @include media-breakpoint-down(xl) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: flex-start;
     }
   }
@@ -23,6 +23,7 @@
 
     @include media-breakpoint-down(xl) {
       margin-bottom: 40px;
+      margin-top: 40px;
     }
   }
 

@@ -1,4 +1,8 @@
 .festival-application {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
   @include media-breakpoint-down(md) {
     margin-bottom: 40px;
   }
@@ -6,6 +10,7 @@
   &__photo {
     margin-bottom: 35px;
     height: 296px;
+    width: 100%;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -35,5 +40,9 @@
       position: relative;
       z-index: 1;
     }
+  }
+
+  .btn {
+    margin-top: auto;
   }
 }
