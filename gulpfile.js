@@ -131,7 +131,7 @@ gulp.task('scripts', function () {
 gulp.task('images', function () {
   return gulp.src(paths.images.src)
     .pipe(plumber())
-    .pipe(imagemin())
+//    .pipe(imagemin())
     .pipe(rename({
       dirname: ''
     }))
