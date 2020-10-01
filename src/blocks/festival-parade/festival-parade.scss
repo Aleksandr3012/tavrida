@@ -56,4 +56,16 @@
   &__btn {
     flex-shrink: 0;
   }
+
+  &__picture {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: -135px;
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+  }
 }

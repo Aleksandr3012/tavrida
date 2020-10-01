@@ -1,4 +1,6 @@
 .fashion {
+  padding-top: 100px;
+
   @include media-breakpoint-down(xl) {
     padding-top: 50px;
   }
@@ -16,7 +18,7 @@
 
   &__picture {
     margin-right: 144px;
-    margin-top: -40px;
+    margin-top: -20px;
     margin-bottom: -60px;
     flex-shrink: 0;
     max-width: 100%;
@@ -27,11 +29,19 @@
     }
   }
 
-  &__header {
+  &__content {
     max-width: 500px;
 
     @include media-breakpoint-down(xl) {
       max-width: 80%;
+    }
+  }
+
+  &__header {
+    margin-bottom: 65px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 35px;
     }
   }
 }

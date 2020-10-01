@@ -16,13 +16,13 @@
   }
 
   &__img {
-    max-width: 1027px;
-    position: absolute;
-    bottom: -136px;
-    left: 0;
+    //    max-width: 1027px;
+    //    position: absolute;
+    //    bottom: -136px;
+    //    left: 0;
 
-    @include media-breakpoint-down(lg) {
-      display: none;
-    }
+    //    @include media-breakpoint-down(lg) {
+    //      display: none;
+    //    }
   }
 }

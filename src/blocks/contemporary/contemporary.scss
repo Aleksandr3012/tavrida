@@ -3,7 +3,8 @@
   padding: 65px 0 80px;
 
   &__picture {
-    margin-bottom: -250px;
+    border-radius: 20px;
+    overflow: hidden;
 
     @include media-breakpoint-down(md) {
       margin-bottom: 0;
