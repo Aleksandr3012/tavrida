@@ -56,6 +56,10 @@
       top: 50%;
       transform: translate(-50%, -50%);
     }
+
+    &--big {
+      padding-top: 66.66%;
+    }
   }
 
   &__yards {
@@ -71,6 +75,24 @@
       bottom: 40px;
       right: 0;
       max-width: 100%;
+    }
+  }
+
+  &__castings {
+    padding: 95px 0;
+    background: #476fb2;
+
+    @include media-breakpoint-down(lg) {
+      padding: 40px 0;
+    }
+  }
+
+  &__street {
+    padding: 95px 0;
+    background: #5a2e91;
+
+    @include media-breakpoint-down(lg) {
+      padding: 40px 0;
     }
   }
 }
