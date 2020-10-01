@@ -11,26 +11,26 @@
       margin-top: 30px;
     }
 
-    &:before {
-      content: '';
-      display: block;
-      width: 930px;
-      height: 543px;
-      background: url(../img/festival-ship.svg) no-repeat bottom right;
-      background-size: contain;
-      position: absolute;
-      right: 0;
-      bottom: calc(100% - 7px);
-
-      @include media-breakpoint-down(xml) {
-        width: 680px;
-        height: 380px;
-      }
-
-      @include media-breakpoint-down(lg) {
-        display: none;
-      }
-    }
+    //    &:before {
+    //      content: '';
+    //      display: block;
+    //      width: 930px;
+    //      height: 543px;
+    //      background: url(../img/festival-ship.svg) no-repeat bottom right;
+    //      background-size: contain;
+    //      position: absolute;
+    //      right: 0;
+    //      bottom: calc(100% - 7px);
+    //
+    //      @include media-breakpoint-down(xml) {
+    //        width: 680px;
+    //        height: 380px;
+    //      }
+    //
+    //      @include media-breakpoint-down(lg) {
+    //        display: none;
+    //      }
+    //    }
   }
 
   &__content {
