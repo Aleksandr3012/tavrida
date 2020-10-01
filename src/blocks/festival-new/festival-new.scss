@@ -57,4 +57,20 @@
       transform: translate(-50%, -50%);
     }
   }
+
+  &__yards {
+    padding: 90px 0 130px;
+  }
+
+  &__yards-picture {
+    position: relative;
+    width: 100%;
+
+    img {
+      position: absolute;
+      bottom: 40px;
+      right: 0;
+      max-width: 100%;
+    }
+  }
 }
