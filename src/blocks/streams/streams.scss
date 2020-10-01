@@ -56,6 +56,30 @@
         }
       }
     }
+
+    &--festival-new {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 80px;
+
+      @include media-breakpoint-down(md) {
+        min-height: 0;
+      }
+
+      .streams__front-header {
+        margin-bottom: 145px;
+
+        @include media-breakpoint-down(xl) {
+          margin-bottom: 100px;
+        }
+
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 40px;
+        }
+      }
+    }
   }
 
   &__front-wrapper {
