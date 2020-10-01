@@ -15,6 +15,14 @@
     width: 100%;
     margin-bottom: 50px;
 
+    @include media-breakpoint-down(lg) {
+      padding: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+
     &--yellow {
       color: $dark;
       background: #efc825;
@@ -43,6 +51,7 @@
     background-repeat: no-repeat;
     border-radius: 20px;
     position: relative;
+    @include transition;
 
     &:before {
       content: '';
@@ -57,13 +66,27 @@
       transform: translate(-50%, -50%);
     }
 
+    &:hover {
+      opacity: 0.8;
+    }
+
     &--big {
       padding-top: 66.66%;
+    }
+
+    &--drag {
+      @include media-breakpoint-down(lg) {
+        min-width: 300px;
+      }
     }
   }
 
   &__yards {
     padding: 90px 0 130px;
+
+    @include media-breakpoint-down(lg) {
+      padding: 40px 0;
+    }
   }
 
   &__yards-picture {
@@ -75,6 +98,11 @@
       bottom: 40px;
       right: 0;
       max-width: 100%;
+
+      @include media-breakpoint-down(lg) {
+        position: static;
+        margin-top: 30px;
+      }
     }
   }
 

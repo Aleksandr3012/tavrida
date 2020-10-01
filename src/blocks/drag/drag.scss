@@ -2,5 +2,9 @@
   &__content {
     flex-wrap: nowrap;
     cursor: grab;
+
+    @include media-breakpoint-down(lg) {
+      overflow: auto;
+    }
   }
 }

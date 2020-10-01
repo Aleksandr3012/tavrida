@@ -43,18 +43,18 @@ block content
         p.font-weight-semi.font-secondary.pr-xml-80.mb-30.mb-xl-45 Таврида Live ‒ онлайн-фестиваль, который был проведен в формате ток-шоу в студии на площадке арт-кластера. Его ключевыми событиями стали интервью со звездами и фрешменами, трансляции концертов, перформансов, кастингов.
         .drag.mb-40.mb-xl-100
           .row.drag__content
-            .col-lg-4
-              a.festival-new__video(href="#", style="background-image: url(./img/festival-front-video.jpg);")
-            .col-lg-4
-              a.festival-new__video(href="#", style="background-image: url(./img/festival-front-video.jpg);")
-            .col-lg-4
-              a.festival-new__video(href="#", style="background-image: url(./img/festival-front-video.jpg);")
-            .col-lg-4
-              a.festival-new__video(href="#", style="background-image: url(./img/festival-front-video.jpg);")
-            .col-lg-4
-              a.festival-new__video(href="#", style="background-image: url(./img/festival-front-video.jpg);")
-            .col-lg-4
-              a.festival-new__video(href="#", style="background-image: url(./img/festival-front-video.jpg);")
+            .col-xl-4
+              a.festival-new__video.festival-new__video--drag(href="#", style="background-image: url(./img/festival-front-video.jpg);")
+            .col-xl-4
+              a.festival-new__video.festival-new__video--drag(href="#", style="background-image: url(./img/festival-front-video.jpg);")
+            .col-xl-4
+              a.festival-new__video.festival-new__video--drag(href="#", style="background-image: url(./img/festival-front-video.jpg);")
+            .col-xl-4
+              a.festival-new__video.festival-new__video--drag(href="#", style="background-image: url(./img/festival-front-video.jpg);")
+            .col-xl-4
+              a.festival-new__video.festival-new__video--drag(href="#", style="background-image: url(./img/festival-front-video.jpg);")
+            .col-xl-4
+              a.festival-new__video.festival-new__video--drag(href="#", style="background-image: url(./img/festival-front-video.jpg);")
         h4.text-dark.font-secondary.mb-30 Артисты
         .drag.mb-20
           .row.drag__content
@@ -62,64 +62,64 @@ block content
               +artist({
                 photo: 'artist-1.jpg',
                 name: 'Юлианна Караулова'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-2.jpg',
                 name: 'ST'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-3.jpg',
                 name: 'Серьга'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-1.jpg',
                 name: 'Юлианна Караулова'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-2.jpg',
                 name: 'ST'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-3.jpg',
                 name: 'Серьга'
-              })
+              }).artist--drag
         .drag.mb-20
           .row.drag__content
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-1.jpg',
                 name: 'Юлианна Караулова'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-2.jpg',
                 name: 'ST'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-3.jpg',
                 name: 'Серьга'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-1.jpg',
                 name: 'Юлианна Караулова'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-2.jpg',
                 name: 'ST'
-              })
+              }).artist--drag
             .col-sm-6.col-lg-3
               +artist({
                 photo: 'artist-3.jpg',
                 name: 'Серьга'
-              })
+              }).artist--drag
         h4.text-dark.font-secondary.mt-30.mt-xl-50.mb-30 Фестивали
         .row
           .col-sm-6.col-lg-3.d-flex
@@ -210,22 +210,22 @@ block content
       .bg-gray.festival-new__yards
         .container.container--default
           .row
-            .col-lg-7
+            .col-xl-7
               h2.h2--default.font-secondary.text-dark.mb-25 ФЕСТИВАЛЬ СТРИМОВ И КОНЦЕРТОВ ВО ДВОРАХ «ТАВРИДА РЯДОМ»
               p.font-weight-semi.font-secondary Молодые деятели культуры и искусств поддержали фестиваль фестивалей «Таврида ‒ АРТ» творческими выступлениями и концертами в 73 регионах России. С 4 по 6 сентября на улицах российских городов состоялось свыше 2 000 мероприятий, фестиваль стримов и концертов во дворах «Таврида рядом» прошел в онлайн- и офлайн-форматах. Лекции, воркшопы, мастер-классы, встречи с лидерами арт-индустрии, концерты, стендапы транслировались в прямом эфире в аккаунтах творцов во всех социальных сетях.
               h5.text-dark.font-weight-semi.font-secondary.text-transform-none.mt-35 2014 мероприятий в 73 регионах России <br>
                 a(href="#") Список участников на получение финансовой поддержки 
-            .col-lg-5.d-flex
+            .col-xl-5.d-flex
               .festival-new__yards-picture
                 img(src="./img/festival-yard.png", alt)
           .row.mt-30.mt-lg-50
-            .col-lg-4
+            .col-lg-4.mb-30.mb-lg-0
               p.font-secondary.font-weight-normal.mb-20 За проведенные офлайн-мероприятия участники получили финансовую поддержку в размере
               h4.text-dark.font-secondary 10 000 рублей
-            .col-lg-4
+            .col-lg-4.mb-30.mb-lg-0
               p.font-secondary.font-weight-normal.mb-20 Офлайн-проекты, реализованные коллективами (2 участника и более), получили финансовую поддержку в размере
               h4.text-dark.font-secondary 30 000 рублей
-            .col-lg-4
+            .col-lg-4.mb-30.mb-lg-0
               p.font-secondary.font-weight-normal.mb-20 За проведенные онлайн-мероприятия участники получили финансовую поддержку в размере
               h4.text-dark.font-secondary 5 000 рублей
       .festival-new__castings
@@ -236,14 +236,14 @@ block content
                 h2.h2--default.font-secondary.text-white.mb-20 Кастинг-платформа
                 p.font-weight-semi.font-secondary.text-white.mb-30.mb-lg-50 Единственная в России кастинг-платформа, объединяющая прослушивания, отборы и собеседования для прохождения стажировок от ведущих игроков арт-индустрии и медиакомпаний. Более 100 кастингов ждут твоего участия.
                 a.btn.btn-green(href="#") Принять участие
-            .col-lg-5.offset-lg-2
-              img.img-radius(src="./img/fest-new-cast.jpg", alt)
+            .col-lg-5.offset-lg-2.mt-30.mt-lg-0
+              img.img-radius.img-fluid(src="./img/fest-new-cast.jpg", alt)
       .festival-new__street
         .container
           .row
             .col-lg-5
               a.festival-new__video.festival-new__video--big(href="#", style="background-image: url(./img/fest-new-cast.jpg);")
-            .col-lg-6.offset-lg-1.d-flex.align-items-center
+            .col-lg-6.offset-lg-1.d-flex.align-items-center.mt-30.mt-lg-0
               div
                 h2.h2--default.font-secondary.text-white.mb-35 Стрит-арт-фестиваль
                 p.font-weight-semi.font-secondary.text-white.mb-30 На трассе «Таврида» проходит масштабный стрит-арт-проект «Таврида – АРТ»: резиденты арт-кластера, молодые художники, которые уже успели громко заявить о себе и доказали свой профессионализм, оформят в арт-объекты 40 пар опор путепроводов и 14 подпорных стен на протяжении всей трассы.
