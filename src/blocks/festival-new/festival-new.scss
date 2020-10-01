@@ -32,4 +32,29 @@
       background: #476fb2;
     }
   }
+
+  &__video {
+    padding-top: 56.36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 72px;
+      height: 72px;
+      background: url(../img/play-white.svg) no-repeat center;
+      background-size: contain;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

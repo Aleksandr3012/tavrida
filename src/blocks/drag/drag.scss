@@ -1,2 +1,6 @@
 .drag {
+  &__content {
+    flex-wrap: nowrap;
+    cursor: grab;
+  }
 }
