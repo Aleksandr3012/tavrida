@@ -1,0 +1,214 @@
+@import 'bootstrap-custom';
+
+@import 'mixins';
+
+/* Fix for Fancybox */
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+/* Plugins */
+// @import 'plugins/fullpage.min';
+
+// @import 'plugins/slick';
+
+// @import 'plugins/perfect-scrollbar';
+
+// @import 'plugins/jquery.fancybox.min';
+
+// @import 'plugins/jquery-ui.structure';
+
+// @import 'plugins/jquery-ui.theme';
+
+// @import 'plugins/select2.min';
+
+// @import 'plugins/jquery.timepicker.min';
+
+// @import 'plugins/jquery.mCustomScrollbar.min';
+
+// @import 'plugins/plugins-rewrite';
+
+// /* Global styles */
+// @import 'global/global-fonts';
+
+// @import 'global/global-typo';
+
+// @import 'global/global-scaffolding';
+
+// /* Blocks */
+
+// @import './src/blocks/front/front';
+
+// @import './src/blocks/logo/logo';
+
+// @import './src/blocks/header/header';
+
+// @import './src/blocks/menu/menu';
+
+// @import './src/blocks/socials/socials';
+
+// @import './src/blocks/wrapper/wrapper';
+
+// @import './src/blocks/section/section';
+
+// @import './src/blocks/feature/feature';
+
+// @import './src/blocks/advantages/advantages';
+
+// @import './src/blocks/event/event';
+
+// @import './src/blocks/item/item';
+
+// @import './src/blocks/content/content';
+
+// @import './src/blocks/about/about';
+
+// @import './src/blocks/news/news';
+
+// @import './src/blocks/feedback/feedback';
+
+// @import './src/blocks/slider/slider';
+
+// @import './src/blocks/partners/partners';
+
+// @import './src/blocks/footer/footer';
+
+// @import './src/blocks/info/info';
+
+// @import './src/blocks/timeline/timeline';
+
+// @import './src/blocks/headliner/headliner';
+
+// @import './src/blocks/map/map';
+
+// @import './src/blocks/registration/registration';
+
+// @import './src/blocks/form/form';
+
+// @import './src/blocks/input/input';
+
+// @import './src/blocks/art/art';
+
+// @import './src/blocks/part/part';
+
+// @import './src/blocks/award/award';
+
+// @import './src/blocks/anti/anti';
+
+// @import './src/blocks/header-inner/header-inner';
+
+// @import './src/blocks/select/select';
+
+// @import './src/blocks/anti-list/anti-list';
+
+// @import './src/blocks/signup/signup';
+
+// @import './src/blocks/hero/hero';
+
+// @import './src/blocks/team/team';
+
+// @import './src/blocks/flow/flow';
+
+// @import './src/blocks/step/step';
+
+// @import './src/blocks/dates/dates';
+
+// @import './src/blocks/highlights/highlights';
+
+// @import './src/blocks/summary/summary';
+
+// @import './src/blocks/field/field';
+
+// @import './src/blocks/participation/participation';
+
+// @import './src/blocks/faq/faq';
+
+// @import './src/blocks/question/question';
+
+// @import './src/blocks/story/story';
+
+// @import './src/blocks/item-slider/item-slider';
+
+// @import './src/blocks/document/document';
+
+// @import './src/blocks/cabinet/cabinet';
+
+// @import './src/blocks/applications/applications';
+
+// @import './src/blocks/link-back/link-back';
+
+// @import './src/blocks/footer-short/footer-short';
+
+// @import './src/blocks/partnership/partnership';
+
+// @import './src/blocks/partner-section/partner-section';
+
+// @import './src/blocks/partners-list/partners-list';
+
+// @import './src/blocks/anti-feature/anti-feature';
+
+// @import './src/blocks/anti-big/anti-big';
+
+// @import './src/blocks/workshop/workshop';
+
+// @import './src/blocks/workshop-team/workshop-team';
+
+// @import './src/blocks/workshop-stage/workshop-stage';
+
+// @import './src/blocks/lk-event/lk-event';
+
+// @import './src/blocks/residence/residence';
+
+// @import './src/blocks/concept/concept';
+
+// @import './src/blocks/modal/modal';
+
+// @import './src/blocks/card/card';
+
+// @import './src/blocks/quarter/quarter';
+
+// @import './src/blocks/structure/structure';
+
+// @import './src/blocks/conditions/conditions';
+
+// @import './src/blocks/transfer/transfer';
+
+// @import './src/blocks/procession/procession';
+
+// @import './src/blocks/banner/banner';
+
+// @import './src/blocks/exhibition/exhibition';
+
+// @import './src/blocks/steps-list/steps-list';
+
+// @import './src/blocks/streams/streams';
+// @import './src/blocks/streams-feature/streams-feature';
+// @import './src/blocks/stream-current/stream-current';
+// @import './src/blocks/prize/prize';
+// @import './src/blocks/streams-format/streams-format';
+// @import './src/blocks/streams-prize/streams-prize';
+
+// @import './src/blocks/casting-type/casting-type';
+// @import './src/blocks/announcement/announcement';
+// @import './src/blocks/castings-slider/castings-slider';
+// @import './src/blocks/casting/casting';
+// @import './src/blocks/casting-stream/casting-stream';
+
+// @import './src/blocks/parade/parade';
+
+// @import './src/blocks/artist/artist';
+// @import './src/blocks/festival-item/festival-item';
+// @import './src/blocks/performance/performance';
+// @import './src/blocks/festival-parade/festival-parade';
+// @import './src/blocks/contemporary/contemporary';
+// @import './src/blocks/fashion/fashion';
+// @import './src/blocks/festival-grant/festival-grant';
+// @import './src/blocks/fun/fun';
+// @import './src/blocks/festival-application/festival-application';
+// @import './src/blocks/festival-doc/festival-doc';
+@import './src/blocks/sContent/_sContent';
+@import './src/blocks/AwardNominees/_AwardNominees';

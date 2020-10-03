@@ -5,7 +5,7 @@ $spacer: 10px;
 $spacers: (
   0: 0,
   5: (
-    $spacer * .5,
+    $spacer * 0.5,
   ),
   10: $spacer,
   15: (
@@ -70,7 +70,7 @@ $line-height-sm: 1;
 
 $line-height-lg: 2;
 
-$transition-base: .3s cubic-bezier(.25, .1, .25, 1);
+$transition-base: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
 $headings-margin-bottom: $spacer;
 
@@ -82,6 +82,7 @@ $black: #333;
 $dark: $black;
 $green: #c9df55;
 $yellow: #efc825;
+$purple: #5c2480;
 
 $container-max-widths: (
   xl: 1620px,
@@ -110,6 +111,7 @@ $font-family-secondary: 'Montserrat', 'Georgia', sans-serif;
 
 /* Imports */
 @import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/vendor/rfs';
 
 @import '../../node_modules/bootstrap/scss/variables';
 
@@ -117,24 +119,24 @@ $font-family-secondary: 'Montserrat', 'Georgia', sans-serif;
 
 @import '../../node_modules/bootstrap/scss/root';
 
-@import '../../node_modules/bootstrap/scss/reboot';
+// @import '../../node_modules/bootstrap/scss/reboot';
 
-@import '../../node_modules/bootstrap/scss/type';
+// @import '../../node_modules/bootstrap/scss/type';
 
-@import '../../node_modules/bootstrap/scss/images';
+// @import '../../node_modules/bootstrap/scss/images';
 
-@import '../../node_modules/bootstrap/scss/grid';
+// @import '../../node_modules/bootstrap/scss/grid';
 
-@import '../../node_modules/bootstrap/scss/forms';
+// @import '../../node_modules/bootstrap/scss/forms';
 
-@import '../../node_modules/bootstrap/scss/buttons';
+// @import '../../node_modules/bootstrap/scss/buttons';
 
-@import '../../node_modules/bootstrap/scss/nav';
+// @import '../../node_modules/bootstrap/scss/nav';
 
-@import '../../node_modules/bootstrap/scss/transitions';
+// @import '../../node_modules/bootstrap/scss/transitions';
 
-@import '../../node_modules/bootstrap/scss/custom-forms';
+// @import '../../node_modules/bootstrap/scss/custom-forms';
 
-@import '../../node_modules/bootstrap/scss/utilities';
+// @import '../../node_modules/bootstrap/scss/utilities';
 
-@import '../../node_modules/bootstrap/scss/print';
+// @import '../../node_modules/bootstrap/scss/print';

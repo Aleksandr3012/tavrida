@@ -8,7 +8,6 @@
 Нужно добавить в стилях элемента конструкцию вида @include placeholder(#000); */
 
 @mixin placeholder {
-
   &.placeholder {
     @content;
   }
