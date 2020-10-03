@@ -1,6 +1,11 @@
 mixin fashion(data)
   .fashion&attributes(attributes)
     .container.container--default
-      .fashion__wrapper
-        img.fashion__picture(src="./img/fashion.png", alt)
-        h2.fashion__header.font-secondary.text-dark.h2--default.mb-0 МОДНЫЙ ПОКАЗ МОЛОДЫХ РОССИЙСКИХ ДИЗАЙНЕРОВ
+      .row
+        .col-lg-11.offset-lg-1
+          .fashion__wrapper
+            img.fashion__picture(src="./img/fashion.png", alt)
+            .fashion__content
+              h2.fashion__header.font-secondary.text-dark.h2--default Модный показ от молодых российских дизайнеров
+              p.font-secondary.font-weight-normal.mb-30 Более 20 выпускников арт-кластера представили работы на модном показе от молодых российских дизайнеров.
+              p.font-secondary.font-weight-normal.mb-0 Свои коллекции продемонстрировали участники антишколы «Индустрия моды» форума «Таврида» 2020 года, выпускники арт-кластера 2019 года, а также участники проекта Industry. Design. Innovation
