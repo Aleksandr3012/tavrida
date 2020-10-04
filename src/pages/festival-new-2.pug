@@ -48,98 +48,20 @@ block content
         +sCalendar()
         h2.h2--default.font-secondary.text-dark.mt-40.mt-xl-100.mb-45 Принять участие в фестивале
         +sParticipation()
-        h4.text-dark.font-secondary.mb-30 Артисты
-        .drag.mb-20.js-drag-artist1
-          .row.drag__content.js-drag-artist1-content
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-1.jpg',
-                name: 'Юлианна Караулова'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-2.jpg',
-                name: 'ST'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-3.jpg',
-                name: 'Серьга'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-1.jpg',
-                name: 'Юлианна Караулова'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-2.jpg',
-                name: 'ST'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-3.jpg',
-                name: 'Серьга'
-              }).artist--drag
-        .drag.mb-20.js-drag-artist2
-          .row.drag__content.js-drag-artist2-content
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-1.jpg',
-                name: 'Юлианна Караулова'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-2.jpg',
-                name: 'ST'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-3.jpg',
-                name: 'Серьга'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-1.jpg',
-                name: 'Юлианна Караулова'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-2.jpg',
-                name: 'ST'
-              }).artist--drag
-            .col-sm-6.col-lg-3
-              +artist({
-                photo: 'artist-3.jpg',
-                name: 'Серьга'
-              }).artist--drag
-        h4.text-dark.font-secondary.mt-30.mt-xl-50.mb-30 Фестивали
-        .row
-          .col-sm-6.col-lg-3.d-flex
-            +festival-item({
-              logo: 'festival-item-1.png'
-            })
-          .col-sm-6.col-lg-3.d-flex
-            +festival-item({
-              logo: 'festival-item-2.png'
-            })
-          .col-sm-6.col-lg-3.d-flex
-            +festival-item({
-              logo: 'festival-item-3.png'
-            })
-          .col-sm-6.col-lg-3.d-flex
-            +festival-item({
-              logo: 'festival-item-4.png'
-            })
         .row.mt-40.mt-lg-65
           .col-lg-10
-            h2.h2--default.font-secondary.text-dark.mb-25 Перформансы
-            p.font-weight-semi.font-secondary.mb-40.mb-lg-95 Частью программы фестиваля фестивалей на площадке арт-кластера «Таврида» в 2020 году стали масштабные театрализованные перформансы: арт-шествие «Мы вместе», «Живые краски триколора», «Танцующие холмы», «Феникс», «Морские пейзажи» и другие события, в которых приняли участие молодые деятели культуры и искусств, представители креативных индустрий в возрасте от 18 до 35 лет.
+            h2.h2--default.font-secondary.text-dark.mb-25 ГАЛА-КОНЦЕРТ НАЦИОНАЛЬНОГО ЧЕМПИОНАТА ТВОРЧЕСКИХ КОМПЕТЕНЦИЙ ARTMASTERS
+            .row
+              .award02__col.col-lg-2
+                img(src="img/calendar.svg", alt="")
+                .award02__date #[strong 21 октября]
+              .award02__col.col-auto
+                img(src="img/location.svg", alt="")
+                .award02__place Государственный академический Большой театр России
         +performance({
           modifier: 'ltr',
-          picture: 'performance-1.jpg',
-          title: 'ЖИВЫЕ КРАСКИ ТРИКОЛОРА',
-          dscr: 'Творческий номер был посвящен 75-летию Победы в Великой Отечественной войне. Молодые деятели культуры выстроились в ряды, символизирующие полотнище флага, рядом с надписью «Мир. Любовь. Искусство». На вершине холма ветеран Великой Отечественной войны Николай Радега поднял флаг вместе с юным армейцем. Актер Владислав Маленко исполнил свою поэму «Ржев» под музыку композитора Эдуарда Артемьева. Торжественное мероприятие завершилось гимном Российской Федерации в исполнении резидентов арт-кластера «Таврида».'
+          picture: '75b7f3fa7ac27a4440109b5b586d2f9f.jpg',
+          dscr: `Участники компетенций ARTMASTERS объединятся с актерами, музыкантами, хореографами, операторами и режиссерами арт-кластера «Таврида», чтобы создать новые творческие союзы.<br><br> На гала-концерте будут представлены лучшие творческие работы финалистов чемпионата: музыкальные клипы, театральные эскизы, подготовленные в коллаборации с молодыми режиссерами арт-кластера «Таврида», шоу – видеомэппинг.`
         }).performance--ltr
         +performance({
           modifier: 'rtl',
