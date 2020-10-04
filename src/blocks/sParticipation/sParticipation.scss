@@ -26,6 +26,9 @@
     @include media-breakpoint-up(sm) {
       font-size: 25px;
     }
+    @include media-breakpoint-only(lg) {
+      font-size: 18px;
+    }
     line-height: 150%;
     color: #333333;
   }

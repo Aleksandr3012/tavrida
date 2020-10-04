@@ -1,15 +1,15 @@
 mixin sCalendar(data)
   .sCalendar&attributes(attributes)
     mixin item(d,t)
-      .col-sm-6.col-md-4.col-lg-3
+      .col-sm-6.col-lg-4.col-xl-3
         a.sCalendar__item(href="#")&attributes(attributes)
           .sCalendar__date= d
           if t
             .sCalendar__descr!= t
     .row
       +item('21 ОКТЯБРЯ','Гала-концерт Национального чемпионата творческих компетенций ArtMasters')
-      +item('22 — 23 ОКТЯБРЯ',`Кейс-стади &laquo;ТАВРИДА&nbsp;АРТ MOSCOW&raquo;`)
-      +item('23 ОКТЯБРЯ','Музыкальный вечер «Время&nbsp;Есенина»')
+      +item('22 — 23 ОКТЯБРЯ',`Кейс-стади &laquo;ТАВРИДА АРТ MOSCOW&raquo;`)
+      +item('23 ОКТЯБРЯ','Музыкальный вечер «Время Есенина»')
       +item('24 ОКТЯБРЯ','Концерт, посвященный 180-летию со дня рождения П.И. Чайковского')
       +item('24 ОКТЯБРЯ','Шоу участников и победителей кастинг- платформы «Таврида – АРТ»')
       +item('24 — 25 ОКТЯБРЯ','Конференция креативных индустрий')
