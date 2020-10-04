@@ -19,4 +19,27 @@
     margin-bottom: 35px;
     border-radius: 20px;
   }
+
+  &__name {
+    margin-bottom: 17px;
+    font-size: 25px;
+    line-height: 150%;
+  }
+
+  &__descr {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  &--participants {
+    padding-bottom: 30px;
+    max-width: 474px;
+    margin: 0 auto;
+
+    .fun__photo {
+      max-width: 383px;
+      margin: 0 auto 33px;
+    }
+  }
 }

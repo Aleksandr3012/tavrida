@@ -14,11 +14,19 @@
     }
 
     &--light {
-      background: rgba(#efc825, .2);
+      background: rgba(#efc825, 0.2);
     }
 
     &--dark {
-      background: rgba($primary, .2);
+      background: rgba($primary, 0.2);
+    }
+
+    &--other {
+      .slick-arrow {
+        width: 52px;
+        height: 52px;
+        margin-top: -25px;
+      }
     }
   }
 
@@ -130,7 +138,6 @@
   }
 
   .slick-arrow {
-
     @include media-breakpoint-down(md) {
       display: block !important;
     }
@@ -141,7 +148,6 @@
   }
 
   .slick-prev {
-
     @include media-breakpoint-down(md) {
       left: -30px;
     }
@@ -156,7 +162,6 @@
   }
 
   &--new {
-
     .container {
       padding-right: 40px;
 

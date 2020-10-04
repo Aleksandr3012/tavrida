@@ -55,7 +55,7 @@ block content
               .award02__col.col-lg-3.col-xxl-2
                 img(src="img/calendar.svg", alt="")
                 .award02__date #[strong 21 октября]
-              .award02__col.col-auto
+              .award02__col.col
                 img(src="img/location.svg", alt="")
                 .award02__place Государственный академический Большой театр России
         +performance({
@@ -63,112 +63,349 @@ block content
           picture: '75b7f3fa7ac27a4440109b5b586d2f9f.jpg',
           dscr: `Участники компетенций ARTMASTERS объединятся с актерами, музыкантами, хореографами, операторами и режиссерами арт-кластера «Таврида», чтобы создать новые творческие союзы.<br><br> На гала-концерте будут представлены лучшие творческие работы финалистов чемпионата: музыкальные клипы, театральные эскизы, подготовленные в коллаборации с молодыми режиссерами арт-кластера «Таврида», шоу – видеомэппинг.`
         }).performance--ltr
-        +performance({
-          modifier: 'rtl',
-          picture: 'performance-2.jpg',
-          title: 'СВЕТОВОЙ ПЕРФОРМАНС «МЫ ВМЕСТЕ»',
-          dscr: 'Ценность слов определяется по тем смыслам, которые они несут. В процессе театрализованной постановки участники перформанса зажгли сотни фонариков, чтобы продемонстрировать как никогда важные в 2020 году слова: «Мы вместе».'
-        }).performance--rtl
-        +performance({
-          modifier: 'ltr',
-          picture: 'performance-3.jpg',
-          title: 'ТАНЦУЮЩИЕ ХОЛМЫ',
-          dscr: 'Атмосферу единения творцов передал масштабный перформанс «Танцующие холмы», который прошел на площадке фестиваля вблизи арт-объекта «Дерево». Он стал частью выступления Юлианны Карауловой и Александра Кудинова. В перформансе приняли участие сотни деятелей культуры и искусств и гости фестиваля. Они выстроились на холмах и заполнили все пространство светом своих браслетов.'
-        }).performance--ltr
-        +performance({
-          modifier: 'rtl',
-          picture: 'performance-4.jpg',
-          title: 'ФЕНИКС',
-          dscr: 'ажигательный перформанс стал частью музыкального номера Гарика Сукачева и Любови Павлушиной. Этническая процессия, олицетворяющая водную стихию, фольклорные мотивы, возрождение феникса и несколько сотен участников, отбивающих ритм на бубнах и барабанах в завораживающем танце.'
-        }).performance--rtl
+        .row.mt-40.mt-lg-65
+          .col-lg-10
+            h2.h2--default.font-secondary.text-dark.mb-25 КЕЙС-СТАДИ «ТАВРИДА АРТ MOSCOW»
+            .row
+              .award02__col.col-lg-3.col-xxl-auto.pr-0
+                img(src="img/calendar.svg", alt="")
+                .award02__date #[strong 22 ‒ 23 октября]
+              .award02__col.col
+                img(src="img/location.svg", alt="")
+                .award02__place Офисы корпораций и государственных учреждений
         +performance({
           modifier: 'ltr',
-          picture: 'performance-5.jpg',
-          title: 'Арт-шествие',
-          dscr: 'Театрализованное перформанс-шествие творческого комьюнити «Тавриды». Участники были одеты в невероятные, авангардные, футуристические костюмы. Процессия творцов прошла через всю территорию арт-кластера «Таврида» к главной сцене, на которой начался концерт рэп-исполнителя ST, ставший одним из событий, ознаменовавших окончание фестиваля фестивалей.'
+          picture: '75b7f3fa7ac27a4440109b5b586d2f9f.jpg',
+          dscr: `Кейс-стади ‒ серия мероприятий, объединяющая молодых деятелей культуры и искусства, представителей компаний в сфере креативных индустрий, сотрудников крупных корпораций и государственных организаций для совместного осмысления и поиска путей решения кейсов по интеграции креативных практик в корпоративное и государственное управление.`
         }).performance--ltr
-      +festival-parade
-      +contemporary
-      +fashion
-      +festival-grant
+      // slider
+      .partners__row.partners__row--other
+        .container
+          .partners__row-wrapper
+            .partners__row-content
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+      +award02(`МУЗЫКАЛЬНЫЙ ВЕЧЕР «ВРЕМЯ ЕСЕНИНА»`,`23 октября`,`Фудмолл «Депо. Москва»`)
+        +performance({
+          modifier: 'ltr',
+          picture: 'esenin.jpg',
+          dscr: `В рамках музыкального вечера «Время Есенина» резиденты арт-кластера исполнят песни на стихи поэта. Мероприятие приурочено к 125-летию со дня рождения одного из самых любимых русских поэтов.`
+        }).performance--ltr
+      .partners__row.partners__row--other
+        .container
+          .partners__row-wrapper
+            .partners__row-content
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+      +award02(`МУЗЫКАЛЬНЫЙ ВЕЧЕР «ВРЕМЯ ЕСЕНИНА»`,`23 октября`,`Фудмолл «Депо. Москва»`)
+        +performance({
+          modifier: 'ltr',
+          picture: 'esenin.jpg',
+          dscr: `В рамках музыкального вечера «Время Есенина» резиденты арт-кластера исполнят песни на стихи поэта. Мероприятие приурочено к 125-летию со дня рождения одного из самых любимых русских поэтов..`
+        }).performance--ltr
+      +sConference()
+      +castings-slider-2()
+        h4.text-dark.font-secondary.font-weight-bold.mt-30.mt-lg-65.mb-30.mb-lg-50 Кураторы
+        .castings-slider__content
+          +casting-other({
+            picture: 'curator-1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, Лауреат Премии Правительства Российской Федерации'
+          }).castings-slider__item
+
+          +casting-other({
+            picture: 'curator-2.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-3.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-4.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, Лауреат Премии Правительства Российской Федерации'
+          }).castings-slider__item
+      +castings-slider-2()
+        h4.text-dark.font-secondary.font-weight-bold.mt-30.mt-lg-65.mb-30.mb-lg-50 Спикеры
+        .castings-slider__content
+          +casting-other({
+            picture: 'curator-1_1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, Лауреат Премии Правительства Российской Федерации'
+          }).castings-slider__item
+
+          +casting-other({
+            picture: 'curator-1_2.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-1_3.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-1_4.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-1_1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-1_1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, Лауреат Премии Правительства Российской Федерации'
+          }).castings-slider__item
+      .partners__row.partners__row--other
+        .container
+          .partners__row-wrapper
+            .partners__row-content
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+      +award02(`ПРЕЗЕНТАЦИЯ АРТ-РЕЗИДЕНЦИЙ`,`24 ‒ 25 ОКТЯБРЯ`,`Цифровое деловое пространство`)
+        +performance({
+          modifier: 'ltr',
+          picture: 'esenin.jpg',
+          dscr: `Арт-резиденция – точка зарождения локальных проектов, способных изменить культурную жизнь людей. Это место для сотрудничества и творческих коллабораций представителей разных креативных индустрий с участием ведущих экспертов. Презентация будет включать в себя питчинги и старт партнерской программы с участием крупных компаний и амбассадоров арт-резиденций.`
+        }).performance--ltr
+      +castings-slider-2()
+        h4.text-dark.font-secondary.font-weight-bold.mt-30.mt-lg-65.mb-30.mb-lg-50 Амбасадоры
+        .castings-slider__content
+          +casting-other({
+            picture: 'curator-3_1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, Лауреат Премии Правительства Российской Федерации'
+          }).castings-slider__item
+
+          +casting-other({
+            picture: 'curator-3_2.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-1_4.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-2.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-3_1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, '
+          }).castings-slider__item
+
+      .partners__row.partners__row--other
+        .container
+          .partners__row-wrapper
+            .partners__row-content
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+      +award02(`Шоу участников и победителей кастинг-платформы «Таврида – АРТ»`,`24 ‒ 25 ОКТЯБРЯ`,`Цифровое деловое пространство`)
+        +performance({
+          modifier: 'ltr',
+          picture: 'esenin.jpg',
+          dscr: `Кастинг-платформа «Таврида – АРТ» предоставляет большие возможности для молодых деятелей культуры и искусств по направлениям: музыка, литература, хореография, театр и кино, арт, юмор, медиа и ивент. Пройти отбор, собеседование или прослушивание могут пользователи в возрасте от 18 до 35 лет со всей России. На шоу в Москве выступят участники и финалисты кастингов, а эксперты-партнеры подведут итоги первого этапа работы платформы.`
+        }).performance--ltr
+      .partners__row.partners__row--other
+        .container
+          .partners__row-wrapper
+            .partners__row-content
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-1.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-2.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-3.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-4.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-5.png", alt="Logo")
+              .partners__item
+                img.partners__logo(src="./img/sliderImg-6.png", alt="Logo")
+      +award02(`ВЫСТАВКА МОЛОДЫХ ХУДОЖНИКОВ`,`24 ‒ 25 ОКТЯБРЯ`,`Цифровое деловое пространство`)
+        +performance({
+          modifier: 'ltr',
+          picture: 'esenin.jpg',
+          dscr: `Выставка молодых художников – это размышления о локальной идентичности городов России, исследование стереотипов, новых образов, синтеза классических и инновационных городских решений, а также влияния инновационных продуктов на восприятие окружающей реальности. В рамках выставки пройдет благотворительный аукцион. Вырученные средства будут направлены на поддержку проекта «Мечтай со мной».`
+        }).performance--ltr
+      +sConference-sm
+      +castings-slider-2()
+        h4.text-dark.font-secondary.font-weight-bold.mt-30.mt-lg-65.mb-30.mb-lg-50 Кураторы
+        .castings-slider__content
+          +casting-other({
+            picture: 'curator-3_1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, Лауреат Премии Правительства Российской Федерации'
+          }).castings-slider__item
+
+          +casting-other({
+            picture: 'curator-3_2.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-1_4.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-2.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, '
+          }).castings-slider__item
+          +casting-other({
+            picture: 'curator-3_1.png',
+            name: 'Чайковский Александр ',
+            descr: 'Советский и российский композитор, пианист, педагог, профессор Московской консерватории, Народный артист Российской Федерации, '
+          }).castings-slider__item
+
+      +award02(`Концерт, посвященный 180-летию со дня рождения П.И. Чайковского при участии резидентов «Тавриды» и приглашенных звезд`,`24 октября`,`Рахманиновский зал Московской государственной консерватории имени П.И. Чайковского`)
+        +performance({
+          modifier: 'ltr',
+          picture: 'esenin.jpg',
+          dscr: `В концерте примут участие камерный оркестр Московской консерватории под руководством народного артиста Российской Федерации Феликса Коробова, резиденты арт-кластера «Таврида», студенты и выпускники МГК им. П.И.Чайковского`
+        }).performance--ltr
       .container.container--default
-        .row
-          .col-lg-8.mt-40.mt-lg-80.mb-30.mb-lg-70
-            h2.h2--default.font-secondary.text-dark.mb-25 Развлекательная программа
-            p.font-weight-semi.font-secondary Ежедневно на фестивале фестивалей «Таврида ‒ АРТ» проходила развлекательная программа, включающая в себя различные форматы и тематики:
-        .row
+        h4.text-dark.font-secondary.font-weight-bold.mt-30.mt-lg-65.mb-30.mb-lg-50 В концерте примут участие:
+        .row.text-center
           .col-sm-6.col-lg-4
-            +fun({
-              photo: 'fun-1.jpg',
-              title: 'Ежедневные шоу-концерты с участием молодых артистов арт-кластера «Таврида»'
-            })
+            +fun-lg({
+              photo: 'frame-1.png',
+              title: `АННА<br>АГЛАТОВА`,
+              descr: 'Российская оперная певица, сопрано, в 2014 году была удостоена Премии Президента Российской Федерации для молодых деятелей культуры и номинирована на премию «Золотая маска»'
+            }).fun--participants
           .col-sm-6.col-lg-4
-            +fun({
-              photo: 'fun-2.jpg',
-              title: 'Танцевальные мастер-классы'
-            })
+            +fun-lg({
+              photo: 'frame-2.png',
+              title: `АЛЕКСЕЙ<br>ТАТАРИНЦЕВ`,
+              descr: 'Российский оперный певец, тенор, заслуженный артист Республики Северная Осетия-Алания, лауреат Национальной оперной премии «Онегин» в номинации «Мастер сцены»'
+            }).fun--participants
           .col-sm-6.col-lg-4
-            +fun({
-              photo: 'fun-3.jpg',
-              title: 'Многопрофильные тренировки и практики от спортивной студии «Лайф»'
-            })
-          .col-sm-6.col-lg-4
-            +fun({
-              photo: 'fun-4.jpg',
-              title: 'Лекционные тренинги о творческом мышлении'
-            })
-          .col-sm-6.col-lg-4
-            +fun({
-              photo: 'fun-5.jpg',
-              title: 'Мастер-классы по изобразительному искусству и кастомизации одежды'
-            })
-      .bg-gray.festival-new__yards
-        .container.container--default
-          .row
-            .col-xl-7
-              h2.h2--default.font-secondary.text-dark.mb-25 ФЕСТИВАЛЬ СТРИМОВ И КОНЦЕРТОВ ВО ДВОРАХ «ТАВРИДА РЯДОМ»
-              p.font-weight-semi.font-secondary Молодые деятели культуры и искусств поддержали фестиваль фестивалей «Таврида ‒ АРТ» творческими выступлениями и концертами в 73 регионах России. С 4 по 6 сентября на улицах российских городов состоялось свыше 2 000 мероприятий, фестиваль стримов и концертов во дворах «Таврида рядом» прошел в онлайн- и офлайн-форматах. Лекции, воркшопы, мастер-классы, встречи с лидерами арт-индустрии, концерты, стендапы транслировались в прямом эфире в аккаунтах творцов во всех социальных сетях.
-              h5.text-dark.font-weight-semi.font-secondary.text-transform-none.mt-35 2014 мероприятий в 73 регионах России <br>
-                a(href="#") Список участников на получение финансовой поддержки 
-            .col-xl-5.d-flex
-              .festival-new__yards-picture
-                img(src="./img/festival-yard.png", alt)
-          .row.mt-30.mt-lg-50
-            .col-lg-4.mb-30.mb-lg-0
-              p.font-secondary.font-weight-normal.mb-20 За проведенные офлайн-мероприятия участники получили финансовую поддержку в размере
-              h4.text-dark.font-secondary 10 000 рублей
-            .col-lg-4.mb-30.mb-lg-0
-              p.font-secondary.font-weight-normal.mb-20 Офлайн-проекты, реализованные коллективами (2 участника и более), получили финансовую поддержку в размере
-              h4.text-dark.font-secondary 30 000 рублей
-            .col-lg-4.mb-30.mb-lg-0
-              p.font-secondary.font-weight-normal.mb-20 За проведенные онлайн-мероприятия участники получили финансовую поддержку в размере
-              h4.text-dark.font-secondary 5 000 рублей
-      .festival-new__castings
-        .container
-          .row
-            .col-lg-6.d-flex.align-items-center
-              div
-                h2.h2--default.font-secondary.text-white.mb-20 Кастинг-платформа
-                .row
-                  .col-lg-9
-                    p.font-weight-semi.font-secondary.text-white.mb-30.mb-lg-50 Единственная в России кастинг-платформа, объединяющая прослушивания, отборы и собеседования для прохождения стажировок от ведущих игроков арт-индустрии и медиакомпаний. Более 100 кастингов ждут твоего участия.
-                a.btn.btn-green(href="#") Принять участие
-            .col-lg-5.offset-lg-1.mt-30.mt-lg-0
-              img.img-radius.img-fluid(src="./img/fest-new-cast.jpg", alt)
-      .festival-new__street
-        .container
-          .row
-            .col-lg-5
-              a.festival-new__video.festival-new__video--big(href="#", style="background-image: url(./img/fest-new-cast.jpg);")
-            .col-lg-6.offset-lg-1.d-flex.align-items-center.mt-30.mt-lg-0
-              div
-                h2.h2--default.font-secondary.text-white.mb-35 Стрит-арт-фестиваль
-                p.font-weight-semi.font-secondary.text-white.mb-30 На трассе «Таврида» проходит масштабный стрит-арт-проект «Таврида – АРТ»: резиденты арт-кластера, молодые художники, которые уже успели громко заявить о себе и доказали свой профессионализм, оформят в арт-объекты 40 пар опор путепроводов и 14 подпорных стен на протяжении всей трассы.
-                p.font-weight-semi.font-secondary.text-white.mb-0 Художники Александр Милицин, Андрей Кожуро, Вадим Живов, Анатолий Кутырёв и Иван Разумовский уже воплотили свои идеи и готовы к новым: стрит-арт-фестиваль будет идти несколько сезонов.
-
-
-
-
+            +fun-lg({
+              photo: 'frame-3.png',
+              title: 'КАМЕРНЫЙ ОРКЕСТР МОСКОВСКОЙ КОНСЕРВАТОРИИ',
+              descr: 'Художественный руководитель и главный дирижер ‒ народный артист Российской Федерации ФЕЛИКС КОРОБОВ'
+            }).fun--participants
 
 
       +award02(`ШОУ РЕЗИДЕНТОВ АРТ-КЛАСТЕРА «ТАВРИДА»`,`25 октября`,`Цифровое деловое пространство`)(class="award02--pb")
@@ -179,9 +416,6 @@ block content
         }).performance--ltr
       +directions()
 
-
-
-      
       +award02(``,`25 октября`,`Московский театр Олега Табакова`)
         +performance({
           modifier: 'ltr',

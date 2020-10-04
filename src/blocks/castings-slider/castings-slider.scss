@@ -59,4 +59,15 @@
       }
     }
   }
+
+  &--other {
+    .casting__picture {
+      padding-top: 99%;
+    }
+
+    .slick-next,
+    .slick-prev {
+      top: 130px;
+    }
+  }
 }

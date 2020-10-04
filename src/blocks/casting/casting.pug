@@ -1,12 +1,24 @@
-mixin casting(data)
+mixin casting(data,t)
+  .casting&attributes(attributes)
+    .casting__wrapper
+      a.casting__picture(href="#", style="background-image: url(./img/" + data.picture + ");")
+      .casting__content
+        if t
+          block
+        else
+          .casting__content-wrapper
+            .casting__deadline Дедлайн подачи заявки: 
+              span.font-weight-bold 10 сентября
+            p.font-weight-bold.font-secondary.mb-20
+              a.text-dark(href="#")= data.title
+            p.p--xs.font-secondary Открытие стационарного образовательного центра для молодых деятелей культуры и искусств «Арт-резиденция «Таврида» планируется в 2022 году и позволит проекту перейти
+          a.btn.btn-green.btn-green--newest.mt-20.text-uppercase(href="#") принять участие
+
+mixin casting-other(data)
   .casting&attributes(attributes)
     .casting__wrapper
       a.casting__picture(href="#", style="background-image: url(./img/" + data.picture + ");")
       .casting__content
         .casting__content-wrapper
-          .casting__deadline Дедлайн подачи заявки: 
-            span.font-weight-bold 10 сентября
-          p.font-weight-bold.font-secondary.mb-20
-            a.text-dark(href="#")= data.title
-          p.p--xs.font-secondary Открытие стационарного образовательного центра для молодых деятелей культуры и искусств «Арт-резиденция «Таврида» планируется в 2022 году и позволит проекту перейти
-        a.btn.btn-green.btn-green--newest.mt-20.text-uppercase(href="#") принять участие
+          .casting__name= data.name
+          .casting__descr= data.descr

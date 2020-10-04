@@ -37,4 +37,19 @@
       margin-top: auto;
     }
   }
+
+  &__name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-family: $font-family-secondary;
+  }
+
+  &__descr {
+    font-family: $font-family-secondary;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
