@@ -117,6 +117,11 @@
   }
 
   &--pb {
-    padding-bottom: 33px;
+    @media (min-width: 768px) {
+      padding-bottom: 33px;
+      margin-bottom: 40px;
+    }
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
