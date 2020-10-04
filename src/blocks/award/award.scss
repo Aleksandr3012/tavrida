@@ -65,24 +65,35 @@
     font-family: $font-family-secondary;
     line-height: (30 / 20);
     font-size: 20px;
-    margin-bottom: 54px;
+    @media (min-width: 1200px) {
+      margin-bottom: 54px;
+    }
+    margin-bottom: 20px;
     img {
       margin-right: 23px;
     }
   }
-  .award02__item {
+  &__item {
     display: flex;
-    margin-bottom: 72px;
+    @media (min-width: 1200px) {
+      margin-bottom: 72px;
+    }
+    margin-bottom: 30px;
     .row {
       align-items: center;
     }
   }
   &__img-wrap {
-    max-width: 664px;
+    width: 664px;
+    // max-width: 664px;
     height: 460px;
     border-radius: 20px;
     overflow: hidden;
-    margin-right: 142px;
+    @media (min-width: 1200px) {
+      margin-right: 142px;
+      margin-bottom: 0;
+    }
+    margin-bottom: 30px;
     img {
       object-fit: cover;
       width: 100%;

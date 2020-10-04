@@ -207,6 +207,7 @@
   }
   .registration__type-top--mb {
     margin-bottom: 56px;
+    flex-wrap: wrap;
   }
   .registration__type-header--choice {
     font-weight: 600;
@@ -215,6 +216,10 @@
     color: #333333;
     font-family: $font-family-secondary;
     margin-right: 117px;
+    @media (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+    margin-bottom: 20px;
   }
 
   .custom-control-label--ccl {
@@ -236,6 +241,7 @@
   }
   .form__footer--fmb {
     padding-bottom: 88px;
+    // flex-wrap: wrap;
   }
 
   .btn--fest2 {
