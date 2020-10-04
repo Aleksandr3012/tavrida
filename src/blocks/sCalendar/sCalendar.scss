@@ -1,0 +1,43 @@
+.sCalendar {
+  padding-top: 20px;
+  // padding-bottom: 59px;
+  &__item {
+    border: 1px solid #476fb2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 32px);
+    min-height: 192px;
+    margin-bottom: 32px;
+    @include transition;
+    color: #333333;
+    padding: 24px 31px 31px;
+    font-family: $font-family-secondary;
+    &:hover {
+      background: #bfd7fc;
+    }
+    &.program {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .sCalendar__date {
+        max-width: 190px;
+      }
+    }
+  }
+
+  &__date {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 9px;
+    line-height: 150%;
+  }
+
+  &__descr {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+  }
+}

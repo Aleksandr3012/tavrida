@@ -1,0 +1,67 @@
+.sFrom {
+  background: #476fb2;
+  border-radius: 20px;
+  padding: 20px;
+  @include media-breakpoint-up(sm) {
+    padding: 34px 58px 30px 47px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 34px 58px 0px 47px;
+  }
+  color: #fff;
+
+  p {
+    color: #fff;
+    font-size: 20px;
+    font-family: $font-family-secondary;
+    font-weight: normal;
+  }
+
+  &__imgWrap {
+    margin-top: -50px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .form-wrap {
+    overflow: hidden;
+
+    .input {
+      border-radius: 250px;
+      font-family: $font-family-secondary;
+    }
+
+    &__inputWrap {
+      position: relative;
+      margin-bottom: 19px;
+    }
+
+    &__btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      // height: 100%;
+      padding: 9px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #c9df55;
+      border-radius: 250px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &__polite {
+      font-family: $font-family-secondary;
+      font-size: 11px;
+      a {
+        color: #c9df55;
+      }
+    }
+  }
+}

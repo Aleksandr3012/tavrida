@@ -1,0 +1,29 @@
+.sParticipation {
+  &__item {
+    display: block;
+    background: #c9df55;
+    border-radius: 20px;
+    @include transition;
+    &:hover {
+      background: rgba($color: #c9df55, $alpha: 0.8);
+    }
+  }
+
+  &__imgWrap {
+    margin-top: -10px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-secondary;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 150px;
+    font-size: 25px;
+    line-height: 150%;
+    color: #333333;
+  }
+}

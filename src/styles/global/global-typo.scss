@@ -60,6 +60,10 @@ h2,
     @include media-breakpoint-down(sm) {
       font-size: 27px;
     }
+
+    &.text-indigo {
+      color: $indigo !important;
+    }
   }
 }
 

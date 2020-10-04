@@ -317,33 +317,4 @@
       }
     }
   }
-
-  &--legends {
-    display: flex;
-    flex-direction: column;
-    .team__front {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 3rem;
-      @include media-breakpoint-up(sm) {
-        min-height: calc(100vh - 9rem);
-      }
-      min-height: calc(100vh - 12rem);
-    }
-    .container {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    .streams__front-content {
-      flex-grow: 1;
-    }
-  }
-}
-.color-line {
-  background-image: url(../img/color-line.jpg);
-  height: 9rem;
-  background-size: cover;
-  // background-size: cover;
-  background-repeat: repeat-x;
 }

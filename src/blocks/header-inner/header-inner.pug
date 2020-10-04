@@ -11,12 +11,6 @@ mixin header-inner(data)
           +logo({
             img: 'logo--newest.svg'
           }).header-inner__logo
-          
-        else if data && data.modifier == 'legends'
-          +logo({
-            img: 'logo--legends.png'
-          }).header-inner__logo
-
         else
           +logo({
             img: 'logo.svg'
