@@ -1,0 +1,70 @@
+mixin sConference(data)
+  .sConference&attributes(attributes)
+    .container.container--default
+      mixin tasks(i,t)
+        .col-sm-6.col-lg-3
+          .sConference__tasks
+            .sConference__tasksNumb= i
+            .sConference__task=t 
+      .row
+        +tasks('1','Объединить индустрию, стимулировать коллаборации между разными творческими секторами экономики')
+        +tasks('2','Наладить продуктивный диалог между представителями креативных индустрий и государства')
+        +tasks('3','Подчеркнуть значимость креативных индустрий в экономическом, социальном и инфраструктурном развитии страны')
+        +tasks('4','Осмыслить последствия пандемии, отразить новые тренды и перспективы развития')
+      .sConference__title Главные темы конференции:
+      .sConference__topicList
+        .row
+          .col-lg-6
+            ul
+              li Объединение и новые качества
+              li Государство и креативные индустрии – сближение и поддержка
+              li Креативные индустрии и искусство управления
+              li Профессиональный рост творческих специалистов
+              li Современное образование в креативных индустриях
+          .col-lg-6
+            ul
+              li Экспорт креативных индустрий Креативные индустрии и регион
+              li Привлечение инвестиций в креативный бизнес
+              li Современные технологии в креативных индустриях
+              li Экологизация и устойчивое развитие 
+              li Креативные индустрии после пандемии
+      .sConference__title Направления:
+      .row
+        .col-lg-11
+          .row.justify-content-center
+            mixin direction(i,t)
+              .col-sm-6.col-lg-4
+                .sConference__direction
+                  .sConference__imgWrap
+                    img.res-i(src=`img/direction-${i}.svg`, alt="")
+                  .sConference__text!= t
+            +direction('1','СОВРЕМЕННОЕ ИСКУССТВО')
+            +direction('2',`АРХИТЕКТУРА И&nbsp;УРБАНИСТИКА`)
+            +direction('3','ДИЗАЙН')
+            +direction('4',`FASHION / ДИЗАЙН&nbsp;ОДЕЖДЫ`)
+            +direction('5','МУЗЫКА и&nbsp;КИНО')
+            +direction('6','ТЕАТР')
+            +direction('7','МЕДИА')
+            +direction('8','ГАСТРОНОМИЯ')
+            +direction('9','Анимация')
+
+
+mixin sConference-sm(data)
+  .sConference&attributes(attributes)
+    .container.container--default
+      .row
+        .col-lg-11
+          .row.justify-content-center
+            mixin direction(i,t)
+              .col-sm-6.col-lg-4
+                .sConference__direction
+                  .sConference__imgWrap
+                    img.res-i(src=`img/direction-${i}.svg`, alt="")
+                  .sConference__text!= t
+            +direction('1','ВИДЕОАРТ')
+            +direction('2',`AR/VR`)
+            +direction('3','ЖИВОПИСЬ И&nbsp;ГРАФИКА')
+            +direction('4',`ИНСТАЛЛЯЦИИ`)
+            +direction('5','ФОТОГРАФИЯ')
+            +direction('6','СТРИТ-АРТ')
+            +direction('8','ПЕРФОРМАТИВНЫЕ ПРАКТИКИ')

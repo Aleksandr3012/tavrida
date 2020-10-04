@@ -1,0 +1,74 @@
+.sConference {
+  font-family: $font-family-secondary;
+
+  &__tasks {
+    margin-bottom: 37px;
+  }
+
+  &__tasksNumb {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 11px;
+    line-height: 61px;
+    text-transform: uppercase;
+    color: #476fb2;
+  }
+
+  &__task {
+    max-width: 284px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__topicList {
+    padding-bottom: 30px;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+  li {
+    padding-left: 27px;
+    list-style: none;
+    position: relative;
+    line-height: 150%;
+    margin-bottom: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 22px;
+      height: 7px;
+      background-image: url('../img/li.svg');
+    }
+  }
+
+  &__direction {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__imgWrap {
+    margin-right: 30px;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    max-width: 210px;
+    color: #5a2e91;
+  }
+}

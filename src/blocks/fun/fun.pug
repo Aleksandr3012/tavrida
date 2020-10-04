@@ -2,3 +2,9 @@ mixin fun(data)
   a.fun(href="#")&attributes(attributes)
     .fun__photo(style="background-image: url(./img/" + data.photo + ');')
     p.font-weight-semi.text-dark.font-secondary.mb-0= data.title
+
+mixin fun-lg(data)
+  a.fun(href="#")&attributes(attributes)
+    .fun__photo(style="background-image: url(./img/" + data.photo + ');')
+    .fun__name.text-dark.font-secondary.font-weight-bold!= data.title
+    .fun__descr.text-dark.font-secondary.mb-0= data.descr

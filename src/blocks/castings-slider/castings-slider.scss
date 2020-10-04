@@ -59,4 +59,14 @@
       }
     }
   }
+
+  &--other {
+    .casting__picture {
+      padding-top: 99%;
+    }
+
+    .slick-next {
+      top: 130px;
+    }
+  }
 }
