@@ -5,7 +5,7 @@ $spacer: 10px;
 $spacers: (
   0: 0,
   5: (
-    $spacer * .5,
+    $spacer * 0.5,
   ),
   10: $spacer,
   15: (
@@ -70,7 +70,7 @@ $line-height-sm: 1;
 
 $line-height-lg: 2;
 
-$transition-base: .3s cubic-bezier(.25, .1, .25, 1);
+$transition-base: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
 $headings-margin-bottom: $spacer;
 
@@ -82,6 +82,7 @@ $black: #333;
 $dark: $black;
 $green: #c9df55;
 $yellow: #efc825;
+$purple: #5a2e91;
 
 $container-max-widths: (
   xl: 1620px,

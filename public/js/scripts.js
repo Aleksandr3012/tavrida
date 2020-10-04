@@ -250,11 +250,13 @@ $('.question__header').click(function(e) {
 
 
 
+
 $('.select').select2({
   minimumResultsForSearch: -1,
   width: '100%',
   dropdownAutoWidth: true,
 });
+
 
 $('.js-registration').click(function (e) {
   e.preventDefault();
@@ -337,6 +339,7 @@ $('.slider').slick({
   infinite: false,
   variableWidth: true
 });
+
 
 
 //var heights = $(".step__header").map(function () {
