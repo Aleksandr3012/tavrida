@@ -3,6 +3,7 @@
     display: block;
     background: #c9df55;
     border-radius: 20px;
+    margin-bottom: 20px;
     @include transition;
     &:hover {
       background: rgba($color: #c9df55, $alpha: 0.8);
@@ -22,7 +23,9 @@
     font-weight: bold;
     text-transform: uppercase;
     max-width: 150px;
-    font-size: 25px;
+    @include media-breakpoint-up(sm) {
+      font-size: 25px;
+    }
     line-height: 150%;
     color: #333333;
   }
