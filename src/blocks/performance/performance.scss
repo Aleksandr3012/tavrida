@@ -47,4 +47,21 @@
       }
     }
   }
+
+  .p--fz {
+    width: 659px;
+    font-size: 24px;
+    line-height: (36 / 24);
+    font-family: $font-family-secondary;
+    font-weight: normal;
+  }
+
+  .img-wrap {
+    height: 460px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
