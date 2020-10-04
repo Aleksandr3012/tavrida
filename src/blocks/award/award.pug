@@ -4,7 +4,7 @@ mixin award(data)
     a.btn.btn-outline-secondary(href="#") Узнать больше
 
 
-mixin award02(t)
+mixin award02(t,d,pl)
   .award02.award&attributes(attributes)
     .container.container--default
       .row.mt-40.mt-lg-65
@@ -16,10 +16,10 @@ mixin award02(t)
           .row
             .award02__col.col-auto.mr-60
               img(src="img/calendar.svg", alt="")
-              .award02__date #[strong 25 октября]
+              strong.award02__date= d
             .award02__col.col
               img(src="img/location.svg", alt="")
-              .award02__place Московский театр Олега Табакова
+              .award02__place!= pl 
       block
       //- if p
       //-   +performance()
