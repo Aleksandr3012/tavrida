@@ -48,7 +48,10 @@
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 56px;
+  @media (min-width: 576px) {
+    padding-bottom: 56px;
+  }
+  padding-bottom: 5px;
 
   h3 {
     font-size: 50px;
@@ -85,15 +88,15 @@
   }
   &__img-wrap {
     // width: 664px;
-    max-width: 664px;
+    // max-width: 664px;
     height: 460px;
-    border-radius: 20px;
-    overflow: hidden;
-    @media (min-width: 1200px) {
-      margin-right: 142px;
-      margin-bottom: 0;
-    }
-    margin-bottom: 30px;
+    // border-radius: 20px;
+    // overflow: hidden;
+    // @media (min-width: 1200px) {
+    //   margin-right: 142px;
+    //   margin-bottom: 0;
+    // }
+    // margin-bottom: 30px;
     img {
       object-fit: cover;
       width: 100%;
@@ -101,7 +104,7 @@
     }
   }
   p {
-    width: 659px;
+    // width: 659px;
     font-size: 24px;
     line-height: (36 / 24);
     font-family: $font-family-secondary;
@@ -110,5 +113,6 @@
   .btn-award {
     width: 248px;
     height: 48px;
+    font-size: 20px;
   }
 }
