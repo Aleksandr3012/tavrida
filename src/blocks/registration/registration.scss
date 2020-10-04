@@ -187,4 +187,66 @@
       }
     }
   }
+
+  .head-h2 {
+    padding-top: 73px;
+    color: #333;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: (61 / 50);
+    font-family: $font-family-secondary;
+  }
+
+  .p--fz {
+    font-size: 14px;
+    line-height: (17 / 14);
+  }
+
+  .custom-control--mr {
+    margin-right: 21px;
+  }
+  .registration__type-top--mb {
+    margin-bottom: 56px;
+  }
+  .registration__type-header--choice {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: (17 / 14);
+    color: #333333;
+    font-family: $font-family-secondary;
+    margin-right: 117px;
+  }
+
+  .custom-control-label--ccl {
+    // background-color: #EFC825;
+    color: #4f4f4f;
+    border: 1px solid #bdbdbd;
+    background-color: #fff;
+    font-weight: bold;
+    width: 184px;
+    height: 42px;
+    font-size: 16px;
+    line-height: (20 / 16);
+    display: flex;
+    align-items: center;
+    font-family: $font-family-secondary;
+    &.active {
+      color: #333;
+    }
+  }
+  .form__footer--fmb {
+    padding-bottom: 88px;
+  }
+
+  .btn--fest2 {
+    font-family: $font-family-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: (20 / 20);
+    // align-items: center;
+    text-align: center;
+    color: #000000;
+    width: 248px;
+    height: 48px;
+  }
 }
