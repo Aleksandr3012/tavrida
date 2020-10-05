@@ -255,4 +255,29 @@
     width: 248px;
     height: 48px;
   }
+
+  &__link {
+    font-family: $font-family-serif;
+    @include media-breakpoint-up(lg) {
+      min-width: 184px;
+    }
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    @include transition;
+    &:not(:last-child) {
+      margin-right: 21px;
+    }
+
+    &:hover {
+      background: #efc825;
+    }
+  }
 }

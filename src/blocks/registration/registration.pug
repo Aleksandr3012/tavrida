@@ -358,16 +358,10 @@ mixin registration-02(data)
           .registration__type-top.registration__type-top--mb
             .registration__type-header.registration__type-header--choice Выберите роль участия
             .registration__type-content
-              .custom-control.custom-radio.custom-control--mr
-                input#type1.custom-control-input(type='radio', name='type' checked)
-                label.custom-control-label.custom-control-label--ccl(for='type1') Участник
-              .custom-control.custom-radio.custom-control--mr
-                input#type2.custom-control-input(type='radio', name='type')
-                label.custom-control-label.custom-control-label--ccl(for='type2') Зритель
-              .custom-control.custom-radio.custom-control--mr
-                input#type3.custom-control-input(type='radio', name='type')
-                label.custom-control-label.custom-control-label--ccl(for='type3') Волонтер
+              a.btn.registration__link.js-registration(href="#") Участник
+              a.btn.registration__link.js-registration(href="#") Зритель
+              a.btn.registration__link.js-registration(href="#") Волонтер
         .form__footer.form__footer--fmb
-          button.btn.btn-green.btn--fest2(type="submit") Отправить
+          //- button.btn.btn-green.btn--fest2(type="submit") Отправить
           p.form__footer-agreement Нажимая кнопку, я соглашаюсь с правилами пользования сайтом Арт-кластера «Таврида» и с политикой обработки и защиты персональных данных.
                   
