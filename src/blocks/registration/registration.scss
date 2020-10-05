@@ -261,6 +261,10 @@
     @include media-breakpoint-up(lg) {
       min-width: 184px;
     }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 15px;
+      width: 100%;
+    }
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
@@ -273,7 +277,9 @@
     border-radius: 5px;
     @include transition;
     &:not(:last-child) {
-      margin-right: 21px;
+      @include media-breakpoint-up(lg) {
+        margin-right: 21px;
+      }
     }
 
     &:hover {
