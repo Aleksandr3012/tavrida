@@ -1,0 +1,42 @@
+mixin sAmbassadors(data)
+  +b.sAmbassadors&attributes(attributes)
+    .container
+      h2.h2--default.font-secondary.text-dark.mb-30 Амбассадоры — 2020
+      .sPart__sub-title Программа кадрового резерва &laquo;Тавриды&raquo; реализуется с&nbsp;2019&nbsp;года. В&nbsp;2020 году 83&nbsp;резидента прошли конкурсный отбор и&nbsp;стали официальными представителями арт-кластера &laquo;Таврида&raquo; в&nbsp;своем регионе.
+      .drag.mb-20.js-drag-amb
+        .row.drag__content.js-drag-amb-content
+          mixin item()
+            .sAmbassadors__item
+              .sAmbassadors__img-wrap
+                img(src="img/avatar.png" loading="lazy", alt="")
+          - for (var x = 0; x < 3; x++)
+            +e.col.col-auto
+              +item()
+              +item()
+              +item()
+            +e.col.col-auto
+              +item()
+              +item()
+            +e.col.col-auto
+              +item()
+              +item()
+            +e.col.col-auto
+              +item()
+              +item()
+            +e.col.col-auto
+              +item()
+              +item()
+              +item()
+            +e.col.col-auto
+              +item()
+              +item()
+            +e.col.col-auto
+              +item()
+              +item()
+              +item()
+            +e.col.col-auto
+              +item()
+              +item()
+            // line
+
+
