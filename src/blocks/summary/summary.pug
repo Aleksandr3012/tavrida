@@ -35,6 +35,16 @@ mixin summary(data)
               .summary__restriction
                 .summary__restriction-dscr для<br>зрителей
                 .summary__restriction-age 16+
+    else if data && data.modifier == 'ambassadors'
+    
+      +header-inner({
+        modifier: 'newest',
+        modifier2: 'about'
+      }).header-inner--alone.header-inner--summary
+      .container.summary__wrapper
+        div
+          h1.text-body Амбассадоры <br> Тавриды –   <br>2021
+          a.summary__later(href="#") Как это было в 2019 году 
 
     else
     

@@ -1,0 +1,56 @@
+extends ../templates/template.pug
+block content
+  +header
+  .wrapper
+    //- +summary({
+    //-   modifier: 'ambassadors'
+    //- }).summary--new.summary--white
+    .start-block
+      +header-inner({
+          modifier: 'dark', 
+        }).header-inner--alone
+      .container.summary__wrapper
+        div.w-100
+          h1 Амбассадоры <br> Тавриды –   <br>2021
+          a.link-part(href="#") 
+            div Стань частью #[span #tavrida1love]
+    +sPart
+    +sFeatures
+    +sSteps
+    .item-slider__wrapper.item-slider__wrapper--blue
+      .container.py-30.py-lg-90
+        h2.h2--default.font-secondary.text-white.mb-30.mb-lg-50 СМИ об амбассадорах
+        .item-slider
+          .item-slider__card
+            +story({
+              name: 'Название СМИ',
+              place: 'Тамбовская область',
+              link: 'Кликабельный заголовок из нескольких строк для наглядности отображения  в три строки'
+            })
+            
+          .item-slider__card
+            +story({
+              name: 'Название СМИ',
+              place: 'Воронежская область',
+              link: 'Кликабельный заголовок из нескольких строк для наглядности отображения  в три строки'
+            }) 
+          .item-slider__card
+            +story({
+             name: 'Название СМИ',
+              place: 'Рязанская область',
+              link: 'Кликабельный заголовок из нескольких строк для наглядности отображения  в три строки'
+            }) 
+          .item-slider__card
+            +story({
+              name: 'Название СМИ',
+              place: 'Тамбовская область',
+              link: 'Кликабельный заголовок из нескольких строк для наглядности отображения  в три строки'
+            }) 
+    +faq-a().faq--light
+    +registration-a({
+      modifier: 'festival'
+    }).bg-gray
+    +partners({
+      modifier: 'new'
+    }).partners--new
+    +footer

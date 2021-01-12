@@ -4,7 +4,7 @@ mixin performance(data)
     if data && data.modifier == 'ltr'
       .row
         .col-lg-6.col-xl-5
-          .performance__picture-wrapper
+          .performance__picture-wrapper.img-wrap
             if data && data.picture
               img.performance__picture(src="./img/" + data.picture, alt)
             else
@@ -12,7 +12,7 @@ mixin performance(data)
         .col-lg-6.col-xl-4.offset-xl-1.d-flex
           .performance__content
             h4.text-dark.font-secondary.mb-25= data.title
-            p.font-weight-normal.text-dark.font-secondary.mb-0= data.dscr
+            p.p--fz.font-weight-normal.text-dark.font-secondary.mb-0!= data.dscr
           
     if data && data.modifier == 'rtl'
       .row
@@ -26,3 +26,5 @@ mixin performance(data)
               img.performance__picture(src="./img/" + data.picture, alt)
             else
               img.performance__picture(src="./img/performance.jpg", alt)
+
+

@@ -3,6 +3,29 @@
 
   &__wrapper {
     overflow: hidden;
+    &--blue {
+      background: #476fb2;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+      .slick-list {
+        overflow: visible;
+      }
+      .story__content {
+        color: #ffffff;
+        .story__place {
+          opacity: 0.5;
+          color: #ffffff;
+        }
+        p {
+          color: #ffffff;
+        }
+      }
+      .item-slider .slick-arrow.slick-disabled,
+      .item-slider .slick-arrow {
+        display: none !important;
+      }
+    }
   }
 
   .slick-list {

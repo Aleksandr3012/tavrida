@@ -65,9 +65,8 @@ gulp.task('templates', function () {
     }))
     .pipe(gulpif(global.isBuild,cachebust.references()))
     .pipe(gulp.dest(paths.html.dest))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+     
+    .on('end',  browserSync.reload);
 });
 
 gulp.task('templates_page', function () {
@@ -79,9 +78,7 @@ gulp.task('templates_page', function () {
       pretty: true
     }))
     .pipe(gulp.dest(paths.html.dest))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .on('end',  browserSync.reload);
 });
 
 

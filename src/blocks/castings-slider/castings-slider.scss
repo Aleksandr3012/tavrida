@@ -59,4 +59,31 @@
       }
     }
   }
+
+  &--other {
+    .casting__picture {
+      padding-top: 99%;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: url('../img/before.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    }
+
+    .slick-next,
+    .slick-prev {
+      top: 130px;
+    }
+  }
 }

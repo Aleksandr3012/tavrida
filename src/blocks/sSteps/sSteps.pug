@@ -1,0 +1,24 @@
+mixin sSteps(data)
+  .sSteps&attributes(attributes)
+    .container
+      h2.h2--default.font-secondary.text-dark.mb-30.mb-lg-70 Этапы отбора
+      .row
+        mixin item(i,t,  ...items)
+          .sSteps__col.col-xl-6
+            .sSteps__item&attributes(attributes)
+
+              .sSteps__title= t
+              ul
+                each item in items
+                  li!= item
+              img(src=`img/steps-${i}.png` loading="lazy", alt="")
+          // /.sSteps__col.col-lg-6
+        +item(`1`,`Первый этап`,`Запиши видеоролик в&nbsp;формате интервью и&nbsp;расскажи о&nbsp;себе`,`Выполни <a href="#">творческое задание</a> `,`Прикрепи выполненные задания к&nbsp;своей заявке на&nbsp;участие и&nbsp;отправляй.`)(style="background: #C9DF55;")
+        +item(`2`,`Второй этап: `,`Онлайн-собеседование участников, прошедших во&nbsp;второй этап. `,`Отбор участников программы по&nbsp;результатам собеседования.`)(style="background: #EFC825;")
+      .text-center
+        a.btn.btn-green.btn-green--new(href='#') Подать заявку
+
+
+ 
+
+

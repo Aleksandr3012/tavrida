@@ -345,3 +345,61 @@ mixin registration(data)
             button.btn.btn-primary.btn-green(type="submit") Зарегистрироваться
             p.form__footer-agreement Нажимая кнопку я соглашаюсь с 
               a(href="#") пользовательским соглашением
+
+
+
+mixin registration-02(data)
+  .registration&attributes(attributes)
+    .container.container--default
+      h2.head-h2.mb-10 Подать заявку на участие
+      p.p--fz.font-secondary.mb-30.mb-lg-45 заявки принимаются до 31 августа 2020 года
+      form.form(action="#", method="POST")
+        .registration__type
+          .registration__type-top.registration__type-top--mb
+            .registration__type-header.registration__type-header--choice Выберите роль участия
+            .registration__type-content
+              a.btn.registration__link.js-registration(href="#") Участник
+              a.btn.registration__link.js-registration(href="#") Зритель
+              a.btn.registration__link.js-registration(href="#") Волонтер
+        .form__footer.form__footer--fmb
+          //- button.btn.btn-green.btn--fest2(type="submit") Отправить
+          p.form__footer-agreement Нажимая кнопку, я соглашаюсь с правилами пользования сайтом Арт-кластера «Таврида» и с политикой обработки и защиты персональных данных.
+                  
+mixin registration-a(data)
+  .registration&attributes(attributes)
+    .container.container--default.font-secondary
+      h2.head-h2.mb-10 Форма заявки на&nbsp;участие  <br> в&nbsp;программе &laquo;Аммбассадоры&nbsp;&mdash; 2021&raquo;
+      p.p--fz.font-secondary.mb-30.mb-lg-45 заявки принимаются до 31 августа 2020 года
+      form.form(action="#", method="POST")
+        .form__item.form-group
+          label.form__label В каких проектах арт-кластера «Таврида» принимал участие?
+          input.input.form-control(type="text", placeholder="Заполните поле")
+        .row
+          .col-lg-6
+            .form__item.form-group
+              label.form__label В каких проектах арт-кластера «Таврида» принимал участие?
+              input.input.form-control(type="text", placeholder="Заполните поле")
+          .col-lg-6
+            .form__item.form-group
+              label.form__label В каких проектах арт-кластера «Таврида» принимал участие?
+              input.input.form-control(type="text", placeholder="Заполните поле")
+        .form__item.form-group
+          label.form__label Опиши личный опыт проведения мероприятий (название, должностные обязанности, команда)*
+          textara.input.form-control(  placeholder="Заполните поле")
+        .form__item.form-group
+          label.form__label Опиши свои проекты и участие в грантовом конкурсе (при наличии)
+          textara.input.form-control(  placeholder="Заполните поле")
+        .form__item.form-group
+          label.form__label Прикрепи ссылку на Youtube, где размещена #[a(href="#") твоя видеовизитка]
+          input.input.form-control(type="text", placeholder="Заполните поле")
+        .form__item.form-group
+          label.form__label Прикрепи ссылку, где размещено твое   #[a(href="#") творческое задание]
+          input.input.form-control(type="text", placeholder="Заполните поле")
+        .row.align-items-center.pt-3
+          .col-auto.mb-3
+            button.btn.btn-green.btn-green--new(type="submit") Отправить
+          .col.form__footer-agreement.mb-3 Нажимая кнопку я соглашаюсь с #[a(href="#") пользовательским соглашением  ]
+        .form__footer.form__footer--fmb
+          //- button.btn.btn-green.btn--fest2(type="submit") Отправить
+          //- p.form__footer-agreement Нажимая кнопку, я соглашаюсь с правилами пользования сайтом Арт-кластера «Таврида» и с политикой обработки и защиты персональных данных.
+                  

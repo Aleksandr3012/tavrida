@@ -1,0 +1,159 @@
+.sSteps {
+  @extend .font-secondary;
+  counter-reset: num;
+  @include media-breakpoint-up(xl) {
+    padding-bottom: rem(150);
+  }
+  padding-bottom: rem(30);
+  .btn {
+    text-transform: none;
+  }
+  &__title {
+    @include rfs(30px);
+    @include media-breakpoint-up(xl) {
+      margin-bottom: rem(40);
+    }
+    margin-bottom: rem(20);
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  &__item {
+    --mb: #{rem(30)};
+    @include media-breakpoint-up(xl) {
+      --mb: #{rem(110)};
+    }
+    min-height: calc(100% - var(--mb));
+    margin-bottom: var(--mb);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: rem(34) rem(34);
+    @include media-breakpoint-up(xxl) {
+      padding: rem(64) rem(64);
+    }
+
+    z-index: 2;
+    &::before {
+      content: counter(num);
+      counter-increment: num;
+      z-index: -1;
+      color: #ffffff;
+      opacity: 0.2;
+      top: rem(30);
+      left: rem(30);
+      @include rfs(495px);
+      font-weight: 900;
+      position: absolute;
+    }
+    ul {
+      padding-left: 0;
+      list-style: none !important;
+    }
+    li {
+      // font-size: rem(24);
+      // @extend .h4;
+      position: relative;
+      z-index: 2;
+      @include rfs(24px);
+      font-weight: normal;
+      margin-bottom: 1em;
+      line-height: 150%;
+      position: relative;
+      padding-left: var(--sp);
+      max-width: calc(#{rem(570)} + var(--sp));
+      --sp: #{rem(30)};
+      @include media-breakpoint-up(xl) {
+        --sp: #{rem(60)};
+
+        max-width: calc(#{rem(370)} + var(--sp));
+      }
+      list-style: none !important;
+      color: #333333;
+      text-transform: none;
+      a {
+        color: currentColor;
+        border-bottom: 1px solid;
+        &:hover {
+          border-color: transparent;
+        }
+      }
+      @extend .font-secondary;
+      &::marker {
+        display: none;
+      }
+      &::before {
+        content: url("data:image/svg+xml,%3Csvg width='22' height='8' viewBox='0 0 22 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 4.68572L21.9878 4.67614L22 4.66336L21.6901 4.42068L19.5223 2.57502C19.5223 2.57502 19.484 2.61175 19.4213 2.66603L19.3638 2.72351C18.8693 3.1466 17.2848 4.37119 15.4252 4.39513C15.3852 4.39513 15.3452 4.39513 15.3051 4.39513C14.3266 4.29774 13.3724 3.81557 12.4043 2.92308C10.7972 1.43506 9.00894 0.631973 7.08492 0.525002C7.03095 0.525002 6.97697 0.525002 6.92473 0.525002C6.63529 0.501474 6.34452 0.494543 6.05413 0.504246C3.15679 0.612814 1.00467 2.39461 0.273368 3.08114C0.11666 3.21047 0.0226355 3.30307 0.0017412 3.31903L0.0121884 3.32861C0.00900944 3.33398 0.00489203 3.33884 0 3.34298L0.309933 3.58247L2.47772 5.42973L2.57871 5.33712L2.63617 5.27965C3.12893 4.85495 4.71516 3.63037 6.57475 3.60802C6.6148 3.60802 6.65311 3.60802 6.69315 3.60802C7.67345 3.70541 8.62588 4.18758 9.59399 5.08007C11.2028 6.56171 12.9876 7.36479 14.9116 7.47496C14.9638 7.47496 15.0178 7.47496 15.0718 7.47496C15.3612 7.49855 15.652 7.50548 15.9424 7.49571C18.8397 7.38714 20.9918 5.60695 21.7232 4.92041C21.8746 4.7863 21.9704 4.69529 21.9896 4.67614' fill='%235A2E91'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        left: 0;
+      }
+    }
+    position: relative;
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.start-block {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 150px 0 50px;
+
+  .header-inner__link {
+    color: #333333;
+  }
+  .header-inner__login {
+    background-image: url(../img/dark-user.svg);
+  }
+  .btn,
+  .header-inner__login {
+    color: #333333;
+    border-color: currentColor;
+  }
+  .summary__wrapper {
+    flex-grow: 1;
+    align-items: center;
+  }
+  h1 {
+    color: #333333;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: rem(100);
+    }
+    margin-bottom: rem(50);
+  }
+}
+
+.link-part {
+  font-weight: 900;
+  @extend .font-secondary;
+  text-transform: uppercase;
+  color: #333333;
+  position: relative;
+  // display: flex;
+  display: inline-flex;
+  align-items: center;
+  @include mt;
+  &:hover {
+    opacity: 0.8;
+  }
+  &::after {
+    content: url(../img/play.svg);
+    @include media-breakpoint-up(xl) {
+      margin-left: rem(50);
+    }
+    margin-left: rem(15);
+  }
+  span {
+    color: #5a2e91;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: none;
+    font-size: rem(30);
+  }
+  font-size: rem(20);
+  max-width: 270px;
+}

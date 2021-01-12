@@ -1,3 +1,6 @@
+$output-bourbon-deprecation-warnings: false;
+// @import "mq";
+@import 'bourbon/app/assets/stylesheets/bourbon';
 @import 'bootstrap';
 
 @import 'mixins';
@@ -217,3 +220,11 @@
 @import './src/blocks/sFrom/sFrom';
 @import './src/blocks/sCalendar/sCalendar';
 @import './src/blocks/sParticipation/sParticipation';
+
+@import './src/blocks/sConference/sConference';
+@import './src/blocks/directions/directions';
+
+@import './src/blocks/sFeatures/sFeatures';
+@import './src/blocks/sSteps/sSteps';
+
+@import './src/blocks/sPart/sPart';

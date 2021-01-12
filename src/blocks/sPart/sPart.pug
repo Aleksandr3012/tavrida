@@ -1,0 +1,14 @@
+mixin sPart(data)
+  .sPart&attributes(attributes)
+    .container
+      h2.h2--default.font-secondary.text-dark.mb-30 Стань частью «Тавриды»
+      .sPart__sub-title Амбассадор будет представлять &laquo;Тавриду&raquo; в&nbsp;своем регионе в&nbsp;течение следующего года.  <br> В&nbsp;конкурсном отборе могут принимать участие граждане&nbsp;РФ в&nbsp;возрасте от&nbsp;20&nbsp;до&nbsp;35&nbsp;лет, которые ранее принимали участие в&nbsp;проектах арт-кластера.
+      .row
+        mixin item(i,p)
+          .sPart__col.col-lg-auto.col-sm-6
+            .sPart__img-wrap
+              img(src=`img/sPart-img-${i}.png` loading="lazy", alt="")
+            p!= p
+        +item(`1`,`Ты&nbsp;молодой деятель культуры и&nbsp;искусств  и&nbsp;считаешь себя креативным  и&nbsp;коммуникабельным?`)
+        +item(`2`,`Умеешь выступать перед публикой и&nbsp;знаешь,  как заинтересовать творческую молодежь своего региона?`)
+        +item(`3`,`Готов стать частью творческого сообщества страны?`)

@@ -1,0 +1,13 @@
+mixin sFeatures(data)
+  .sFeatures&attributes(attributes)
+    .container
+      h2.h2--default.font-secondary.text-dark.mb-30.mb-lg-70 Возможности
+      .row
+        mixin item(p)
+          .sFeatures__col.col-xxl-4.col-md-6!= p
+        +item(`Стать частью творческого комьюнити страны `)
+        +item(`Получить <br> уникальный <br> мерч`)
+        +item(`Прокачать свои soft skills, навыки публичных выступлений`)
+        +item(`Получить опыт организации масштабных мероприятий`)
+        +item(`Стать  <br>соорганизатором проектов арт-кластера`)
+        +item(`Приехать на&nbsp;форум или фестиваль уже в&nbsp;качестве организатора`)

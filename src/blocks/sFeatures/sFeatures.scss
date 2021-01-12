@@ -1,0 +1,47 @@
+.sFeatures {
+  @extend .font-secondary;
+  counter-reset: num;
+  .row {
+    @include roww(rem(77));
+  }
+  &__col {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: rem(128);
+      @include rfs(24px);
+    }
+    @include rfs(18px);
+    margin-bottom: rem(64);
+    display: flex;
+    align-items: center;
+    &::before {
+      content: counter(num);
+      counter-increment: num;
+      @include rfs(100px);
+      @include media-breakpoint-up(xl) {
+        @include rfs(150px);
+        margin-right: rem(40);
+      }
+      margin-right: rem(20);
+      font-weight: 900;
+      line-height: 1;
+    }
+    &:nth-child(1)::before {
+      color: #f29400;
+    }
+    &:nth-child(2)::before {
+      color: #5a2e91;
+    }
+    &:nth-child(3)::before {
+      color: #476fb2;
+    }
+    &:nth-child(4)::before {
+      color: #efc825;
+    }
+    &:nth-child(5)::before {
+      color: #67bac3;
+    }
+    &:nth-child(6)::before {
+      color: #ce3b65;
+    }
+  }
+}

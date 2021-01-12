@@ -5,4 +5,8 @@ mixin story(data)
       .story__header
         p.p--xs.text-uppercase.font-weight-bold.mb-0.font-secondary= data.name
         .story__place= data.place
-      p.mb-0.font-weight-semi.font-secondary= data.project
+      if data.project
+        p.mb-0.font-weight-semi.font-secondary= data.project
+      if data.link
+        .story__link-wrap
+          .story__link= data.link
