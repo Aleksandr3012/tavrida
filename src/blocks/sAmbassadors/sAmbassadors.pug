@@ -6,9 +6,16 @@ mixin sAmbassadors(data)
       .drag.mb-20.js-drag-amb
         .row.drag__content.js-drag-amb-content
           mixin item()
-            .sAmbassadors__item
+            a.sAmbassadors__item(href="#ambModal", data-fancybox)
+            
               .sAmbassadors__img-wrap
                 img(src="img/avatar.png" loading="lazy", alt="")
+              .sAmbassadors__card
+                .sAmbassadors__img-wrap
+                  img(src="img/avatar.png" loading="lazy", alt="")
+                .sAmbassadors__caption
+                  .amb-name Игорь  Максагановский
+                  .amb-read-more читать интервью
           - for (var x = 0; x < 3; x++)
             +e.col.col-auto
               +item()
@@ -38,5 +45,19 @@ mixin sAmbassadors(data)
               +item()
               +item()
             // line
+          .modal.modal--amb#ambModal
+            .modal-title Интервью
+            .row
+              .col-auto
+                .sAmbassadors__img-wrap
+                  img(src="img/avatar.png" loading="lazy", alt="")
+                .amb-name Игорь  Максагановский
+                .amb-addr г. Москва
+              .col
+
+                .amb-text
+                  - for (var x = 0; x < 6; x++)
+                    h6 Оплачивается ли работа амбассадора?
+                    p Нет, работа амбассадора не оплачивается. За свою активность амбассадоры получают возможность напрямую работать с оргкомитетом, проходить образовательные курсы от партнеров арт-кластера, прокачивать soft skills, посещать форум и фестиваль в качестве организатора, иметь крутую джинсовку и другой мерч от «Тавриды» и много чего еще.
 
 

@@ -6,6 +6,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "bootstrap": "^4.5.3",
+    "node-sass": "^4.14.1",
     "select2": "^4.0.10",
     "slick-carousel": "^1.8.1"
   },
