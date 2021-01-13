@@ -48,11 +48,14 @@ mixin sAmbassadors(data)
           .modal.modal--amb#ambModal
             .modal-title Интервью
             .row
-              .col-auto
-                .sAmbassadors__img-wrap
-                  img(src="img/avatar.png" loading="lazy", alt="")
-                .amb-name Игорь  Максагановский
-                .amb-addr г. Москва
+              .col-md-auto.mb-3
+                .row
+                  .col-md-12.col-auto
+                    .sAmbassadors__img-wrap
+                      img(src="img/avatar.png" loading="lazy", alt="")
+                  .col-md-12.col
+                    .amb-name Игорь  Максагановский
+                    .amb-addr г. Москва
               .col
 
                 .amb-text

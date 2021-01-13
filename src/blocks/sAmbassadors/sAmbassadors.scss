@@ -1,10 +1,9 @@
 .custom-scroll {
   --bs-primary: #CE3B65;
-	scrollbar-color: var(--bs-primary)  #333333;
+	scrollbar-color: var(--bs-primary)  #8a8a8a;
 
 	scrollbar-width: thin;
-	scrollbar-color: var(--bs-primary)  #333333;
-
+	scrollbar-color: var(--bs-primary) #8a8a8a;
 	&::-webkit-scrollbar-thumb {
 		opacity: 1;
 		display: block
@@ -12,19 +11,15 @@
 
 	&::-webkit-scrollbar-track {
 		border: none;
-		background-color: #333333;
-		border-color: #333333;
-		-webkit-box-shadow: none;
+		background-color:#8a8a8a;		border-color:#8a8a8a;		-webkit-box-shadow: none;
 	}
 
 	&::-webkit-scrollbar {
 		width: 5px;
 		height: 5px;
-		background-color: #333333;
-		// border-right: 2px;
+		background-color:#8a8a8a;		// border-right: 2px;
 		/* or add it to the track */
-		border-color: #333333;
-		opacity: 0;
+		border-color:#8a8a8a;		opacity: 0;
 		-webkit-box-shadow: none;
 
 	}
@@ -271,12 +266,18 @@
 
 .modal--amb{
   padding: rem(26) rem(40);
-  padding-right: 0;
-  padding-bottom: 0;
-  border-radius: 20px;
+  padding-right: 10px; 
+  @include media-breakpoint-up(md){
+    border-radius: 20px;
+  }
 
   .sAmbassadors__img-wrap{
-    --iw: #{rem(250)};
+    @include media-breakpoint-up(md){
+
+      --iw: #{rem(250)};
+    }
+    --iw: #{rem(100)};
+    // --iw: #{rem(250)};
     
   }
   h6{
@@ -291,6 +292,10 @@
   }
   p{
     font-weight: normal;
+    @include media-breakpoint-up(md){
+      font-size: 20px;
+    }
+    font-size: 16px;
   }
   .row{
     .sAmbassadors__img-wrap{
@@ -307,14 +312,25 @@
 }
 .modal-title{
   font-weight: 900;
-  font-size: rem(50);
+  @include media-breakpoint-up(md){
+    font-size: rem(50);
+  }
+  font-size: rem(30);
   margin-bottom: rem(30);
 }
 .amb-name{
-  font-weight: bold;font-size: rem(20);
+  font-weight: bold;
+  @include media-breakpoint-up(md){
+    font-size: 20px;
+  }
+  font-size: 16px;
 }
 .amb-addr{
-  font-size: rem(20);
+  @include media-breakpoint-up(md){
+    font-size: 20px;
+  }
+  font-size: 16px;
+
 }
 
 .amb-text{
