@@ -227,18 +227,25 @@
 .amb-read-more{
   color: #476FB2;
 }
-.sAmbassadors__card{
+ .sAmbassadors__card{
+  @include media-breakpoint-up(md){
+
+    --iw: #{rem(250)};
+    margin-top: rem(-(288 + 82) / 2);
+    min-height: rem(288 + 82);
+  }
+  --iw: #{rem(200)};
+  margin-top: rem(-(288 + 20) / 2);
+  min-height: rem(288 + 20);
   font-weight: bold;
   // @include a-cent();
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: rem(-250 / 2);
-  margin-top: rem(-(288 + 82) / 2);
-  width: rem(250);
+  margin-left: calc(-1 * var(--iw) / 2);
+  width: var(--iw);
   background-color: #ffffff;
   height: auto;
-  min-height: rem(288 + 82);
   box-shadow: 0px 3.65438px 50px rgba(0, 0, 0, 0.35);
   border-radius: 40px;
   text-align: center;
@@ -260,7 +267,7 @@
       box-shadow:  0px 3.65438px 50px rgba(0, 0, 0, 0.35);
       border-radius: 40px;
       margin-bottom: 1rem;
-      --iw: #{rem(250)};
+      
   }
 }
 
