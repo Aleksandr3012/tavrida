@@ -3,7 +3,8 @@ mixin story(data)
     a.story__media(href="#", style="background-image: url(./img/story-1.jpg);")
     .story__content
       .story__header
-        p.p--xs.text-uppercase.font-weight-bold.mb-0.font-secondary= data.name
+        p.p--xs.text-uppercase.font-weight-bold.mb-0.font-secondary
+          a.text-white(href="#")= data.name
         .story__place= data.place
       if data.project
         p.mb-0.font-weight-semi.font-secondary= data.project

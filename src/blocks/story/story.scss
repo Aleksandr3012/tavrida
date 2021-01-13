@@ -108,12 +108,12 @@
   &__link {
     font-size: 20px;
     display: inline;
-    border-bottom: 1px solid;
+    // border-bottom: 1px solid;
     cursor: pointer;
-    @include mt;
-    @extend .font-secondary;
-    &:hover {
-      border-color: transparent;
-    }
+    // @include mt;
+    // @extend .font-secondary;
+    // &:hover {
+    //   border-color: transparent;
+    // }
   }
 }
