@@ -1,9 +1,9 @@
 .custom-scroll {
   --bs-primary: #CE3B65;
-	scrollbar-color: var(--bs-primary)  #8a8a8a;
+	scrollbar-color: var(--bs-primary)  #d8d8d8;
 
 	scrollbar-width: thin;
-	scrollbar-color: var(--bs-primary) #8a8a8a;
+	scrollbar-color: var(--bs-primary) #d8d8d8;
 	&::-webkit-scrollbar-thumb {
 		opacity: 1;
 		display: block
@@ -11,15 +11,15 @@
 
 	&::-webkit-scrollbar-track {
 		border: none;
-		background-color:#8a8a8a;		border-color:#8a8a8a;		-webkit-box-shadow: none;
+		background-color:#d8d8d8;		border-color:#d8d8d8;		-webkit-box-shadow: none;
 	}
 
 	&::-webkit-scrollbar {
 		width: 5px;
 		height: 5px;
-		background-color:#8a8a8a;		// border-right: 2px;
+		background-color:#d8d8d8;		// border-right: 2px;
 		/* or add it to the track */
-		border-color:#8a8a8a;		opacity: 0;
+		border-color:#d8d8d8;		opacity: 0;
 		-webkit-box-shadow: none;
 
 	}
@@ -56,6 +56,8 @@
     background: #c4c4c4;
     border-radius: 40px;
     @include a-cent;
+    margin-left: 0;
+    margin-right: 0;
     width: var(--iw, 143.64px);
     height: var(--iw, 143.64px);
     // margin:  0 ;
@@ -275,6 +277,9 @@
   padding: rem(26) rem(40);
   padding-right: 10px; 
   @include media-breakpoint-up(md){
+    .col-md-auto{
+      max-width: rem(320);
+    }
     border-radius: 20px;
   }
 
